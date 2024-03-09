@@ -1,0 +1,4665 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+
+<base target="_parent">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["bam.eu01.nr-data.net"]},distributed_tracing:{enabled:true,allowed_origins:[],cors_use_newrelic_header:false,cors_use_tracecontext_headers:false}};(window.NREUM||(NREUM={})).loader_config={agentID:"99021217",accountID:"2868847",trustKey:"2868847",xpid:"Vg4BWV5XDxAJXVFQBgAAVw==",licenseKey:"NRBR-1d4ceb8e146a994d175",applicationID:"99021171"};;/*! For license information please see nr-loader-spa-1.252.1.min.js.LICENSE.txt */
+(()=>{var e,t,r={234:(e,t,r)=>{"use strict";r.d(t,{P_:()=>m,Mt:()=>b,C5:()=>s,DL:()=>w,OP:()=>D,lF:()=>O,Yu:()=>E,Dg:()=>v,CX:()=>c,GE:()=>x,sU:()=>N});var n=r(8632),i=r(9567);const o={beacon:n.ce.beacon,errorBeacon:n.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o);const r=(0,n.ek)(e);r&&(r.info=a[e])}const u=e=>{if(!e||"string"!=typeof e)return!1;try{document.createDocumentFragment().querySelector(e)}catch{return!1}return!0};var d=r(7056),l=r(50);const f="[data-nr-mask]",h=()=>{const e={mask_selector:"*",block_selector:"[data-nr-block]",mask_input_options:{color:!1,date:!1,"datetime-local":!1,email:!1,month:!1,number:!1,range:!1,search:!1,tel:!1,text:!1,time:!1,url:!1,week:!1,textarea:!1,select:!1,password:!0}};return{feature_flags:[],proxy:{assets:void 0,beacon:void 0},privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,block_internal:!0,enabled:!0,harvestTimeSeconds:10,autoStart:!0},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},metrics:{enabled:!0,autoStart:!0},page_action:{enabled:!0,harvestTimeSeconds:30,autoStart:!0},page_view_event:{enabled:!0,autoStart:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1,autoStart:!0},session_trace:{enabled:!0,harvestTimeSeconds:10,autoStart:!0},harvest:{tooManyRequestsDelay:60},session_replay:{autoStart:!0,enabled:!1,harvestTimeSeconds:60,sampling_rate:10,error_sampling_rate:100,collect_fonts:!1,inline_images:!1,inline_stylesheet:!0,mask_all_inputs:!0,get mask_text_selector(){return e.mask_selector},set mask_text_selector(t){u(t)?e.mask_selector="".concat(t,",").concat(f):""===t||null===t?e.mask_selector=f:(0,l.Z)("An invalid session_replay.mask_selector was provided. '*' will be used.",t)},get block_class(){return"nr-block"},get ignore_class(){return"nr-ignore"},get mask_text_class(){return"nr-mask"},get block_selector(){return e.block_selector},set block_selector(t){u(t)?e.block_selector+=",".concat(t):""!==t&&(0,l.Z)("An invalid session_replay.block_selector was provided and will not be used",t)},get mask_input_options(){return e.mask_input_options},set mask_input_options(t){t&&"object"==typeof t?e.mask_input_options={...t,password:!0}:(0,l.Z)("An invalid session_replay.mask_input_option was provided and will not be used",t)}},spa:{enabled:!0,harvestTimeSeconds:10,autoStart:!0}}},p={},g="All configuration objects require an agent identifier!";function m(e){if(!e)throw new Error(g);if(!p[e])throw new Error("Configuration for ".concat(e," was never set"));return p[e]}function v(e,t){if(!e)throw new Error(g);p[e]=(0,i.D)(t,h());const r=(0,n.ek)(e);r&&(r.init=p[e])}function b(e,t){if(!e)throw new Error(g);var r=m(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const y={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},A={};function w(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!A[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return A[e]}function x(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");A[e]=(0,i.D)(t,y);const r=(0,n.ek)(e);r&&(r.loader_config=A[e])}const E=(0,n.mF)().o;var _=r(385),T=r(6818);const S={buildEnv:T.Re,customTransaction:void 0,disabled:!1,distMethod:T.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(_._A?.performance?.timeOrigin||_._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+_._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof _._A.XMLHttpRequest?.prototype?.addEventListener,version:T.q4,denyList:void 0},R={};function D(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!R[e])throw new Error("Runtime for ".concat(e," was never set"));return R[e]}function N(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");R[e]=(0,i.D)(t,S);const r=(0,n.ek)(e);r&&(r.runtime=R[e])}function O(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=r(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,n.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,n.Z)("Setting a Configurable requires a model to set its initial properties");const r=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(r).length?e:r;for(let a in o)if(void 0!==e[a])try{Array.isArray(e[a])&&Array.isArray(t[a])?r[a]=Array.from(new Set([...e[a],...t[a]])):"object"==typeof e[a]&&"object"==typeof t[a]?r[a]=i(e[a],t[a]):r[a]=e[a]}catch(e){(0,n.Z)("An error occurred while setting a property of a Configurable",e)}return r}catch(e){(0,n.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,r)=>{"use strict";r.d(t,{Re:()=>i,gF:()=>o,lF:()=>a,q4:()=>n});const n="1.252.1",i="PROD",o="CDN",a="2.0.0-alpha.11"},385:(e,t,r)=>{"use strict";r.d(t,{FN:()=>c,IF:()=>l,LW:()=>a,Nk:()=>h,Tt:()=>u,_A:()=>o,cv:()=>p,iS:()=>s,il:()=>n,ux:()=>d,v6:()=>i,w1:()=>f});const n="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=n?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a="complete"===o?.document?.readyState,s=Boolean("hidden"===o?.document?.visibilityState),c=""+o?.location,u=/iPad|iPhone|iPod/.test(o.navigator?.userAgent),d=u&&"undefined"==typeof SharedWorker,l=(()=>{const e=o.navigator?.userAgent?.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),f=Boolean(n&&window.document.documentMode),h=!!o.navigator?.sendBeacon,p=Math.floor(o?.performance?.timeOrigin||o?.performance?.timing?.navigationStart||Date.now())},1117:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,r)=>{"use strict";r.d(t,{L:()=>d,R:()=>c});var n=r(8325),i=r(1284),o=r(4322),a=r(3325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature",r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if(u(e),!e||!s[e].get(t)||r)return c(t);s[e].get(t).staged=!0;const a=[...s[e]];function c(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)l(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}a.every((e=>{let[t,r]=e;return r.staged}))&&(a.sort(((e,t)=>e[1].priority-t[1].priority)),a.forEach((t=>{let[r]=t;s[e].delete(r),c(r)})))}function l(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},8325:(e,t,r)=>{"use strict";r.d(t,{A:()=>c,ee:()=>u});var n=r(8632),i=r(2210),o=r(234);class a{constructor(e){this.contextId=e}}var s=r(3117);const c="nr@context:".concat(s.a),u=function e(t,r){var n={},s={},d={},f=!1;try{f=16===r.length&&(0,o.OP)(r).isolatedBacklog}catch(e){}var h={on:g,addEventListener:g,removeEventListener:function(e,t){var r=n[e];if(!r)return;for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)},emit:function(e,r,n,i,o){!1!==o&&(o=!0);if(u.aborted&&!i)return;t&&o&&t.emit(e,r,n);for(var a=p(n),c=m(e),d=c.length,l=0;l<d;l++)c[l].apply(a,r);var f=b()[s[e]];f&&f.push([h,e,r,a]);return a},get:v,listeners:m,context:p,buffer:function(e,t){const r=b();if(t=t||"feature",h.aborted)return;Object.entries(e||{}).forEach((e=>{let[n,i]=e;s[i]=t,t in r||(r[t]=[])}))},abort:l,aborted:!1,isBuffering:function(e){return!!b()[s[e]]},debugId:r,backlog:f?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function p(e){return e&&e instanceof a?e:e?(0,i.X)(e,c,(()=>new a(c))):new a(c)}function g(e,t){n[e]=m(e).concat(t)}function m(e){return n[e]||[]}function v(t){return d[t]=d[t]||e(h,t)}function b(){return h.backlog}}(void 0,"globalEE"),d=(0,n.fP)();function l(){u.aborted=!0,Object.keys(u.backlog).forEach((e=>{delete u.backlog[e]}))}d.ee||(d.ee=u)},5546:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(8325).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4322:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(5546);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},3239:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(r,n))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2],n=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(r,n))}},3117:(e,t,r)=>{"use strict";r.d(t,{a:()=>n});const n=(0,r(4402).Rl)()},4402:(e,t,r)=>{"use strict";r.d(t,{Ht:()=>u,M:()=>c,Rl:()=>a,ky:()=>s});var n=r(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=n._A?.crypto||n._A?.msCrypto;let t,r=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(30))),i.split("").map((e=>"x"===e?o(t,r++).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=n._A?.crypto||n._A?.msCrypto;let r,i=0;t&&t.getRandomValues&&(r=t.getRandomValues(new Uint8Array(e)));const a=[];for(var s=0;s<e;s++)a.push(o(r,i++).toString(16));return a.join("")}function c(){return s(16)}function u(){return s(32)}},7056:(e,t,r)=>{"use strict";r.d(t,{Bq:()=>n,Hb:()=>o,IK:()=>c,oD:()=>i,uT:()=>s,wO:()=>a});const n="NRBA",i=144e5,o=18e5,a={PAUSE:"session-pause",RESET:"session-reset",RESUME:"session-resume",UPDATE:"session-update"},s={SAME_TAB:"same-tab",CROSS_TAB:"cross-tab"},c={OFF:0,FULL:1,ERROR:2}},7894:(e,t,r)=>{"use strict";function n(){return Math.round(performance.now())}r.d(t,{z:()=>n})},7243:(e,t,r)=>{"use strict";r.d(t,{e:()=>i});var n=r(385);function i(e){if(0===(e||"").indexOf("data:"))return{protocol:"data"};try{const t=new URL(e,location.href),r={port:t.port,hostname:t.hostname,pathname:t.pathname,search:t.search,protocol:t.protocol.slice(0,t.protocol.indexOf(":")),sameOrigin:t.protocol===n._A?.location?.protocol&&t.host===n._A?.location?.host};return r.port&&""!==r.port||("http:"===t.protocol&&(r.port="80"),"https:"===t.protocol&&(r.port="443")),r.pathname&&""!==r.pathname?r.pathname.startsWith("/")||(r.pathname="/".concat(r.pathname)):r.pathname="/",r}catch(e){return{}}}},50:(e,t,r)=>{"use strict";function n(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},2825:(e,t,r)=>{"use strict";r.d(t,{N:()=>d,T:()=>l});var n=r(8325),i=r(5546),o=r(3325),a=r(385);const s="newrelic";const c={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa],sr:[o.D.sessionReplay,o.D.sessionTrace]},u=new Set;function d(e,t){const r=n.ee.get(t);e&&"object"==typeof e&&(u.has(t)||(Object.entries(e).forEach((e=>{let[t,n]=e;c[t]?c[t].forEach((e=>{n?(0,i.p)("feat-"+t,[],void 0,e,r):(0,i.p)("block-"+t,[],void 0,e,r),(0,i.p)("rumresp-"+t,[Boolean(n)],void 0,e,r)})):n&&(0,i.p)("feat-"+t,[],void 0,void 0,r),l[t]=Boolean(n)})),Object.keys(c).forEach((e=>{void 0===l[e]&&(c[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,r))),l[e]=!1)})),u.add(t),function(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};try{a._A.dispatchEvent(new CustomEvent(s,{detail:e}))}catch(e){}}({loaded:!0})))}const l={}},2210:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,r)=>{"use strict";r.d(t,{D:()=>n});const n=(e,t)=>Object.entries(e||{}).map((e=>{let[r,n]=e;return t(r,n)}))},4351:(e,t,r)=>{"use strict";r.d(t,{P:()=>o});var n=r(8325);const i=()=>{const e=new WeakSet;return(t,r)=>{if("object"==typeof r&&null!==r){if(e.has(r))return;e.add(r)}return r}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{n.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,r)=>{"use strict";r.d(t,{KB:()=>a,b2:()=>o});var n=r(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},8632:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>d,ce:()=>o,ek:()=>u,fP:()=>a,gG:()=>l,h5:()=>c,mF:()=>s});var n=r(7894),i=r(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t){let r=a();r.initializedAgents??={},t.initializedAt={ms:(0,n.z)(),date:new Date},r.initializedAgents[e]=t}function u(e){let t=a();return t.initializedAgents?.[e]}function d(e,t){a()[e]=t}function l(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,r)=>{"use strict";r.d(t,{N:()=>i});var n=r(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],r=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;(0,n.iz)("visibilitychange",(function(){if(t)return void("hidden"===document.visibilityState&&e());e(document.visibilityState)}),r,i)}},1214:(e,t,r)=>{"use strict";r.d(t,{em:()=>b,u5:()=>R,QU:()=>O,_L:()=>P,Gm:()=>M,Lg:()=>L,BV:()=>Z,Kf:()=>Y});var n=r(8325),i=r(3117);const o="nr@original:".concat(i.a);var a=Object.prototype.hasOwnProperty,s=!1;function c(e,t){return e||(e=n.ee),r.inPlace=function(e,t,n,i,o){n||(n="");const a="-"===n.charAt(0);for(let s=0;s<t.length;s++){const c=t[s],u=e[c];d(u)||(e[c]=r(u,a?c+n:n,i,c,o))}},r.flag=o,r;function r(t,r,n,s,c){return d(t)?t:(r||(r=""),nrWrapper[o]=t,function(e,t,r){if(Object.defineProperty&&Object.keys)try{return Object.keys(e).forEach((function(r){Object.defineProperty(t,r,{get:function(){return e[r]},set:function(t){return e[r]=t,t}})})),t}catch(e){u([e],r)}for(var n in e)a.call(e,n)&&(t[n]=e[n])}(t,nrWrapper,e),nrWrapper);function nrWrapper(){var o,a,d,l;try{a=this,o=[...arguments],d="function"==typeof n?n(o,a):n||{}}catch(t){u([t,"",[o,a,s],d],e)}i(r+"start",[o,a,s],d,c);try{return l=t.apply(a,o)}catch(e){throw i(r+"err",[o,a,e],d,c),e}finally{i(r+"end",[o,a,l],d,c)}}}function i(r,n,i,o){if(!s||t){var a=s;s=!0;try{e.emit(r,n,i,t,o)}catch(t){u([t,r,n,i],e)}s=a}}}function u(e,t){t||(t=n.ee);try{t.emit("internal-error",e)}catch(e){}}function d(e){return!(e&&"function"==typeof e&&e.apply&&!e[o])}var l=r(2210),f=r(385);const h={},p=f._A.XMLHttpRequest,g="addEventListener",m="removeEventListener",v="nr@wrapped:".concat(n.A);function b(e){var t=function(e){return(e||n.ee).get("events")}(e);if(h[t.debugId]++)return t;h[t.debugId]=1;var r=c(t,!0);function i(e){r.inPlace(e,[g,m],"-",o)}function o(e,t){return e[1]}return"getPrototypeOf"in Object&&(f.il&&y(document,i),y(f._A,i),y(p.prototype,i)),t.on(g+"-start",(function(e,t){var n=e[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var i=(0,l.X)(n,v,(function(){var e={object:function(){if("function"!=typeof n.handleEvent)return;return n.handleEvent.apply(n,arguments)},function:n}[typeof n];return e?r(e,"fn-",null,e.name||"anonymous"):n}));this.wrapped=e[1]=i}})),t.on(m+"-start",(function(e){e[1]=this.wrapped||e[1]})),t}function y(e,t){let r=e;for(;"object"==typeof r&&!Object.prototype.hasOwnProperty.call(r,g);)r=Object.getPrototypeOf(r);for(var n=arguments.length,i=new Array(n>2?n-2:0),o=2;o<n;o++)i[o-2]=arguments[o];r&&t(r,...i)}var A="fetch-",w=A+"body-",x=["arrayBuffer","blob","json","text","formData"],E=f._A.Request,_=f._A.Response,T="prototype";const S={};function R(e){const t=function(e){return(e||n.ee).get("fetch")}(e);if(!(E&&_&&f._A.fetch))return t;if(S[t.debugId]++)return t;function r(e,r,i){var o=e[r];"function"==typeof o&&(e[r]=function(){var e,r=[...arguments],a={};t.emit(i+"before-start",[r],a),a[n.A]&&a[n.A].dt&&(e=a[n.A].dt);var s=o.apply(this,r);return t.emit(i+"start",[r,e],s),s.then((function(e){return t.emit(i+"end",[null,e],s),e}),(function(e){throw t.emit(i+"end",[e],s),e}))})}return S[t.debugId]=1,x.forEach((e=>{r(E[T],e,w),r(_[T],e,w)})),r(f._A,"fetch",A),t.on(A+"end",(function(e,r){var n=this;if(r){var i=r.headers.get("content-length");null!==i&&(n.rxSize=i),t.emit(A+"done",[null,r],n)}else t.emit(A+"done",[e],n)})),t}const D={},N=["pushState","replaceState"];function O(e){const t=function(e){return(e||n.ee).get("history")}(e);return!f.il||D[t.debugId]++||(D[t.debugId]=1,c(t).inPlace(window.history,N,"-")),t}var I=r(3239);const j={},C=["appendChild","insertBefore","replaceChild"];function P(e){const t=function(e){return(e||n.ee).get("jsonp")}(e);if(!f.il||j[t.debugId])return t;j[t.debugId]=!0;var r=c(t),i=/[?&](?:callback|cb)=([^&#]+)/,o=/(.*)\.([^.]+)/,a=/^(\w+)(\.|$)(.*)$/;function s(e,t){if(!e)return t;const r=e.match(a),n=r[1];return s(r[3],t[n])}return r.inPlace(Node.prototype,C,"dom-"),t.on("dom-start",(function(e){!function(e){if(!e||"string"!=typeof e.nodeName||"script"!==e.nodeName.toLowerCase())return;if("function"!=typeof e.addEventListener)return;var n=(a=e.src,c=a.match(i),c?c[1]:null);var a,c;if(!n)return;var u=function(e){var t=e.match(o);if(t&&t.length>=3)return{key:t[2],parent:s(t[1],window)};return{key:e,parent:window}}(n);if("function"!=typeof u.parent[u.key])return;var d={};function l(){t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,I.m$)(!1)),e.removeEventListener("error",f,(0,I.m$)(!1))}function f(){t.emit("jsonp-error",[],d),t.emit("jsonp-end",[],d),e.removeEventListener("load",l,(0,I.m$)(!1)),e.removeEventListener("error",f,(0,I.m$)(!1))}r.inPlace(u.parent,[u.key],"cb-",d),e.addEventListener("load",l,(0,I.m$)(!1)),e.addEventListener("error",f,(0,I.m$)(!1)),t.emit("new-jsonp",[e.src],d)}(e[0])})),t}const k={};function M(e){const t=function(e){return(e||n.ee).get("mutation")}(e);if(!f.il||k[t.debugId])return t;k[t.debugId]=!0;var r=c(t),i=f._A.MutationObserver;return i&&(window.MutationObserver=function(e){return this instanceof i?new i(r(e,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype),t}const H={};function L(e){const t=function(e){return(e||n.ee).get("promise")}(e);if(H[t.debugId])return t;H[t.debugId]=!0;var r=t.context,i=c(t),a=f._A.Promise;return a&&function(){function e(r){var n=t.context(),o=i(r,"executor-",n,null,!1);const s=Reflect.construct(a,[o],e);return t.context(s).getCtx=function(){return n},s}f._A.Promise=e,Object.defineProperty(e,"name",{value:"Promise"}),e.toString=function(){return a.toString()},Object.setPrototypeOf(e,a),["all","race"].forEach((function(r){const n=a[r];e[r]=function(e){let i=!1;[...e||[]].forEach((e=>{this.resolve(e).then(a("all"===r),a(!1))}));const o=n.apply(this,arguments);return o;function a(e){return function(){t.emit("propagate",[null,!i],o,!1,!1),i=i||!e}}}})),["resolve","reject"].forEach((function(r){const n=a[r];e[r]=function(e){const r=n.apply(this,arguments);return e!==r&&t.emit("propagate",[e,!0],r,!1,!1),r}})),e.prototype=a.prototype;const n=a.prototype.then;a.prototype.then=function(){var e=this,o=r(e);o.promise=e;for(var a=arguments.length,s=new Array(a),c=0;c<a;c++)s[c]=arguments[c];s[0]=i(s[0],"cb-",o,null,!1),s[1]=i(s[1],"cb-",o,null,!1);const u=n.apply(this,s);return o.nextPromise=u,t.emit("propagate",[e,!0],u,!1,!1),u},a.prototype.then[o]=n,t.on("executor-start",(function(e){e[0]=i(e[0],"resolve-",this,null,!1),e[1]=i(e[1],"resolve-",this,null,!1)})),t.on("executor-err",(function(e,t,r){e[1](r)})),t.on("cb-end",(function(e,r,n){t.emit("propagate",[n,!0],this.nextPromise,!1,!1)})),t.on("propagate",(function(e,r,n){this.getCtx&&!r||(this.getCtx=function(){if(e instanceof Promise)var r=t.context(e);return r&&r.getCtx?r.getCtx():this})}))}(),t}const z={},F="setTimeout",B="setInterval",U="clearTimeout",V="-start",q="-",G=[F,"setImmediate",B,U,"clearImmediate"];function Z(e){const t=function(e){return(e||n.ee).get("timer")}(e);if(z[t.debugId]++)return t;z[t.debugId]=1;var r=c(t);return r.inPlace(f._A,G.slice(0,2),F+q),r.inPlace(f._A,G.slice(2,3),B+q),r.inPlace(f._A,G.slice(3),U+q),t.on(B+V,(function(e,t,n){e[0]=r(e[0],"fn-",null,n)})),t.on(F+V,(function(e,t,n){this.method=n,this.timerDuration=isNaN(e[1])?0:+e[1],e[0]=r(e[0],"fn-",this,n)})),t}var W=r(50);const X={},K=["open","send"];function Y(e){var t=e||n.ee;const r=function(e){return(e||n.ee).get("xhr")}(t);if(X[r.debugId]++)return r;X[r.debugId]=1,b(t);var i=c(r),o=f._A.XMLHttpRequest,a=f._A.MutationObserver,s=f._A.Promise,u=f._A.setInterval,d="readystatechange",l=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],h=[],p=f._A.XMLHttpRequest=function(e){const t=new o(e),n=r.context(t);try{r.emit("new-xhr",[t],n),t.addEventListener(d,(a=n,function(){var e=this;e.readyState>3&&!a.resolved&&(a.resolved=!0,r.emit("xhr-resolved",[],e)),i.inPlace(e,l,"fn-",w)}),(0,I.m$)(!1))}catch(e){(0,W.Z)("An error occurred while intercepting XHR",e);try{r.emit("internal-error",[e])}catch(e){}}var a;return t};function g(e,t){i.inPlace(t,["onreadystatechange"],"fn-",w)}if(function(e,t){for(var r in e)t[r]=e[r]}(o,p),p.prototype=o.prototype,i.inPlace(p.prototype,K,"-xhr-",w),r.on("send-xhr-start",(function(e,t){g(e,t),function(e){h.push(e),a&&(m?m.then(A):u?u(A):(v=-v,y.data=v))}(t)})),r.on("open-xhr-start",g),a){var m=s&&s.resolve();if(!u&&!s){var v=1,y=document.createTextNode(v);new a(A).observe(y,{characterData:!0})}}else t.on("fn-end",(function(e){e[0]&&e[0].type===d||A()}));function A(){for(var e=0;e<h.length;e++)g(0,h[e]);h.length&&(h=[])}function w(e,t){return t}return r}},7825:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.ajax},6660:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.jserrors},3081:(e,t,r)=>{"use strict";r.d(t,{gF:()=>o,mY:()=>i,t9:()=>n,vz:()=>s,xS:()=>a});const n=r(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},4649:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageAction},7633:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewEvent},9251:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(3325).D.pageViewTiming},7144:(e,t,r)=>{"use strict";r.d(t,{J0:()=>l,Mi:()=>d,Vb:()=>o,Ye:()=>s,fm:()=>c,i9:()=>a,t9:()=>i,u0:()=>u});var n=r(7056);const i=r(3325).D.sessionReplay,o=.12,a={DomContentLoaded:0,Load:1,FullSnapshot:2,IncrementalSnapshot:3,Meta:4,Custom:5},s=1e6,c=64e3,u={[n.IK.ERROR]:15e3,[n.IK.FULL]:3e5,[n.IK.OFF]:0},d={RESET:{message:"Session was reset",sm:"Reset"},IMPORT:{message:"Recorder failed to import",sm:"Import"},TOO_MANY:{message:"429: Too Many Requests",sm:"Too-Many"},TOO_BIG:{message:"Payload was too large",sm:"Too-Big"},CROSS_TAB:{message:"Session Entity was set to OFF on another tab",sm:"Cross-Tab"},ENTITLEMENTS:{message:"Session Replay is not allowed and will not be started",sm:"Entitlement"}},l=5e3},3614:(e,t,r)=>{"use strict";r.d(t,{BST_RESOURCE:()=>i,END:()=>s,FEATURE_NAME:()=>n,FN_END:()=>u,FN_START:()=>c,PUSH_STATE:()=>d,RESOURCE:()=>o,START:()=>a});const n=r(3325).D.sessionTrace,i="bstResource",o="resource",a="-start",s="-end",c="fn"+a,u="fn"+s,d="pushState"},7836:(e,t,r)=>{"use strict";r.d(t,{BODY:()=>x,CB_END:()=>E,CB_START:()=>u,END:()=>w,FEATURE_NAME:()=>i,FETCH:()=>T,FETCH_BODY:()=>v,FETCH_DONE:()=>m,FETCH_START:()=>g,FN_END:()=>c,FN_START:()=>s,INTERACTION:()=>f,INTERACTION_API:()=>d,INTERACTION_EVENTS:()=>o,JSONP_END:()=>b,JSONP_NODE:()=>p,JS_TIME:()=>_,MAX_TIMER_BUDGET:()=>a,REMAINING:()=>l,SPA_NODE:()=>h,START:()=>A,originalSetTimeout:()=>y});var n=r(234);const i=r(3325).D.spa,o=["click","submit","keypress","keydown","keyup","change"],a=999,s="fn-start",c="fn-end",u="cb-start",d="api-ixn-",l="remaining",f="interaction",h="spaNode",p="jsonpNode",g="fetch-start",m="fetch-done",v="fetch-body-",b="jsonp-end",y=n.Yu.ST,A="-start",w="-end",x="-body",E="cb"+w,_="jsTime",T="fetch"},5938:(e,t,r)=>{"use strict";r.d(t,{W:()=>i});var n=r(8325);class i{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=n.ee.get(e),this.featureName=r,this.blocked=!1}}},8862:(e,t,r)=>{"use strict";r.d(t,{j:()=>A});var n=r(3325),i=r(234),o=r(5546),a=r(8325),s=r(7894),c=r(8e3),u=r(3960),d=r(385),l=r(50),f=r(3081),h=r(8632);const p=["setErrorHandler","finished","addToTrace","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId","setApplicationVersion","start","recordReplay","pauseReplay"],g=["setErrorHandler","finished","addToTrace","addRelease"];function m(){const e=(0,h.gG)();p.forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...n))})),o.length>1?o:o[0]}(t,...n)}}))}var v=r(2825);const b=e=>{const t=e.startsWith("http");e+="/",r.p=t?e:"https://"+e};let y=!1;function A(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},p=arguments.length>2?arguments[2]:void 0,A=arguments.length>3?arguments[3]:void 0,{init:w,info:x,loader_config:E,runtime:_={loaderType:p},exposed:T=!0}=t;const S=(0,h.gG)();x||(w=S.init,x=S.info,E=S.loader_config),(0,i.Dg)(e.agentIdentifier,w||{}),(0,i.GE)(e.agentIdentifier,E||{}),x.jsAttributes??={},d.v6&&(x.jsAttributes.isWorker=!0),(0,i.CX)(e.agentIdentifier,x);const R=(0,i.P_)(e.agentIdentifier),D=[x.beacon,x.errorBeacon];y||(R.proxy.assets&&(b(R.proxy.assets),D.push(R.proxy.assets)),R.proxy.beacon&&D.push(R.proxy.beacon),m(),(0,h.EZ)("activatedFeatures",v.T)),_.denyList=[...R.ajax.deny_list||[],...R.ajax.block_internal?D:[]],(0,i.sU)(e.agentIdentifier,_),void 0===e.api&&(e.api=function(e,t){t||(0,c.R)(e,"api");const h={};var p=a.ee.get(e),m=p.get("tracer"),v="api-",b=v+"ixn-";function y(t,r,n,o){const a=(0,i.C5)(e);return null===r?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:r}}),x(v,n,!0,o||null===r?"session":void 0)(t,r)}function A(){}g.forEach((e=>{h[e]=x(v,e,!0,"api")})),h.addPageAction=x(v,"addPageAction",!0,n.D.pageAction),h.setCurrentRouteName=x(v,"routeName",!0,n.D.spa),h.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(r||"http://custom.transaction")+t,x(v,"setPageViewName",!0)()},h.setCustomAttribute=function(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number","boolean"].includes(typeof t)||null===t)return y(e,t,"setCustomAttribute",r);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string, number or boolean type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setUserId=function(e){if("string"==typeof e||null===e)return y("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},h.setApplicationVersion=function(e){if("string"==typeof e||null===e)return y("application.version",e,"setApplicationVersion",!1);(0,l.Z)("Failed to execute setApplicationVersion. Expected <String | null>, but got <".concat(typeof e,">."))},h.start=e=>{try{const t=e?"defined":"undefined";(0,o.p)(f.xS,["API/start/".concat(t,"/called")],void 0,n.D.metrics,p);const r=Object.values(n.D);if(void 0===e)e=r;else{if((e=Array.isArray(e)&&e.length?e:[e]).some((e=>!r.includes(e))))return(0,l.Z)("Invalid feature name supplied. Acceptable feature names are: ".concat(r));e.includes(n.D.pageViewEvent)||e.push(n.D.pageViewEvent)}e.forEach((e=>{p.emit("".concat(e,"-opt-in"))}))}catch(e){(0,l.Z)("An unexpected issue occurred",e)}},h.recordReplay=function(){(0,o.p)(f.xS,["API/recordReplay/called"],void 0,n.D.metrics,p),(0,o.p)("recordReplay",[],void 0,n.D.sessionReplay,p)},h.pauseReplay=function(){(0,o.p)(f.xS,["API/pauseReplay/called"],void 0,n.D.metrics,p),(0,o.p)("pauseReplay",[],void 0,n.D.sessionReplay,p)},h.interaction=function(){return(new A).get()};var w=A.prototype={createTracer:function(e,t){var r={},i=this,a="function"==typeof t;return(0,o.p)(f.xS,["API/createTracer/called"],void 0,n.D.metrics,p),(0,o.p)(b+"tracer",[(0,s.z)(),e,r],i,n.D.spa,p),function(){if(m.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],r),a)try{return t.apply(this,arguments)}catch(e){throw m.emit("fn-err",[arguments,this,e],r),e}finally{m.emit("fn-end",[(0,s.z)()],r)}}}};function x(e,t,r,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,n.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],r?null:this,i,p),r?void 0:this}}function E(){r.e(111).then(r.bind(r,7438)).then((t=>{let{setAPI:r}=t;r(e),(0,c.L)(e,"api")})).catch((()=>{(0,l.Z)("Downloading runtime APIs failed..."),(0,c.L)(e,"api",!0)}))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=x(b,e,void 0,n.D.spa)})),h.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,n.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,n.D.jserrors,p)},d.il?(0,u.b2)((()=>E()),!0):E(),h}(e.agentIdentifier,A)),void 0===e.exposed&&(e.exposed=T),y=!0}},1926:(e,t,r)=>{r.nc=(()=>{try{return document?.currentScript?.nonce}catch(e){}return""})()},3325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8,[n.sessionReplay]:9}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>({111:"nr-spa",164:"nr-spa-compressor",433:"nr-spa-recorder"}[e]+"-1.252.1.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA-1.252.1.PROD:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var l=u[d];if(l.getAttribute("src")==r||l.getAttribute("data-webpack")==t+o){s=l;break}}if(!s){c=!0;var f={111:"sha512-yqKktm3jjy7vH57ymJxJxF1Z6jKArrgcXebUMwF0elgpFkLMiY9/6juO9vuYcQ3VLbGCuFTO0QlvCZc8xgPFaA==",433:"sha512-xCugVfV9zLov1hjT2nBv+ZvSWVPV2dTRP6ZOb5BWXDkjLxZfeMBu5Yb1JACb/dMdGYlFRYh6/5+evlY/nf7URw==",164:"sha512-9mCt3EsEBu4UoI4ZDKBWyuf3gjOy9vMrbuPNIGxVj+hCDXuCy2yhAiQXr+3Xyg4vMnD349BCtUd0vc2Cys6CFQ=="};(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r,0!==s.src.indexOf(window.location.origin+"/")&&(s.crossOrigin="anonymous"),f[a]&&(s.integrity=f[a])}e[r]=[n];var h=(t,n)=>{s.onerror=s.onload=null,clearTimeout(p);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},p=setTimeout(h.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=h.bind(null,s.onerror),s.onload=h.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={801:0,92:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=self["webpackChunk:NRBA-1.252.1.PROD"]=self["webpackChunk:NRBA-1.252.1.PROD"]||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})(),(()=>{"use strict";i(1926);var e=i(50);class t{#e(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];if("function"==typeof this.api?.[t])return this.api[t](...n);(0,e.Z)("Call to agent api ".concat(t," failed. The API is not currently initialized."))}addPageAction(e,t){return this.#e("addPageAction",e,t)}setPageViewName(e,t){return this.#e("setPageViewName",e,t)}setCustomAttribute(e,t,r){return this.#e("setCustomAttribute",e,t,r)}noticeError(e,t){return this.#e("noticeError",e,t)}setUserId(e){return this.#e("setUserId",e)}setApplicationVersion(e){return this.#e("setApplicationVersion",e)}setErrorHandler(e){return this.#e("setErrorHandler",e)}finished(e){return this.#e("finished",e)}addRelease(e,t){return this.#e("addRelease",e,t)}start(e){return this.#e("start",e)}recordReplay(){return this.#e("recordReplay")}pauseReplay(){return this.#e("pauseReplay")}addToTrace(e){return this.#e("addToTrace",e)}setCurrentRouteName(e){return this.#e("setCurrentRouteName",e)}interaction(){return this.#e("interaction")}}var r=i(3325),n=i(234);const o=Object.values(r.D);function a(e){const t={};return o.forEach((r=>{t[r]=function(e,t){return!1!==(0,n.Mt)(t,"".concat(e,".enabled"))}(r,e)})),t}var s=i(8862);var c=i(8e3),u=i(5938),d=i(3960),l=i(385);class f extends u.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.auto=i,this.abortHandler=void 0,this.featAggregate=void 0,this.onAggregateImported=void 0,!1===(0,n.Mt)(this.agentIdentifier,"".concat(this.featureName,".autoStart"))&&(this.auto=!1),this.auto&&(0,c.R)(e,r)}importAggregator(){let t=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate)return;if(!this.auto)return void this.ee.on("".concat(this.featureName,"-opt-in"),(()=>{(0,c.R)(this.agentIdentifier,this.featureName),this.auto=!0,this.importAggregator()}));const r=l.il&&!0===(0,n.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let o;this.onAggregateImported=new Promise((e=>{o=e}));const a=async()=>{let n;try{if(r){const{setupAgentSession:e}=await i.e(111).then(i.bind(i,1656));n=e(this.agentIdentifier)}}catch(t){(0,e.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",t)}try{if(!this.shouldImportAgg(this.featureName,n))return(0,c.L)(this.agentIdentifier,this.featureName),void o(!1);const{lazyFeatureLoader:e}=await i.e(111).then(i.bind(i,8582)),{Aggregate:r}=await e(this.featureName,"aggregate");this.featAggregate=new r(this.agentIdentifier,this.aggregator,t),o(!0)}catch(t){(0,e.Z)("Downloading and initializing ".concat(this.featureName," failed..."),t),this.abortHandler?.(),(0,c.L)(this.agentIdentifier,this.featureName,!0),o(!1)}};l.il?(0,d.b2)((()=>a()),!0):a()}shouldImportAgg(e,t){return e!==r.D.sessionReplay||!!n.Yu.MO&&(!1!==(0,n.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!t?.isNew||!!t?.state.sessionReplayMode))}}var h=i(7633);class p extends f{static featureName=h.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,h.t,r),this.importAggregator()}}var g=i(1117),m=i(1284);class v extends g.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,m.D)(e,(function(e,r){t[e]=b(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,m.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=b(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=y(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=b(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=A(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function b(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=y(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function y(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function A(e){return"object"!=typeof e?[]:(0,m.D)(e,w)}function w(e,t){return t}var x=i(8632),E=i(4402),_=i(4351);var T=i(5546),S=i(7956),R=i(3239),D=i(7894),N=i(9251);class O extends f{static featureName=N.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,N.t,r),l.il&&((0,S.N)((()=>(0,T.p)("docHidden",[(0,D.z)()],void 0,N.t,this.ee)),!0),(0,R.bP)("pagehide",(()=>(0,T.p)("winPagehide",[(0,D.z)()],void 0,N.t,this.ee))),this.importAggregator())}}var I=i(3081);class j extends f{static featureName=I.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,I.t9,r),this.importAggregator()}}var C=i(6660);class P{constructor(e,t,r,n){this.name="UncaughtError",this.message=e,this.sourceURL=t,this.line=r,this.column=n}}class k extends f{static featureName=C.t;#t=new Set;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,C.t,n);try{this.removeOnAbort=new AbortController}catch(e){}this.ee.on("fn-err",((e,t,n)=>{this.abortHandler&&!this.#t.has(n)&&(this.#t.add(n),(0,T.p)("err",[this.#r(n),(0,D.z)()],void 0,r.D.jserrors,this.ee))})),this.ee.on("internal-error",(e=>{this.abortHandler&&(0,T.p)("ierr",[this.#r(e),(0,D.z)(),!0],void 0,r.D.jserrors,this.ee)})),l._A.addEventListener("unhandledrejection",(e=>{this.abortHandler&&(0,T.p)("err",[this.#n(e),(0,D.z)(),!1,{unhandledPromiseRejection:1}],void 0,r.D.jserrors,this.ee)}),(0,R.m$)(!1,this.removeOnAbort?.signal)),l._A.addEventListener("error",(e=>{this.abortHandler&&(this.#t.has(e.error)?this.#t.delete(e.error):(0,T.p)("err",[this.#i(e),(0,D.z)()],void 0,r.D.jserrors,this.ee))}),(0,R.m$)(!1,this.removeOnAbort?.signal)),this.abortHandler=this.#o,this.importAggregator()}#o(){this.removeOnAbort?.abort(),this.#t.clear(),this.abortHandler=void 0}#r(e){return e instanceof Error?e:void 0!==e?.message?new P(e.message,e.filename||e.sourceURL,e.lineno||e.line,e.colno||e.col):new P("string"==typeof e?e:(0,_.P)(e))}#n(e){let t="Unhandled Promise Rejection: ";if(e?.reason instanceof Error)try{return e.reason.message=t+e.reason.message,e.reason}catch(t){return e.reason}if(void 0===e.reason)return new P(t);const r=this.#r(e.reason);return r.message=t+r.message,r}#i(e){if(e.error instanceof SyntaxError&&!/:\d+$/.test(e.error.stack?.trim())){const t=new P(e.message,e.filename,e.lineno,e.colno);return t.name=SyntaxError.name,t}return e.error instanceof Error?e.error:new P(e.message,e.filename,e.lineno,e.colno)}}var M=i(2210);let H=1;const L="nr@id";function z(e){const t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===l._A?0:(0,M.X)(e,L,(function(){return H++}))}function F(e){if("string"==typeof e&&e.length)return e.length;if("object"==typeof e){if("undefined"!=typeof ArrayBuffer&&e instanceof ArrayBuffer&&e.byteLength)return e.byteLength;if("undefined"!=typeof Blob&&e instanceof Blob&&e.size)return e.size;if(!("undefined"!=typeof FormData&&e instanceof FormData))try{return(0,_.P)(e).length}catch(e){return}}}var B=i(1214),U=i(7243);class V{constructor(e){this.agentIdentifier=e}generateTracePayload(e){if(!this.shouldGenerateTrace(e))return null;var t=(0,n.DL)(this.agentIdentifier);if(!t)return null;var r=(t.accountID||"").toString()||null,i=(t.agentID||"").toString()||null,o=(t.trustKey||"").toString()||null;if(!r||!i)return null;var a=(0,E.M)(),s=(0,E.Ht)(),c=Date.now(),u={spanId:a,traceId:s,timestamp:c};return(e.sameOrigin||this.isAllowedOrigin(e)&&this.useTraceContextHeadersForCors())&&(u.traceContextParentHeader=this.generateTraceContextParentHeader(a,s),u.traceContextStateHeader=this.generateTraceContextStateHeader(a,c,r,i,o)),(e.sameOrigin&&!this.excludeNewrelicHeader()||!e.sameOrigin&&this.isAllowedOrigin(e)&&this.useNewrelicHeaderForCors())&&(u.newrelicHeader=this.generateTraceHeader(a,s,c,r,i,o)),u}generateTraceContextParentHeader(e,t){return"00-"+t+"-"+e+"-01"}generateTraceContextStateHeader(e,t,r,n,i){return i+"@nr=0-1-"+r+"-"+n+"-"+e+"----"+t}generateTraceHeader(e,t,r,n,i,o){if(!("function"==typeof l._A?.btoa))return null;var a={v:[0,1],d:{ty:"Browser",ac:n,ap:i,id:e,tr:t,ti:r}};return o&&n!==o&&(a.d.tk=o),btoa((0,_.P)(a))}shouldGenerateTrace(e){return this.isDtEnabled()&&this.isAllowedOrigin(e)}isAllowedOrigin(e){var t=!1,r={};if((0,n.Mt)(this.agentIdentifier,"distributed_tracing")&&(r=(0,n.P_)(this.agentIdentifier).distributed_tracing),e.sameOrigin)t=!0;else if(r.allowed_origins instanceof Array)for(var i=0;i<r.allowed_origins.length;i++){var o=(0,U.e)(r.allowed_origins[i]);if(e.hostname===o.hostname&&e.protocol===o.protocol&&e.port===o.port){t=!0;break}}return t}isDtEnabled(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.enabled}excludeNewrelicHeader(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.exclude_newrelic_header}useNewrelicHeaderForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!1!==e.cors_use_newrelic_header}useTraceContextHeadersForCors(){var e=(0,n.Mt)(this.agentIdentifier,"distributed_tracing");return!!e&&!!e.cors_use_tracecontext_headers}}var q=i(7825),G=["load","error","abort","timeout"],Z=G.length,W=n.Yu.REQ,X=n.Yu.XHR;class K extends f{static featureName=q.t;constructor(e,t){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,q.t,i),(0,n.OP)(e).xhrWrappable){this.dt=new V(e),this.handler=(e,t,r,n)=>(0,T.p)(e,t,r,n,this.ee);try{const e={xmlhttprequest:"xhr",fetch:"fetch",beacon:"beacon"};l._A?.performance?.getEntriesByType("resource").forEach((t=>{if(t.initiatorType in e&&0!==t.responseStatus){const n={status:t.responseStatus},i={rxSize:t.transferSize,duration:Math.floor(t.duration),cbTime:0};Y(n,t.name),this.handler("xhr",[n,i,t.startTime,t.responseEnd,e[t.initiatorType]],void 0,r.D.ajax)}}))}catch(e){}(0,B.u5)(this.ee),(0,B.Kf)(this.ee),function(e,t,i,o){function a(e){var t=this;t.totalCbs=0,t.called=0,t.cbTime=0,t.end=x,t.ended=!1,t.xhrGuids={},t.lastSize=null,t.loadCaptureCalled=!1,t.params=this.params||{},t.metrics=this.metrics||{},e.addEventListener("load",(function(r){E(t,e)}),(0,R.m$)(!1)),l.IF||e.addEventListener("progress",(function(e){t.lastSize=e.loaded}),(0,R.m$)(!1))}function s(e){this.params={method:e[0]},Y(this,e[1]),this.metrics={}}function c(t,r){var i=(0,n.DL)(e);i.xpid&&this.sameOrigin&&r.setRequestHeader("X-NewRelic-ID",i.xpid);var a=o.generateTracePayload(this.parsedOrigin);if(a){var s=!1;a.newrelicHeader&&(r.setRequestHeader("newrelic",a.newrelicHeader),s=!0),a.traceContextParentHeader&&(r.setRequestHeader("traceparent",a.traceContextParentHeader),a.traceContextStateHeader&&r.setRequestHeader("tracestate",a.traceContextStateHeader),s=!0),s&&(this.dt=a)}}function u(e,r){var n=this.metrics,i=e[0],o=this;if(n&&i){var a=F(i);a&&(n.txSize=a)}this.startTime=(0,D.z)(),this.body=i,this.listener=function(e){try{"abort"!==e.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==e.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof r.onload)&&"function"==typeof o.end)&&o.end(r)}catch(e){try{t.emit("internal-error",[e])}catch(e){}}};for(var s=0;s<Z;s++)r.addEventListener(G[s],this.listener,(0,R.m$)(!1))}function d(e,t,r){this.cbTime+=e,t?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof r.onload||"function"!=typeof this.end||this.end(r)}function f(e,t){var r=""+z(e)+!!t;this.xhrGuids&&!this.xhrGuids[r]&&(this.xhrGuids[r]=!0,this.totalCbs+=1)}function h(e,t){var r=""+z(e)+!!t;this.xhrGuids&&this.xhrGuids[r]&&(delete this.xhrGuids[r],this.totalCbs-=1)}function p(){this.endTime=(0,D.z)()}function g(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-added",[e[1],e[2]],r)}function m(e,r){r instanceof X&&"load"===e[0]&&t.emit("xhr-load-removed",[e[1],e[2]],r)}function v(e,t,r){t instanceof X&&("onload"===r&&(this.onload=!0),("load"===(e[0]&&e[0].type)||this.onload)&&(this.xhrCbStart=(0,D.z)()))}function b(e,r){this.xhrCbStart&&t.emit("xhr-cb-time",[(0,D.z)()-this.xhrCbStart,this.onload,r],r)}function y(e){var t,r=e[1]||{};if("string"==typeof e[0]?0===(t=e[0]).length&&l.il&&(t=""+l._A.location.href):e[0]&&e[0].url?t=e[0].url:l._A?.URL&&e[0]&&e[0]instanceof URL?t=e[0].href:"function"==typeof e[0].toString&&(t=e[0].toString()),"string"==typeof t&&0!==t.length){t&&(this.parsedOrigin=(0,U.e)(t),this.sameOrigin=this.parsedOrigin.sameOrigin);var n=o.generateTracePayload(this.parsedOrigin);if(n&&(n.newrelicHeader||n.traceContextParentHeader))if(e[0]&&e[0].headers)s(e[0].headers,n)&&(this.dt=n);else{var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),s(i.headers,n)&&(this.dt=n),e.length>1?e[1]=i:e.push(i)}}function s(e,t){var r=!1;return t.newrelicHeader&&(e.set("newrelic",t.newrelicHeader),r=!0),t.traceContextParentHeader&&(e.set("traceparent",t.traceContextParentHeader),t.traceContextStateHeader&&e.set("tracestate",t.traceContextStateHeader),r=!0),r}}function A(e,t){this.params={},this.metrics={},this.startTime=(0,D.z)(),this.dt=t,e.length>=1&&(this.target=e[0]),e.length>=2&&(this.opts=e[1]);var r,n=this.opts||{},i=this.target;"string"==typeof i?r=i:"object"==typeof i&&i instanceof W?r=i.url:l._A?.URL&&"object"==typeof i&&i instanceof URL&&(r=i.href),Y(this,r);var o=(""+(i&&i instanceof W&&i.method||n.method||"GET")).toUpperCase();this.params.method=o,this.body=n.body,this.txSize=F(n.body)||0}function w(e,t){var n;this.endTime=(0,D.z)(),this.params||(this.params={}),this.params.status=t?t.status:0,"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var o={txSize:this.txSize,rxSize:n,duration:(0,D.z)()-this.startTime};i("xhr",[this.params,o,this.startTime,this.endTime,"fetch"],this,r.D.ajax)}function x(e){var t=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var o=0;o<Z;o++)e.removeEventListener(G[o],this.listener,!1);t.aborted||(n.duration=(0,D.z)()-this.startTime,this.loadCaptureCalled||4!==e.readyState?null==t.status&&(t.status=0):E(this,e),n.cbTime=this.cbTime,i("xhr",[t,n,this.startTime,this.endTime,"xhr"],this,r.D.ajax))}}function E(e,n){e.params.status=n.status;var i=function(e,t){var r=e.responseType;return"json"===r&&null!==t?t:"arraybuffer"===r||"blob"===r||"json"===r?F(e.response):"text"===r||""===r||void 0===r?F(e.responseText):void 0}(n,e.lastSize);if(i&&(e.metrics.rxSize=i),e.sameOrigin){var o=n.getResponseHeader("X-NewRelic-App-Data");o&&((0,T.p)(I.mY,["Ajax/CrossApplicationTracing/Header/Seen"],void 0,r.D.metrics,t),e.params.cat=o.split(", ").pop())}e.loadCaptureCalled=!0}t.on("new-xhr",a),t.on("open-xhr-start",s),t.on("open-xhr-end",c),t.on("send-xhr-start",u),t.on("xhr-cb-time",d),t.on("xhr-load-added",f),t.on("xhr-load-removed",h),t.on("xhr-resolved",p),t.on("addEventListener-end",g),t.on("removeEventListener-end",m),t.on("fn-end",b),t.on("fetch-before-start",y),t.on("fetch-start",A),t.on("fn-start",v),t.on("fetch-done",w)}(e,this.ee,this.handler,this.dt),this.importAggregator()}}}function Y(e,t){var r=(0,U.e)(t),n=e.params||e;n.hostname=r.hostname,n.port=r.port,n.protocol=r.protocol,n.host=r.hostname+":"+r.port,n.pathname=r.pathname,e.parsedOrigin=r,e.sameOrigin=r.sameOrigin}var J=i(3614);const{BST_RESOURCE:Q,RESOURCE:ee,START:te,END:re,FEATURE_NAME:ne,FN_END:ie,FN_START:oe,PUSH_STATE:ae}=J;var se=i(7056),ce=i(7144);class ue extends f{static featureName=ce.t9;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,ce.t9,r);try{const e=JSON.parse(localStorage.getItem("NRBA_SESSION"));e.sessionReplayMode!==se.IK.OFF?this.#a(e.sessionReplayMode):this.importAggregator({})}catch(e){this.importAggregator({})}}async#a(e){const{Recorder:t}=await Promise.all([i.e(111),i.e(433)]).then(i.bind(i,4136));this.recorder=new t({mode:e,agentIdentifier:this.agentIdentifier}),this.recorder.startRecording(),this.importAggregator({recorder:this.recorder})}}var de=i(7836);const{FEATURE_NAME:le,START:fe,END:he,BODY:pe,CB_END:ge,JS_TIME:me,FETCH:ve,FN_START:be,CB_START:ye,FN_END:Ae}=de;var we=i(4649);class xe extends f{static featureName=we.t;constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,we.t,r),this.importAggregator()}}new class extends t{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,E.ky)(16);super(),l._A?(this.agentIdentifier=r,this.sharedAggregator=new v({agentIdentifier:this.agentIdentifier}),this.features={},(0,x.h5)(r,this),this.desiredFeatures=new Set(t.features||[]),this.desiredFeatures.add(p),(0,s.j)(this,t,t.loaderType||"agent"),this.run()):(0,e.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,n.C5)(this.agentIdentifier),init:(0,n.P_)(this.agentIdentifier),loader_config:(0,n.DL)(this.agentIdentifier),runtime:(0,n.OP)(this.agentIdentifier)}}run(){try{const t=a(this.agentIdentifier),n=[...this.desiredFeatures];n.sort(((e,t)=>r.p[e.featureName]-r.p[t.featureName])),n.forEach((n=>{if(t[n.featureName]||n.featureName===r.D.pageViewEvent){const i=function(e){switch(e){case r.D.ajax:return[r.D.jserrors];case r.D.sessionTrace:return[r.D.ajax,r.D.pageViewEvent];case r.D.sessionReplay:return[r.D.sessionTrace];case r.D.pageViewTiming:return[r.D.pageViewEvent];default:return[]}}(n.featureName);i.every((e=>t[e]))||(0,e.Z)("".concat(n.featureName," is enabled but one or more dependent features has been disabled (").concat((0,_.P)(i),"). This may cause unintended consequences or missing data...")),this.features[n.featureName]=new n(this.agentIdentifier,this.sharedAggregator)}}))}catch(t){(0,e.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,x.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.features,delete this.sharedAggregator,r.ee?.abort(),delete r.ee?.get(this.agentIdentifier),!1}}}({features:[K,p,O,class extends f{static featureName=ne;constructor(e,t){if(super(e,t,ne,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;const n=this.ee;let i;(0,B.QU)(n),this.eventsEE=(0,B.em)(n),this.eventsEE.on(oe,(function(e,t){this.bstStart=(0,D.z)()})),this.eventsEE.on(ie,(function(e,t){(0,T.p)("bst",[e[0],t,this.bstStart,(0,D.z)()],void 0,r.D.sessionTrace,n)})),n.on(ae+te,(function(e){this.time=(0,D.z)(),this.startPath=location.pathname+location.hash})),n.on(ae+re,(function(e){(0,T.p)("bstHist",[location.pathname+location.hash,this.startPath,this.time],void 0,r.D.sessionTrace,n)}));try{i=new PerformanceObserver((e=>{const t=e.getEntries();(0,T.p)(Q,[t],void 0,r.D.sessionTrace,n)})),i.observe({type:ee,buffered:!0})}catch(e){}this.importAggregator({resourceObserver:i})}},ue,j,xe,k,class extends f{static featureName=le;constructor(e,t){if(super(e,t,le,!(arguments.length>2&&void 0!==arguments[2])||arguments[2]),!l.il)return;if(!(0,n.OP)(e).xhrWrappable)return;try{this.removeOnAbort=new AbortController}catch(e){}let r,i=0;const o=this.ee.get("tracer"),a=(0,B._L)(this.ee),s=(0,B.Lg)(this.ee),c=(0,B.BV)(this.ee),u=(0,B.Kf)(this.ee),d=this.ee.get("events"),f=(0,B.u5)(this.ee),h=(0,B.QU)(this.ee),p=(0,B.Gm)(this.ee);function g(e,t){h.emit("newURL",[""+window.location,t])}function m(){i++,r=window.location.hash,this[be]=(0,D.z)()}function v(){i--,window.location.hash!==r&&g(0,!0);var e=(0,D.z)();this[me]=~~this[me]+e-this[be],this[Ae]=e}function b(e,t){e.on(t,(function(){this[t]=(0,D.z)()}))}this.ee.on(be,m),s.on(ye,m),a.on(ye,m),this.ee.on(Ae,v),s.on(ge,v),a.on(ge,v),this.ee.buffer([be,Ae,"xhr-resolved"],this.featureName),d.buffer([be],this.featureName),c.buffer(["setTimeout"+he,"clearTimeout"+fe,be],this.featureName),u.buffer([be,"new-xhr","send-xhr"+fe],this.featureName),f.buffer([ve+fe,ve+"-done",ve+pe+fe,ve+pe+he],this.featureName),h.buffer(["newURL"],this.featureName),p.buffer([be],this.featureName),s.buffer(["propagate",ye,ge,"executor-err","resolve"+fe],this.featureName),o.buffer([be,"no-"+be],this.featureName),a.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"],this.featureName),b(f,ve+fe),b(f,ve+"-done"),b(a,"new-jsonp"),b(a,"jsonp-end"),b(a,"cb-start"),h.on("pushState-end",g),h.on("replaceState-end",g),window.addEventListener("hashchange",g,(0,R.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("load",g,(0,R.m$)(!0,this.removeOnAbort?.signal)),window.addEventListener("popstate",(function(){g(0,i>1)}),(0,R.m$)(!0,this.removeOnAbort?.signal)),this.abortHandler=this.#o,this.importAggregator()}#o(){this.removeOnAbort?.abort(),this.abortHandler=void 0}}],loaderType:"spa"})})()})();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+
+<meta property="og:image" content="https://cloud.xm-cdn.com/static/xm/common/logos/XM-logo.jpg">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-KPSPFZ');</script>
+<!-- End Google Tag Manager -->
+
+<link rel="shortcut icon" type="image/x-icon" href="https://cloud.xm-cdn.com/static/common/icons/touch/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="https://cloud.xm-cdn.com/static/common/icons/touch/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="152x152" href="https://cloud.xm-cdn.com/static/common/icons/touch/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="120x120" href="https://cloud.xm-cdn.com/static/common/icons/touch/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon-precomposed" sizes="180x180" href="https://cloud.xm-cdn.com/static/common/icons/touch/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://cloud.xm-cdn.com/static/common/icons/touch/apple-touch-icon-152x152-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://cloud.xm-cdn.com/static/common/icons/touch/apple-touch-icon-120x120-precomposed.png">
+<style type="text/css">/*!
+ * Generated using the Bootstrap Customizer (https://getbootstrap.com/docs/3.4/customize/)
+ *//*!
+ * Bootstrap v3.4.1 (https://getbootstrap.com/)
+ * Copyright 2011-2019 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ *//*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background-color:transparent}a:active,a:hover{outline:0}abbr[title]{border-bottom:0;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bold}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:1em 40px}hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0}pre{overflow:auto}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type="checkbox"],input[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height:auto}input[type="search"]{-webkit-appearance:textfield;-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{border:0;padding:0}textarea{overflow:auto}optgroup{font-weight:bold}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */@media print{*,*:before,*:after{color:#000 !important;text-shadow:none !important;background:transparent !important;-webkit-box-shadow:none !important;box-shadow:none !important}a,a:visited{text-decoration:underline}a[href]:after{content:" (" attr(href) ")"}abbr[title]:after{content:" (" attr(title) ")"}a[href^="#"]:after,a[href^="javascript:"]:after{content:""}pre,blockquote{border:1px solid #999;page-break-inside:avoid}thead{display:table-header-group}tr,img{page-break-inside:avoid}img{max-width:100% !important}p,h2,h3{orphans:3;widows:3}h2,h3{page-break-after:avoid}.navbar{display:none}.btn>.caret,.dropup>.btn>.caret{border-top-color:#000 !important}.label{border:1px solid #000}.table{border-collapse:collapse !important}.table td,.table th{background-color:#fff !important}.table-bordered th,.table-bordered td{border:1px solid #ddd !important}}@font-face{font-family:"Glyphicons Halflings";src:url("https://cloud.xm-cdn.com/assets/fonts/bootstrap/glyphicons-halflings-regular.eot");src:url("https://cloud.xm-cdn.com/assets/fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"),url("https://cloud.xm-cdn.com/assets/fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"),url("https://cloud.xm-cdn.com/assets/fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"),url("https://cloud.xm-cdn.com/assets/fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"),url("https://cloud.xm-cdn.com/assets/fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg")}.glyphicon{position:relative;top:1px;display:inline-block;font-family:"Glyphicons Halflings";font-style:normal;font-weight:400;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.glyphicon-asterisk:before{content:"\002a"}.glyphicon-plus:before{content:"\002b"}.glyphicon-euro:before,.glyphicon-eur:before{content:"\20ac"}.glyphicon-minus:before{content:"\2212"}.glyphicon-cloud:before{content:"\2601"}.glyphicon-envelope:before{content:"\2709"}.glyphicon-pencil:before{content:"\270f"}.glyphicon-glass:before{content:"\e001"}.glyphicon-music:before{content:"\e002"}.glyphicon-search:before{content:"\e003"}.glyphicon-heart:before{content:"\e005"}.glyphicon-star:before{content:"\e006"}.glyphicon-star-empty:before{content:"\e007"}.glyphicon-user:before{content:"\e008"}.glyphicon-film:before{content:"\e009"}.glyphicon-th-large:before{content:"\e010"}.glyphicon-th:before{content:"\e011"}.glyphicon-th-list:before{content:"\e012"}.glyphicon-ok:before{content:"\e013"}.glyphicon-remove:before{content:"\e014"}.glyphicon-zoom-in:before{content:"\e015"}.glyphicon-zoom-out:before{content:"\e016"}.glyphicon-off:before{content:"\e017"}.glyphicon-signal:before{content:"\e018"}.glyphicon-cog:before{content:"\e019"}.glyphicon-trash:before{content:"\e020"}.glyphicon-home:before{content:"\e021"}.glyphicon-file:before{content:"\e022"}.glyphicon-time:before{content:"\e023"}.glyphicon-road:before{content:"\e024"}.glyphicon-download-alt:before{content:"\e025"}.glyphicon-download:before{content:"\e026"}.glyphicon-upload:before{content:"\e027"}.glyphicon-inbox:before{content:"\e028"}.glyphicon-play-circle:before{content:"\e029"}.glyphicon-repeat:before{content:"\e030"}.glyphicon-refresh:before{content:"\e031"}.glyphicon-list-alt:before{content:"\e032"}.glyphicon-lock:before{content:"\e033"}.glyphicon-flag:before{content:"\e034"}.glyphicon-headphones:before{content:"\e035"}.glyphicon-volume-off:before{content:"\e036"}.glyphicon-volume-down:before{content:"\e037"}.glyphicon-volume-up:before{content:"\e038"}.glyphicon-qrcode:before{content:"\e039"}.glyphicon-barcode:before{content:"\e040"}.glyphicon-tag:before{content:"\e041"}.glyphicon-tags:before{content:"\e042"}.glyphicon-book:before{content:"\e043"}.glyphicon-bookmark:before{content:"\e044"}.glyphicon-print:before{content:"\e045"}.glyphicon-camera:before{content:"\e046"}.glyphicon-font:before{content:"\e047"}.glyphicon-bold:before{content:"\e048"}.glyphicon-italic:before{content:"\e049"}.glyphicon-text-height:before{content:"\e050"}.glyphicon-text-width:before{content:"\e051"}.glyphicon-align-left:before{content:"\e052"}.glyphicon-align-center:before{content:"\e053"}.glyphicon-align-right:before{content:"\e054"}.glyphicon-align-justify:before{content:"\e055"}.glyphicon-list:before{content:"\e056"}.glyphicon-indent-left:before{content:"\e057"}.glyphicon-indent-right:before{content:"\e058"}.glyphicon-facetime-video:before{content:"\e059"}.glyphicon-picture:before{content:"\e060"}.glyphicon-map-marker:before{content:"\e062"}.glyphicon-adjust:before{content:"\e063"}.glyphicon-tint:before{content:"\e064"}.glyphicon-edit:before{content:"\e065"}.glyphicon-share:before{content:"\e066"}.glyphicon-check:before{content:"\e067"}.glyphicon-move:before{content:"\e068"}.glyphicon-step-backward:before{content:"\e069"}.glyphicon-fast-backward:before{content:"\e070"}.glyphicon-backward:before{content:"\e071"}.glyphicon-play:before{content:"\e072"}.glyphicon-pause:before{content:"\e073"}.glyphicon-stop:before{content:"\e074"}.glyphicon-forward:before{content:"\e075"}.glyphicon-fast-forward:before{content:"\e076"}.glyphicon-step-forward:before{content:"\e077"}.glyphicon-eject:before{content:"\e078"}.glyphicon-chevron-left:before{content:"\e079"}.glyphicon-chevron-right:before{content:"\e080"}.glyphicon-plus-sign:before{content:"\e081"}.glyphicon-minus-sign:before{content:"\e082"}.glyphicon-remove-sign:before{content:"\e083"}.glyphicon-ok-sign:before{content:"\e084"}.glyphicon-question-sign:before{content:"\e085"}.glyphicon-info-sign:before{content:"\e086"}.glyphicon-screenshot:before{content:"\e087"}.glyphicon-remove-circle:before{content:"\e088"}.glyphicon-ok-circle:before{content:"\e089"}.glyphicon-ban-circle:before{content:"\e090"}.glyphicon-arrow-left:before{content:"\e091"}.glyphicon-arrow-right:before{content:"\e092"}.glyphicon-arrow-up:before{content:"\e093"}.glyphicon-arrow-down:before{content:"\e094"}.glyphicon-share-alt:before{content:"\e095"}.glyphicon-resize-full:before{content:"\e096"}.glyphicon-resize-small:before{content:"\e097"}.glyphicon-exclamation-sign:before{content:"\e101"}.glyphicon-gift:before{content:"\e102"}.glyphicon-leaf:before{content:"\e103"}.glyphicon-fire:before{content:"\e104"}.glyphicon-eye-open:before{content:"\e105"}.glyphicon-eye-close:before{content:"\e106"}.glyphicon-warning-sign:before{content:"\e107"}.glyphicon-plane:before{content:"\e108"}.glyphicon-calendar:before{content:"\e109"}.glyphicon-random:before{content:"\e110"}.glyphicon-comment:before{content:"\e111"}.glyphicon-magnet:before{content:"\e112"}.glyphicon-chevron-up:before{content:"\e113"}.glyphicon-chevron-down:before{content:"\e114"}.glyphicon-retweet:before{content:"\e115"}.glyphicon-shopping-cart:before{content:"\e116"}.glyphicon-folder-close:before{content:"\e117"}.glyphicon-folder-open:before{content:"\e118"}.glyphicon-resize-vertical:before{content:"\e119"}.glyphicon-resize-horizontal:before{content:"\e120"}.glyphicon-hdd:before{content:"\e121"}.glyphicon-bullhorn:before{content:"\e122"}.glyphicon-bell:before{content:"\e123"}.glyphicon-certificate:before{content:"\e124"}.glyphicon-thumbs-up:before{content:"\e125"}.glyphicon-thumbs-down:before{content:"\e126"}.glyphicon-hand-right:before{content:"\e127"}.glyphicon-hand-left:before{content:"\e128"}.glyphicon-hand-up:before{content:"\e129"}.glyphicon-hand-down:before{content:"\e130"}.glyphicon-circle-arrow-right:before{content:"\e131"}.glyphicon-circle-arrow-left:before{content:"\e132"}.glyphicon-circle-arrow-up:before{content:"\e133"}.glyphicon-circle-arrow-down:before{content:"\e134"}.glyphicon-globe:before{content:"\e135"}.glyphicon-wrench:before{content:"\e136"}.glyphicon-tasks:before{content:"\e137"}.glyphicon-filter:before{content:"\e138"}.glyphicon-briefcase:before{content:"\e139"}.glyphicon-fullscreen:before{content:"\e140"}.glyphicon-dashboard:before{content:"\e141"}.glyphicon-paperclip:before{content:"\e142"}.glyphicon-heart-empty:before{content:"\e143"}.glyphicon-link:before{content:"\e144"}.glyphicon-phone:before{content:"\e145"}.glyphicon-pushpin:before{content:"\e146"}.glyphicon-usd:before{content:"\e148"}.glyphicon-gbp:before{content:"\e149"}.glyphicon-sort:before{content:"\e150"}.glyphicon-sort-by-alphabet:before{content:"\e151"}.glyphicon-sort-by-alphabet-alt:before{content:"\e152"}.glyphicon-sort-by-order:before{content:"\e153"}.glyphicon-sort-by-order-alt:before{content:"\e154"}.glyphicon-sort-by-attributes:before{content:"\e155"}.glyphicon-sort-by-attributes-alt:before{content:"\e156"}.glyphicon-unchecked:before{content:"\e157"}.glyphicon-expand:before{content:"\e158"}.glyphicon-collapse-down:before{content:"\e159"}.glyphicon-collapse-up:before{content:"\e160"}.glyphicon-log-in:before{content:"\e161"}.glyphicon-flash:before{content:"\e162"}.glyphicon-log-out:before{content:"\e163"}.glyphicon-new-window:before{content:"\e164"}.glyphicon-record:before{content:"\e165"}.glyphicon-save:before{content:"\e166"}.glyphicon-open:before{content:"\e167"}.glyphicon-saved:before{content:"\e168"}.glyphicon-import:before{content:"\e169"}.glyphicon-export:before{content:"\e170"}.glyphicon-send:before{content:"\e171"}.glyphicon-floppy-disk:before{content:"\e172"}.glyphicon-floppy-saved:before{content:"\e173"}.glyphicon-floppy-remove:before{content:"\e174"}.glyphicon-floppy-save:before{content:"\e175"}.glyphicon-floppy-open:before{content:"\e176"}.glyphicon-credit-card:before{content:"\e177"}.glyphicon-transfer:before{content:"\e178"}.glyphicon-cutlery:before{content:"\e179"}.glyphicon-header:before{content:"\e180"}.glyphicon-compressed:before{content:"\e181"}.glyphicon-earphone:before{content:"\e182"}.glyphicon-phone-alt:before{content:"\e183"}.glyphicon-tower:before{content:"\e184"}.glyphicon-stats:before{content:"\e185"}.glyphicon-sd-video:before{content:"\e186"}.glyphicon-hd-video:before{content:"\e187"}.glyphicon-subtitles:before{content:"\e188"}.glyphicon-sound-stereo:before{content:"\e189"}.glyphicon-sound-dolby:before{content:"\e190"}.glyphicon-sound-5-1:before{content:"\e191"}.glyphicon-sound-6-1:before{content:"\e192"}.glyphicon-sound-7-1:before{content:"\e193"}.glyphicon-copyright-mark:before{content:"\e194"}.glyphicon-registration-mark:before{content:"\e195"}.glyphicon-cloud-download:before{content:"\e197"}.glyphicon-cloud-upload:before{content:"\e198"}.glyphicon-tree-conifer:before{content:"\e199"}.glyphicon-tree-deciduous:before{content:"\e200"}.glyphicon-cd:before{content:"\e201"}.glyphicon-save-file:before{content:"\e202"}.glyphicon-open-file:before{content:"\e203"}.glyphicon-level-up:before{content:"\e204"}.glyphicon-copy:before{content:"\e205"}.glyphicon-paste:before{content:"\e206"}.glyphicon-alert:before{content:"\e209"}.glyphicon-equalizer:before{content:"\e210"}.glyphicon-king:before{content:"\e211"}.glyphicon-queen:before{content:"\e212"}.glyphicon-pawn:before{content:"\e213"}.glyphicon-bishop:before{content:"\e214"}.glyphicon-knight:before{content:"\e215"}.glyphicon-baby-formula:before{content:"\e216"}.glyphicon-tent:before{content:"\26fa"}.glyphicon-blackboard:before{content:"\e218"}.glyphicon-bed:before{content:"\e219"}.glyphicon-apple:before{content:"\f8ff"}.glyphicon-erase:before{content:"\e221"}.glyphicon-hourglass:before{content:"\231b"}.glyphicon-lamp:before{content:"\e223"}.glyphicon-duplicate:before{content:"\e224"}.glyphicon-piggy-bank:before{content:"\e225"}.glyphicon-scissors:before{content:"\e226"}.glyphicon-bitcoin:before{content:"\e227"}.glyphicon-btc:before{content:"\e227"}.glyphicon-xbt:before{content:"\e227"}.glyphicon-yen:before{content:"\00a5"}.glyphicon-jpy:before{content:"\00a5"}.glyphicon-ruble:before{content:"\20bd"}.glyphicon-rub:before{content:"\20bd"}.glyphicon-scale:before{content:"\e230"}.glyphicon-ice-lolly:before{content:"\e231"}.glyphicon-ice-lolly-tasted:before{content:"\e232"}.glyphicon-education:before{content:"\e233"}.glyphicon-option-horizontal:before{content:"\e234"}.glyphicon-option-vertical:before{content:"\e235"}.glyphicon-menu-hamburger:before{content:"\e236"}.glyphicon-modal-window:before{content:"\e237"}.glyphicon-oil:before{content:"\e238"}.glyphicon-grain:before{content:"\e239"}.glyphicon-sunglasses:before{content:"\e240"}.glyphicon-text-size:before{content:"\e241"}.glyphicon-text-color:before{content:"\e242"}.glyphicon-text-background:before{content:"\e243"}.glyphicon-object-align-top:before{content:"\e244"}.glyphicon-object-align-bottom:before{content:"\e245"}.glyphicon-object-align-horizontal:before{content:"\e246"}.glyphicon-object-align-left:before{content:"\e247"}.glyphicon-object-align-vertical:before{content:"\e248"}.glyphicon-object-align-right:before{content:"\e249"}.glyphicon-triangle-right:before{content:"\e250"}.glyphicon-triangle-left:before{content:"\e251"}.glyphicon-triangle-bottom:before{content:"\e252"}.glyphicon-triangle-top:before{content:"\e253"}.glyphicon-console:before{content:"\e254"}.glyphicon-superscript:before{content:"\e255"}.glyphicon-subscript:before{content:"\e256"}.glyphicon-menu-left:before{content:"\e257"}.glyphicon-menu-right:before{content:"\e258"}.glyphicon-menu-down:before{content:"\e259"}.glyphicon-menu-up:before{content:"\e260"}*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:rgba(0,0,0,0)}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#337ab7;text-decoration:none}a:hover,a:focus{color:#23527c;text-decoration:underline}a:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}figure{margin:0}img{vertical-align:middle}.img-responsive,.thumbnail>img,.thumbnail a>img,.carousel-inner>.item>img,.carousel-inner>.item>a>img{display:block;max-width:100%;height:auto}.img-rounded{border-radius:6px}.img-thumbnail{padding:4px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:all .2s ease-in-out;-o-transition:all .2s ease-in-out;transition:all .2s ease-in-out;display:inline-block;max-width:100%;height:auto}.img-circle{border-radius:50%}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #eee}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role="button"]{cursor:pointer}h1,h2,h3,h4,h5,h6,.h1,.h2,.h3,.h4,.h5,.h6{font-family:inherit;font-weight:500;line-height:1.1;color:inherit}h1 small,h2 small,h3 small,h4 small,h5 small,h6 small,.h1 small,.h2 small,.h3 small,.h4 small,.h5 small,.h6 small,h1 .small,h2 .small,h3 .small,h4 .small,h5 .small,h6 .small,.h1 .small,.h2 .small,.h3 .small,.h4 .small,.h5 .small,.h6 .small{font-weight:400;line-height:1;color:#777}h1,.h1,h2,.h2,h3,.h3{margin-top:20px;margin-bottom:10px}h1 small,.h1 small,h2 small,.h2 small,h3 small,.h3 small,h1 .small,.h1 .small,h2 .small,.h2 .small,h3 .small,.h3 .small{font-size:65%}h4,.h4,h5,.h5,h6,.h6{margin-top:10px;margin-bottom:10px}h4 small,.h4 small,h5 small,.h5 small,h6 small,.h6 small,h4 .small,.h4 .small,h5 .small,.h5 .small,h6 .small,.h6 .small{font-size:75%}h1,.h1{font-size:36px}h2,.h2{font-size:30px}h3,.h3{font-size:24px}h4,.h4{font-size:18px}h5,.h5{font-size:14px}h6,.h6{font-size:12px}p{margin:0 0 10px}.lead{margin-bottom:20px;font-size:16px;font-weight:300;line-height:1.4}@media(min-width:768px){.lead{font-size:21px}}small,.small{font-size:85%}mark,.mark{padding:.2em;background-color:#fcf8e3}.text-left{text-align:left}.text-right{text-align:right}.text-center{text-align:center}.text-justify{text-align:justify}.text-nowrap{white-space:nowrap}.text-lowercase{text-transform:lowercase}.text-uppercase{text-transform:uppercase}.text-capitalize{text-transform:capitalize}.text-muted{color:#777}.text-primary{color:#337ab7}a.text-primary:hover,a.text-primary:focus{color:#286090}.text-success{color:#3c763d}a.text-success:hover,a.text-success:focus{color:#2b542c}.text-info{color:#31708f}a.text-info:hover,a.text-info:focus{color:#245269}.text-warning{color:#8a6d3b}a.text-warning:hover,a.text-warning:focus{color:#66512c}.text-danger{color:#a94442}a.text-danger:hover,a.text-danger:focus{color:#843534}.bg-primary{color:#fff;background-color:#337ab7}a.bg-primary:hover,a.bg-primary:focus{background-color:#286090}.bg-success{background-color:#dff0d8}a.bg-success:hover,a.bg-success:focus{background-color:#c1e2b3}.bg-info{background-color:#d9edf7}a.bg-info:hover,a.bg-info:focus{background-color:#afd9ee}.bg-warning{background-color:#fcf8e3}a.bg-warning:hover,a.bg-warning:focus{background-color:#f7ecb5}.bg-danger{background-color:#f2dede}a.bg-danger:hover,a.bg-danger:focus{background-color:#e4b9b9}.page-header{padding-bottom:9px;margin:40px 0 20px;border-bottom:1px solid #eee}ul,ol{margin-top:0;margin-bottom:10px}ul ul,ol ul,ul ol,ol ol{margin-bottom:0}.list-unstyled{padding-left:0;list-style:none}.list-inline{padding-left:0;list-style:none;margin-left:-5px}.list-inline>li{display:inline-block;padding-right:5px;padding-left:5px}dl{margin-top:0;margin-bottom:20px}dt,dd{line-height:1.42857143}dt{font-weight:700}dd{margin-left:0}@media(min-width:768px){.dl-horizontal dt{float:left;width:160px;clear:left;text-align:right;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.dl-horizontal dd{margin-left:180px}}abbr[title],abbr[data-original-title]{cursor:help}.initialism{font-size:90%;text-transform:uppercase}blockquote{padding:10px 20px;margin:0 0 20px;font-size:17.5px;border-left:5px solid #eee}blockquote p:last-child,blockquote ul:last-child,blockquote ol:last-child{margin-bottom:0}blockquote footer,blockquote small,blockquote .small{display:block;font-size:80%;line-height:1.42857143;color:#777}blockquote footer:before,blockquote small:before,blockquote .small:before{content:"\2014 \00A0"}.blockquote-reverse,blockquote.pull-right{padding-right:15px;padding-left:0;text-align:right;border-right:5px solid #eee;border-left:0}.blockquote-reverse footer:before,blockquote.pull-right footer:before,.blockquote-reverse small:before,blockquote.pull-right small:before,.blockquote-reverse .small:before,blockquote.pull-right .small:before{content:""}.blockquote-reverse footer:after,blockquote.pull-right footer:after,.blockquote-reverse small:after,blockquote.pull-right small:after,.blockquote-reverse .small:after,blockquote.pull-right .small:after{content:"\00A0 \2014"}address{margin-bottom:20px;font-style:normal;line-height:1.42857143}code,kbd,pre,samp{font-family:Menlo,Monaco,Consolas,"Courier New",monospace}code{padding:2px 4px;font-size:90%;color:#c7254e;background-color:#f9f2f4;border-radius:4px}kbd{padding:2px 4px;font-size:90%;color:#fff;background-color:#333;border-radius:3px;-webkit-box-shadow:inset 0 -1px 0 rgba(0,0,0,0.25);box-shadow:inset 0 -1px 0 rgba(0,0,0,0.25)}kbd kbd{padding:0;font-size:100%;font-weight:700;-webkit-box-shadow:none;box-shadow:none}pre{display:block;padding:9.5px;margin:0 0 10px;font-size:13px;line-height:1.42857143;color:#333;word-break:break-all;word-wrap:break-word;background-color:#f5f5f5;border:1px solid #ccc;border-radius:4px}pre code{padding:0;font-size:inherit;color:inherit;white-space:pre-wrap;background-color:transparent;border-radius:0}.pre-scrollable{max-height:340px;overflow-y:scroll}.container{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}@media(min-width:768px){.container{width:750px}}@media(min-width:992px){.container{width:970px}}@media(min-width:1200px){.container{width:1170px}}.container-fluid{padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{margin-right:-15px;margin-left:-15px}.row-no-gutters{margin-right:0;margin-left:0}.row-no-gutters [class*="col-"]{padding-right:0;padding-left:0}.col-xs-1,.col-sm-1,.col-md-1,.col-lg-1,.col-xs-2,.col-sm-2,.col-md-2,.col-lg-2,.col-xs-3,.col-sm-3,.col-md-3,.col-lg-3,.col-xs-4,.col-sm-4,.col-md-4,.col-lg-4,.col-xs-5,.col-sm-5,.col-md-5,.col-lg-5,.col-xs-6,.col-sm-6,.col-md-6,.col-lg-6,.col-xs-7,.col-sm-7,.col-md-7,.col-lg-7,.col-xs-8,.col-sm-8,.col-md-8,.col-lg-8,.col-xs-9,.col-sm-9,.col-md-9,.col-lg-9,.col-xs-10,.col-sm-10,.col-md-10,.col-lg-10,.col-xs-11,.col-sm-11,.col-md-11,.col-lg-11,.col-xs-12,.col-sm-12,.col-md-12,.col-lg-12{position:relative;min-height:1px;padding-right:15px;padding-left:15px}.col-xs-1,.col-xs-2,.col-xs-3,.col-xs-4,.col-xs-5,.col-xs-6,.col-xs-7,.col-xs-8,.col-xs-9,.col-xs-10,.col-xs-11,.col-xs-12{float:left}.col-xs-12{width:100%}.col-xs-11{width:91.66666667%}.col-xs-10{width:83.33333333%}.col-xs-9{width:75%}.col-xs-8{width:66.66666667%}.col-xs-7{width:58.33333333%}.col-xs-6{width:50%}.col-xs-5{width:41.66666667%}.col-xs-4{width:33.33333333%}.col-xs-3{width:25%}.col-xs-2{width:16.66666667%}.col-xs-1{width:8.33333333%}.col-xs-pull-12{right:100%}.col-xs-pull-11{right:91.66666667%}.col-xs-pull-10{right:83.33333333%}.col-xs-pull-9{right:75%}.col-xs-pull-8{right:66.66666667%}.col-xs-pull-7{right:58.33333333%}.col-xs-pull-6{right:50%}.col-xs-pull-5{right:41.66666667%}.col-xs-pull-4{right:33.33333333%}.col-xs-pull-3{right:25%}.col-xs-pull-2{right:16.66666667%}.col-xs-pull-1{right:8.33333333%}.col-xs-pull-0{right:auto}.col-xs-push-12{left:100%}.col-xs-push-11{left:91.66666667%}.col-xs-push-10{left:83.33333333%}.col-xs-push-9{left:75%}.col-xs-push-8{left:66.66666667%}.col-xs-push-7{left:58.33333333%}.col-xs-push-6{left:50%}.col-xs-push-5{left:41.66666667%}.col-xs-push-4{left:33.33333333%}.col-xs-push-3{left:25%}.col-xs-push-2{left:16.66666667%}.col-xs-push-1{left:8.33333333%}.col-xs-push-0{left:auto}.col-xs-offset-12{margin-left:100%}.col-xs-offset-11{margin-left:91.66666667%}.col-xs-offset-10{margin-left:83.33333333%}.col-xs-offset-9{margin-left:75%}.col-xs-offset-8{margin-left:66.66666667%}.col-xs-offset-7{margin-left:58.33333333%}.col-xs-offset-6{margin-left:50%}.col-xs-offset-5{margin-left:41.66666667%}.col-xs-offset-4{margin-left:33.33333333%}.col-xs-offset-3{margin-left:25%}.col-xs-offset-2{margin-left:16.66666667%}.col-xs-offset-1{margin-left:8.33333333%}.col-xs-offset-0{margin-left:0}@media(min-width:768px){.col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12{float:left}.col-sm-12{width:100%}.col-sm-11{width:91.66666667%}.col-sm-10{width:83.33333333%}.col-sm-9{width:75%}.col-sm-8{width:66.66666667%}.col-sm-7{width:58.33333333%}.col-sm-6{width:50%}.col-sm-5{width:41.66666667%}.col-sm-4{width:33.33333333%}.col-sm-3{width:25%}.col-sm-2{width:16.66666667%}.col-sm-1{width:8.33333333%}.col-sm-pull-12{right:100%}.col-sm-pull-11{right:91.66666667%}.col-sm-pull-10{right:83.33333333%}.col-sm-pull-9{right:75%}.col-sm-pull-8{right:66.66666667%}.col-sm-pull-7{right:58.33333333%}.col-sm-pull-6{right:50%}.col-sm-pull-5{right:41.66666667%}.col-sm-pull-4{right:33.33333333%}.col-sm-pull-3{right:25%}.col-sm-pull-2{right:16.66666667%}.col-sm-pull-1{right:8.33333333%}.col-sm-pull-0{right:auto}.col-sm-push-12{left:100%}.col-sm-push-11{left:91.66666667%}.col-sm-push-10{left:83.33333333%}.col-sm-push-9{left:75%}.col-sm-push-8{left:66.66666667%}.col-sm-push-7{left:58.33333333%}.col-sm-push-6{left:50%}.col-sm-push-5{left:41.66666667%}.col-sm-push-4{left:33.33333333%}.col-sm-push-3{left:25%}.col-sm-push-2{left:16.66666667%}.col-sm-push-1{left:8.33333333%}.col-sm-push-0{left:auto}.col-sm-offset-12{margin-left:100%}.col-sm-offset-11{margin-left:91.66666667%}.col-sm-offset-10{margin-left:83.33333333%}.col-sm-offset-9{margin-left:75%}.col-sm-offset-8{margin-left:66.66666667%}.col-sm-offset-7{margin-left:58.33333333%}.col-sm-offset-6{margin-left:50%}.col-sm-offset-5{margin-left:41.66666667%}.col-sm-offset-4{margin-left:33.33333333%}.col-sm-offset-3{margin-left:25%}.col-sm-offset-2{margin-left:16.66666667%}.col-sm-offset-1{margin-left:8.33333333%}.col-sm-offset-0{margin-left:0}}@media(min-width:992px){.col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12{float:left}.col-md-12{width:100%}.col-md-11{width:91.66666667%}.col-md-10{width:83.33333333%}.col-md-9{width:75%}.col-md-8{width:66.66666667%}.col-md-7{width:58.33333333%}.col-md-6{width:50%}.col-md-5{width:41.66666667%}.col-md-4{width:33.33333333%}.col-md-3{width:25%}.col-md-2{width:16.66666667%}.col-md-1{width:8.33333333%}.col-md-pull-12{right:100%}.col-md-pull-11{right:91.66666667%}.col-md-pull-10{right:83.33333333%}.col-md-pull-9{right:75%}.col-md-pull-8{right:66.66666667%}.col-md-pull-7{right:58.33333333%}.col-md-pull-6{right:50%}.col-md-pull-5{right:41.66666667%}.col-md-pull-4{right:33.33333333%}.col-md-pull-3{right:25%}.col-md-pull-2{right:16.66666667%}.col-md-pull-1{right:8.33333333%}.col-md-pull-0{right:auto}.col-md-push-12{left:100%}.col-md-push-11{left:91.66666667%}.col-md-push-10{left:83.33333333%}.col-md-push-9{left:75%}.col-md-push-8{left:66.66666667%}.col-md-push-7{left:58.33333333%}.col-md-push-6{left:50%}.col-md-push-5{left:41.66666667%}.col-md-push-4{left:33.33333333%}.col-md-push-3{left:25%}.col-md-push-2{left:16.66666667%}.col-md-push-1{left:8.33333333%}.col-md-push-0{left:auto}.col-md-offset-12{margin-left:100%}.col-md-offset-11{margin-left:91.66666667%}.col-md-offset-10{margin-left:83.33333333%}.col-md-offset-9{margin-left:75%}.col-md-offset-8{margin-left:66.66666667%}.col-md-offset-7{margin-left:58.33333333%}.col-md-offset-6{margin-left:50%}.col-md-offset-5{margin-left:41.66666667%}.col-md-offset-4{margin-left:33.33333333%}.col-md-offset-3{margin-left:25%}.col-md-offset-2{margin-left:16.66666667%}.col-md-offset-1{margin-left:8.33333333%}.col-md-offset-0{margin-left:0}}@media(min-width:1200px){.col-lg-1,.col-lg-2,.col-lg-3,.col-lg-4,.col-lg-5,.col-lg-6,.col-lg-7,.col-lg-8,.col-lg-9,.col-lg-10,.col-lg-11,.col-lg-12{float:left}.col-lg-12{width:100%}.col-lg-11{width:91.66666667%}.col-lg-10{width:83.33333333%}.col-lg-9{width:75%}.col-lg-8{width:66.66666667%}.col-lg-7{width:58.33333333%}.col-lg-6{width:50%}.col-lg-5{width:41.66666667%}.col-lg-4{width:33.33333333%}.col-lg-3{width:25%}.col-lg-2{width:16.66666667%}.col-lg-1{width:8.33333333%}.col-lg-pull-12{right:100%}.col-lg-pull-11{right:91.66666667%}.col-lg-pull-10{right:83.33333333%}.col-lg-pull-9{right:75%}.col-lg-pull-8{right:66.66666667%}.col-lg-pull-7{right:58.33333333%}.col-lg-pull-6{right:50%}.col-lg-pull-5{right:41.66666667%}.col-lg-pull-4{right:33.33333333%}.col-lg-pull-3{right:25%}.col-lg-pull-2{right:16.66666667%}.col-lg-pull-1{right:8.33333333%}.col-lg-pull-0{right:auto}.col-lg-push-12{left:100%}.col-lg-push-11{left:91.66666667%}.col-lg-push-10{left:83.33333333%}.col-lg-push-9{left:75%}.col-lg-push-8{left:66.66666667%}.col-lg-push-7{left:58.33333333%}.col-lg-push-6{left:50%}.col-lg-push-5{left:41.66666667%}.col-lg-push-4{left:33.33333333%}.col-lg-push-3{left:25%}.col-lg-push-2{left:16.66666667%}.col-lg-push-1{left:8.33333333%}.col-lg-push-0{left:auto}.col-lg-offset-12{margin-left:100%}.col-lg-offset-11{margin-left:91.66666667%}.col-lg-offset-10{margin-left:83.33333333%}.col-lg-offset-9{margin-left:75%}.col-lg-offset-8{margin-left:66.66666667%}.col-lg-offset-7{margin-left:58.33333333%}.col-lg-offset-6{margin-left:50%}.col-lg-offset-5{margin-left:41.66666667%}.col-lg-offset-4{margin-left:33.33333333%}.col-lg-offset-3{margin-left:25%}.col-lg-offset-2{margin-left:16.66666667%}.col-lg-offset-1{margin-left:8.33333333%}.col-lg-offset-0{margin-left:0}}table{background-color:transparent}table col[class*="col-"]{position:static;display:table-column;float:none}table td[class*="col-"],table th[class*="col-"]{position:static;display:table-cell;float:none}caption{padding-top:8px;padding-bottom:8px;color:#777;text-align:left}th{text-align:left}.table{width:100%;max-width:100%;margin-bottom:20px}.table>thead>tr>th,.table>tbody>tr>th,.table>tfoot>tr>th,.table>thead>tr>td,.table>tbody>tr>td,.table>tfoot>tr>td{padding:8px;line-height:1.42857143;vertical-align:top;border-top:1px solid #ddd}.table>thead>tr>th{vertical-align:bottom;border-bottom:2px solid #ddd}.table>caption+thead>tr:first-child>th,.table>colgroup+thead>tr:first-child>th,.table>thead:first-child>tr:first-child>th,.table>caption+thead>tr:first-child>td,.table>colgroup+thead>tr:first-child>td,.table>thead:first-child>tr:first-child>td{border-top:0}.table>tbody+tbody{border-top:2px solid #ddd}.table .table{background-color:#fff}.table-condensed>thead>tr>th,.table-condensed>tbody>tr>th,.table-condensed>tfoot>tr>th,.table-condensed>thead>tr>td,.table-condensed>tbody>tr>td,.table-condensed>tfoot>tr>td{padding:5px}.table-bordered{border:1px solid #ddd}.table-bordered>thead>tr>th,.table-bordered>tbody>tr>th,.table-bordered>tfoot>tr>th,.table-bordered>thead>tr>td,.table-bordered>tbody>tr>td,.table-bordered>tfoot>tr>td{border:1px solid #ddd}.table-bordered>thead>tr>th,.table-bordered>thead>tr>td{border-bottom-width:2px}.table-striped>tbody>tr:nth-of-type(odd){background-color:#f9f9f9}.table-hover>tbody>tr:hover{background-color:#f5f5f5}.table>thead>tr>td.active,.table>tbody>tr>td.active,.table>tfoot>tr>td.active,.table>thead>tr>th.active,.table>tbody>tr>th.active,.table>tfoot>tr>th.active,.table>thead>tr.active>td,.table>tbody>tr.active>td,.table>tfoot>tr.active>td,.table>thead>tr.active>th,.table>tbody>tr.active>th,.table>tfoot>tr.active>th{background-color:#f5f5f5}.table-hover>tbody>tr>td.active:hover,.table-hover>tbody>tr>th.active:hover,.table-hover>tbody>tr.active:hover>td,.table-hover>tbody>tr:hover>.active,.table-hover>tbody>tr.active:hover>th{background-color:#e8e8e8}.table>thead>tr>td.success,.table>tbody>tr>td.success,.table>tfoot>tr>td.success,.table>thead>tr>th.success,.table>tbody>tr>th.success,.table>tfoot>tr>th.success,.table>thead>tr.success>td,.table>tbody>tr.success>td,.table>tfoot>tr.success>td,.table>thead>tr.success>th,.table>tbody>tr.success>th,.table>tfoot>tr.success>th{background-color:#dff0d8}.table-hover>tbody>tr>td.success:hover,.table-hover>tbody>tr>th.success:hover,.table-hover>tbody>tr.success:hover>td,.table-hover>tbody>tr:hover>.success,.table-hover>tbody>tr.success:hover>th{background-color:#d0e9c6}.table>thead>tr>td.info,.table>tbody>tr>td.info,.table>tfoot>tr>td.info,.table>thead>tr>th.info,.table>tbody>tr>th.info,.table>tfoot>tr>th.info,.table>thead>tr.info>td,.table>tbody>tr.info>td,.table>tfoot>tr.info>td,.table>thead>tr.info>th,.table>tbody>tr.info>th,.table>tfoot>tr.info>th{background-color:#d9edf7}.table-hover>tbody>tr>td.info:hover,.table-hover>tbody>tr>th.info:hover,.table-hover>tbody>tr.info:hover>td,.table-hover>tbody>tr:hover>.info,.table-hover>tbody>tr.info:hover>th{background-color:#c4e3f3}.table>thead>tr>td.warning,.table>tbody>tr>td.warning,.table>tfoot>tr>td.warning,.table>thead>tr>th.warning,.table>tbody>tr>th.warning,.table>tfoot>tr>th.warning,.table>thead>tr.warning>td,.table>tbody>tr.warning>td,.table>tfoot>tr.warning>td,.table>thead>tr.warning>th,.table>tbody>tr.warning>th,.table>tfoot>tr.warning>th{background-color:#fcf8e3}.table-hover>tbody>tr>td.warning:hover,.table-hover>tbody>tr>th.warning:hover,.table-hover>tbody>tr.warning:hover>td,.table-hover>tbody>tr:hover>.warning,.table-hover>tbody>tr.warning:hover>th{background-color:#faf2cc}.table>thead>tr>td.danger,.table>tbody>tr>td.danger,.table>tfoot>tr>td.danger,.table>thead>tr>th.danger,.table>tbody>tr>th.danger,.table>tfoot>tr>th.danger,.table>thead>tr.danger>td,.table>tbody>tr.danger>td,.table>tfoot>tr.danger>td,.table>thead>tr.danger>th,.table>tbody>tr.danger>th,.table>tfoot>tr.danger>th{background-color:#f2dede}.table-hover>tbody>tr>td.danger:hover,.table-hover>tbody>tr>th.danger:hover,.table-hover>tbody>tr.danger:hover>td,.table-hover>tbody>tr:hover>.danger,.table-hover>tbody>tr.danger:hover>th{background-color:#ebcccc}.table-responsive{min-height:.01%;overflow-x:auto}@media screen and (max-width:767px){.table-responsive{width:100%;margin-bottom:15px;overflow-y:hidden;-ms-overflow-style:-ms-autohiding-scrollbar;border:1px solid #ddd}.table-responsive>.table{margin-bottom:0}.table-responsive>.table>thead>tr>th,.table-responsive>.table>tbody>tr>th,.table-responsive>.table>tfoot>tr>th,.table-responsive>.table>thead>tr>td,.table-responsive>.table>tbody>tr>td,.table-responsive>.table>tfoot>tr>td{white-space:nowrap}.table-responsive>.table-bordered{border:0}.table-responsive>.table-bordered>thead>tr>th:first-child,.table-responsive>.table-bordered>tbody>tr>th:first-child,.table-responsive>.table-bordered>tfoot>tr>th:first-child,.table-responsive>.table-bordered>thead>tr>td:first-child,.table-responsive>.table-bordered>tbody>tr>td:first-child,.table-responsive>.table-bordered>tfoot>tr>td:first-child{border-left:0}.table-responsive>.table-bordered>thead>tr>th:last-child,.table-responsive>.table-bordered>tbody>tr>th:last-child,.table-responsive>.table-bordered>tfoot>tr>th:last-child,.table-responsive>.table-bordered>thead>tr>td:last-child,.table-responsive>.table-bordered>tbody>tr>td:last-child,.table-responsive>.table-bordered>tfoot>tr>td:last-child{border-right:0}.table-responsive>.table-bordered>tbody>tr:last-child>th,.table-responsive>.table-bordered>tfoot>tr:last-child>th,.table-responsive>.table-bordered>tbody>tr:last-child>td,.table-responsive>.table-bordered>tfoot>tr:last-child>td{border-bottom:0}}fieldset{min-width:0;padding:0;margin:0;border:0}legend{display:block;width:100%;padding:0;margin-bottom:20px;font-size:21px;line-height:inherit;color:#333;border:0;border-bottom:1px solid #e5e5e5}label{display:inline-block;max-width:100%;margin-bottom:5px;font-weight:700}input[type="search"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-appearance:none;appearance:none}input[type="radio"],input[type="checkbox"]{margin:4px 0 0;margin-top:1px \9;line-height:normal}input[type="radio"][disabled],input[type="checkbox"][disabled],input[type="radio"].disabled,input[type="checkbox"].disabled,fieldset[disabled] input[type="radio"],fieldset[disabled] input[type="checkbox"]{cursor:not-allowed}input[type="file"]{display:block}input[type="range"]{display:block;width:100%}select[multiple],select[size]{height:auto}input[type="file"]:focus,input[type="radio"]:focus,input[type="checkbox"]:focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}output{display:block;padding-top:7px;font-size:14px;line-height:1.42857143;color:#555}.form-control{display:block;width:100%;height:34px;padding:6px 12px;font-size:14px;line-height:1.42857143;color:#555;background-color:#fff;background-image:none;border:1px solid #ccc;border-radius:4px;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s}.form-control:focus{border-color:#66afe9;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,0.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,0.6)}.form-control::-moz-placeholder{color:#999;opacity:1}.form-control:-ms-input-placeholder{color:#999}.form-control::-webkit-input-placeholder{color:#999}.form-control::-ms-expand{background-color:transparent;border:0}.form-control[disabled],.form-control[readonly],fieldset[disabled] .form-control{background-color:#eee;opacity:1}.form-control[disabled],fieldset[disabled] .form-control{cursor:not-allowed}textarea.form-control{height:auto}@media screen and (-webkit-min-device-pixel-ratio:0){input[type="date"].form-control,input[type="time"].form-control,input[type="datetime-local"].form-control,input[type="month"].form-control{line-height:34px}input[type="date"].input-sm,input[type="time"].input-sm,input[type="datetime-local"].input-sm,input[type="month"].input-sm,.input-group-sm input[type="date"],.input-group-sm input[type="time"],.input-group-sm input[type="datetime-local"],.input-group-sm input[type="month"]{line-height:30px}input[type="date"].input-lg,input[type="time"].input-lg,input[type="datetime-local"].input-lg,input[type="month"].input-lg,.input-group-lg input[type="date"],.input-group-lg input[type="time"],.input-group-lg input[type="datetime-local"],.input-group-lg input[type="month"]{line-height:46px}}.form-group{margin-bottom:15px}.radio,.checkbox{position:relative;display:block;margin-top:10px;margin-bottom:10px}.radio.disabled label,.checkbox.disabled label,fieldset[disabled] .radio label,fieldset[disabled] .checkbox label{cursor:not-allowed}.radio label,.checkbox label{min-height:20px;padding-left:20px;margin-bottom:0;font-weight:400;cursor:pointer}.radio input[type="radio"],.radio-inline input[type="radio"],.checkbox input[type="checkbox"],.checkbox-inline input[type="checkbox"]{position:absolute;margin-top:4px \9;margin-left:-20px}.radio+.radio,.checkbox+.checkbox{margin-top:-5px}.radio-inline,.checkbox-inline{position:relative;display:inline-block;padding-left:20px;margin-bottom:0;font-weight:400;vertical-align:middle;cursor:pointer}.radio-inline.disabled,.checkbox-inline.disabled,fieldset[disabled] .radio-inline,fieldset[disabled] .checkbox-inline{cursor:not-allowed}.radio-inline+.radio-inline,.checkbox-inline+.checkbox-inline{margin-top:0;margin-left:10px}.form-control-static{min-height:34px;padding-top:7px;padding-bottom:7px;margin-bottom:0}.form-control-static.input-lg,.form-control-static.input-sm{padding-right:0;padding-left:0}.input-sm{height:30px;padding:5px 10px;font-size:12px;line-height:1.5;border-radius:3px}select.input-sm{height:30px;line-height:30px}textarea.input-sm,select[multiple].input-sm{height:auto}.form-group-sm .form-control{height:30px;padding:5px 10px;font-size:12px;line-height:1.5;border-radius:3px}.form-group-sm select.form-control{height:30px;line-height:30px}.form-group-sm textarea.form-control,.form-group-sm select[multiple].form-control{height:auto}.form-group-sm .form-control-static{height:30px;min-height:32px;padding:6px 10px;font-size:12px;line-height:1.5}.input-lg{height:46px;padding:10px 16px;font-size:18px;line-height:1.3333333;border-radius:6px}select.input-lg{height:46px;line-height:46px}textarea.input-lg,select[multiple].input-lg{height:auto}.form-group-lg .form-control{height:46px;padding:10px 16px;font-size:18px;line-height:1.3333333;border-radius:6px}.form-group-lg select.form-control{height:46px;line-height:46px}.form-group-lg textarea.form-control,.form-group-lg select[multiple].form-control{height:auto}.form-group-lg .form-control-static{height:46px;min-height:38px;padding:11px 16px;font-size:18px;line-height:1.3333333}.has-feedback{position:relative}.has-feedback .form-control{padding-right:42.5px}.form-control-feedback{position:absolute;top:0;right:0;z-index:2;display:block;width:34px;height:34px;line-height:34px;text-align:center;pointer-events:none}.input-lg+.form-control-feedback,.input-group-lg+.form-control-feedback,.form-group-lg .form-control+.form-control-feedback{width:46px;height:46px;line-height:46px}.input-sm+.form-control-feedback,.input-group-sm+.form-control-feedback,.form-group-sm .form-control+.form-control-feedback{width:30px;height:30px;line-height:30px}.has-success .help-block,.has-success .control-label,.has-success .radio,.has-success .checkbox,.has-success .radio-inline,.has-success .checkbox-inline,.has-success.radio label,.has-success.checkbox label,.has-success.radio-inline label,.has-success.checkbox-inline label{color:#3c763d}.has-success .form-control{border-color:#3c763d;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);box-shadow:inset 0 1px 1px rgba(0,0,0,0.075)}.has-success .form-control:focus{border-color:#2b542c;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #67b168;box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #67b168}.has-success .input-group-addon{color:#3c763d;background-color:#dff0d8;border-color:#3c763d}.has-success .form-control-feedback{color:#3c763d}.has-warning .help-block,.has-warning .control-label,.has-warning .radio,.has-warning .checkbox,.has-warning .radio-inline,.has-warning .checkbox-inline,.has-warning.radio label,.has-warning.checkbox label,.has-warning.radio-inline label,.has-warning.checkbox-inline label{color:#8a6d3b}.has-warning .form-control{border-color:#8a6d3b;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);box-shadow:inset 0 1px 1px rgba(0,0,0,0.075)}.has-warning .form-control:focus{border-color:#66512c;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #c0a16b;box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #c0a16b}.has-warning .input-group-addon{color:#8a6d3b;background-color:#fcf8e3;border-color:#8a6d3b}.has-warning .form-control-feedback{color:#8a6d3b}.has-error .help-block,.has-error .control-label,.has-error .radio,.has-error .checkbox,.has-error .radio-inline,.has-error .checkbox-inline,.has-error.radio label,.has-error.checkbox label,.has-error.radio-inline label,.has-error.checkbox-inline label{color:#a94442}.has-error .form-control{border-color:#a94442;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075);box-shadow:inset 0 1px 1px rgba(0,0,0,0.075)}.has-error .form-control:focus{border-color:#843534;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #ce8483;box-shadow:inset 0 1px 1px rgba(0,0,0,0.075),0 0 6px #ce8483}.has-error .input-group-addon{color:#a94442;background-color:#f2dede;border-color:#a94442}.has-error .form-control-feedback{color:#a94442}.has-feedback label~.form-control-feedback{top:25px}.has-feedback label.sr-only~.form-control-feedback{top:0}.help-block{display:block;margin-top:5px;margin-bottom:10px;color:#737373}@media(min-width:768px){.form-inline .form-group{display:inline-block;margin-bottom:0;vertical-align:middle}.form-inline .form-control{display:inline-block;width:auto;vertical-align:middle}.form-inline .form-control-static{display:inline-block}.form-inline .input-group{display:inline-table;vertical-align:middle}.form-inline .input-group .input-group-addon,.form-inline .input-group .input-group-btn,.form-inline .input-group .form-control{width:auto}.form-inline .input-group>.form-control{width:100%}.form-inline .control-label{margin-bottom:0;vertical-align:middle}.form-inline .radio,.form-inline .checkbox{display:inline-block;margin-top:0;margin-bottom:0;vertical-align:middle}.form-inline .radio label,.form-inline .checkbox label{padding-left:0}.form-inline .radio input[type="radio"],.form-inline .checkbox input[type="checkbox"]{position:relative;margin-left:0}.form-inline .has-feedback .form-control-feedback{top:0}}.form-horizontal .radio,.form-horizontal .checkbox,.form-horizontal .radio-inline,.form-horizontal .checkbox-inline{padding-top:7px;margin-top:0;margin-bottom:0}.form-horizontal .radio,.form-horizontal .checkbox{min-height:27px}.form-horizontal .form-group{margin-right:-15px;margin-left:-15px}@media(min-width:768px){.form-horizontal .control-label{padding-top:7px;margin-bottom:0;text-align:right}}.form-horizontal .has-feedback .form-control-feedback{right:15px}@media(min-width:768px){.form-horizontal .form-group-lg .control-label{padding-top:11px;font-size:18px}}@media(min-width:768px){.form-horizontal .form-group-sm .control-label{padding-top:6px;font-size:12px}}.btn{display:inline-block;margin-bottom:0;font-weight:normal;text-align:center;white-space:nowrap;vertical-align:middle;-ms-touch-action:manipulation;touch-action:manipulation;cursor:pointer;background-image:none;border:1px solid transparent;padding:6px 12px;font-size:14px;line-height:1.42857143;border-radius:4px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.btn:focus,.btn:active:focus,.btn.active:focus,.btn.focus,.btn:active.focus,.btn.active.focus{outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}.btn:hover,.btn:focus,.btn.focus{color:#333;text-decoration:none}.btn:active,.btn.active{background-image:none;outline:0;-webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,0.125);box-shadow:inset 0 3px 5px rgba(0,0,0,0.125)}.btn.disabled,.btn[disabled],fieldset[disabled] .btn{cursor:not-allowed;filter:alpha(opacity=65);opacity:.65;-webkit-box-shadow:none;box-shadow:none}a.btn.disabled,fieldset[disabled] a.btn{pointer-events:none}.btn-default{color:#333;background-color:#fff;border-color:#ccc}.btn-default:focus,.btn-default.focus{color:#333;background-color:#e6e6e6;border-color:#8c8c8c}.btn-default:hover{color:#333;background-color:#e6e6e6;border-color:#adadad}.btn-default:active,.btn-default.active,.open>.dropdown-toggle.btn-default{color:#333;background-color:#e6e6e6;background-image:none;border-color:#adadad}.btn-default:active:hover,.btn-default.active:hover,.open>.dropdown-toggle.btn-default:hover,.btn-default:active:focus,.btn-default.active:focus,.open>.dropdown-toggle.btn-default:focus,.btn-default:active.focus,.btn-default.active.focus,.open>.dropdown-toggle.btn-default.focus{color:#333;background-color:#d4d4d4;border-color:#8c8c8c}.btn-default.disabled:hover,.btn-default[disabled]:hover,fieldset[disabled] .btn-default:hover,.btn-default.disabled:focus,.btn-default[disabled]:focus,fieldset[disabled] .btn-default:focus,.btn-default.disabled.focus,.btn-default[disabled].focus,fieldset[disabled] .btn-default.focus{background-color:#fff;border-color:#ccc}.btn-default .badge{color:#fff;background-color:#333}.btn-primary{color:#fff;background-color:#337ab7;border-color:#2e6da4}.btn-primary:focus,.btn-primary.focus{color:#fff;background-color:#286090;border-color:#122b40}.btn-primary:hover{color:#fff;background-color:#286090;border-color:#204d74}.btn-primary:active,.btn-primary.active,.open>.dropdown-toggle.btn-primary{color:#fff;background-color:#286090;background-image:none;border-color:#204d74}.btn-primary:active:hover,.btn-primary.active:hover,.open>.dropdown-toggle.btn-primary:hover,.btn-primary:active:focus,.btn-primary.active:focus,.open>.dropdown-toggle.btn-primary:focus,.btn-primary:active.focus,.btn-primary.active.focus,.open>.dropdown-toggle.btn-primary.focus{color:#fff;background-color:#204d74;border-color:#122b40}.btn-primary.disabled:hover,.btn-primary[disabled]:hover,fieldset[disabled] .btn-primary:hover,.btn-primary.disabled:focus,.btn-primary[disabled]:focus,fieldset[disabled] .btn-primary:focus,.btn-primary.disabled.focus,.btn-primary[disabled].focus,fieldset[disabled] .btn-primary.focus{background-color:#337ab7;border-color:#2e6da4}.btn-primary .badge{color:#337ab7;background-color:#fff}.btn-success{color:#fff;background-color:#5cb85c;border-color:#4cae4c}.btn-success:focus,.btn-success.focus{color:#fff;background-color:#449d44;border-color:#255625}.btn-success:hover{color:#fff;background-color:#449d44;border-color:#398439}.btn-success:active,.btn-success.active,.open>.dropdown-toggle.btn-success{color:#fff;background-color:#449d44;background-image:none;border-color:#398439}.btn-success:active:hover,.btn-success.active:hover,.open>.dropdown-toggle.btn-success:hover,.btn-success:active:focus,.btn-success.active:focus,.open>.dropdown-toggle.btn-success:focus,.btn-success:active.focus,.btn-success.active.focus,.open>.dropdown-toggle.btn-success.focus{color:#fff;background-color:#398439;border-color:#255625}.btn-success.disabled:hover,.btn-success[disabled]:hover,fieldset[disabled] .btn-success:hover,.btn-success.disabled:focus,.btn-success[disabled]:focus,fieldset[disabled] .btn-success:focus,.btn-success.disabled.focus,.btn-success[disabled].focus,fieldset[disabled] .btn-success.focus{background-color:#5cb85c;border-color:#4cae4c}.btn-success .badge{color:#5cb85c;background-color:#fff}.btn-info{color:#fff;background-color:#5bc0de;border-color:#46b8da}.btn-info:focus,.btn-info.focus{color:#fff;background-color:#31b0d5;border-color:#1b6d85}.btn-info:hover{color:#fff;background-color:#31b0d5;border-color:#269abc}.btn-info:active,.btn-info.active,.open>.dropdown-toggle.btn-info{color:#fff;background-color:#31b0d5;background-image:none;border-color:#269abc}.btn-info:active:hover,.btn-info.active:hover,.open>.dropdown-toggle.btn-info:hover,.btn-info:active:focus,.btn-info.active:focus,.open>.dropdown-toggle.btn-info:focus,.btn-info:active.focus,.btn-info.active.focus,.open>.dropdown-toggle.btn-info.focus{color:#fff;background-color:#269abc;border-color:#1b6d85}.btn-info.disabled:hover,.btn-info[disabled]:hover,fieldset[disabled] .btn-info:hover,.btn-info.disabled:focus,.btn-info[disabled]:focus,fieldset[disabled] .btn-info:focus,.btn-info.disabled.focus,.btn-info[disabled].focus,fieldset[disabled] .btn-info.focus{background-color:#5bc0de;border-color:#46b8da}.btn-info .badge{color:#5bc0de;background-color:#fff}.btn-warning{color:#fff;background-color:#f0ad4e;border-color:#eea236}.btn-warning:focus,.btn-warning.focus{color:#fff;background-color:#ec971f;border-color:#985f0d}.btn-warning:hover{color:#fff;background-color:#ec971f;border-color:#d58512}.btn-warning:active,.btn-warning.active,.open>.dropdown-toggle.btn-warning{color:#fff;background-color:#ec971f;background-image:none;border-color:#d58512}.btn-warning:active:hover,.btn-warning.active:hover,.open>.dropdown-toggle.btn-warning:hover,.btn-warning:active:focus,.btn-warning.active:focus,.open>.dropdown-toggle.btn-warning:focus,.btn-warning:active.focus,.btn-warning.active.focus,.open>.dropdown-toggle.btn-warning.focus{color:#fff;background-color:#d58512;border-color:#985f0d}.btn-warning.disabled:hover,.btn-warning[disabled]:hover,fieldset[disabled] .btn-warning:hover,.btn-warning.disabled:focus,.btn-warning[disabled]:focus,fieldset[disabled] .btn-warning:focus,.btn-warning.disabled.focus,.btn-warning[disabled].focus,fieldset[disabled] .btn-warning.focus{background-color:#f0ad4e;border-color:#eea236}.btn-warning .badge{color:#f0ad4e;background-color:#fff}.btn-danger{color:#fff;background-color:#d9534f;border-color:#d43f3a}.btn-danger:focus,.btn-danger.focus{color:#fff;background-color:#c9302c;border-color:#761c19}.btn-danger:hover{color:#fff;background-color:#c9302c;border-color:#ac2925}.btn-danger:active,.btn-danger.active,.open>.dropdown-toggle.btn-danger{color:#fff;background-color:#c9302c;background-image:none;border-color:#ac2925}.btn-danger:active:hover,.btn-danger.active:hover,.open>.dropdown-toggle.btn-danger:hover,.btn-danger:active:focus,.btn-danger.active:focus,.open>.dropdown-toggle.btn-danger:focus,.btn-danger:active.focus,.btn-danger.active.focus,.open>.dropdown-toggle.btn-danger.focus{color:#fff;background-color:#ac2925;border-color:#761c19}.btn-danger.disabled:hover,.btn-danger[disabled]:hover,fieldset[disabled] .btn-danger:hover,.btn-danger.disabled:focus,.btn-danger[disabled]:focus,fieldset[disabled] .btn-danger:focus,.btn-danger.disabled.focus,.btn-danger[disabled].focus,fieldset[disabled] .btn-danger.focus{background-color:#d9534f;border-color:#d43f3a}.btn-danger .badge{color:#d9534f;background-color:#fff}.btn-link{font-weight:400;color:#337ab7;border-radius:0}.btn-link,.btn-link:active,.btn-link.active,.btn-link[disabled],fieldset[disabled] .btn-link{background-color:transparent;-webkit-box-shadow:none;box-shadow:none}.btn-link,.btn-link:hover,.btn-link:focus,.btn-link:active{border-color:transparent}.btn-link:hover,.btn-link:focus{color:#23527c;text-decoration:underline;background-color:transparent}.btn-link[disabled]:hover,fieldset[disabled] .btn-link:hover,.btn-link[disabled]:focus,fieldset[disabled] .btn-link:focus{color:#777;text-decoration:none}.btn-lg,.btn-group-lg>.btn{padding:10px 16px;font-size:18px;line-height:1.3333333;border-radius:6px}.btn-sm,.btn-group-sm>.btn{padding:5px 10px;font-size:12px;line-height:1.5;border-radius:3px}.btn-xs,.btn-group-xs>.btn{padding:1px 5px;font-size:12px;line-height:1.5;border-radius:3px}.btn-block{display:block;width:100%}.btn-block+.btn-block{margin-top:5px}input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"].btn-block{width:100%}.fade{opacity:0;-webkit-transition:opacity .15s linear;-o-transition:opacity .15s linear;transition:opacity .15s linear}.fade.in{opacity:1}.collapse{display:none}.collapse.in{display:block}tr.collapse.in{display:table-row}tbody.collapse.in{display:table-row-group}.collapsing{position:relative;height:0;overflow:hidden;-webkit-transition-property:height,visibility;-o-transition-property:height,visibility;transition-property:height,visibility;-webkit-transition-duration:.35s;-o-transition-duration:.35s;transition-duration:.35s;-webkit-transition-timing-function:ease;-o-transition-timing-function:ease;transition-timing-function:ease}.caret{display:inline-block;width:0;height:0;margin-left:2px;vertical-align:middle;border-top:4px dashed;border-top:4px solid \9;border-right:4px solid transparent;border-left:4px solid transparent}.dropup,.dropdown{position:relative}.dropdown-toggle:focus{outline:0}.dropdown-menu{position:absolute;top:100%;left:0;z-index:1000;display:none;float:left;min-width:160px;padding:5px 0;margin:2px 0 0;font-size:14px;text-align:left;list-style:none;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,0.15);border-radius:4px;-webkit-box-shadow:0 6px 12px rgba(0,0,0,0.175);box-shadow:0 6px 12px rgba(0,0,0,0.175)}.dropdown-menu.pull-right{right:0;left:auto}.dropdown-menu .divider{height:1px;margin:9px 0;overflow:hidden;background-color:#e5e5e5}.dropdown-menu>li>a{display:block;padding:3px 20px;clear:both;font-weight:400;line-height:1.42857143;color:#333;white-space:nowrap}.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus{color:#262626;text-decoration:none;background-color:#f5f5f5}.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus{color:#fff;text-decoration:none;background-color:#337ab7;outline:0}.dropdown-menu>.disabled>a,.dropdown-menu>.disabled>a:hover,.dropdown-menu>.disabled>a:focus{color:#777}.dropdown-menu>.disabled>a:hover,.dropdown-menu>.disabled>a:focus{text-decoration:none;cursor:not-allowed;background-color:transparent;background-image:none;filter:progid:DXImageTransform.Microsoft.gradient(enabled = false)}.open>.dropdown-menu{display:block}.open>a{outline:0}.dropdown-menu-right{right:0;left:auto}.dropdown-menu-left{right:auto;left:0}.dropdown-header{display:block;padding:3px 20px;font-size:12px;line-height:1.42857143;color:#777;white-space:nowrap}.dropdown-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;z-index:990}.pull-right>.dropdown-menu{right:0;left:auto}.dropup .caret,.navbar-fixed-bottom .dropdown .caret{content:"";border-top:0;border-bottom:4px dashed;border-bottom:4px solid \9}.dropup .dropdown-menu,.navbar-fixed-bottom .dropdown .dropdown-menu{top:auto;bottom:100%;margin-bottom:2px}@media(min-width:768px){.navbar-right .dropdown-menu{right:0;left:auto}.navbar-right .dropdown-menu-left{right:auto;left:0}}.btn-group,.btn-group-vertical{position:relative;display:inline-block;vertical-align:middle}.btn-group>.btn,.btn-group-vertical>.btn{position:relative;float:left}.btn-group>.btn:hover,.btn-group-vertical>.btn:hover,.btn-group>.btn:focus,.btn-group-vertical>.btn:focus,.btn-group>.btn:active,.btn-group-vertical>.btn:active,.btn-group>.btn.active,.btn-group-vertical>.btn.active{z-index:2}.btn-group .btn+.btn,.btn-group .btn+.btn-group,.btn-group .btn-group+.btn,.btn-group .btn-group+.btn-group{margin-left:-1px}.btn-toolbar{margin-left:-5px}.btn-toolbar .btn,.btn-toolbar .btn-group,.btn-toolbar .input-group{float:left}.btn-toolbar>.btn,.btn-toolbar>.btn-group,.btn-toolbar>.input-group{margin-left:5px}.btn-group>.btn:not(:first-child):not(:last-child):not(.dropdown-toggle){border-radius:0}.btn-group>.btn:first-child{margin-left:0}.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle){border-top-right-radius:0;border-bottom-right-radius:0}.btn-group>.btn:last-child:not(:first-child),.btn-group>.dropdown-toggle:not(:first-child){border-top-left-radius:0;border-bottom-left-radius:0}.btn-group>.btn-group{float:left}.btn-group>.btn-group:not(:first-child):not(:last-child)>.btn{border-radius:0}.btn-group>.btn-group:first-child:not(:last-child)>.btn:last-child,.btn-group>.btn-group:first-child:not(:last-child)>.dropdown-toggle{border-top-right-radius:0;border-bottom-right-radius:0}.btn-group>.btn-group:last-child:not(:first-child)>.btn:first-child{border-top-left-radius:0;border-bottom-left-radius:0}.btn-group .dropdown-toggle:active,.btn-group.open .dropdown-toggle{outline:0}.btn-group>.btn+.dropdown-toggle{padding-right:8px;padding-left:8px}.btn-group>.btn-lg+.dropdown-toggle{padding-right:12px;padding-left:12px}.btn-group.open .dropdown-toggle{-webkit-box-shadow:inset 0 3px 5px rgba(0,0,0,0.125);box-shadow:inset 0 3px 5px rgba(0,0,0,0.125)}.btn-group.open .dropdown-toggle.btn-link{-webkit-box-shadow:none;box-shadow:none}.btn .caret{margin-left:0}.btn-lg .caret{border-width:5px 5px 0;border-bottom-width:0}.dropup .btn-lg .caret{border-width:0 5px 5px}.btn-group-vertical>.btn,.btn-group-vertical>.btn-group,.btn-group-vertical>.btn-group>.btn{display:block;float:none;width:100%;max-width:100%}.btn-group-vertical>.btn-group>.btn{float:none}.btn-group-vertical>.btn+.btn,.btn-group-vertical>.btn+.btn-group,.btn-group-vertical>.btn-group+.btn,.btn-group-vertical>.btn-group+.btn-group{margin-top:-1px;margin-left:0}.btn-group-vertical>.btn:not(:first-child):not(:last-child){border-radius:0}.btn-group-vertical>.btn:first-child:not(:last-child){border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-right-radius:0;border-bottom-left-radius:0}.btn-group-vertical>.btn:last-child:not(:first-child){border-top-left-radius:0;border-top-right-radius:0;border-bottom-right-radius:4px;border-bottom-left-radius:4px}.btn-group-vertical>.btn-group:not(:first-child):not(:last-child)>.btn{border-radius:0}.btn-group-vertical>.btn-group:first-child:not(:last-child)>.btn:last-child,.btn-group-vertical>.btn-group:first-child:not(:last-child)>.dropdown-toggle{border-bottom-right-radius:0;border-bottom-left-radius:0}.btn-group-vertical>.btn-group:last-child:not(:first-child)>.btn:first-child{border-top-left-radius:0;border-top-right-radius:0}.btn-group-justified{display:table;width:100%;table-layout:fixed;border-collapse:separate}.btn-group-justified>.btn,.btn-group-justified>.btn-group{display:table-cell;float:none;width:1%}.btn-group-justified>.btn-group .btn{width:100%}.btn-group-justified>.btn-group .dropdown-menu{left:auto}[data-toggle="buttons"]>.btn input[type="radio"],[data-toggle="buttons"]>.btn-group>.btn input[type="radio"],[data-toggle="buttons"]>.btn input[type="checkbox"],[data-toggle="buttons"]>.btn-group>.btn input[type="checkbox"]{position:absolute;clip:rect(0,0,0,0);pointer-events:none}.input-group{position:relative;display:table;border-collapse:separate}.input-group[class*="col-"]{float:none;padding-right:0;padding-left:0}.input-group .form-control{position:relative;z-index:2;float:left;width:100%;margin-bottom:0}.input-group .form-control:focus{z-index:3}.input-group-lg>.form-control,.input-group-lg>.input-group-addon,.input-group-lg>.input-group-btn>.btn{height:46px;padding:10px 16px;font-size:18px;line-height:1.3333333;border-radius:6px}select.input-group-lg>.form-control,select.input-group-lg>.input-group-addon,select.input-group-lg>.input-group-btn>.btn{height:46px;line-height:46px}textarea.input-group-lg>.form-control,textarea.input-group-lg>.input-group-addon,textarea.input-group-lg>.input-group-btn>.btn,select[multiple].input-group-lg>.form-control,select[multiple].input-group-lg>.input-group-addon,select[multiple].input-group-lg>.input-group-btn>.btn{height:auto}.input-group-sm>.form-control,.input-group-sm>.input-group-addon,.input-group-sm>.input-group-btn>.btn{height:30px;padding:5px 10px;font-size:12px;line-height:1.5;border-radius:3px}select.input-group-sm>.form-control,select.input-group-sm>.input-group-addon,select.input-group-sm>.input-group-btn>.btn{height:30px;line-height:30px}textarea.input-group-sm>.form-control,textarea.input-group-sm>.input-group-addon,textarea.input-group-sm>.input-group-btn>.btn,select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.input-group-addon,select[multiple].input-group-sm>.input-group-btn>.btn{height:auto}.input-group-addon,.input-group-btn,.input-group .form-control{display:table-cell}.input-group-addon:not(:first-child):not(:last-child),.input-group-btn:not(:first-child):not(:last-child),.input-group .form-control:not(:first-child):not(:last-child){border-radius:0}.input-group-addon,.input-group-btn{width:1%;white-space:nowrap;vertical-align:middle}.input-group-addon{padding:6px 12px;font-size:14px;font-weight:400;line-height:1;color:#555;text-align:center;background-color:#eee;border:1px solid #ccc;border-radius:4px}.input-group-addon.input-sm{padding:5px 10px;font-size:12px;border-radius:3px}.input-group-addon.input-lg{padding:10px 16px;font-size:18px;border-radius:6px}.input-group-addon input[type="radio"],.input-group-addon input[type="checkbox"]{margin-top:0}.input-group .form-control:first-child,.input-group-addon:first-child,.input-group-btn:first-child>.btn,.input-group-btn:first-child>.btn-group>.btn,.input-group-btn:first-child>.dropdown-toggle,.input-group-btn:last-child>.btn:not(:last-child):not(.dropdown-toggle),.input-group-btn:last-child>.btn-group:not(:last-child)>.btn{border-top-right-radius:0;border-bottom-right-radius:0}.input-group-addon:first-child{border-right:0}.input-group .form-control:last-child,.input-group-addon:last-child,.input-group-btn:last-child>.btn,.input-group-btn:last-child>.btn-group>.btn,.input-group-btn:last-child>.dropdown-toggle,.input-group-btn:first-child>.btn:not(:first-child),.input-group-btn:first-child>.btn-group:not(:first-child)>.btn{border-top-left-radius:0;border-bottom-left-radius:0}.input-group-addon:last-child{border-left:0}.input-group-btn{position:relative;font-size:0;white-space:nowrap}.input-group-btn>.btn{position:relative}.input-group-btn>.btn+.btn{margin-left:-1px}.input-group-btn>.btn:hover,.input-group-btn>.btn:focus,.input-group-btn>.btn:active{z-index:2}.input-group-btn:first-child>.btn,.input-group-btn:first-child>.btn-group{margin-right:-1px}.input-group-btn:last-child>.btn,.input-group-btn:last-child>.btn-group{z-index:2;margin-left:-1px}.nav{padding-left:0;margin-bottom:0;list-style:none}.nav>li{position:relative;display:block}.nav>li>a{position:relative;display:block;padding:10px 15px}.nav>li>a:hover,.nav>li>a:focus{text-decoration:none;background-color:#eee}.nav>li.disabled>a{color:#777}.nav>li.disabled>a:hover,.nav>li.disabled>a:focus{color:#777;text-decoration:none;cursor:not-allowed;background-color:transparent}.nav .open>a,.nav .open>a:hover,.nav .open>a:focus{background-color:#eee;border-color:#337ab7}.nav .nav-divider{height:1px;margin:9px 0;overflow:hidden;background-color:#e5e5e5}.nav>li>a>img{max-width:none}.nav-tabs{border-bottom:1px solid #ddd}.nav-tabs>li{float:left;margin-bottom:-1px}.nav-tabs>li>a{margin-right:2px;line-height:1.42857143;border:1px solid transparent;border-radius:4px 4px 0 0}.nav-tabs>li>a:hover{border-color:#eee #eee #ddd}.nav-tabs>li.active>a,.nav-tabs>li.active>a:hover,.nav-tabs>li.active>a:focus{color:#555;cursor:default;background-color:#fff;border:1px solid #ddd;border-bottom-color:transparent}.nav-tabs.nav-justified{width:100%;border-bottom:0}.nav-tabs.nav-justified>li{float:none}.nav-tabs.nav-justified>li>a{margin-bottom:5px;text-align:center}.nav-tabs.nav-justified>.dropdown .dropdown-menu{top:auto;left:auto}@media(min-width:768px){.nav-tabs.nav-justified>li{display:table-cell;width:1%}.nav-tabs.nav-justified>li>a{margin-bottom:0}}.nav-tabs.nav-justified>li>a{margin-right:0;border-radius:4px}.nav-tabs.nav-justified>.active>a,.nav-tabs.nav-justified>.active>a:hover,.nav-tabs.nav-justified>.active>a:focus{border:1px solid #ddd}@media(min-width:768px){.nav-tabs.nav-justified>li>a{border-bottom:1px solid #ddd;border-radius:4px 4px 0 0}.nav-tabs.nav-justified>.active>a,.nav-tabs.nav-justified>.active>a:hover,.nav-tabs.nav-justified>.active>a:focus{border-bottom-color:#fff}}.nav-pills>li{float:left}.nav-pills>li>a{border-radius:4px}.nav-pills>li+li{margin-left:2px}.nav-pills>li.active>a,.nav-pills>li.active>a:hover,.nav-pills>li.active>a:focus{color:#fff;background-color:#337ab7}.nav-stacked>li{float:none}.nav-stacked>li+li{margin-top:2px;margin-left:0}.nav-justified{width:100%}.nav-justified>li{float:none}.nav-justified>li>a{margin-bottom:5px;text-align:center}.nav-justified>.dropdown .dropdown-menu{top:auto;left:auto}@media(min-width:768px){.nav-justified>li{display:table-cell;width:1%}.nav-justified>li>a{margin-bottom:0}}.nav-tabs-justified{border-bottom:0}.nav-tabs-justified>li>a{margin-right:0;border-radius:4px}.nav-tabs-justified>.active>a,.nav-tabs-justified>.active>a:hover,.nav-tabs-justified>.active>a:focus{border:1px solid #ddd}@media(min-width:768px){.nav-tabs-justified>li>a{border-bottom:1px solid #ddd;border-radius:4px 4px 0 0}.nav-tabs-justified>.active>a,.nav-tabs-justified>.active>a:hover,.nav-tabs-justified>.active>a:focus{border-bottom-color:#fff}}.tab-content>.tab-pane{display:none}.tab-content>.active{display:block}.nav-tabs .dropdown-menu{margin-top:-1px;border-top-left-radius:0;border-top-right-radius:0}.navbar{position:relative;min-height:50px;margin-bottom:20px;border:1px solid transparent}@media(min-width:768px){.navbar{border-radius:4px}}@media(min-width:768px){.navbar-header{float:left}}.navbar-collapse{padding-right:15px;padding-left:15px;overflow-x:visible;border-top:1px solid transparent;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.1);box-shadow:inset 0 1px 0 rgba(255,255,255,0.1);-webkit-overflow-scrolling:touch}.navbar-collapse.in{overflow-y:auto}@media(min-width:768px){.navbar-collapse{width:auto;border-top:0;-webkit-box-shadow:none;box-shadow:none}.navbar-collapse.collapse{display:block !important;height:auto !important;padding-bottom:0;overflow:visible !important}.navbar-collapse.in{overflow-y:visible}.navbar-fixed-top .navbar-collapse,.navbar-static-top .navbar-collapse,.navbar-fixed-bottom .navbar-collapse{padding-right:0;padding-left:0}}.navbar-fixed-top,.navbar-fixed-bottom{position:fixed;right:0;left:0;z-index:1030}.navbar-fixed-top .navbar-collapse,.navbar-fixed-bottom .navbar-collapse{max-height:340px}@media(max-device-width:480px) and (orientation:landscape){.navbar-fixed-top .navbar-collapse,.navbar-fixed-bottom .navbar-collapse{max-height:200px}}@media(min-width:768px){.navbar-fixed-top,.navbar-fixed-bottom{border-radius:0}}.navbar-fixed-top{top:0;border-width:0 0 1px}.navbar-fixed-bottom{bottom:0;margin-bottom:0;border-width:1px 0 0}.container>.navbar-header,.container-fluid>.navbar-header,.container>.navbar-collapse,.container-fluid>.navbar-collapse{margin-right:-15px;margin-left:-15px}@media(min-width:768px){.container>.navbar-header,.container-fluid>.navbar-header,.container>.navbar-collapse,.container-fluid>.navbar-collapse{margin-right:0;margin-left:0}}.navbar-static-top{z-index:1000;border-width:0 0 1px}@media(min-width:768px){.navbar-static-top{border-radius:0}}.navbar-brand{float:left;height:50px;padding:15px 15px;font-size:18px;line-height:20px}.navbar-brand:hover,.navbar-brand:focus{text-decoration:none}.navbar-brand>img{display:block}@media(min-width:768px){.navbar>.container .navbar-brand,.navbar>.container-fluid .navbar-brand{margin-left:-15px}}.navbar-toggle{position:relative;float:right;padding:9px 10px;margin-right:15px;margin-top:8px;margin-bottom:8px;background-color:transparent;background-image:none;border:1px solid transparent;border-radius:4px}.navbar-toggle:focus{outline:0}.navbar-toggle .icon-bar{display:block;width:22px;height:2px;border-radius:1px}.navbar-toggle .icon-bar+.icon-bar{margin-top:4px}@media(min-width:768px){.navbar-toggle{display:none}}.navbar-nav{margin:7.5px -15px}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:20px}@media(max-width:767px){.navbar-nav .open .dropdown-menu{position:static;float:none;width:auto;margin-top:0;background-color:transparent;border:0;-webkit-box-shadow:none;box-shadow:none}.navbar-nav .open .dropdown-menu>li>a,.navbar-nav .open .dropdown-menu .dropdown-header{padding:5px 15px 5px 25px}.navbar-nav .open .dropdown-menu>li>a{line-height:20px}.navbar-nav .open .dropdown-menu>li>a:hover,.navbar-nav .open .dropdown-menu>li>a:focus{background-image:none}}@media(min-width:768px){.navbar-nav{float:left;margin:0}.navbar-nav>li{float:left}.navbar-nav>li>a{padding-top:15px;padding-bottom:15px}}.navbar-form{padding:10px 15px;margin-right:-15px;margin-left:-15px;border-top:1px solid transparent;border-bottom:1px solid transparent;-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,0.1),0 1px 0 rgba(255,255,255,0.1);box-shadow:inset 0 1px 0 rgba(255,255,255,0.1),0 1px 0 rgba(255,255,255,0.1);margin-top:8px;margin-bottom:8px}@media(min-width:768px){.navbar-form .form-group{display:inline-block;margin-bottom:0;vertical-align:middle}.navbar-form .form-control{display:inline-block;width:auto;vertical-align:middle}.navbar-form .form-control-static{display:inline-block}.navbar-form .input-group{display:inline-table;vertical-align:middle}.navbar-form .input-group .input-group-addon,.navbar-form .input-group .input-group-btn,.navbar-form .input-group .form-control{width:auto}.navbar-form .input-group>.form-control{width:100%}.navbar-form .control-label{margin-bottom:0;vertical-align:middle}.navbar-form .radio,.navbar-form .checkbox{display:inline-block;margin-top:0;margin-bottom:0;vertical-align:middle}.navbar-form .radio label,.navbar-form .checkbox label{padding-left:0}.navbar-form .radio input[type="radio"],.navbar-form .checkbox input[type="checkbox"]{position:relative;margin-left:0}.navbar-form .has-feedback .form-control-feedback{top:0}}@media(max-width:767px){.navbar-form .form-group{margin-bottom:5px}.navbar-form .form-group:last-child{margin-bottom:0}}@media(min-width:768px){.navbar-form{width:auto;padding-top:0;padding-bottom:0;margin-right:0;margin-left:0;border:0;-webkit-box-shadow:none;box-shadow:none}}.navbar-nav>li>.dropdown-menu{margin-top:0;border-top-left-radius:0;border-top-right-radius:0}.navbar-fixed-bottom .navbar-nav>li>.dropdown-menu{margin-bottom:0;border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-right-radius:0;border-bottom-left-radius:0}.navbar-btn{margin-top:8px;margin-bottom:8px}.navbar-btn.btn-sm{margin-top:10px;margin-bottom:10px}.navbar-btn.btn-xs{margin-top:14px;margin-bottom:14px}.navbar-text{margin-top:15px;margin-bottom:15px}@media(min-width:768px){.navbar-text{float:left;margin-right:15px;margin-left:15px}}@media(min-width:768px){.navbar-left{float:left !important}.navbar-right{float:right !important;margin-right:-15px}.navbar-right~.navbar-right{margin-right:0}}.navbar-default{background-color:#f8f8f8;border-color:#e7e7e7}.navbar-default .navbar-brand{color:#777}.navbar-default .navbar-brand:hover,.navbar-default .navbar-brand:focus{color:#5e5e5e;background-color:transparent}.navbar-default .navbar-text{color:#777}.navbar-default .navbar-nav>li>a{color:#777}.navbar-default .navbar-nav>li>a:hover,.navbar-default .navbar-nav>li>a:focus{color:#333;background-color:transparent}.navbar-default .navbar-nav>.active>a,.navbar-default .navbar-nav>.active>a:hover,.navbar-default .navbar-nav>.active>a:focus{color:#555;background-color:#e7e7e7}.navbar-default .navbar-nav>.disabled>a,.navbar-default .navbar-nav>.disabled>a:hover,.navbar-default .navbar-nav>.disabled>a:focus{color:#ccc;background-color:transparent}.navbar-default .navbar-nav>.open>a,.navbar-default .navbar-nav>.open>a:hover,.navbar-default .navbar-nav>.open>a:focus{color:#555;background-color:#e7e7e7}@media(max-width:767px){.navbar-default .navbar-nav .open .dropdown-menu>li>a{color:#777}.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus{color:#333;background-color:transparent}.navbar-default .navbar-nav .open .dropdown-menu>.active>a,.navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover,.navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus{color:#555;background-color:#e7e7e7}.navbar-default .navbar-nav .open .dropdown-menu>.disabled>a,.navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:hover,.navbar-default .navbar-nav .open .dropdown-menu>.disabled>a:focus{color:#ccc;background-color:transparent}}.navbar-default .navbar-toggle{border-color:#ddd}.navbar-default .navbar-toggle:hover,.navbar-default .navbar-toggle:focus{background-color:#ddd}.navbar-default .navbar-toggle .icon-bar{background-color:#888}.navbar-default .navbar-collapse,.navbar-default .navbar-form{border-color:#e7e7e7}.navbar-default .navbar-link{color:#777}.navbar-default .navbar-link:hover{color:#333}.navbar-default .btn-link{color:#777}.navbar-default .btn-link:hover,.navbar-default .btn-link:focus{color:#333}.navbar-default .btn-link[disabled]:hover,fieldset[disabled] .navbar-default .btn-link:hover,.navbar-default .btn-link[disabled]:focus,fieldset[disabled] .navbar-default .btn-link:focus{color:#ccc}.navbar-inverse{background-color:#222;border-color:#080808}.navbar-inverse .navbar-brand{color:#9d9d9d}.navbar-inverse .navbar-brand:hover,.navbar-inverse .navbar-brand:focus{color:#fff;background-color:transparent}.navbar-inverse .navbar-text{color:#9d9d9d}.navbar-inverse .navbar-nav>li>a{color:#9d9d9d}.navbar-inverse .navbar-nav>li>a:hover,.navbar-inverse .navbar-nav>li>a:focus{color:#fff;background-color:transparent}.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>.active>a:focus{color:#fff;background-color:#080808}.navbar-inverse .navbar-nav>.disabled>a,.navbar-inverse .navbar-nav>.disabled>a:hover,.navbar-inverse .navbar-nav>.disabled>a:focus{color:#444;background-color:transparent}.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a:focus{color:#fff;background-color:#080808}@media(max-width:767px){.navbar-inverse .navbar-nav .open .dropdown-menu>.dropdown-header{border-color:#080808}.navbar-inverse .navbar-nav .open .dropdown-menu .divider{background-color:#080808}.navbar-inverse .navbar-nav .open .dropdown-menu>li>a{color:#9d9d9d}.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:hover,.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focus{color:#fff;background-color:transparent}.navbar-inverse .navbar-nav .open .dropdown-menu>.active>a,.navbar-inverse .navbar-nav .open .dropdown-menu>.active>a:hover,.navbar-inverse .navbar-nav .open .dropdown-menu>.active>a:focus{color:#fff;background-color:#080808}.navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a,.navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a:hover,.navbar-inverse .navbar-nav .open .dropdown-menu>.disabled>a:focus{color:#444;background-color:transparent}}.navbar-inverse .navbar-toggle{border-color:#333}.navbar-inverse .navbar-toggle:hover,.navbar-inverse .navbar-toggle:focus{background-color:#333}.navbar-inverse .navbar-toggle .icon-bar{background-color:#fff}.navbar-inverse .navbar-collapse,.navbar-inverse .navbar-form{border-color:#101010}.navbar-inverse .navbar-link{color:#9d9d9d}.navbar-inverse .navbar-link:hover{color:#fff}.navbar-inverse .btn-link{color:#9d9d9d}.navbar-inverse .btn-link:hover,.navbar-inverse .btn-link:focus{color:#fff}.navbar-inverse .btn-link[disabled]:hover,fieldset[disabled] .navbar-inverse .btn-link:hover,.navbar-inverse .btn-link[disabled]:focus,fieldset[disabled] .navbar-inverse .btn-link:focus{color:#444}.breadcrumb{padding:8px 15px;margin-bottom:20px;list-style:none;background-color:#f5f5f5;border-radius:4px}.breadcrumb>li{display:inline-block}.breadcrumb>li+li:before{padding:0 5px;color:#ccc;content:"/\00a0"}.breadcrumb>.active{color:#777}.pagination{display:inline-block;padding-left:0;margin:20px 0;border-radius:4px}.pagination>li{display:inline}.pagination>li>a,.pagination>li>span{position:relative;float:left;padding:6px 12px;margin-left:-1px;line-height:1.42857143;color:#337ab7;text-decoration:none;background-color:#fff;border:1px solid #ddd}.pagination>li>a:hover,.pagination>li>span:hover,.pagination>li>a:focus,.pagination>li>span:focus{z-index:2;color:#23527c;background-color:#eee;border-color:#ddd}.pagination>li:first-child>a,.pagination>li:first-child>span{margin-left:0;border-top-left-radius:4px;border-bottom-left-radius:4px}.pagination>li:last-child>a,.pagination>li:last-child>span{border-top-right-radius:4px;border-bottom-right-radius:4px}.pagination>.active>a,.pagination>.active>span,.pagination>.active>a:hover,.pagination>.active>span:hover,.pagination>.active>a:focus,.pagination>.active>span:focus{z-index:3;color:#fff;cursor:default;background-color:#337ab7;border-color:#337ab7}.pagination>.disabled>span,.pagination>.disabled>span:hover,.pagination>.disabled>span:focus,.pagination>.disabled>a,.pagination>.disabled>a:hover,.pagination>.disabled>a:focus{color:#777;cursor:not-allowed;background-color:#fff;border-color:#ddd}.pagination-lg>li>a,.pagination-lg>li>span{padding:10px 16px;font-size:18px;line-height:1.3333333}.pagination-lg>li:first-child>a,.pagination-lg>li:first-child>span{border-top-left-radius:6px;border-bottom-left-radius:6px}.pagination-lg>li:last-child>a,.pagination-lg>li:last-child>span{border-top-right-radius:6px;border-bottom-right-radius:6px}.pagination-sm>li>a,.pagination-sm>li>span{padding:5px 10px;font-size:12px;line-height:1.5}.pagination-sm>li:first-child>a,.pagination-sm>li:first-child>span{border-top-left-radius:3px;border-bottom-left-radius:3px}.pagination-sm>li:last-child>a,.pagination-sm>li:last-child>span{border-top-right-radius:3px;border-bottom-right-radius:3px}.pager{padding-left:0;margin:20px 0;text-align:center;list-style:none}.pager li{display:inline}.pager li>a,.pager li>span{display:inline-block;padding:5px 14px;background-color:#fff;border:1px solid #ddd;border-radius:15px}.pager li>a:hover,.pager li>a:focus{text-decoration:none;background-color:#eee}.pager .next>a,.pager .next>span{float:right}.pager .previous>a,.pager .previous>span{float:left}.pager .disabled>a,.pager .disabled>a:hover,.pager .disabled>a:focus,.pager .disabled>span{color:#777;cursor:not-allowed;background-color:#fff}.label{display:inline;padding:.2em .6em .3em;font-size:75%;font-weight:700;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:baseline;border-radius:.25em}a.label:hover,a.label:focus{color:#fff;text-decoration:none;cursor:pointer}.label:empty{display:none}.btn .label{position:relative;top:-1px}.label-default{background-color:#777}.label-default[href]:hover,.label-default[href]:focus{background-color:#5e5e5e}.label-primary{background-color:#337ab7}.label-primary[href]:hover,.label-primary[href]:focus{background-color:#286090}.label-success{background-color:#5cb85c}.label-success[href]:hover,.label-success[href]:focus{background-color:#449d44}.label-info{background-color:#5bc0de}.label-info[href]:hover,.label-info[href]:focus{background-color:#31b0d5}.label-warning{background-color:#f0ad4e}.label-warning[href]:hover,.label-warning[href]:focus{background-color:#ec971f}.label-danger{background-color:#d9534f}.label-danger[href]:hover,.label-danger[href]:focus{background-color:#c9302c}.badge{display:inline-block;min-width:10px;padding:3px 7px;font-size:12px;font-weight:bold;line-height:1;color:#fff;text-align:center;white-space:nowrap;vertical-align:middle;background-color:#777;border-radius:10px}.badge:empty{display:none}.btn .badge{position:relative;top:-1px}.btn-xs .badge,.btn-group-xs>.btn .badge{top:0;padding:1px 5px}a.badge:hover,a.badge:focus{color:#fff;text-decoration:none;cursor:pointer}.list-group-item.active>.badge,.nav-pills>.active>a>.badge{color:#337ab7;background-color:#fff}.list-group-item>.badge{float:right}.list-group-item>.badge+.badge{margin-right:5px}.nav-pills>li>a>.badge{margin-left:3px}.jumbotron{padding-top:30px;padding-bottom:30px;margin-bottom:30px;color:inherit;background-color:#eee}.jumbotron h1,.jumbotron .h1{color:inherit}.jumbotron p{margin-bottom:15px;font-size:21px;font-weight:200}.jumbotron>hr{border-top-color:#d5d5d5}.container .jumbotron,.container-fluid .jumbotron{padding-right:15px;padding-left:15px;border-radius:6px}.jumbotron .container{max-width:100%}@media screen and (min-width:768px){.jumbotron{padding-top:48px;padding-bottom:48px}.container .jumbotron,.container-fluid .jumbotron{padding-right:60px;padding-left:60px}.jumbotron h1,.jumbotron .h1{font-size:63px}}.thumbnail{display:block;padding:4px;margin-bottom:20px;line-height:1.42857143;background-color:#fff;border:1px solid #ddd;border-radius:4px;-webkit-transition:border .2s ease-in-out;-o-transition:border .2s ease-in-out;transition:border .2s ease-in-out}.thumbnail>img,.thumbnail a>img{margin-right:auto;margin-left:auto}a.thumbnail:hover,a.thumbnail:focus,a.thumbnail.active{border-color:#337ab7}.thumbnail .caption{padding:9px;color:#333}.alert{padding:15px;margin-bottom:20px;border:1px solid transparent;border-radius:4px}.alert h4{margin-top:0;color:inherit}.alert .alert-link{font-weight:bold}.alert>p,.alert>ul{margin-bottom:0}.alert>p+p{margin-top:5px}.alert-dismissable,.alert-dismissible{padding-right:35px}.alert-dismissable .close,.alert-dismissible .close{position:relative;top:-2px;right:-21px;color:inherit}.alert-success{color:#3c763d;background-color:#dff0d8;border-color:#d6e9c6}.alert-success hr{border-top-color:#c9e2b3}.alert-success .alert-link{color:#2b542c}.alert-info{color:#31708f;background-color:#d9edf7;border-color:#bce8f1}.alert-info hr{border-top-color:#a6e1ec}.alert-info .alert-link{color:#245269}.alert-warning{color:#8a6d3b;background-color:#fcf8e3;border-color:#faebcc}.alert-warning hr{border-top-color:#f7e1b5}.alert-warning .alert-link{color:#66512c}.alert-danger{color:#a94442;background-color:#f2dede;border-color:#ebccd1}.alert-danger hr{border-top-color:#e4b9c0}.alert-danger .alert-link{color:#843534}@-webkit-keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}}@-o-keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}}@keyframes progress-bar-stripes{from{background-position:40px 0}to{background-position:0 0}}.progress{height:20px;margin-bottom:20px;overflow:hidden;background-color:#f5f5f5;border-radius:4px;-webkit-box-shadow:inset 0 1px 2px rgba(0,0,0,0.1);box-shadow:inset 0 1px 2px rgba(0,0,0,0.1)}.progress-bar{float:left;width:0;height:100%;font-size:12px;line-height:20px;color:#fff;text-align:center;background-color:#337ab7;-webkit-box-shadow:inset 0 -1px 0 rgba(0,0,0,0.15);box-shadow:inset 0 -1px 0 rgba(0,0,0,0.15);-webkit-transition:width .6s ease;-o-transition:width .6s ease;transition:width .6s ease}.progress-striped .progress-bar,.progress-bar-striped{background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);background-image:-o-linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);background-image:linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);-webkit-background-size:40px 40px;background-size:40px 40px}.progress.active .progress-bar,.progress-bar.active{-webkit-animation:progress-bar-stripes 2s linear infinite;-o-animation:progress-bar-stripes 2s linear infinite;animation:progress-bar-stripes 2s linear infinite}.progress-bar-success{background-color:#5cb85c}.progress-striped .progress-bar-success{background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);background-image:-o-linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);background-image:linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent)}.progress-bar-info{background-color:#5bc0de}.progress-striped .progress-bar-info{background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);background-image:-o-linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);background-image:linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent)}.progress-bar-warning{background-color:#f0ad4e}.progress-striped .progress-bar-warning{background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);background-image:-o-linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);background-image:linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent)}.progress-bar-danger{background-color:#d9534f}.progress-striped .progress-bar-danger{background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);background-image:-o-linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent);background-image:linear-gradient(45deg,rgba(255,255,255,0.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,0.15) 50%,rgba(255,255,255,0.15) 75%,transparent 75%,transparent)}.media{margin-top:15px}.media:first-child{margin-top:0}.media,.media-body{overflow:hidden;zoom:1}.media-body{width:10000px}.media-object{display:block}.media-object.img-thumbnail{max-width:none}.media-right,.media>.pull-right{padding-left:10px}.media-left,.media>.pull-left{padding-right:10px}.media-left,.media-right,.media-body{display:table-cell;vertical-align:top}.media-middle{vertical-align:middle}.media-bottom{vertical-align:bottom}.media-heading{margin-top:0;margin-bottom:5px}.media-list{padding-left:0;list-style:none}.list-group{padding-left:0;margin-bottom:20px}.list-group-item{position:relative;display:block;padding:10px 15px;margin-bottom:-1px;background-color:#fff;border:1px solid #ddd}.list-group-item:first-child{border-top-left-radius:4px;border-top-right-radius:4px}.list-group-item:last-child{margin-bottom:0;border-bottom-right-radius:4px;border-bottom-left-radius:4px}.list-group-item.disabled,.list-group-item.disabled:hover,.list-group-item.disabled:focus{color:#777;cursor:not-allowed;background-color:#eee}.list-group-item.disabled .list-group-item-heading,.list-group-item.disabled:hover .list-group-item-heading,.list-group-item.disabled:focus .list-group-item-heading{color:inherit}.list-group-item.disabled .list-group-item-text,.list-group-item.disabled:hover .list-group-item-text,.list-group-item.disabled:focus .list-group-item-text{color:#777}.list-group-item.active,.list-group-item.active:hover,.list-group-item.active:focus{z-index:2;color:#fff;background-color:#337ab7;border-color:#337ab7}.list-group-item.active .list-group-item-heading,.list-group-item.active:hover .list-group-item-heading,.list-group-item.active:focus .list-group-item-heading,.list-group-item.active .list-group-item-heading>small,.list-group-item.active:hover .list-group-item-heading>small,.list-group-item.active:focus .list-group-item-heading>small,.list-group-item.active .list-group-item-heading>.small,.list-group-item.active:hover .list-group-item-heading>.small,.list-group-item.active:focus .list-group-item-heading>.small{color:inherit}.list-group-item.active .list-group-item-text,.list-group-item.active:hover .list-group-item-text,.list-group-item.active:focus .list-group-item-text{color:#c7ddef}a.list-group-item,button.list-group-item{color:#555}a.list-group-item .list-group-item-heading,button.list-group-item .list-group-item-heading{color:#333}a.list-group-item:hover,button.list-group-item:hover,a.list-group-item:focus,button.list-group-item:focus{color:#555;text-decoration:none;background-color:#f5f5f5}button.list-group-item{width:100%;text-align:left}.list-group-item-success{color:#3c763d;background-color:#dff0d8}a.list-group-item-success,button.list-group-item-success{color:#3c763d}a.list-group-item-success .list-group-item-heading,button.list-group-item-success .list-group-item-heading{color:inherit}a.list-group-item-success:hover,button.list-group-item-success:hover,a.list-group-item-success:focus,button.list-group-item-success:focus{color:#3c763d;background-color:#d0e9c6}a.list-group-item-success.active,button.list-group-item-success.active,a.list-group-item-success.active:hover,button.list-group-item-success.active:hover,a.list-group-item-success.active:focus,button.list-group-item-success.active:focus{color:#fff;background-color:#3c763d;border-color:#3c763d}.list-group-item-info{color:#31708f;background-color:#d9edf7}a.list-group-item-info,button.list-group-item-info{color:#31708f}a.list-group-item-info .list-group-item-heading,button.list-group-item-info .list-group-item-heading{color:inherit}a.list-group-item-info:hover,button.list-group-item-info:hover,a.list-group-item-info:focus,button.list-group-item-info:focus{color:#31708f;background-color:#c4e3f3}a.list-group-item-info.active,button.list-group-item-info.active,a.list-group-item-info.active:hover,button.list-group-item-info.active:hover,a.list-group-item-info.active:focus,button.list-group-item-info.active:focus{color:#fff;background-color:#31708f;border-color:#31708f}.list-group-item-warning{color:#8a6d3b;background-color:#fcf8e3}a.list-group-item-warning,button.list-group-item-warning{color:#8a6d3b}a.list-group-item-warning .list-group-item-heading,button.list-group-item-warning .list-group-item-heading{color:inherit}a.list-group-item-warning:hover,button.list-group-item-warning:hover,a.list-group-item-warning:focus,button.list-group-item-warning:focus{color:#8a6d3b;background-color:#faf2cc}a.list-group-item-warning.active,button.list-group-item-warning.active,a.list-group-item-warning.active:hover,button.list-group-item-warning.active:hover,a.list-group-item-warning.active:focus,button.list-group-item-warning.active:focus{color:#fff;background-color:#8a6d3b;border-color:#8a6d3b}.list-group-item-danger{color:#a94442;background-color:#f2dede}a.list-group-item-danger,button.list-group-item-danger{color:#a94442}a.list-group-item-danger .list-group-item-heading,button.list-group-item-danger .list-group-item-heading{color:inherit}a.list-group-item-danger:hover,button.list-group-item-danger:hover,a.list-group-item-danger:focus,button.list-group-item-danger:focus{color:#a94442;background-color:#ebcccc}a.list-group-item-danger.active,button.list-group-item-danger.active,a.list-group-item-danger.active:hover,button.list-group-item-danger.active:hover,a.list-group-item-danger.active:focus,button.list-group-item-danger.active:focus{color:#fff;background-color:#a94442;border-color:#a94442}.list-group-item-heading{margin-top:0;margin-bottom:5px}.list-group-item-text{margin-bottom:0;line-height:1.3}.panel{margin-bottom:20px;background-color:#fff;border:1px solid transparent;border-radius:4px;-webkit-box-shadow:0 1px 1px rgba(0,0,0,0.05);box-shadow:0 1px 1px rgba(0,0,0,0.05)}.panel-body{padding:15px}.panel-heading{padding:10px 15px;border-bottom:1px solid transparent;border-top-left-radius:3px;border-top-right-radius:3px}.panel-heading>.dropdown .dropdown-toggle{color:inherit}.panel-title{margin-top:0;margin-bottom:0;font-size:16px;color:inherit}.panel-title>a,.panel-title>small,.panel-title>.small,.panel-title>small>a,.panel-title>.small>a{color:inherit}.panel-footer{padding:10px 15px;background-color:#f5f5f5;border-top:1px solid #ddd;border-bottom-right-radius:3px;border-bottom-left-radius:3px}.panel>.list-group,.panel>.panel-collapse>.list-group{margin-bottom:0}.panel>.list-group .list-group-item,.panel>.panel-collapse>.list-group .list-group-item{border-width:1px 0;border-radius:0}.panel>.list-group:first-child .list-group-item:first-child,.panel>.panel-collapse>.list-group:first-child .list-group-item:first-child{border-top:0;border-top-left-radius:3px;border-top-right-radius:3px}.panel>.list-group:last-child .list-group-item:last-child,.panel>.panel-collapse>.list-group:last-child .list-group-item:last-child{border-bottom:0;border-bottom-right-radius:3px;border-bottom-left-radius:3px}.panel>.panel-heading+.panel-collapse>.list-group .list-group-item:first-child{border-top-left-radius:0;border-top-right-radius:0}.panel-heading+.list-group .list-group-item:first-child{border-top-width:0}.list-group+.panel-footer{border-top-width:0}.panel>.table,.panel>.table-responsive>.table,.panel>.panel-collapse>.table{margin-bottom:0}.panel>.table caption,.panel>.table-responsive>.table caption,.panel>.panel-collapse>.table caption{padding-right:15px;padding-left:15px}.panel>.table:first-child,.panel>.table-responsive:first-child>.table:first-child{border-top-left-radius:3px;border-top-right-radius:3px}.panel>.table:first-child>thead:first-child>tr:first-child,.panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child,.panel>.table:first-child>tbody:first-child>tr:first-child,.panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child{border-top-left-radius:3px;border-top-right-radius:3px}.panel>.table:first-child>thead:first-child>tr:first-child td:first-child,.panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child td:first-child,.panel>.table:first-child>tbody:first-child>tr:first-child td:first-child,.panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child td:first-child,.panel>.table:first-child>thead:first-child>tr:first-child th:first-child,.panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child th:first-child,.panel>.table:first-child>tbody:first-child>tr:first-child th:first-child,.panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child th:first-child{border-top-left-radius:3px}.panel>.table:first-child>thead:first-child>tr:first-child td:last-child,.panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child td:last-child,.panel>.table:first-child>tbody:first-child>tr:first-child td:last-child,.panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child td:last-child,.panel>.table:first-child>thead:first-child>tr:first-child th:last-child,.panel>.table-responsive:first-child>.table:first-child>thead:first-child>tr:first-child th:last-child,.panel>.table:first-child>tbody:first-child>tr:first-child th:last-child,.panel>.table-responsive:first-child>.table:first-child>tbody:first-child>tr:first-child th:last-child{border-top-right-radius:3px}.panel>.table:last-child,.panel>.table-responsive:last-child>.table:last-child{border-bottom-right-radius:3px;border-bottom-left-radius:3px}.panel>.table:last-child>tbody:last-child>tr:last-child,.panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child,.panel>.table:last-child>tfoot:last-child>tr:last-child,.panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child{border-bottom-right-radius:3px;border-bottom-left-radius:3px}.panel>.table:last-child>tbody:last-child>tr:last-child td:first-child,.panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child td:first-child,.panel>.table:last-child>tfoot:last-child>tr:last-child td:first-child,.panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child td:first-child,.panel>.table:last-child>tbody:last-child>tr:last-child th:first-child,.panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child th:first-child,.panel>.table:last-child>tfoot:last-child>tr:last-child th:first-child,.panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child th:first-child{border-bottom-left-radius:3px}.panel>.table:last-child>tbody:last-child>tr:last-child td:last-child,.panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child td:last-child,.panel>.table:last-child>tfoot:last-child>tr:last-child td:last-child,.panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child td:last-child,.panel>.table:last-child>tbody:last-child>tr:last-child th:last-child,.panel>.table-responsive:last-child>.table:last-child>tbody:last-child>tr:last-child th:last-child,.panel>.table:last-child>tfoot:last-child>tr:last-child th:last-child,.panel>.table-responsive:last-child>.table:last-child>tfoot:last-child>tr:last-child th:last-child{border-bottom-right-radius:3px}.panel>.panel-body+.table,.panel>.panel-body+.table-responsive,.panel>.table+.panel-body,.panel>.table-responsive+.panel-body{border-top:1px solid #ddd}.panel>.table>tbody:first-child>tr:first-child th,.panel>.table>tbody:first-child>tr:first-child td{border-top:0}.panel>.table-bordered,.panel>.table-responsive>.table-bordered{border:0}.panel>.table-bordered>thead>tr>th:first-child,.panel>.table-responsive>.table-bordered>thead>tr>th:first-child,.panel>.table-bordered>tbody>tr>th:first-child,.panel>.table-responsive>.table-bordered>tbody>tr>th:first-child,.panel>.table-bordered>tfoot>tr>th:first-child,.panel>.table-responsive>.table-bordered>tfoot>tr>th:first-child,.panel>.table-bordered>thead>tr>td:first-child,.panel>.table-responsive>.table-bordered>thead>tr>td:first-child,.panel>.table-bordered>tbody>tr>td:first-child,.panel>.table-responsive>.table-bordered>tbody>tr>td:first-child,.panel>.table-bordered>tfoot>tr>td:first-child,.panel>.table-responsive>.table-bordered>tfoot>tr>td:first-child{border-left:0}.panel>.table-bordered>thead>tr>th:last-child,.panel>.table-responsive>.table-bordered>thead>tr>th:last-child,.panel>.table-bordered>tbody>tr>th:last-child,.panel>.table-responsive>.table-bordered>tbody>tr>th:last-child,.panel>.table-bordered>tfoot>tr>th:last-child,.panel>.table-responsive>.table-bordered>tfoot>tr>th:last-child,.panel>.table-bordered>thead>tr>td:last-child,.panel>.table-responsive>.table-bordered>thead>tr>td:last-child,.panel>.table-bordered>tbody>tr>td:last-child,.panel>.table-responsive>.table-bordered>tbody>tr>td:last-child,.panel>.table-bordered>tfoot>tr>td:last-child,.panel>.table-responsive>.table-bordered>tfoot>tr>td:last-child{border-right:0}.panel>.table-bordered>thead>tr:first-child>td,.panel>.table-responsive>.table-bordered>thead>tr:first-child>td,.panel>.table-bordered>tbody>tr:first-child>td,.panel>.table-responsive>.table-bordered>tbody>tr:first-child>td,.panel>.table-bordered>thead>tr:first-child>th,.panel>.table-responsive>.table-bordered>thead>tr:first-child>th,.panel>.table-bordered>tbody>tr:first-child>th,.panel>.table-responsive>.table-bordered>tbody>tr:first-child>th{border-bottom:0}.panel>.table-bordered>tbody>tr:last-child>td,.panel>.table-responsive>.table-bordered>tbody>tr:last-child>td,.panel>.table-bordered>tfoot>tr:last-child>td,.panel>.table-responsive>.table-bordered>tfoot>tr:last-child>td,.panel>.table-bordered>tbody>tr:last-child>th,.panel>.table-responsive>.table-bordered>tbody>tr:last-child>th,.panel>.table-bordered>tfoot>tr:last-child>th,.panel>.table-responsive>.table-bordered>tfoot>tr:last-child>th{border-bottom:0}.panel>.table-responsive{margin-bottom:0;border:0}.panel-group{margin-bottom:20px}.panel-group .panel{margin-bottom:0;border-radius:4px}.panel-group .panel+.panel{margin-top:5px}.panel-group .panel-heading{border-bottom:0}.panel-group .panel-heading+.panel-collapse>.panel-body,.panel-group .panel-heading+.panel-collapse>.list-group{border-top:1px solid #ddd}.panel-group .panel-footer{border-top:0}.panel-group .panel-footer+.panel-collapse .panel-body{border-bottom:1px solid #ddd}.panel-default{border-color:#ddd}.panel-default>.panel-heading{color:#333;background-color:#f5f5f5;border-color:#ddd}.panel-default>.panel-heading+.panel-collapse>.panel-body{border-top-color:#ddd}.panel-default>.panel-heading .badge{color:#f5f5f5;background-color:#333}.panel-default>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#ddd}.panel-primary{border-color:#337ab7}.panel-primary>.panel-heading{color:#fff;background-color:#337ab7;border-color:#337ab7}.panel-primary>.panel-heading+.panel-collapse>.panel-body{border-top-color:#337ab7}.panel-primary>.panel-heading .badge{color:#337ab7;background-color:#fff}.panel-primary>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#337ab7}.panel-success{border-color:#d6e9c6}.panel-success>.panel-heading{color:#3c763d;background-color:#dff0d8;border-color:#d6e9c6}.panel-success>.panel-heading+.panel-collapse>.panel-body{border-top-color:#d6e9c6}.panel-success>.panel-heading .badge{color:#dff0d8;background-color:#3c763d}.panel-success>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#d6e9c6}.panel-info{border-color:#bce8f1}.panel-info>.panel-heading{color:#31708f;background-color:#d9edf7;border-color:#bce8f1}.panel-info>.panel-heading+.panel-collapse>.panel-body{border-top-color:#bce8f1}.panel-info>.panel-heading .badge{color:#d9edf7;background-color:#31708f}.panel-info>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#bce8f1}.panel-warning{border-color:#faebcc}.panel-warning>.panel-heading{color:#8a6d3b;background-color:#fcf8e3;border-color:#faebcc}.panel-warning>.panel-heading+.panel-collapse>.panel-body{border-top-color:#faebcc}.panel-warning>.panel-heading .badge{color:#fcf8e3;background-color:#8a6d3b}.panel-warning>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#faebcc}.panel-danger{border-color:#ebccd1}.panel-danger>.panel-heading{color:#a94442;background-color:#f2dede;border-color:#ebccd1}.panel-danger>.panel-heading+.panel-collapse>.panel-body{border-top-color:#ebccd1}.panel-danger>.panel-heading .badge{color:#f2dede;background-color:#a94442}.panel-danger>.panel-footer+.panel-collapse>.panel-body{border-bottom-color:#ebccd1}.embed-responsive{position:relative;display:block;height:0;padding:0;overflow:hidden}.embed-responsive .embed-responsive-item,.embed-responsive iframe,.embed-responsive embed,.embed-responsive object,.embed-responsive video{position:absolute;top:0;bottom:0;left:0;width:100%;height:100%;border:0}.embed-responsive-16by9{padding-bottom:56.25%}.embed-responsive-4by3{padding-bottom:75%}.well{min-height:20px;padding:19px;margin-bottom:20px;background-color:#f5f5f5;border:1px solid #e3e3e3;border-radius:4px;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,0.05);box-shadow:inset 0 1px 1px rgba(0,0,0,0.05)}.well blockquote{border-color:#ddd;border-color:rgba(0,0,0,0.15)}.well-lg{padding:24px;border-radius:6px}.well-sm{padding:9px;border-radius:3px}.close{float:right;font-size:21px;font-weight:bold;line-height:1;color:#000;text-shadow:0 1px 0 #fff;filter:alpha(opacity=20);opacity:.2}.close:hover,.close:focus{color:#000;text-decoration:none;cursor:pointer;filter:alpha(opacity=50);opacity:.5}button.close{padding:0;cursor:pointer;background:transparent;border:0;-webkit-appearance:none;appearance:none}.modal-open{overflow:hidden}.modal{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1050;display:none;overflow:hidden;-webkit-overflow-scrolling:touch;outline:0}.modal.fade .modal-dialog{-webkit-transform:translate(0,-25%);-ms-transform:translate(0,-25%);-o-transform:translate(0,-25%);transform:translate(0,-25%);-webkit-transition:-webkit-transform .3s ease-out;-o-transition:-o-transform .3s ease-out;transition:transform .3s ease-out}.modal.in .modal-dialog{-webkit-transform:translate(0,0);-ms-transform:translate(0,0);-o-transform:translate(0,0);transform:translate(0,0)}.modal-open .modal{overflow-x:hidden;overflow-y:auto}.modal-dialog{position:relative;width:auto;margin:10px}.modal-content{position:relative;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #999;border:1px solid rgba(0,0,0,0.2);border-radius:6px;-webkit-box-shadow:0 3px 9px rgba(0,0,0,0.5);box-shadow:0 3px 9px rgba(0,0,0,0.5);outline:0}.modal-backdrop{position:fixed;top:0;right:0;bottom:0;left:0;z-index:1040;background-color:#000}.modal-backdrop.fade{filter:alpha(opacity=0);opacity:0}.modal-backdrop.in{filter:alpha(opacity=50);opacity:.5}.modal-header{padding:15px;border-bottom:1px solid #e5e5e5}.modal-header .close{margin-top:-2px}.modal-title{margin:0;line-height:1.42857143}.modal-body{position:relative;padding:15px}.modal-footer{padding:15px;text-align:right;border-top:1px solid #e5e5e5}.modal-footer .btn+.btn{margin-bottom:0;margin-left:5px}.modal-footer .btn-group .btn+.btn{margin-left:-1px}.modal-footer .btn-block+.btn-block{margin-left:0}.modal-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}@media(min-width:768px){.modal-dialog{width:600px;margin:30px auto}.modal-content{-webkit-box-shadow:0 5px 15px rgba(0,0,0,0.5);box-shadow:0 5px 15px rgba(0,0,0,0.5)}.modal-sm{width:300px}}@media(min-width:992px){.modal-lg{width:900px}}.tooltip{position:absolute;z-index:1070;display:block;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-style:normal;font-weight:400;line-height:1.42857143;line-break:auto;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;font-size:12px;filter:alpha(opacity=0);opacity:0}.tooltip.in{filter:alpha(opacity=90);opacity:.9}.tooltip.top{padding:5px 0;margin-top:-3px}.tooltip.right{padding:0 5px;margin-left:3px}.tooltip.bottom{padding:5px 0;margin-top:3px}.tooltip.left{padding:0 5px;margin-left:-3px}.tooltip.top .tooltip-arrow{bottom:0;left:50%;margin-left:-5px;border-width:5px 5px 0;border-top-color:#000}.tooltip.top-left .tooltip-arrow{right:5px;bottom:0;margin-bottom:-5px;border-width:5px 5px 0;border-top-color:#000}.tooltip.top-right .tooltip-arrow{bottom:0;left:5px;margin-bottom:-5px;border-width:5px 5px 0;border-top-color:#000}.tooltip.right .tooltip-arrow{top:50%;left:0;margin-top:-5px;border-width:5px 5px 5px 0;border-right-color:#000}.tooltip.left .tooltip-arrow{top:50%;right:0;margin-top:-5px;border-width:5px 0 5px 5px;border-left-color:#000}.tooltip.bottom .tooltip-arrow{top:0;left:50%;margin-left:-5px;border-width:0 5px 5px;border-bottom-color:#000}.tooltip.bottom-left .tooltip-arrow{top:0;right:5px;margin-top:-5px;border-width:0 5px 5px;border-bottom-color:#000}.tooltip.bottom-right .tooltip-arrow{top:0;left:5px;margin-top:-5px;border-width:0 5px 5px;border-bottom-color:#000}.tooltip-inner{max-width:200px;padding:3px 8px;color:#fff;text-align:center;background-color:#000;border-radius:4px}.tooltip-arrow{position:absolute;width:0;height:0;border-color:transparent;border-style:solid}.popover{position:absolute;top:0;left:0;z-index:1060;display:none;max-width:276px;padding:1px;font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-style:normal;font-weight:400;line-height:1.42857143;line-break:auto;text-align:left;text-align:start;text-decoration:none;text-shadow:none;text-transform:none;letter-spacing:normal;word-break:normal;word-spacing:normal;word-wrap:normal;white-space:normal;font-size:14px;background-color:#fff;-webkit-background-clip:padding-box;background-clip:padding-box;border:1px solid #ccc;border:1px solid rgba(0,0,0,0.2);border-radius:6px;-webkit-box-shadow:0 5px 10px rgba(0,0,0,0.2);box-shadow:0 5px 10px rgba(0,0,0,0.2)}.popover.top{margin-top:-10px}.popover.right{margin-left:10px}.popover.bottom{margin-top:10px}.popover.left{margin-left:-10px}.popover>.arrow{border-width:11px}.popover>.arrow,.popover>.arrow:after{position:absolute;display:block;width:0;height:0;border-color:transparent;border-style:solid}.popover>.arrow:after{content:"";border-width:10px}.popover.top>.arrow{bottom:-11px;left:50%;margin-left:-11px;border-top-color:#999;border-top-color:rgba(0,0,0,0.25);border-bottom-width:0}.popover.top>.arrow:after{bottom:1px;margin-left:-10px;content:" ";border-top-color:#fff;border-bottom-width:0}.popover.right>.arrow{top:50%;left:-11px;margin-top:-11px;border-right-color:#999;border-right-color:rgba(0,0,0,0.25);border-left-width:0}.popover.right>.arrow:after{bottom:-10px;left:1px;content:" ";border-right-color:#fff;border-left-width:0}.popover.bottom>.arrow{top:-11px;left:50%;margin-left:-11px;border-top-width:0;border-bottom-color:#999;border-bottom-color:rgba(0,0,0,0.25)}.popover.bottom>.arrow:after{top:1px;margin-left:-10px;content:" ";border-top-width:0;border-bottom-color:#fff}.popover.left>.arrow{top:50%;right:-11px;margin-top:-11px;border-right-width:0;border-left-color:#999;border-left-color:rgba(0,0,0,0.25)}.popover.left>.arrow:after{right:1px;bottom:-10px;content:" ";border-right-width:0;border-left-color:#fff}.popover-title{padding:8px 14px;margin:0;font-size:14px;background-color:#f7f7f7;border-bottom:1px solid #ebebeb;border-radius:5px 5px 0 0}.popover-content{padding:9px 14px}.carousel{position:relative}.carousel-inner{position:relative;width:100%;overflow:hidden}.carousel-inner>.item{position:relative;display:none;-webkit-transition:.6s ease-in-out left;-o-transition:.6s ease-in-out left;transition:.6s ease-in-out left}.carousel-inner>.item>img,.carousel-inner>.item>a>img{line-height:1}@media all and (transform-3d),(-webkit-transform-3d){.carousel-inner>.item{-webkit-transition:-webkit-transform .6s ease-in-out;-o-transition:-o-transform .6s ease-in-out;transition:transform .6s ease-in-out;-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-perspective:1000px;perspective:1000px}.carousel-inner>.item.next,.carousel-inner>.item.active.right{-webkit-transform:translate3d(100%,0,0);transform:translate3d(100%,0,0);left:0}.carousel-inner>.item.prev,.carousel-inner>.item.active.left{-webkit-transform:translate3d(-100%,0,0);transform:translate3d(-100%,0,0);left:0}.carousel-inner>.item.next.left,.carousel-inner>.item.prev.right,.carousel-inner>.item.active{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0);left:0}}.carousel-inner>.active,.carousel-inner>.next,.carousel-inner>.prev{display:block}.carousel-inner>.active{left:0}.carousel-inner>.next,.carousel-inner>.prev{position:absolute;top:0;width:100%}.carousel-inner>.next{left:100%}.carousel-inner>.prev{left:-100%}.carousel-inner>.next.left,.carousel-inner>.prev.right{left:0}.carousel-inner>.active.left{left:-100%}.carousel-inner>.active.right{left:100%}.carousel-control{position:absolute;top:0;bottom:0;left:0;width:15%;font-size:20px;color:#fff;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,0.6);background-color:rgba(0,0,0,0);filter:alpha(opacity=50);opacity:.5}.carousel-control.left{background-image:-webkit-linear-gradient(left,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.0001) 100%);background-image:-o-linear-gradient(left,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.0001) 100%);background-image:-webkit-gradient(linear,left top,right top,color-stop(0,rgba(0,0,0,0.5)),to(rgba(0,0,0,0.0001)));background-image:linear-gradient(to right,rgba(0,0,0,0.5) 0,rgba(0,0,0,0.0001) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000',endColorstr='#00000000',GradientType=1);background-repeat:repeat-x}.carousel-control.right{right:0;left:auto;background-image:-webkit-linear-gradient(left,rgba(0,0,0,0.0001) 0,rgba(0,0,0,0.5) 100%);background-image:-o-linear-gradient(left,rgba(0,0,0,0.0001) 0,rgba(0,0,0,0.5) 100%);background-image:-webkit-gradient(linear,left top,right top,color-stop(0,rgba(0,0,0,0.0001)),to(rgba(0,0,0,0.5)));background-image:linear-gradient(to right,rgba(0,0,0,0.0001) 0,rgba(0,0,0,0.5) 100%);filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000',endColorstr='#80000000',GradientType=1);background-repeat:repeat-x}.carousel-control:hover,.carousel-control:focus{color:#fff;text-decoration:none;outline:0;filter:alpha(opacity=90);opacity:.9}.carousel-control .icon-prev,.carousel-control .icon-next,.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right{position:absolute;top:50%;z-index:5;display:inline-block;margin-top:-10px}.carousel-control .icon-prev,.carousel-control .glyphicon-chevron-left{left:50%;margin-left:-10px}.carousel-control .icon-next,.carousel-control .glyphicon-chevron-right{right:50%;margin-right:-10px}.carousel-control .icon-prev,.carousel-control .icon-next{width:20px;height:20px;font-family:serif;line-height:1}.carousel-control .icon-prev:before{content:"\2039"}.carousel-control .icon-next:before{content:"\203a"}.carousel-indicators{position:absolute;bottom:10px;left:50%;z-index:15;width:60%;padding-left:0;margin-left:-30%;text-align:center;list-style:none}.carousel-indicators li{display:inline-block;width:10px;height:10px;margin:1px;text-indent:-999px;cursor:pointer;background-color:#000 \9;background-color:rgba(0,0,0,0);border:1px solid #fff;border-radius:10px}.carousel-indicators .active{width:12px;height:12px;margin:0;background-color:#fff}.carousel-caption{position:absolute;right:15%;bottom:20px;left:15%;z-index:10;padding-top:20px;padding-bottom:20px;color:#fff;text-align:center;text-shadow:0 1px 2px rgba(0,0,0,0.6)}.carousel-caption .btn{text-shadow:none}@media screen and (min-width:768px){.carousel-control .glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-control .icon-prev,.carousel-control .icon-next{width:30px;height:30px;margin-top:-10px;font-size:30px}.carousel-control .glyphicon-chevron-left,.carousel-control .icon-prev{margin-left:-10px}.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next{margin-right:-10px}.carousel-caption{right:20%;left:20%;padding-bottom:30px}.carousel-indicators{bottom:20px}}.clearfix:before,.clearfix:after,.dl-horizontal dd:before,.dl-horizontal dd:after,.container:before,.container:after,.container-fluid:before,.container-fluid:after,.row:before,.row:after,.form-horizontal .form-group:before,.form-horizontal .form-group:after,.btn-toolbar:before,.btn-toolbar:after,.btn-group-vertical>.btn-group:before,.btn-group-vertical>.btn-group:after,.nav:before,.nav:after,.navbar:before,.navbar:after,.navbar-header:before,.navbar-header:after,.navbar-collapse:before,.navbar-collapse:after,.pager:before,.pager:after,.panel-body:before,.panel-body:after,.modal-header:before,.modal-header:after,.modal-footer:before,.modal-footer:after{display:table;content:" "}.clearfix:after,.dl-horizontal dd:after,.container:after,.container-fluid:after,.row:after,.form-horizontal .form-group:after,.btn-toolbar:after,.btn-group-vertical>.btn-group:after,.nav:after,.navbar:after,.navbar-header:after,.navbar-collapse:after,.pager:after,.panel-body:after,.modal-header:after,.modal-footer:after{clear:both}.center-block{display:block;margin-right:auto;margin-left:auto}.pull-right{float:right !important}.pull-left{float:left !important}.hide{display:none !important}.show{display:block !important}.invisible{visibility:hidden}.text-hide{font:0/0 a;color:transparent;text-shadow:none;background-color:transparent;border:0}.hidden{display:none !important}.affix{position:fixed}@-ms-viewport{width:device-width}.visible-xs,.visible-sm,.visible-md,.visible-lg{display:none !important}.visible-xs-block,.visible-xs-inline,.visible-xs-inline-block,.visible-sm-block,.visible-sm-inline,.visible-sm-inline-block,.visible-md-block,.visible-md-inline,.visible-md-inline-block,.visible-lg-block,.visible-lg-inline,.visible-lg-inline-block{display:none !important}@media(max-width:767px){.visible-xs{display:block !important}table.visible-xs{display:table !important}tr.visible-xs{display:table-row !important}th.visible-xs,td.visible-xs{display:table-cell !important}}@media(max-width:767px){.visible-xs-block{display:block !important}}@media(max-width:767px){.visible-xs-inline{display:inline !important}}@media(max-width:767px){.visible-xs-inline-block{display:inline-block !important}}@media(min-width:768px) and (max-width:991px){.visible-sm{display:block !important}table.visible-sm{display:table !important}tr.visible-sm{display:table-row !important}th.visible-sm,td.visible-sm{display:table-cell !important}}@media(min-width:768px) and (max-width:991px){.visible-sm-block{display:block !important}}@media(min-width:768px) and (max-width:991px){.visible-sm-inline{display:inline !important}}@media(min-width:768px) and (max-width:991px){.visible-sm-inline-block{display:inline-block !important}}@media(min-width:992px) and (max-width:1199px){.visible-md{display:block !important}table.visible-md{display:table !important}tr.visible-md{display:table-row !important}th.visible-md,td.visible-md{display:table-cell !important}}@media(min-width:992px) and (max-width:1199px){.visible-md-block{display:block !important}}@media(min-width:992px) and (max-width:1199px){.visible-md-inline{display:inline !important}}@media(min-width:992px) and (max-width:1199px){.visible-md-inline-block{display:inline-block !important}}@media(min-width:1200px){.visible-lg{display:block !important}table.visible-lg{display:table !important}tr.visible-lg{display:table-row !important}th.visible-lg,td.visible-lg{display:table-cell !important}}@media(min-width:1200px){.visible-lg-block{display:block !important}}@media(min-width:1200px){.visible-lg-inline{display:inline !important}}@media(min-width:1200px){.visible-lg-inline-block{display:inline-block !important}}@media(max-width:767px){.hidden-xs{display:none !important}}@media(min-width:768px) and (max-width:991px){.hidden-sm{display:none !important}}@media(min-width:992px) and (max-width:1199px){.hidden-md{display:none !important}}@media(min-width:1200px){.hidden-lg{display:none !important}}.visible-print{display:none !important}@media print{.visible-print{display:block !important}table.visible-print{display:table !important}tr.visible-print{display:table-row !important}th.visible-print,td.visible-print{display:table-cell !important}}.visible-print-block{display:none !important}@media print{.visible-print-block{display:block !important}}.visible-print-inline{display:none !important}@media print{.visible-print-inline{display:inline !important}}.visible-print-inline-block{display:none !important}@media print{.visible-print-inline-block{display:inline-block !important}}@media print{.hidden-print{display:none !important}}.owl-carousel,.owl-carousel .owl-item{-webkit-tap-highlight-color:transparent;position:relative}.owl-carousel{display:none;width:100%;z-index:1}.owl-carousel .owl-stage{position:relative;-ms-touch-action:pan-Y;touch-action:manipulation;-moz-backface-visibility:hidden}.owl-carousel .owl-stage:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}.owl-carousel .owl-stage-outer{position:relative;overflow:hidden;-webkit-transform:translate3d(0,0,0)}.owl-carousel .owl-item,.owl-carousel .owl-wrapper{-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;-ms-backface-visibility:hidden;-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0)}.owl-carousel .owl-item{min-height:1px;float:left;-webkit-backface-visibility:hidden;-webkit-touch-callout:none}.owl-carousel .owl-item img{display:block;width:100%}.owl-carousel .owl-dots.disabled,.owl-carousel .owl-nav.disabled{display:none}.no-js .owl-carousel,.owl-carousel.owl-loaded{display:block}.owl-carousel .owl-dot,.owl-carousel .owl-nav .owl-next,.owl-carousel .owl-nav .owl-prev{cursor:pointer;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel .owl-nav button.owl-next,.owl-carousel .owl-nav button.owl-prev,.owl-carousel button.owl-dot{background:0;color:inherit;border:0;padding:0 !important;font:inherit}.owl-carousel.owl-loading{opacity:0;display:block}.owl-carousel.owl-hidden{opacity:0}.owl-carousel.owl-refresh .owl-item{visibility:hidden}.owl-carousel.owl-drag .owl-item{-ms-touch-action:pan-y;touch-action:pan-y;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.owl-carousel.owl-grab{cursor:move;cursor:grab}.owl-carousel.owl-rtl{direction:rtl}.owl-carousel.owl-rtl .owl-item{float:right}.owl-carousel .animated{animation-duration:1s;animation-fill-mode:both}.owl-carousel .owl-animated-in{z-index:0}.owl-carousel .owl-animated-out{z-index:1}.owl-carousel .fadeOut{animation-name:fadeOut}@keyframes fadeOut{0{opacity:1}100%{opacity:0}}.owl-height{transition:height .5s ease-in-out}.owl-carousel .owl-item .owl-lazy{opacity:0;transition:opacity .4s ease}.owl-carousel .owl-item .owl-lazy:not([src]),.owl-carousel .owl-item .owl-lazy[src^=""]{max-height:0}.owl-carousel .owl-item img.owl-lazy{transform-style:preserve-3d}.owl-carousel .owl-video-wrapper{position:relative;height:100%;background:#000}.owl-carousel .owl-video-play-icon{position:absolute;height:80px;width:80px;left:50%;top:50%;margin-left:-40px;margin-top:-40px;cursor:pointer;z-index:1;-webkit-backface-visibility:hidden;transition:transform .1s ease}.owl-carousel .owl-video-play-icon:hover{-ms-transform:scale(1.3,1.3);transform:scale(1.3,1.3)}.owl-carousel .owl-video-playing .owl-video-play-icon,.owl-carousel .owl-video-playing .owl-video-tn{display:none}.owl-carousel .owl-video-tn{opacity:0;height:100%;background-position:center center;background-repeat:no-repeat;background-size:contain;transition:opacity .4s ease}.owl-carousel .owl-video-frame{position:relative;z-index:1;height:100%;width:100%}.owl-theme .owl-nav{margin-top:10px;text-align:center;-webkit-tap-highlight-color:transparent}.owl-theme .owl-nav [class*='owl-']{color:#FFF;font-size:14px;margin:5px;padding:4px 7px;background:#d6d6d6;display:inline-block;cursor:pointer;border-radius:3px}.owl-theme .owl-nav [class*='owl-']:hover{background:#869791;color:#FFF;text-decoration:none}.owl-theme .owl-nav .disabled{opacity:.5;cursor:default}.owl-theme .owl-nav.disabled+.owl-dots{margin-top:10px}.owl-theme .owl-dots{text-align:center;-webkit-tap-highlight-color:transparent}.owl-theme .owl-dots .owl-dot{display:inline-block;zoom:1;*display:inline}.owl-theme .owl-dots .owl-dot span{width:10px;height:10px;margin:5px 7px;background:#d6d6d6;display:block;-webkit-backface-visibility:visible;transition:opacity 200ms ease;border-radius:30px}.owl-theme .owl-dots .owl-dot.active span,.owl-theme .owl-dots .owl-dot:hover span{background:#869791}.slick-slider{position:relative;display:block;box-sizing:border-box;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;-webkit-touch-callout:none;-khtml-user-select:none;-ms-touch-action:pan-y;touch-action:pan-y;-webkit-tap-highlight-color:transparent;direction:ltr}.slick-list{position:relative;display:block;overflow:hidden;margin:0;padding:0}.slick-list:focus{outline:0}.slick-list.dragging{cursor:pointer;cursor:hand}.slick-slider .slick-track,.slick-slider .slick-list{-webkit-transform:translate3d(0,0,0);-moz-transform:translate3d(0,0,0);-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}.slick-track{position:relative;top:0;left:0;display:block}.slick-track:before,.slick-track:after{display:table;content:''}.slick-track:after{clear:both}.slick-loading .slick-track{visibility:hidden}.slick-slide{display:none;float:left;height:100%;min-height:1px}[dir='rtl'] .slick-slide{float:right}.slick-slide img{display:block}.slick-slide.slick-loading img{display:none}.slick-slide.dragging img{pointer-events:none}.slick-initialized .slick-slide{display:block}.slick-loading .slick-slide{visibility:hidden}.slick-vertical .slick-slide{display:block;height:auto;border:1px solid transparent}.slick-arrow.slick-hidden{display:none}@font-face{font-family:"BebasExt";src:url("https://cloud.xm-cdn.com/static/fonts/bebasneue_ext/bebasneue_bold-webfont.eot");src:url("https://cloud.xm-cdn.com/static/fonts/bebasneue_ext/bebasneue_bold-webfont.eot?#iefix") format("embedded-opentype"),url("https://cloud.xm-cdn.com/static/fonts/bebasneue_ext/bebasneue_bold-webfont.woff") format("woff"),url("https://cloud.xm-cdn.com/static/fonts/bebasneue_ext/bebasneue_bold-webfont.ttf") format("truetype"),url("https://cloud.xm-cdn.com/static/fonts/bebasneue_ext/bebasneue_bold-webfont.svg") format("svg");font-weight:700;font-style:normal}@font-face{font-family:"BebasExt";src:url("https://cloud.xm-cdn.com/static/fonts/bebasneue_ext/bebasneue_regular-webfont.eot");src:url("https://cloud.xm-cdn.com/static/fonts/bebasneue_ext/bebasneue_regular-webfont.eot?#iefix") format("embedded-opentype"),url("https://cloud.xm-cdn.com/static/fonts/bebasneue_ext/bebasneue_regular-webfont.woff") format("woff"),url("https://cloud.xm-cdn.com/static/fonts/bebasneue_ext/bebasneue_regular-webfont.ttf") format("truetype"),url("https://cloud.xm-cdn.com/static/fonts/bebasneue_ext/bebasneue_regular-webfont.svg") format("svg");font-weight:400;font-style:normal}@font-face{font-family:"BebasExt";src:url("https://cloud.xm-cdn.com/static/fonts/bebasneue_ext/bebasneue_book-webfont.eot") format("embedded-opentype");src:url("https://cloud.xm-cdn.com/static/fonts/bebasneue_ext/bebasneue_book-webfont.eot?#iefix") format("embedded-opentype"),url("https://cloud.xm-cdn.com/static/fonts/bebasneue_ext/bebasneue_book-webfont.woff") format("woff"),url("https://cloud.xm-cdn.com/static/fonts/bebasneue_ext/bebasneue_book-webfont.ttf") format("truetype"),url("https://cloud.xm-cdn.com/static/fonts/bebasneue_ext/bebasneue_book-webfont.svg") format("svg");font-weight:300;font-style:normal}@font-face{font-family:"Bebas";src:url("https://cloud.xm-cdn.com/static/fonts/bebasneue/bebasneue_bold-webfont.eot");src:url("https://cloud.xm-cdn.com/static/fonts/bebasneue/bebasneue_bold-webfont.eot?#iefix") format("embedded-opentype"),url("https://cloud.xm-cdn.com/static/fonts/bebasneue/bebasneue_bold-webfont.woff") format("woff"),url("	https://cloud.xm-cdn.com/static/fonts/bebasneue/bebasneue_bold-webfont.ttf") format("truetype"),url("https://cloud.xm-cdn.com/static/fonts/bebasneue/bebasneue_bold-webfont.svg") format("svg");font-weight:700;font-style:normal}@font-face{font-family:"Bebas";src:url("https://cloud.xm-cdn.com/static/fonts/bebasneue/bebasneue_regular-webfont.eot");src:url("https://cloud.xm-cdn.com/static/fonts/bebasneue/bebasneue_regular-webfont.eot?#iefix") format("embedded-opentype"),url("https://cloud.xm-cdn.com/static/fonts/bebasneue/bebasneue_regular-webfont.woff") format("woff"),url("https://cloud.xm-cdn.com/static/fonts/bebasneue/bebasneue_regular-webfont.ttf") format("truetype"),url("https://cloud.xm-cdn.com/static/fonts/bebasneue/bebasneue_regular-webfont.svg") format("svg");font-weight:400;font-style:normal}@font-face{font-family:"Bebas";src:url("https://cloud.xm-cdn.com/static/fonts/bebasneue/bebasneue_book-webfont.eot");src:url("https://cloud.xm-cdn.com/static/fonts/bebasneue/bebasneue_book-webfont.eot?#iefix") format("embedded-opentype"),url("https://cloud.xm-cdn.com/static/fonts/bebasneue/bebasneue_book-webfont.woff") format("woff"),url("https://cloud.xm-cdn.com/static/fonts/bebasneue/bebasneue_book-webfont.ttf") format("truetype"),url("https://cloud.xm-cdn.com/static/fonts/bebasneue/bebasneue_book-webfont.svg") format("svg");font-weight:300;font-style:normal}@font-face{font-family:"RobCond";src:url("https://cloud.xm-cdn.com/static/fonts/robotoCond/RobotoCondensed-Light.eot");src:url("https://cloud.xm-cdn.com/static/fonts/robotoCond/RobotoCondensed-Light.eot?#iefix") format("embedded-opentype"),url("https://cloud.xm-cdn.com/static/fonts/robotoCond/RobotoCondensed-Light.woff") format("woff"),url("https://cloud.xm-cdn.com/static/fonts/robotoCond/RobotoCondensed-Light.ttf") format("truetype"),url("https://cloud.xm-cdn.com/static/fonts/robotoCond/RobotoCondensed-Light.svg#RobCond") format("svg");font-weight:300;font-style:normal;font-variant:normal}@font-face{font-family:"RobCond";src:url("https://cloud.xm-cdn.com/static/fonts/robotoCond/RobotoCondensed-Regular.eot");src:url("https://cloud.xm-cdn.com/static/fonts/robotoCond/RobotoCondensed-Regular.eot?#iefix") format("embedded-opentype"),url("https://cloud.xm-cdn.com/static/fonts/robotoCond/RobotoCondensed-Regular.woff") format("woff"),url("https://cloud.xm-cdn.com/static/fonts/robotoCond/RobotoCondensed-Regular.ttf") format("truetype"),url("https://cloud.xm-cdn.com/static/fonts/robotoCond/RobotoCondensed-Regular.svg#RobCond") format("svg");font-weight:400;font-style:normal;font-variant:normal}@font-face{font-family:"RobCond";src:url("https://cloud.xm-cdn.com/static/fonts/robotoCond/RobotoCondensed-Bold.eot");src:url("https://cloud.xm-cdn.com/static/fonts/robotoCond/RobotoCondensed-Bold.eot?#iefix") format("embedded-opentype"),url("https://cloud.xm-cdn.com/static/fonts/robotoCond/RobotoCondensed-Bold.woff") format("woff"),url("https://cloud.xm-cdn.com/static/fonts/robotoCond/RobotoCondensed-Bold.ttf") format("truetype"),url("https://cloud.xm-cdn.com/static/fonts/robotoCond/RobotoCondensed-Bold.svg#RobCond") format("svg");font-weight:700;font-style:normal;font-variant:normal}@font-face{font-family:"Roboto";src:url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Thin-webfont.eot");src:url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Thin-webfont.eot?#iefix") format("embedded-opentype"),url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Thin-webfont.woff") format("woff"),url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Thin-webfont.ttf") format("truetype"),url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Thin-webfont.svg#RobCond#RobCond") format("svg");font-weight:100;font-style:normal}@font-face{font-family:"Roboto";src:url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Light-webfont.eot");src:url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Light-webfont.eot?#iefix") format("embedded-opentype"),url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Light-webfont.woff") format("woff"),url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Light-webfont.ttf") format("truetype"),url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Light-webfont.svg#RobCond#RobCond") format("svg");font-weight:300;font-style:normal}@font-face{font-family:"Roboto";src:url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Regular-webfont.eot");src:url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Regular-webfont.eot?#iefix") format("embedded-opentype"),url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Regular-webfont.woff") format("woff"),url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Regular-webfont.ttf") format("truetype"),url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Regular-webfont.svg#RobCond#RobCond") format("svg");font-weight:400;font-style:normal}@font-face{font-family:"Roboto";src:url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Medium-webfont.eot");src:url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Medium-webfont.eot?#iefix") format("embedded-opentype"),url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Medium-webfont.woff") format("woff"),url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Medium-webfont.ttf") format("truetype"),url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Medium-webfont.svg#RobCond") format("svg");font-weight:500;font-style:normal}@font-face{font-family:"Roboto";src:url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Bold-webfont.eot");src:url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Bold-webfont.eot?#iefix") format("embedded-opentype"),url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Bold-webfont.woff") format("woff"),url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Bold-webfont.ttf") format("truetype"),url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Bold-webfont.svg#RobCond") format("svg");font-weight:700;font-style:normal}@font-face{font-family:"Roboto";src:url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Black-webfont.eot");src:url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Black-webfont.eot?#iefix") format("embedded-opentype"),url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Black-webfont.woff") format("woff"),url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Black-webfont.ttf") format("truetype"),url("https://cloud.xm-cdn.com/static/fonts/roboto/Roboto-Black-webfont.svg#RobCond") format("svg");font-weight:900;font-style:normal}@font-face{font-family:"HindSiliguri";src:url("https://cloud.xm-cdn.com/static/fonts/hind_siliguri/hindsiliguri-light-webfont.woff") format("woff2"),url("https://cloud.xm-cdn.com/static/fonts/hind_siliguri/hindsiliguri-light-webfont.woff") format("woff"),url("https://cloud.xm-cdn.com/static/fonts/hind_siliguri/hindsiliguri-light.ttf") format("ttf");font-weight:300;font-style:normal}@font-face{font-family:"HindSiliguri";src:url("https://cloud.xm-cdn.com/static/fonts/hind_siliguri/hindsiliguri-regular-webfont.woff") format("woff2"),url("https://cloud.xm-cdn.com/static/fonts/hind_siliguri/hindsiliguri-regular-webfont.woff") format("woff"),url("https://cloud.xm-cdn.com/static/fonts/hind_siliguri/hindsiliguri-regular.ttf") format("ttf");font-weight:400;font-style:normal}@font-face{font-family:"HindSiliguri";src:url("https://cloud.xm-cdn.com/static/fonts/hind_siliguri/hindsiliguri-bold-webfont.woff") format("woff2"),url("https://cloud.xm-cdn.com/static/fonts/hind_siliguri/hindsiliguri-bold-webfont.woff") format("woff"),url("https://cloud.xm-cdn.com/static/fonts/hind_siliguri/hindsiliguri-bold.ttf") format("ttf");font-weight:700;font-style:normal}header .cursorNone{cursor:default;pointer-events:none}.news .title{font-size:14px;font-weight:700;color:#d51820;margin-bottom:10px}.news .date{color:#999;font-size:10px;line-height:1;display:block;margin-bottom:10px}html[lang="zh_CN"] .news h4,html[lang="zh_CN"] .news p,html[lang="tw"] .news h4,html[lang="tw"] .news p{margin-bottom:7px}html[lang="el"] .news h4,html[lang="vn"] .news h4{margin-bottom:4px}.rtl-lang .news h4,html[lang="fa"] .news h4{margin-bottom:2px;font-size:13px}.tominify{display:none}.accents-responsive{background:#f7f7f7}.accents-responsive_wrapper{display:flex;flex-wrap:wrap;margin:0 auto}.accents-responsive_wrapper .accent{flex:0 1 50%;margin-bottom:50px;text-align:center}.accents-responsive_wrapper .accent a{width:140px;display:inline-block;text-align:center}.rtl-lang .accents-responsive_wrapper .accent a{text-align:right}.accents-responsive_wrapper .accent .xmFont{font-size:45px}.accents-responsive_wrapper .accent em{color:#444;font-weight:700;font-style:normal;font-size:16px}.accents-responsive_wrapper .accent p{color:#757575;font-size:14px}.accents>.container{display:table;padding-top:30px;padding-bottom:50px}.accents{background-color:#f7f7f7;text-align:center}.accents .accent{display:inline-block;width:24%;text-align:center}.accents span{font-size:80px;vertical-align:middle}.accents .accent a:hover{opacity:.5;filter:alpha(opacity=50)}.accents .accent a span{display:block;height:110px;background:0;margin:0;background-position:0 0}.main-site.hp-v17 .accents .accent em{display:block;font-size:16px;margin-bottom:5px;min-height:100%;color:#444;white-space:nowrap;font-style:normal;font-weight:500}html[lang="bn"] .accents .accent em{font-weight:300}.accents .accent a{display:block;width:100%;min-width:100px;float:left;position:relative;color:#d51820;-webkit-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease}.main-site.hp-v17 .accents em .fa{display:none;font-size:13px;margin-left:5px;vertical-align:middle}.rtl-lang .accents em .fa,html[lang="fa"] .main-site.hp-v17 .accents em .fa{margin-left:0;margin-right:5px}.main-site.hp-v17 .accents p{font-size:15px;color:#757575;margin:0;line-height:20px}#dashboard-wrap{font-weight:700;font-size:16px;line-height:1;position:relative}#dashboard-wrap b{display:block;width:100%;text-align:center;margin-bottom:5px}html[lang="zh_CN"] #dashboard-wrap b,html[lang="ko"] #dashboard-wrap b,html[lang="tw"] #dashboard-wrap b,html[lang="th"] #dashboard-wrap b{font-weight:600}html[lang="ko"] #dashboard-wrap b,html[lang="th"] #dashboard-wrap b{font-size:14px}#dashboard-wrap>div{display:block;position:relative;padding:0;text-transform:uppercase}#dashboard-wrap>div:before,#dashboard-wrap>div:after{content:" ";display:table}#dashboard-wrap>div:after{clear:both}#dashboard-wrap>div+div{margin-top:12px}#dashboard-wrap>div:before{content:'';height:15px;width:1px;position:absolute;bottom:0;left:50%;border-left:1px dashed #fff;z-index:51;opacity:.8;filter:alpha(opacity=80)}#dashboard-wrap>div span{height:15px;display:block}#dashboard-wrap>div .green-bar{background-color:#588c0d;float:left;position:relative;z-index:50}#dashboard-wrap>div .green-bar:after{content:'';width:1px;height:100%;display:block;position:absolute;right:-1px;bottom:0;background-color:#fff}#dashboard-wrap>div .red-bar{background-color:#d51820;float:right}#dashboard-wrap>div i{height:15px;line-height:15px;font-style:normal;position:absolute;float:left;top:0}#dashboard-wrap>div i:after{content:"%"}html[lang="tr"] #dashboard-wrap>div i:after{float:left}#dashboard-wrap>div i.green-bar-nbr{left:0;color:#588c0d}#dashboard-wrap>div i.red-bar-nbr{right:0;color:#d51820}#dashboard-wrap span.indicator{font-size:13px;position:absolute;bottom:-20px}#dashboard-wrap span.indicator.fifty{color:#222;left:49%}#dashboard-wrap span.indicator.buy{left:38px;color:#588c0d}#dashboard-wrap span.indicator.sell{right:40px;color:#d51820}.main-site.hp-v17 #dashboard-wrap>div .green-bar{background-color:#32aa43 !important}.main-site.hp-v17 #dashboard-wrap>div .red-bar{background-color:#d4171f !important}.main-site.hp-v17 #payments-carousel .owl-controls{margin-top:10px}.main-site.hp-v17 #dashboard-wrap>div i.green-bar-nbr{color:#32aa43 !important}.main-site.hp-v17 #dashboard-wrap>div i.red-bar-nbr{color:#d4171f !important}.main-site.hp-v17 #dashboard-wrap span.indicator.buy{color:#32aa43 !important}.main-site.hp-v17 #dashboard-wrap span.indicator.sell{color:#d4171f !important}.main-site.hp-v17 #awards-content{text-align:center}.main-site.hp-v17 #awards-content h2{margin:0}.main-site.hp-v17 #awards-content hr{width:30%;border-color:#b7b7b7;margin-top:15px;margin-bottom:15px;margin-left:0}.rtl-lang.main-site.hp-v17 #awards-content hr{margin-left:unset;margin-right:0}.main-site.hp-v17 #awards-content .btn{font-size:24px;padding:8px 16px !important}#awards-content h4{color:#000}.links-slider .slide{width:100%;height:60px;padding:5px 0;background-color:#fff}.links-slider .slide .icon-wrap{position:relative;width:63px;float:left;text-align:center;height:22px;top:8px}.rtl-lang .links-slider .slide .icon-wrap,html[lang="fa"] .links-slider .slide .icon-wrap{float:right}.links-slider .slide a{font-weight:700;text-transform:uppercase}.rtl-lang .links-slider .slide a,html[lang="fa"] .links-slider .slide a{float:right;text-align:right}html[lang="zh_CN"] .links-slider .slide a,html[lang="ja"] .links-slider .slide a,html[lang="ko"] .links-slider .slide a,html[lang="th"] .links-slider .slide a,html[lang="tw"] .links-slider .slide a{font-weight:600}html[lang="es"] .links-slider .slide a,html[lang="it"] .links-slider .slide a,html[lang="nl"] .links-slider .slide a,html[lang="pt"] .links-slider .slide a{font-size:25px}html[lang="zh_CN"] .links-slider .slide a,html[lang="de"] .links-slider .slide a,html[lang="fr"] .links-slider .slide a,html[lang="ph"] .links-slider .slide a,html[lang="tw"] .links-slider .slide a{font-size:24px}html[lang="el"] .links-slider .slide a{font-size:22px}html[lang="vn"] .links-slider .slide a{font-size:21px}html[lang="ja"] .links-slider .slide a,html[lang="ko"] .links-slider .slide a,html[lang="th"] .links-slider .slide a{font-size:20px}html[lang="th"] .links-slider .slide a{font-size:17px}.links-slider .slide a span{position:relative;top:50%;-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-webkit-transform:translateY(-50%);transform:translateY(-50%);display:block;margin-left:10px;color:#444}html[lang="it"] .links-slider .slide a small,html[lang="nl"] .links-slider .slide a small{font-size:17px}html[lang="zh_CN"] .links-slider .slide a small,html[lang="de"] .links-slider .slide a small,html[lang="id"] .links-slider .slide a small,html[lang="ja"] .links-slider .slide a small,html[lang="ms"] .links-slider .slide a small,html[lang="tw"] .links-slider .slide a small{font-size:16px}html[lang="fr"] .links-slider .slide a small,html[lang="pt"] .links-slider .slide a small,html[lang="sv"] .links-slider .slide a small{font-size:15px}html[lang="el"] .main-site.hp-v17.partners .links-slider .slide a small,html[lang="ko"] .links-slider .slide a small,html[lang="th"] .links-slider .slide a small{font-size:14px}html[lang="ph"] .links-slider .slide a small{font-size:13px}html[lang="el"] .links-slider .slide a small,html[lang="vn"] .links-slider .slide a small{font-size:12px}#socialmedia .slide .icon-wrap>i{font-size:32px;color:#d51820}#socialmedia .links-slider .slide a{font-size:26px;color:#888;line-height:1;float:left;width:76%;height:45px}.main-site.hp-v17 #socialmedia{margin-top:20px}.main-site.hp-v17 #xm-wechat h3.border{font-size:16px;border:1px solid #cbcbcb;color:#9d9d9d;padding:12px !important}body.xmbz.main-site .links-slider .slide .icon-wrap{margin-left:40px}body.xmbz.main-site #socialmedia .links-slider .slide a{width:auto}body.xmbz.partners .links-slider .slide .icon-wrap{margin-left:0}body.xmbz.partners #socialmedia .links-slider .slide a{width:auto}html[lang="zh_CN"] #xm-wechat .links-slider .slide,html[lang="en"] #xm-wechat .links-slider .slide,html[lang="tw"] #xm-wechat .links-slider .slide{float:left;height:55px}html[lang="zh_CN"] #xm-wechat .links-slider .slide:first-child,html[lang="en"] #xm-wechat .links-slider .slide:first-child,html[lang="tw"] #xm-wechat .links-slider .slide:first-child{border-top:0}html[lang="zh_CN"] #xm-wechat .links-slider .slide .icon-wrap,html[lang="en"] #xm-wechat .links-slider .slide .icon-wrap,html[lang="tw"] #xm-wechat .links-slider .slide .icon-wrap{height:30px;top:1px}html[lang="zh_CN"] #xm-wechat .links-slider .slide .icon-wrap>i,html[lang="en"] #xm-wechat .links-slider .slide .icon-wrap>i,html[lang="tw"] #xm-wechat .links-slider .slide .icon-wrap>i{font-size:32px;color:#d51820}html[lang="zh_CN"] #xm-wechat .links-slider .slide a span,html[lang="en"] #xm-wechat .links-slider .slide a span,html[lang="tw"] #xm-wechat .links-slider .slide a span{top:34%;color:#444}html[lang="zh_CN"] #xm-wechat .links-slider .slide a:hover,html[lang="en"] #xm-wechat .links-slider .slide a:hover,html[lang="tw"] #xm-wechat .links-slider .slide a:hover{opacity:.7;filter:alpha(opacity=70)}html[lang="el"] #company-news,html[lang="vn"] #company-news{font-size:13px}.view-platforms{background:url("https://cloud.xm-cdn.com/static/xm/pages/homepage/devices-icon.svg") right 10% bottom 50% no-repeat #333}.view-platforms__wrapper{display:flex;align-items:center;padding:15px 0;min-height:163px}.rtl-lang .view-platforms{background:url("https://cloud.xm-cdn.com/static/xm/pages/homepage/devices-icon.svg") left 10% bottom 50% no-repeat #333}.view-platforms h3{color:#fff}.view-platforms a{color:#fff !important;text-decoration:underline !important;font-weight:700}.view-platforms__wrapper{display:flex;align-items:center;padding:15px 0;min-height:163px}.view-platforms__content{width:280px}.rtl-lang .view-platforms__content{margin-left:0}.carousel-wrapper{background-color:#efefef;padding:45px 0 50px 0}.carousel-wrapper .owl-stage{display:flex}.carousel-wrapper .owl-item{display:flex;height:auto}.carousel-wrapper .info-box{background:#fff;width:100%}.carousel-wrapper .info-box{padding:22px 17px;margin:0 5px}.carousel-wrapper .info-box__icon .xmFont{font-size:40px;font-weight:normal}.carousel-wrapper .info-box__icon{margin-bottom:14px}.carousel-wrapper .info-box--title{font-size:14px;line-height:16px}.carousel-wrapper .info-box--link a{font-size:13px;line-height:16px;color:#333 !important}.carousel-wrapper .owl-theme .owl-dots .owl-dot.active span,.carousel-wrapper .owl-theme .owl-dots .owl-dot:hover span{background:#959595}.carousel-wrapper .owl-theme .owl-dots .owl-dot span{border:1px solid #959595;background:0}@media(min-width:400px){.accents-responsive_wrapper .accent a{text-align:left}.rtl-lang .accents-responsive_wrapper .accent a{text-align:right}}@media(min-width:768px){.accents-responsive_wrapper .accent{flex:0 1 33.3%}.accents-responsive_wrapper{max-width:unset}.view-platforms{background:url("https://cloud.xm-cdn.com/static/xm/pages/homepage/devices-icon-sm.svg") right 10% bottom 50% no-repeat #333}.view-platforms__wrapper{min-height:115px}.rtl-lang .view-platforms{background:url("https://cloud.xm-cdn.com/static/xm/pages/homepage/devices-icon-sm.svg") left 10% bottom 50% no-repeat #333}.view-platforms__content{width:auto}.rtl-lang .view-platforms__content{margin-left:0}.carousel-wrapper{padding:65px 0 70px 0}}@media(min-width:992px){.main-site.hp-v17 #awards-content .btn{padding:15.5px 16px !important}.links-slider .slide{border-top:1px solid #ccc;position:relative;display:block;text-align:left}.rtl-lang .links-slider .slide>strong,html[lang="fa"] .links-slider .slide>strong{width:100%}html[lang="ar"] .main-site.hp-v17 .line-link{margin-top:20px}.main-site.hp-v17 #awards-content{background-color:#f7f7f7}.main-site.hp-v17 #awards-content hr{margin-left:auto}.rtl-lang.main-site.hp-v17 #awards-content hr{margin-right:auto;margin-left:auto}}@media(min-width:1289px){#dashboard-wrap>div{padding:0 7%}#dashboard-wrap>div i{top:auto;bottom:0}html[lang="th"] #dashboard-wrap>div{padding:0 9%}}@media(max-width:991px){.accents .accent{width:33%}.two-tab,.three-tab{margin-bottom:20px;overflow:hidden}.three-tab .nav-tabs>li{width:33.33%}.three-tab .tab-pane{font-size:0}.three-tab .tab-pane>*{font-size:14px}.two-tab .news,.three-tab .news{width:50%;display:block;vertical-align:top;float:left}.three-tab .news:nth-child(odd){padding-right:10px}.two-tab .news:first-child+.news,.three-tab .news:first-child+.news{padding-top:0;margin-top:0}.two-tab .news:first-child+.news:before,.three-tab .news:first-child+.news:before{display:none}#licenses .news,.two-tab .news,.reasons-list{width:50% !important;padding:0 50px}#licenses .news:before,.two-tab .news:before{left:50px}.rtl-lang #licenses .news:before,.rtl-lang .two-tab .news:before,html[lang="fa"] #licenses .news:before,html[lang="fa"] .two-tab .news:before{left:0;right:50px}.news{padding-top:12px !important}}@media(max-width:767px){#licenses .news,.two-tab .news,.reasons-list{padding:0 25px}#licenses .news:before,.two-tab .news:before{left:25px}.rtl-lang #licenses .news:before,.rtl-lang .two-tab .news:before,html[lang="fa"] #licenses .news:before,html[lang="fa"] .two-tab .news:before{left:0;right:25px}.tabbable.three-tab .nav-tabs{display:none}}@media(max-width:650px){#licenses .news,.two-tab .news,.reasons-list{padding:0}#licenses .news:before,.two-tab .news:before{left:0}.rtl-lang #licenses .news:before,.rtl-lang .two-tab .news:before,html[lang="fa"] #licenses .news:before,html[lang="fa"] .two-tab .news:before{right:25px}}@media(max-width:320px){.two-tab .news,.three-tab .news{width:44% !important}}.rtl-lang .gc-bubbleDefault{display:none !important}.main-site .news-responsive .notification-wrapper{padding:50px 0}.main-site .news-responsive .news .btn--custom{position:relative;font-family:"Roboto",sans-serif;text-transform:none;font-weight:400;font-size:13px !important;line-height:16px;color:#333 !important;border:1px solid #333 !important;padding:6px 26px 6px 10px !important}.main-site.rtl-lang .news-responsive .news .btn--custom{padding:6px 10px 6px 36px !important}.main-site.rtl-lang .news-responsive .news a.btn--custom:after{margin-left:0;margin-right:4px;transform:translateY(-50%) rotate(180deg)}.main-site.hp-v17 .news-responsive .line-link:before{background-color:#fff}.main-site .news-responsive .wrap-news{display:flex;justify-content:center;flex-wrap:wrap;margin-bottom:7px}.main-site .news-responsive .news{background:#efefef;padding:25px !important;margin:0;flex:0 1 100%;max-width:556px;margin-bottom:18px}.main-site .news-responsive .news.videos{margin-bottom:8px}.main-site .news-responsive .news.videos{padding:0 !important}.main-site .news-responsive .news:before{display:none}.main-site .news-responsive .notification-wrapper .title-block-wrap{font-family:"Roboto",sans-serif;text-transform:none;max-width:556px;margin:0 auto 45px;color:#333;font-weight:700;font-size:30px}html[lang="ar"] .main-site .news-responsive .notification-wrapper .title-block-wrap a{font-family:"Roboto",Tahoma,sans-serif;font-size:20px;line-height:normal;height:auto;border-left:1px solid #cbcbcb !important}html[lang="ar"] .main-site .news-responsive .notification-wrapper .title-block-wrap.active a{border:1px solid #d51820 !important}html[lang="ar"] .main-site .news-responsive .notification-wrapper .title-block-wrap{font-family:"Roboto",Tahoma,sans-serif;font-size:20px;line-height:normal;height:auto;padding:12px}.main-site .news-responsive .news .title{font-weight:600;font-size:18px;line-height:22px}.main-site .news-responsive .news .title a{color:#333}.main-site .news-responsive .news .date{margin-bottom:20px}.main-site .news-responsive .news p{margin-bottom:26px}.main-site .news-responsive .line-link{max-width:556px;margin:0 auto;display:flex;justify-content:flex-end;font-weight:700}.main-site .news-responsive .line-link a{text-decoration:underline !important}.main-site .news-responsive .news .btn--custom{position:relative;font-family:"Roboto",sans-serif;text-transform:none;font-weight:400;font-size:13px;line-height:16px;color:#333 !important;border:1px solid #333 !important;padding:6px 26px 6px 10px !important}.main-site .news-responsive .news a.btn--custom:after{content:'';background:url('https://cloud.xm-cdn.com/static/xm/pages/homepage/small-arrow-right.svg');position:absolute;margin-left:4px;top:50%;transform:translateY(-50%);width:8px;height:7px;-webkit-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease}.main-site .news-responsive .news a.btn--custom:hover:after{background:url('https://cloud.xm-cdn.com/static/xm/pages/homepage/small-arrow-right-white.svg')}.main-site .news-responsive .wrap-news .news:first-of-type{display:block !important}.main-site .news-responsive .wrap-news .news{display:none !important}.main-site.rtl-lang .news-responsive .view-all{padding-left:0;padding-right:10px}@media(min-width:768px){.main-site .news-responsive .notification-wrapper{padding:70px 0}.main-site .news-responsive .wrap-news{margin-left:-10px;margin-right:-10px}.main-site .news-responsive .wrap-news{justify-content:space-between}.main-site .news-responsive .news{margin:0 10px;flex:1;margin-bottom:25px}.main-site .news-responsive .notification-wrapper .title-block-wrap{margin:0 auto 35px;max-width:100%}html[lang="ar"] .main-site .news-responsive .notification-wrapper .title-block-wrap{padding:unset}.main-site .news-responsive .nav-tabs{max-width:100%;margin:0 auto}.main-site .news-responsive .news .internal-wrapper{display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start;height:100%}.main-site .news-responsive .line-link{max-width:100%}.main-site .news-responsive .wrap-news .news{display:block !important}.main-site .news-responsive .wrap-news .news:last-of-type{display:none !important}}@media(min-width:992px){.rtl-lang.main-site.hp-v17 .nav-tabs>li>a{border-left:1px solid #cbcbcb !important}html[lang="ar"] .nav-tabs>li.active a{border:1px solid #d51820 !important}}.fake-change{display:none}body{color:#333;font-size:14px;line-height:1.5 !important}html[lang="zh_CN"] body,html[lang="tw"] body{font-size:15px}.mArea h1{font-size:30px;margin-top:0;margin-bottom:30px;color:#000}h3.border{padding:12px;font-size:16px;border:2px solid #cbcbcb;color:#888;text-align:center;margin-top:0;margin-bottom:30px;text-transform:uppercase}h3.border.reset{margin-bottom:0}h4{font-size:14px;font-weight:700;color:#d51820;margin:0}h2{margin-top:0;margin-bottom:30px}#careers h2,.main-site.hp-v17 h2{font-size:30px}.main-site.hp-v17 h2{font-weight:bold}h3{font-size:18px;margin:0;padding:0}html[lang="si"] h3{line-height:1.3}h3.light{font-weight:300}.education h3{font-size:22px}h2.big{font-size:35px;font-weight:bold}p.big{font-size:20px;font-weight:300}ul li.cat-item a{color:#000}small,.small{font-size:90%}body,#notify-recording-block .btn,.btn small,.fontsize-control .btn,#forex-calculator .btn-group .btn.btn-default,.table-country-filter .btn,.popover,.buttons-nav .btn.telegram{font-family:"Roboto",sans-serif}html[lang="bn"] body,html[lang="bn"] #notify-recording-block .btn,html[lang="bn"] .btn small,html[lang="bn"] .fontsize-control .btn,html[lang="bn"] #forex-calculator .btn-group .btn.btn-default,html[lang="bn"] .table-country-filter .btn,html[lang="bn"] .popover,html[lang="bn"] .buttons-nav .btn.telegram,html[lang="bn"] #custom-livechat .btn,html[lang="bn"] #custom-livechat .nav-tabs>li>a{font-family:"Roboto","HindSiliguri",sans-serif}html[lang="ja"] body,html[lang="ja"] #notify-recording-block .btn,html[lang="ja"] .btn small,html[lang="ja"] .fontsize-control .btn,html[lang="ja"] #forex-calculator .btn-group .btn.btn-default,html[lang="ja"] .table-country-filter .btn,html[lang="ja"] .popover,html[lang="ja"] .buttons-nav .btn.telegram,html[lang="ja"] #custom-livechat .btn,html[lang="ja"] #custom-livechat .nav-tabs>li>a{font-family:"Roboto",Hiragino Kaku Gothic Pro,"Meiryo",sans-serif}html[lang="zh_CN"] body,html[lang="tw"] body,html[lang="zh_CN"] #notify-recording-block .btn,html[lang="tw"] #notify-recording-block .btn,html[lang="zh_CN"] .btn small,html[lang="tw"] .btn small,html[lang="zh_CN"] .fontsize-control .btn,html[lang="tw"] .fontsize-control .btn,html[lang="zh_CN"] #forex-calculator .btn-group .btn.btn-default,html[lang="tw"] #forex-calculator .btn-group .btn.btn-default,html[lang="zh_CN"] .table-country-filter .btn,html[lang="tw"] .table-country-filter .btn,html[lang="zh_CN"] .popover,html[lang="tw"] .popover,html[lang="zh_CN"] .buttons-nav .btn.telegram,html[lang="tw"] .buttons-nav .btn.telegram,html[lang="zh_CN"] #custom-livechat .btn,html[lang="tw"] #custom-livechat .btn,html[lang="zh_CN"] #custom-livechat .nav-tabs>li>a,html[lang="tw"] #custom-livechat .nav-tabs>li>a{font-family:"Roboto",Arial,Helvetica,"Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",sans-serif}body.rtl-lang,html[lang="fa"] body,html[lang="th"] body,.rtl-lang #notify-recording-block .btn,html[lang="fa"] #notify-recording-block .btn,html[lang="th"] #notify-recording-block .btn,.rtl-lang .btn small,html[lang="fa"] .btn small,html[lang="th"] .btn small,.rtl-lang .fontsize-control .btn,html[lang="fa"] .fontsize-control .btn,html[lang="th"] .fontsize-control .btn,.rtl-lang #forex-calculator .btn-group .btn.btn-default,html[lang="fa"] #forex-calculator .btn-group .btn.btn-default,html[lang="th"] #forex-calculator .btn-group .btn.btn-default,.rtl-lang .table-country-filter .btn,html[lang="fa"] .table-country-filter .btn,html[lang="th"] .table-country-filter .btn,.rtl-lang .popover,html[lang="fa"] .popover,html[lang="th"] .popover,.rtl-lang .buttons-nav .btn.telegram,html[lang="fa"] .buttons-nav .btn.telegram,html[lang="th"] .buttons-nav .btn.telegram,.rtl-lang #custom-livechat .btn,html[lang="fa"] #custom-livechat .btn,html[lang="th"] #custom-livechat .btn,.rtl-lang #custom-livechat .nav-tabs>li>a,html[lang="fa"] #custom-livechat .nav-tabs>li>a,html[lang="th"] #custom-livechat .nav-tabs>li>a{font-family:"Roboto",Tahoma,sans-serif}.emphasized-font,.btn,#main-nav.nav-logo>li>a,#main-nav.partnersNavMenu>li>a,.main-nav .block>span,.main-nav .box>span,.main-nav .block>span,.toggleLeftNav span,.toggleRightNav span,.parent .top-bar h1,#mobileAppBar .text-wrap h3,.title-block-wrap,.tabbable .nav-tabs>li>a,h3.border,h3#duration,.platforms-center h3,.promotion .prom1 .box h3,.promotion .prom2 .box h3,.prom-package .title,.prom-package .addition,.promotion h2,.reasons-list,.links-slider .slide a,.xmtd .stripe span,.partners #hero-content .stripe em,.webinars h4,.alert .account-status,#myModalIndex button,#processingpartners .wpwl-button,.sidebar.mArea .alert,.home_videos a h3,.promo__bonus .header-wrap h2,.prom-package .txt,.promotion span.or,.seminars .panel-default>.panel-heading .date,#complaint .disputed .amount,#galaPromo .bracket h3,#galaPromo .mainTitle,#galaPromo .subtitle,#galaPromo .prizes .duration,#galaPromo .main-msg.main-text,#galaPromo.motogp .highlight-text,#galaPromo.motogp .track-points .p7,#galaPromo .main-msg.main-text,#galaPromo.partner .main-header>.wrap h3,#galaPromo.partner .place-labels .cash,#galaPromo .main-msg.main-text,.gold-silver,#ib-competition h2.main,#ib-competition header h2.sub,.maintenance h1,.seminars .panel-default>.panel-heading .date,#world-championship .header .mainTitle,#world-championship .header h2,#world-championship .round-wrap .date span,.upload-documents .modalDocuments .modal-header button,.mArea .balance-bar span.amount,.xmp-package h3,#custom-livechat .btn,#custom-livechat .nav-tabs>li>a,.monthly-timeline__info .uppercase,.main-banner h2,.shapes-circle__text h2,.shapes-circle__text h3,.shapes-circle__text h5,.shapes-circle-container h6,.main-photo .block h2,.main-slider .block h2{font-family:"Bebas","BebasExt",sans-serif;text-transform:uppercase}html[lang="vn"] .main-photo .block h2,html[lang="el"] .emphasized-font,html[lang="vn"] .emphasized-font,html[lang="el"] .btn,html[lang="vn"] .btn,html[lang="el"] #main-nav.nav-logo>li>a,html[lang="el"] #main-nav.partnersNavMenu>li>a,html[lang="vn"] #main-nav.nav-logo>li>a,html[lang="vn"] #main-nav.partnersNavMenu>li>a,html[lang="el"] .main-nav .block>span,html[lang="vn"] .main-nav .block>span,html[lang="el"] .main-nav .box>span,html[lang="vn"] .main-nav .box>span,html[lang="el"] .main-nav .block>span,html[lang="vn"] .main-nav .block>span,html[lang="el"] .toggleLeftNav span,html[lang="vn"] .toggleLeftNav span,html[lang="el"] .toggleRightNav span,html[lang="vn"] .toggleRightNav span,html[lang="el"] .parent .top-bar h1,html[lang="vn"] .parent .top-bar h1,html[lang="el"] #mobileAppBar .text-wrap h3,html[lang="vn"] #mobileAppBar .text-wrap h3,html[lang="el"] .title-block-wrap,html[lang="vn"] .title-block-wrap,html[lang="el"] .tabbable .nav-tabs>li>a,html[lang="vn"] .tabbable .nav-tabs>li>a,html[lang="el"] h3.border,html[lang="vn"] h3.border,html[lang="el"] h3#duration,html[lang="vn"] h3#duration,html[lang="el"] .platforms-center h3,html[lang="vn"] .platforms-center h3,html[lang="el"] .promotion .prom1 .box h3,html[lang="vn"] .promotion .prom1 .box h3,html[lang="el"] .promotion .prom2 .box h3,html[lang="vn"] .promotion .prom2 .box h3,html[lang="el"] .prom-package .title,html[lang="vn"] .prom-package .title,html[lang="el"] .prom-package .addition,html[lang="vn"] .prom-package .addition,html[lang="el"] .promotion h2,html[lang="vn"] .promotion h2,html[lang="el"] .reasons-list,html[lang="vn"] .reasons-list,html[lang="el"] .links-slider .slide a,html[lang="vn"] .links-slider .slide a,html[lang="el"] .xmtd .stripe span,html[lang="vn"] .xmtd .stripe span,html[lang="el"] .partners #hero-content .stripe em,html[lang="vn"] .partners #hero-content .stripe em,html[lang="el"] .webinars h4,html[lang="vn"] .webinars h4,html[lang="el"] .alert .account-status,html[lang="vn"] .alert .account-status,html[lang="el"] #myModalIndex button,html[lang="vn"] #myModalIndex button,html[lang="el"] #processingpartners .wpwl-button,html[lang="vn"] #processingpartners .wpwl-button,html[lang="el"] .sidebar.mArea .alert,html[lang="vn"] .sidebar.mArea .alert,html[lang="el"] .home_videos a h3,html[lang="vn"] .home_videos a h3,html[lang="el"] .promo__bonus .header-wrap h2,html[lang="vn"] .promo__bonus .header-wrap h2,html[lang="el"] .prom-package .txt,html[lang="vn"] .prom-package .txt,html[lang="el"] .promotion span.or,html[lang="vn"] .promotion span.or,html[lang="el"] .seminars .panel-default>.panel-heading .date,html[lang="vn"] .seminars .panel-default>.panel-heading .date,html[lang="el"] #complaint .disputed .amount,html[lang="vn"] #complaint .disputed .amount,html[lang="el"] #galaPromo .bracket h3,html[lang="vn"] #galaPromo .bracket h3,html[lang="el"] #galaPromo .mainTitle,html[lang="vn"] #galaPromo .mainTitle,html[lang="el"] #galaPromo .subtitle,html[lang="vn"] #galaPromo .subtitle,html[lang="el"] #galaPromo .prizes .duration,html[lang="vn"] #galaPromo .prizes .duration,html[lang="el"] #galaPromo .main-msg.main-text,html[lang="vn"] #galaPromo .main-msg.main-text,html[lang="el"] #galaPromo.motogp .highlight-text,html[lang="vn"] #galaPromo.motogp .highlight-text,html[lang="el"] #galaPromo.motogp .track-points .p7,html[lang="vn"] #galaPromo.motogp .track-points .p7,html[lang="el"] #galaPromo .main-msg.main-text,html[lang="vn"] #galaPromo .main-msg.main-text,html[lang="el"] #galaPromo.partner .main-header>.wrap h3,html[lang="vn"] #galaPromo.partner .main-header>.wrap h3,html[lang="el"] #galaPromo.partner .place-labels .cash,html[lang="vn"] #galaPromo.partner .place-labels .cash,html[lang="el"] #galaPromo .main-msg.main-text,html[lang="vn"] #galaPromo .main-msg.main-text,html[lang="el"] .gold-silver,html[lang="vn"] .gold-silver,html[lang="el"] #ib-competition h2.main,html[lang="vn"] #ib-competition h2.main,html[lang="el"] #ib-competition header h2.sub,html[lang="vn"] #ib-competition header h2.sub,html[lang="el"] .maintenance h1,html[lang="vn"] .maintenance h1,html[lang="el"] .seminars .panel-default>.panel-heading .date,html[lang="vn"] .seminars .panel-default>.panel-heading .date,html[lang="el"] #world-championship .header .mainTitle,html[lang="vn"] #world-championship .header .mainTitle,html[lang="el"] #world-championship .header h2,html[lang="vn"] #world-championship .header h2,html[lang="el"] #world-championship .round-wrap .date span,html[lang="vn"] #world-championship .round-wrap .date span,html[lang="el"] .upload-documents .modalDocuments .modal-header button,html[lang="vn"] .upload-documents .modalDocuments .modal-header button,html[lang="el"] .mArea .balance-bar span.amount,html[lang="vn"] .mArea .balance-bar span.amount,html[lang="el"] .xmp-package h3,html[lang="vn"] .xmp-package h3,html[lang="el"] .dotted-container__text .uppercase,html[lang="vn"] .dotted-container__text .uppercase,html[lang="el"] .main-banner h2,html[lang="vn"] .main-banner h2,html[lang="el"] .shapes-circle__text h2,html[lang="vn"] .shapes-circle__text h2,html[lang="el"] .shapes-circle__text h3,html[lang="vn"] .shapes-circle__text h3,html[lang="el"] .shapes-circle__text h5,html[lang="vn"] .shapes-circle__text h5,html[lang="el"] .shapes-circle-container h6,html[lang="vn"] .shapes-circle-container h6{font-family:"RobCond","Bebas","BebasExt",sans-serif}html[lang="bn"] .emphasized-font,html[lang="bn"] .btn,html[lang="bn"] #main-nav.nav-logo>li>a,html[lang="bn"] #main-nav.partnersNavMenu>li>a,html[lang="bn"] .main-nav .block>span,html[lang="bn"] .main-nav .box>span,html[lang="bn"] .main-nav .block>span,html[lang="bn"] .toggleLeftNav span,html[lang="bn"] .toggleRightNav span,html[lang="bn"] .parent .top-bar h1,html[lang="bn"] #mobileAppBar .text-wrap h3,html[lang="bn"] .title-block-wrap,html[lang="bn"] .tabbable .nav-tabs>li>a,html[lang="bn"] h3.border,html[lang="bn"] h3#duration,html[lang="bn"] .platforms-center h3,html[lang="bn"] .promotion .prom1 .box h3,html[lang="bn"] .promotion .prom2 .box h3,html[lang="bn"] .prom-package .title,html[lang="bn"] .prom-package .addition,html[lang="bn"] .promotion h2,html[lang="bn"] .reasons-list,html[lang="bn"] .links-slider .slide a,html[lang="bn"] .xmtd .stripe span,html[lang="bn"] .partners #hero-content .stripe em,html[lang="bn"] .webinars h4,html[lang="bn"] .alert .account-status,html[lang="bn"] #myModalIndex button,html[lang="bn"] #processingpartners .wpwl-button,html[lang="bn"] .sidebar.mArea .alert,html[lang="bn"] .home_videos a h3,html[lang="bn"] .promo__bonus .header-wrap h2,html[lang="bn"] .prom-package .txt,html[lang="bn"] .promotion span.or,html[lang="bn"] .seminars .panel-default>.panel-heading .date,html[lang="bn"] #complaint .disputed .amount,html[lang="bn"] #galaPromo .bracket h3,html[lang="bn"] #galaPromo .mainTitle,html[lang="bn"] #galaPromo .subtitle,html[lang="bn"] #galaPromo .prizes .duration,html[lang="bn"] #galaPromo .main-msg.main-text,html[lang="bn"] #galaPromo.motogp .highlight-text,html[lang="bn"] #galaPromo.motogp .track-points .p7,html[lang="bn"] #galaPromo .main-msg.main-text,html[lang="bn"] #galaPromo.partner .main-header>.wrap h3,html[lang="bn"] #galaPromo.partner .place-labels .cash,html[lang="bn"] #galaPromo .main-msg.main-text,html[lang="bn"] .gold-silver,html[lang="bn"] #ib-competition h2.main,html[lang="bn"] #ib-competition header h2.sub,html[lang="bn"] .maintenance h1,html[lang="bn"] .seminars .panel-default>.panel-heading .date,html[lang="bn"] #world-championship .header .mainTitle,html[lang="bn"] #world-championship .header h2,html[lang="bn"] #world-championship .round-wrap .date span,html[lang="bn"] .upload-documents .modalDocuments .modal-header button,html[lang="bn"] .mArea .balance-bar span.amount,html[lang="bn"] .xmp-package h3{font-family:"Bebas","HindSiliguri",sans-serif}html[lang="ja"] .emphasized-font,html[lang="ja"] .btn,html[lang="ja"] #main-nav.nav-logo>li>a,html[lang="ja"] #main-nav.partnersNavMenu>li>a,html[lang="ja"] .main-nav .block>span,html[lang="ja"] .main-nav .box>span,html[lang="ja"] .main-nav .block>span,html[lang="ja"] .toggleLeftNav span,html[lang="ja"] .toggleRightNav span,html[lang="ja"] .parent .top-bar h1,html[lang="ja"] #mobileAppBar .text-wrap h3,html[lang="ja"] .title-block-wrap,html[lang="ja"] .tabbable .nav-tabs>li>a,html[lang="ja"] h3.border,html[lang="ja"] h3#duration,html[lang="ja"] .platforms-center h3,html[lang="ja"] .promotion .prom1 .box h3,html[lang="ja"] .promotion .prom2 .box h3,html[lang="ja"] .prom-package .title,html[lang="ja"] .prom-package .addition,html[lang="ja"] .promotion h2,html[lang="ja"] .reasons-list,html[lang="ja"] .links-slider .slide a,html[lang="ja"] .xmtd .stripe span,html[lang="ja"] .partners #hero-content .stripe em,html[lang="ja"] .webinars h4,html[lang="ja"] .alert .account-status,html[lang="ja"] #myModalIndex button,html[lang="ja"] #processingpartners .wpwl-button,html[lang="ja"] .sidebar.mArea .alert,html[lang="ja"] .home_videos a h3,html[lang="ja"] .promo__bonus .header-wrap h2,html[lang="ja"] .prom-package .txt,html[lang="ja"] .promotion span.or,html[lang="ja"] .seminars .panel-default>.panel-heading .date,html[lang="ja"] #complaint .disputed .amount,html[lang="ja"] #galaPromo .bracket h3,html[lang="ja"] #galaPromo .mainTitle,html[lang="ja"] #galaPromo .subtitle,html[lang="ja"] #galaPromo .prizes .duration,html[lang="ja"] #galaPromo .main-msg.main-text,html[lang="ja"] #galaPromo.motogp .highlight-text,html[lang="ja"] #galaPromo.motogp .track-points .p7,html[lang="ja"] #galaPromo .main-msg.main-text,html[lang="ja"] #galaPromo.partner .main-header>.wrap h3,html[lang="ja"] #galaPromo.partner .place-labels .cash,html[lang="ja"] #galaPromo .main-msg.main-text,html[lang="ja"] .gold-silver,html[lang="ja"] #ib-competition h2.main,html[lang="ja"] #ib-competition header h2.sub,html[lang="ja"] .maintenance h1,html[lang="ja"] .seminars .panel-default>.panel-heading .date,html[lang="ja"] #world-championship .header .mainTitle,html[lang="ja"] #world-championship .header h2,html[lang="ja"] #world-championship .round-wrap .date span,html[lang="ja"] .upload-documents .modalDocuments .modal-header button,html[lang="ja"] .mArea .balance-bar span.amount,html[lang="ja"] .xmp-package h3{font-family:"Bebas",Hiragino Kaku Gothic Pro,"Meiryo",sans-serif}html[lang="zh_CN"] .emphasized-font,html[lang="tw"] .emphasized-font,html[lang="zh_CN"] .btn,html[lang="tw"] .btn,html[lang="zh_CN"] #main-nav.nav-logo>li>a,html[lang="zh_CN"] #main-nav.partnersNavMenu>li>a,html[lang="tw"] #main-nav.nav-logo>li>a,html[lang="tw"] #main-nav.partnersNavMenu>li>a,html[lang="zh_CN"] .main-nav .block>span,html[lang="tw"] .main-nav .block>span,html[lang="zh_CN"] .main-nav .box>span,html[lang="tw"] .main-nav .box>span,html[lang="zh_CN"] .main-nav .block>span,html[lang="tw"] .main-nav .block>span,html[lang="zh_CN"] .toggleLeftNav span,html[lang="tw"] .toggleLeftNav span,html[lang="zh_CN"] .toggleRightNav span,html[lang="tw"] .toggleRightNav span,html[lang="zh_CN"] .parent .top-bar h1,html[lang="tw"] .parent .top-bar h1,html[lang="zh_CN"] #mobileAppBar .text-wrap h3,html[lang="tw"] #mobileAppBar .text-wrap h3,html[lang="zh_CN"] .title-block-wrap,html[lang="tw"] .title-block-wrap,html[lang="zh_CN"] .tabbable .nav-tabs>li>a,html[lang="tw"] .tabbable .nav-tabs>li>a,html[lang="zh_CN"] h3.border,html[lang="tw"] h3.border,html[lang="zh_CN"] h3#duration,html[lang="tw"] h3#duration,html[lang="zh_CN"] .platforms-center h3,html[lang="tw"] .platforms-center h3,html[lang="zh_CN"] .promotion .prom1 .box h3,html[lang="tw"] .promotion .prom1 .box h3,html[lang="zh_CN"] .promotion .prom2 .box h3,html[lang="tw"] .promotion .prom2 .box h3,html[lang="zh_CN"] .prom-package .title,html[lang="tw"] .prom-package .title,html[lang="zh_CN"] .prom-package .addition,html[lang="tw"] .prom-package .addition,html[lang="zh_CN"] .promotion h2,html[lang="tw"] .promotion h2,html[lang="zh_CN"] .reasons-list,html[lang="tw"] .reasons-list,html[lang="zh_CN"] .links-slider .slide a,html[lang="tw"] .links-slider .slide a,html[lang="zh_CN"] .xmtd .stripe span,html[lang="tw"] .xmtd .stripe span,html[lang="zh_CN"] .partners #hero-content .stripe em,html[lang="tw"] .partners #hero-content .stripe em,html[lang="zh_CN"] .webinars h4,html[lang="tw"] .webinars h4,html[lang="zh_CN"] .alert .account-status,html[lang="tw"] .alert .account-status,html[lang="zh_CN"] #myModalIndex button,html[lang="tw"] #myModalIndex button,html[lang="zh_CN"] #processingpartners .wpwl-button,html[lang="tw"] #processingpartners .wpwl-button,html[lang="zh_CN"] .sidebar.mArea .alert,html[lang="tw"] .sidebar.mArea .alert,html[lang="zh_CN"] .home_videos a h3,html[lang="tw"] .home_videos a h3,html[lang="zh_CN"] .promo__bonus .header-wrap h2,html[lang="tw"] .promo__bonus .header-wrap h2,html[lang="zh_CN"] .prom-package .txt,html[lang="tw"] .prom-package .txt,html[lang="zh_CN"] .promotion span.or,html[lang="tw"] .promotion span.or,html[lang="zh_CN"] .seminars .panel-default>.panel-heading .date,html[lang="tw"] .seminars .panel-default>.panel-heading .date,html[lang="zh_CN"] #complaint .disputed .amount,html[lang="tw"] #complaint .disputed .amount,html[lang="zh_CN"] #galaPromo .bracket h3,html[lang="tw"] #galaPromo .bracket h3,html[lang="zh_CN"] #galaPromo .mainTitle,html[lang="tw"] #galaPromo .mainTitle,html[lang="zh_CN"] #galaPromo .subtitle,html[lang="tw"] #galaPromo .subtitle,html[lang="zh_CN"] #galaPromo .prizes .duration,html[lang="tw"] #galaPromo .prizes .duration,html[lang="zh_CN"] #galaPromo .main-msg.main-text,html[lang="tw"] #galaPromo .main-msg.main-text,html[lang="zh_CN"] #galaPromo.motogp .highlight-text,html[lang="tw"] #galaPromo.motogp .highlight-text,html[lang="zh_CN"] #galaPromo.motogp .track-points .p7,html[lang="tw"] #galaPromo.motogp .track-points .p7,html[lang="zh_CN"] #galaPromo .main-msg.main-text,html[lang="tw"] #galaPromo .main-msg.main-text,html[lang="zh_CN"] #galaPromo.partner .main-header>.wrap h3,html[lang="tw"] #galaPromo.partner .main-header>.wrap h3,html[lang="zh_CN"] #galaPromo.partner .place-labels .cash,html[lang="tw"] #galaPromo.partner .place-labels .cash,html[lang="zh_CN"] #galaPromo .main-msg.main-text,html[lang="tw"] #galaPromo .main-msg.main-text,html[lang="zh_CN"] .gold-silver,html[lang="tw"] .gold-silver,html[lang="zh_CN"] #ib-competition h2.main,html[lang="tw"] #ib-competition h2.main,html[lang="zh_CN"] #ib-competition header h2.sub,html[lang="tw"] #ib-competition header h2.sub,html[lang="zh_CN"] .maintenance h1,html[lang="tw"] .maintenance h1,html[lang="zh_CN"] .seminars .panel-default>.panel-heading .date,html[lang="tw"] .seminars .panel-default>.panel-heading .date,html[lang="zh_CN"] #world-championship .header .mainTitle,html[lang="tw"] #world-championship .header .mainTitle,html[lang="zh_CN"] #world-championship .header h2,html[lang="tw"] #world-championship .header h2,html[lang="zh_CN"] #world-championship .round-wrap .date span,html[lang="tw"] #world-championship .round-wrap .date span,html[lang="zh_CN"] .upload-documents .modalDocuments .modal-header button,html[lang="tw"] .upload-documents .modalDocuments .modal-header button,html[lang="zh_CN"] .mArea .balance-bar span.amount,html[lang="tw"] .mArea .balance-bar span.amount,html[lang="zh_CN"] .xmp-package h3,html[lang="tw"] .xmp-package h3{font-family:"Bebas",Arial,Helvetica,"Microsoft YaHei New","Microsoft Yahei","微软雅黑",宋体,SimSun,STXihei,"华文细黑",sans-serif}.rtl-lang .emphasized-font,html[lang="fa"] .emphasized-font,html[lang="th"] .emphasized-font,.rtl-lang .btn,html[lang="fa"] .btn,html[lang="th"] .btn,.rtl-lang #main-nav.nav-logo>li>a,html[lang="fa"] #main-nav.nav-logo>li>a,html[lang="th"] #main-nav.nav-logo>li>a,.rtl-lang #main-nav.partnersNavMenu>li>a,html[lang="fa"] #main-nav.partnersNavMenu>li>a,html[lang="th"] #main-nav.partnersNavMenu>li>a,.rtl-lang .main-nav .block>span,html[lang="fa"] .main-nav .block>span,html[lang="th"] .main-nav .block>span,.rtl-lang .main-nav .box>span,html[lang="fa"] .main-nav .box>span,html[lang="th"] .main-nav .box>span,.rtl-lang .main-nav .block>span,html[lang="fa"] .main-nav .block>span,html[lang="th"] .main-nav .block>span,.rtl-lang .toggleLeftNav span,html[lang="fa"] .toggleLeftNav span,html[lang="th"] .toggleLeftNav span,.rtl-lang .toggleRightNav span,html[lang="fa"] .toggleRightNav span,html[lang="th"] .toggleRightNav span,.rtl-lang .parent .top-bar h1,html[lang="fa"] .parent .top-bar h1,html[lang="th"] .parent .top-bar h1,.rtl-lang #mobileAppBar .text-wrap h3,html[lang="fa"] #mobileAppBar .text-wrap h3,html[lang="th"] #mobileAppBar .text-wrap h3,.rtl-lang .title-block-wrap,html[lang="fa"] .title-block-wrap,html[lang="th"] .title-block-wrap,.rtl-lang .tabbable .nav-tabs>li>a,html[lang="fa"] .tabbable .nav-tabs>li>a,html[lang="th"] .tabbable .nav-tabs>li>a,.rtl-lang h3.border,html[lang="fa"] h3.border,html[lang="th"] h3.border,.rtl-lang h3#duration,html[lang="fa"] h3#duration,html[lang="th"] h3#duration,.rtl-lang .platforms-center h3,html[lang="fa"] .platforms-center h3,html[lang="th"] .platforms-center h3,.rtl-lang .promotion .prom1 .box h3,html[lang="fa"] .promotion .prom1 .box h3,html[lang="th"] .promotion .prom1 .box h3,.rtl-lang .promotion .prom2 .box h3,html[lang="fa"] .promotion .prom2 .box h3,html[lang="th"] .promotion .prom2 .box h3,.rtl-lang .prom-package .title,html[lang="fa"] .prom-package .title,html[lang="th"] .prom-package .title,.rtl-lang .prom-package .addition,html[lang="fa"] .prom-package .addition,html[lang="th"] .prom-package .addition,.rtl-lang .promotion h2,html[lang="fa"] .promotion h2,html[lang="th"] .promotion h2,.rtl-lang .reasons-list,html[lang="fa"] .reasons-list,html[lang="th"] .reasons-list,.rtl-lang .links-slider .slide a,html[lang="fa"] .links-slider .slide a,html[lang="th"] .links-slider .slide a,.rtl-lang .xmtd .stripe span,html[lang="fa"] .xmtd .stripe span,html[lang="th"] .xmtd .stripe span,.rtl-lang .partners #hero-content .stripe em,html[lang="fa"] .partners #hero-content .stripe em,html[lang="th"] .partners #hero-content .stripe em,.rtl-lang .webinars h4,html[lang="fa"] .webinars h4,html[lang="th"] .webinars h4,.rtl-lang .alert .account-status,html[lang="fa"] .alert .account-status,html[lang="th"] .alert .account-status,.rtl-lang #myModalIndex button,html[lang="fa"] #myModalIndex button,html[lang="th"] #myModalIndex button,.rtl-lang #processingpartners .wpwl-button,html[lang="fa"] #processingpartners .wpwl-button,html[lang="th"] #processingpartners .wpwl-button,.rtl-lang .sidebar.mArea .alert,html[lang="fa"] .sidebar.mArea .alert,html[lang="th"] .sidebar.mArea .alert,.rtl-lang .home_videos a h3,html[lang="fa"] .home_videos a h3,html[lang="th"] .home_videos a h3,.rtl-lang .promo__bonus .header-wrap h2,html[lang="fa"] .promo__bonus .header-wrap h2,html[lang="th"] .promo__bonus .header-wrap h2,.rtl-lang .prom-package .txt,html[lang="fa"] .prom-package .txt,html[lang="th"] .prom-package .txt,.rtl-lang .promotion span.or,html[lang="fa"] .promotion span.or,html[lang="th"] .promotion span.or,.rtl-lang .seminars .panel-default>.panel-heading .date,html[lang="fa"] .seminars .panel-default>.panel-heading .date,html[lang="th"] .seminars .panel-default>.panel-heading .date,.rtl-lang #complaint .disputed .amount,html[lang="fa"] #complaint .disputed .amount,html[lang="th"] #complaint .disputed .amount,.rtl-lang #galaPromo .bracket h3,html[lang="fa"] #galaPromo .bracket h3,html[lang="th"] #galaPromo .bracket h3,.rtl-lang #galaPromo .mainTitle,html[lang="fa"] #galaPromo .mainTitle,html[lang="th"] #galaPromo .mainTitle,.rtl-lang #galaPromo .subtitle,html[lang="fa"] #galaPromo .subtitle,html[lang="th"] #galaPromo .subtitle,.rtl-lang #galaPromo .prizes .duration,html[lang="fa"] #galaPromo .prizes .duration,html[lang="th"] #galaPromo .prizes .duration,.rtl-lang #galaPromo .main-msg.main-text,html[lang="fa"] #galaPromo .main-msg.main-text,html[lang="th"] #galaPromo .main-msg.main-text,.rtl-lang #galaPromo.motogp .highlight-text,html[lang="fa"] #galaPromo.motogp .highlight-text,html[lang="th"] #galaPromo.motogp .highlight-text,.rtl-lang #galaPromo.motogp .track-points .p7,html[lang="fa"] #galaPromo.motogp .track-points .p7,html[lang="th"] #galaPromo.motogp .track-points .p7,.rtl-lang #galaPromo .main-msg.main-text,html[lang="fa"] #galaPromo .main-msg.main-text,html[lang="th"] #galaPromo .main-msg.main-text,.rtl-lang #galaPromo.partner .main-header>.wrap h3,html[lang="fa"] #galaPromo.partner .main-header>.wrap h3,html[lang="th"] #galaPromo.partner .main-header>.wrap h3,.rtl-lang #galaPromo.partner .place-labels .cash,html[lang="fa"] #galaPromo.partner .place-labels .cash,html[lang="th"] #galaPromo.partner .place-labels .cash,.rtl-lang #galaPromo .main-msg.main-text,html[lang="fa"] #galaPromo .main-msg.main-text,html[lang="th"] #galaPromo .main-msg.main-text,.rtl-lang .gold-silver,html[lang="fa"] .gold-silver,html[lang="th"] .gold-silver,.rtl-lang #ib-competition h2.main,html[lang="fa"] #ib-competition h2.main,html[lang="th"] #ib-competition h2.main,.rtl-lang #ib-competition header h2.sub,html[lang="fa"] #ib-competition header h2.sub,html[lang="th"] #ib-competition header h2.sub,.rtl-lang .maintenance h1,html[lang="fa"] .maintenance h1,html[lang="th"] .maintenance h1,.rtl-lang .seminars .panel-default>.panel-heading .date,html[lang="fa"] .seminars .panel-default>.panel-heading .date,html[lang="th"] .seminars .panel-default>.panel-heading .date,.rtl-lang #world-championship .header .mainTitle,html[lang="fa"] #world-championship .header .mainTitle,html[lang="th"] #world-championship .header .mainTitle,.rtl-lang #world-championship .header h2,html[lang="fa"] #world-championship .header h2,html[lang="th"] #world-championship .header h2,.rtl-lang #world-championship .round-wrap .date span,html[lang="fa"] #world-championship .round-wrap .date span,html[lang="th"] #world-championship .round-wrap .date span,.rtl-lang .upload-documents .modalDocuments .modal-header button,html[lang="fa"] .upload-documents .modalDocuments .modal-header button,html[lang="th"] .upload-documents .modalDocuments .modal-header button,.rtl-lang .mArea .balance-bar span.amount,html[lang="fa"] .mArea .balance-bar span.amount,html[lang="th"] .mArea .balance-bar span.amount,.rtl-lang .xmp-package h3,html[lang="fa"] .xmp-package h3,html[lang="th"] .xmp-package h3{font-family:"Bebas",Tahoma,sans-serif}.emphasized-symbol,.red-number,.stripe em,.benefit-account em,.prom-package .plus,.prom-package .num,span.promo-num h5,.promotion .small-half-box h5,.cirle,.page404 h1,.about-xm .box-border1 h4,.promotion .half-box h5,.promotion .small-half-box h5,.pagination,.zero-account .num,#dashboard-wrap>div,ol.reasons-list li a b,.promotion .prom1 .box-left span,.promotion .prom1 .box-right span,.promotion .prom2 .box-left span,.promotion .prom2 .box-right span,.about-xm .timeline .year,#alnassr-tickets .header,#alnassr-tickets h3.big,.hanami .duration,.hanami .duration span,#ib-competition header h2.sub:before,#ib-competition header h2.sub:after,#world-championship .round-circle .round,#world-championship .round-circle .price,#world-championship .round-wrap.rect .round-circle .round,#world-championship .round-wrap.rect .round-circle .participant,#world-championship .round-wrap.xs li .content .num,.promotion .half-box h5,.promotion .small-half-box h5{font-family:"Bebas","BebasExt",sans-serif}.testingRemoveThis{display:none}html[lang="hi"] h2{line-height:43px}html[lang="si"] h2,html[lang="si"] .h2,html[lang="si"] h3,html[lang="si"] .h3,html[lang="si"] h4,.html[lang="si"] .h4{line-height:1.3}html[lang="si"] .metatrader h2,html[lang="si"] .metatrader .h2{line-height:1.4}html{background-color:white}section{margin-bottom:40px}.main-site.hp-v17 section{margin:0 auto}.layout{position:relative;overflow:hidden;width:100%;background-color:#222}.site-canvas{width:100%;height:100%;position:relative;background-color:#fff}.partners.xmtd .site-canvas{height:unset !important}.row>*:before,.row>*:after{content:" ";display:table}.row>*:after{clear:both}a,.link-like{outline:none !important;text-decoration:none !important;-webkit-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease;color:#d51820;-webkit-transform:translateZ(0);cursor:pointer}.error-with-link{color:#337ab7;font-size:14px}a:focus,a:visited,.link-like:focus,.link-like:visited{color:#d51820}a:hover{text-decoration:underline;color:#d51820}.link-like:hover{color:#d51820;text-decoration:none}span.red,small.red,a.red,.red{color:#d51820 !important;text-decoration:none !important}a.black,.black{color:#444 !important;text-decoration:none !important}a.black:hover{color:#d51820}h4 a{color:#d51820 !important}h4 a:hover{color:#000 !important}a.white,.white{color:#fff !important;text-decoration:none !important}hr{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #e2e2e2}hr.red{margin:0;padding:0;border-top:3px solid #d51820 !important}hr.sb{margin-left:-15px}hr.black{border-top:1px solid #000;margin:5px 0}hr.bonus{border-top:1px solid #000;margin:25px 0}sup{top:-0.25em}.mArea hr{margin:12px 0}.hr_line{width:13%;float:left;border-color:#b7b7b7}header .cursorNone{cursor:default;pointer-events:none}.hp-v17 article p{margin-top:20px}.clear{width:100%;clear:both;float:left}.red-list-style{color:#d51820;margin-bottom:0}.red-list-style span{color:#333}.box-borderline{display:block;border-left:4px solid #d51820;padding-left:25px;margin-bottom:25px}.rtl-lang .box-borderline,html[lang="fa"] .box-borderline{padding-left:0;padding-right:25px;border-left:0;border-right:4px solid #d51820}#research-wrap .line,.main-site.hp-v17 .line-link{position:relative;width:100%}.main-site.hp-v17 .line-link{font-size:13px}#research-wrap .line:before,.main-site.hp-v17 .line-link:before{position:absolute;top:11px;content:"";width:100%;height:1px;background-color:#ccc}#research-wrap .line>a,.main-site.hp-v17 .line-link>a{position:relative;background-color:#fff;padding-left:10px;z-index:1;float:right}.rtl-lang.main-site.hp-v17 .line-link>a,html[lang="fa"] .main-site.hp-v17 .line-link>a{float:left}#research-wrap .line>a>.fa,.main-site.hp-v17 .line-link>a>.fa{margin-right:5px}.rtl-lang.main-site.hp-v17 .line-link>a>.fa,html[lang="fa"] .main-site.hp-v17 .line-link>a>.fa{margin-left:15px;margin-right:5px}.research h2 img{margin-right:15px}#research-team figure .border-gray{border:3px solid #e4e4e4}#research-team #florentiades,#research-team #selena,#research-team #raffi,#research-team #magie,#research-team #jane{padding-top:100px;margin-top:-100px}.avatar{display:block;border:1px solid #000}.person{position:relative;display:block;width:31px;height:35px;margin:0 auto;text-align:center;background:url('https://cloud.xm-cdn.com/static/common/icons/person.png?v=dea78770693bdc58942bda2fc7858f23') no-repeat 0 0}.s-icon{float:left;margin-right:10px}.rtl-lang .s-icon,html[lang="fa"] .s-icon{float:right;margin-left:10px;margin-right:0}span.graytext{color:#6b6b6b}.center-box{float:none !important;margin:0 auto !important}.blocktest{display:block}.cancel{color:#d51820;cursor:pointer}.container-xs-height{display:table;padding-left:0;padding-right:0}.row-xs-height{display:table;width:100%}.col-xs-height{display:table-cell;float:none !important}.hp-v17 .border-title.reset{margin:0}.hp-v17 .border-title{font-weight:700;text-transform:uppercase;font-size:16px;border:2px solid #cbcbcb !important;color:#9d9d9d;padding:12px;text-align:center;height:45px;margin-bottom:30px}.subtext:not(.fa){font-size:13px;color:#999}.hp-v17 .subtext{color:#000}.confirmation h3{font-size:30px;color:#000;margin-bottom:5px}.confirmation h4{font-size:22px;color:#000;font-weight:bold;margin-bottom:20px}.confirmation h5{font-size:20px;color:#000;margin-bottom:10px}.confirmation .line{border-left:4px solid #d51820;padding-left:15px}.rtl-lang .confirmation .line,html[lang="fa"] .confirmation .line{border-left:0;padding-left:0;border-right:4px solid #d51820;padding-right:15px}.confirmation .vertical-line h5,.confirmation .vertical-line p{border-left:4px solid #d51820;padding-left:15px;margin-bottom:0;margin-top:0}.rtl-lang .confirmation .vertical-line h5,.rtl-lang .confirmation .vertical-line p{border-left:0;border-right:4px solid #d51820;padding-left:0;padding-right:15px}.confirmation .vertical-line p{padding-top:10px}.confirmation .vertical-line .col-md-12:first-child p{padding-top:0}.webinars .photos span{margin-left:10px}.webinars .team img{display:block;width:243px;height:245px;margin:15px auto 30px auto;background-color:#eaeaea}.not-applicable .block>*{opacity:.5}.title-block-wrap{border-width:1px;border-color:#cbcbcb;height:45px;font-size:16px;font-weight:700;line-height:45px;color:#888;text-align:center;margin:0;padding:0;margin-bottom:30px;text-transform:uppercase}.rtl-lang .title-block-wrap{font-size:14px}.border.title-block-wrap{border:1px solid #cdcdcd;padding:0}html[lang="el"] .main-site.hp-v17.partners .title-block-wrap{font-size:14px}.title-block-wrap>a{height:45px;line-height:normal !important}.up15{position:relative;top:-15px !important}.indices ul.arrows{float:left}.centered{text-align:center;margin-bottom:20px}.red_title{color:#d51820;margin-bottom:20px}.search-keyword{font-size:25px;font-weight:300;font-style:italic;color:#d51820}h2 .search-results,p .search-results{font-weight:bold}.search-showing{color:#333;font-size:19px;font-style:italic;font-weight:300;line-height:40px}.research h3{font-size:24px;line-height:26px}.research .video-overview h3{font-size:22px}.about-xm h2.big{font-size:43px;font-weight:bold;margin-bottom:10px}html[lang="ur"] .about-xm h2.big{font-size:38px}.platforms-center h2{margin:0;padding:0}.platforms-center h3{font-size:30px;font-weight:700;text-transform:uppercase}.platforms-center h4{font-size:20px;color:#000;font-weight:700 !important}.anchor{height:38px;margin-top:-38px}.anchor-tag{height:100px;margin-top:-100px}.main-site.hp-v17 .risk-wrap{display:block;font-size:12px;text-align:center;margin-top:8px}.risk-with-btn .risk-text{display:block;font-size:12px;text-align:center;margin-top:5px}.btn.btn--w450{max-width:450px !important;margin:0 auto !important}.btn.btn--w350{max-width:350px !important;margin:0 auto !important}.main-site.hp-v17 .platforms-content .main-title{display:block;font-size:30px;font-weight:500;line-height:normal;margin:0;text-align:center}.main-site.hp-v17 .platforms-content .subtext{font-size:14px;text-align:center}.main-site.hp-v17 .platforms-content .btn{font-size:24px;padding:15.5px 80px !important}html[lang="el"] .main-site.hp-v17 .platforms-content .btn{font-size:22px}.main-site.hp-v17 .hp-tabs-content .main-title{display:block;font-size:30px;font-weight:500;line-height:normal;margin:0;text-align:center}.section{padding:0;background-color:#fff;position:relative}img.size-thumbnail{border:1px solid #ccc;float:left;margin:0 8px 15px 0;padding:3px}.rtl-lang img.size-thumbnail,html[lang="fa"] img.size-thumbnail{float:right;margin:0 0 15px 8px}#economic-calendar{position:relative;overflow:hidden;overflow-y:auto;height:100%;height:930px}.red-number{font-size:70px;font-style:normal;font-weight:300;border:0;color:#d72027;margin:0;padding:4px 0 0 0;white-space:nowrap;line-height:97px}.other_tin_text{font-size:13px}.xmApi table.plain,.xmApi table.plain th,.xmApi table.plain td{border:1px solid #000 !important}.xmApi table.plain th{color:#333;font-size:16px;font-weight:bold;padding:5px 30px}.xmApi table.plain td{color:#333;font-size:16px;padding:3px}.partners .sharethis-inline-share-buttons{padding-left:15px;padding-right:15px}.rtl-lang .partners .sharethis-inline-share-buttons,html[lang="fa"] .partners .sharethis-inline-share-buttons{text-align:right !important}.kid-warning-img{position:relative;max-width:341px;border:2px solid #000;background-color:#3296ff;padding:7px;color:#fff}.kid-number-box ul{display:table;table-layout:fixed;width:100%;border-collapse:collapse}.kid-number-box ul li{display:table-cell;vertical-align:middle;text-align:center;border:3px solid #fff;font-size:28px;font-weight:700}.kid-number-box ul li.num-warning{background-color:#ff0;color:#000}.kid-warning-img span{font-size:12px}.kid-warning-parag{padding-left:60px;background-size:50px 50px;background-position:left;background-repeat:no-repeat}.rtl-lang .kid-warning-parag,html[lang="fa"] .kid-warning-parag{padding-left:0;padding-right:60px;background-position:right}.kid-warning-img p{font-size:10px;text-align:justify;margin-bottom:0;line-height:1.1}.line-arrow{position:relative;border-top:1px solid #ccc;width:100%;margin-bottom:15px;float:none}.line-arrow::before,.line-arrow::after{content:'';display:block;position:absolute;width:0;height:0;left:50%;margin:0 auto;border-style:solid;z-index:1;border-width:13px 22px 0 22px;margin-left:-22px}.line-arrow::before{border-color:#ccc transparent transparent transparent;top:0}.line-arrow::after{border-color:#fff transparent transparent transparent;top:-1px}.bracket-title{position:relative;padding:10px 20px}.bracket-title::before,.bracket-title::after{content:' ';border:4px solid #d51820;position:absolute;top:0;height:100%;width:18px}.bracket-title::before{left:0;border-right:0}.bracket-title::after{right:0;border-left:0}.tos-wrapper{direction:ltr}body.rtl-lang,html[lang="fa"] body{direction:rtl}.rtl-lang .col-sm-1,.rtl-lang .col-sm-10,.rtl-lang .col-sm-11,.rtl-lang .col-sm-12,.rtl-lang .col-sm-2,.rtl-lang .col-sm-3,.rtl-lang .col-sm-4,.rtl-lang .col-sm-5,.rtl-lang .col-sm-6,.rtl-lang .col-sm-7,.rtl-lang .col-sm-8,.rtl-lang .col-sm-9,html[lang="fa"] .col-sm-1,html[lang="fa"] .col-sm-10,html[lang="fa"] .col-sm-11,html[lang="fa"] .col-sm-12,html[lang="fa"] .col-sm-2,html[lang="fa"] .col-sm-3,html[lang="fa"] .col-sm-4,html[lang="fa"] .col-sm-5,html[lang="fa"] .col-sm-6,html[lang="fa"] .col-sm-7,html[lang="fa"] .col-sm-8,html[lang="fa"] .col-sm-9{float:none}.rtl-lang .col-xs-1,.rtl-lang .col-xs-10,.rtl-lang .col-xs-11,.rtl-lang .col-xs-12,.rtl-lang .col-xs-2,.rtl-lang .col-xs-3,.rtl-lang .col-xs-4,.rtl-lang .col-xs-5,.rtl-lang .col-xs-6,.rtl-lang .col-xs-7,.rtl-lang .col-xs-8,.rtl-lang .col-xs-9,html[lang="fa"] .col-xs-1,html[lang="fa"] .col-xs-10,html[lang="fa"] .col-xs-11,html[lang="fa"] .col-xs-12,html[lang="fa"] .col-xs-2,html[lang="fa"] .col-xs-3,html[lang="fa"] .col-xs-4,html[lang="fa"] .col-xs-5,html[lang="fa"] .col-xs-6,html[lang="fa"] .col-xs-7,html[lang="fa"] .col-xs-8,html[lang="fa"] .col-xs-9{float:right}.rtl-lang .col-xs-offset-2,html[lang="fa"] .col-xs-offset-2{margin-left:0;margin-right:16.66666667%}.rtl-lang .fa-long-arrow-right:before,html[lang="fa"] .fa-long-arrow-right:before{content:"\f177"}.rtl-lang .fa-caret-right:before,html[lang="fa"] .fa-caret-right:before{content:"\f0d9"}.rtl-lang .fa-arrow-right:before,html[lang="fa"] .fa-arrow-right:before{content:"\f060"}.rtl-lang .btn.nextprev .fa-arrow-right:before,html[lang="fa"] .btn.nextprev .fa-arrow-right:before{content:"\f061"}.rtl-lang .date-navigation .fa-chevron-left:before,html[lang="fa"] .date-navigation .fa-chevron-left:before{content:"\f054"}.rtl-lang .date-navigation .fa-chevron-right:before,html[lang="fa"] .date-navigation .fa-chevron-right:before{content:"\f053"}.rtl-lang dd,html[lang="fa"] dd{margin-right:0}html[lang="zh_CN"] em{font-style:normal}@media(min-width:768px){.bracket-title{padding:10px 30px}.rtl-lang .col-sm-1,.rtl-lang .col-sm-10,.rtl-lang .col-sm-11,.rtl-lang .col-sm-12,.rtl-lang .col-sm-2,.rtl-lang .col-sm-3,.rtl-lang .col-sm-4,.rtl-lang .col-sm-5,.rtl-lang .col-sm-6,.rtl-lang .col-sm-7,.rtl-lang .col-sm-8,.rtl-lang .col-sm-9,html[lang="fa"] .col-sm-1,html[lang="fa"] .col-sm-10,html[lang="fa"] .col-sm-11,html[lang="fa"] .col-sm-12,html[lang="fa"] .col-sm-2,html[lang="fa"] .col-sm-3,html[lang="fa"] .col-sm-4,html[lang="fa"] .col-sm-5,html[lang="fa"] .col-sm-6,html[lang="fa"] .col-sm-7,html[lang="fa"] .col-sm-8,html[lang="fa"] .col-sm-9{float:right}.rtl-lang .col-sm-offset-0,html[lang="fa"] .col-sm-offset-0{margin-left:0;margin-right:0}.rtl-lang .col-sm-offset-1,html[lang="fa"] .col-sm-offset-1{margin-left:0;margin-right:8.33333333%}.rtl-lang .col-sm-offset-3,html[lang="fa"] .col-sm-offset-3{margin-left:0;margin-right:25%}.rtl-lang .col-sm-offset-4,html[lang="fa"] .col-sm-offset-4{margin-left:0;margin-right:33.33333333%}.rtl-lang .col-sm-pull-6,html[lang="fa"] .col-sm-pull-6{left:50%;right:auto}.rtl-lang .col-sm-push-6,html[lang="fa"] .col-sm-push-6{right:50%;left:auto}}@media(min-width:992px){.platforms-center.wrap{padding:0 15px}.platforms-center [class*="col-md-4"]{padding:0 50px;border-right:1px solid #e2e2e2}.platforms-center [class*="col-md-4"]:last-child{border-right:0}.site-canvas .toggle-bar-line{display:none}.view-all{float:right}img.size-thumbnail{margin:0 15px 15px 0}.rtl-lang img.size-thumbnail,html[lang="fa"] img.size-thumbnail{margin:0 0 15px 15px}.rtl-lang .col-md-1,.rtl-lang .col-md-10,.rtl-lang .col-md-11,.rtl-lang .col-md-12,.rtl-lang .col-md-2,.rtl-lang .col-md-3,.rtl-lang .col-md-4,.rtl-lang .col-md-5,.rtl-lang .col-md-6,.rtl-lang .col-md-7,.rtl-lang .col-md-8,.rtl-lang .col-md-9,html[lang="fa"] .col-md-1,html[lang="fa"] .col-md-10,html[lang="fa"] .col-md-11,html[lang="fa"] .col-md-12,html[lang="fa"] .col-md-2,html[lang="fa"] .col-md-3,html[lang="fa"] .col-md-4,html[lang="fa"] .col-md-5,html[lang="fa"] .col-md-6,html[lang="fa"] .col-md-7,html[lang="fa"] .col-md-8,html[lang="fa"] .col-md-9{float:right}.rtl-lang .col-md-offset-1,html[lang="fa"] .col-md-offset-1{margin-left:0;margin-right:8.33333333%}.rtl-lang .col-md-offset-2,html[lang="fa"] .col-md-offset-2{margin-left:0;margin-right:16.66666667%}.rtl-lang .col-md-offset-3,html[lang="fa"] .col-md-offset-3{margin-left:0;margin-right:25%}.rtl-lang .col-md-pull-6,html[lang="fa"] .col-md-pull-6{left:50%;right:auto}.rtl-lang .col-md-push-6,html[lang="fa"] .col-md-push-6{right:50%;left:auto}.rtl-lang .col-md-pull-3,html[lang="fa"] .col-md-pull-3{left:25%;right:auto}.rtl-lang .col-md-push-3,html[lang="fa"] .col-md-push-3{right:25%;left:auto}}@media(min-width:1200px){.section{padding:70px 0 0 0;background-color:#f1f1f1}.section::before,.section.bottom::after{content:'';position:absolute;display:block;left:0;right:0;margin:0 auto;border-style:solid;border-width:35px 280px 0 280px;z-index:9;width:0;height:0}.section::before{top:0;border-color:#fff transparent transparent transparent}.section.bottom::after{bottom:-30px;border-color:#f1f1f1 transparent transparent transparent}.section .line-arrow::after{border-color:#f1f1f1 transparent transparent transparent}.rtl-lang .col-lg-offset-2,html[lang="fa"] .col-lg-offset-2{margin-right:16.66666667%}.btn.btn--m0{margin:0 !important}}@media(max-width:1290px){.layout>section{margin-bottom:30px}}@media(max-width:1200px){.hidden-l-sm{display:none}}@media(max-width:991px){.center-sm{max-width:450px;margin:0 auto !important}section.container{margin-top:30px}section{margin-bottom:0}.sm-txt-center{text-align:center}.partner-types h2,.partner-types h3,.partner-types p{text-align:center}.animating .site-canvas{transition:transform .25s ease-in-out;-webkit-transition:-webkit-transform .25s ease-in-out}}@media(max-width:767px){.center-xs{max-width:450px;margin:0 auto !important}article small{display:block;text-align:left;margin-top:15px}}.xmtrader-content{border-bottom:1px solid #cecece}.xmt-home-promo-left h2{font-size:24px !important;margin-bottom:10px}.xmt-home-promo-left p{font-size:13px}.xmtrader-content p.sub-text{font-size:15px;margin-right:0}.xmt-home-promo-left,.xmt-home-promo-right{float:none;display:table-cell;vertical-align:bottom}.xmtrader-content hr{width:15%;margin:15px 0 15px;min-height:1px;height:5px;background:#d51820}span.no-wrap{white-space:nowrap}.android_app img{width:120px;border:1px solid #bdbdbd}.android_app .fa-android{margin-right:8px}@media(min-width:1200px){.xmtrader-content{border-bottom:0}.android_app img{position:absolute;margin:0;top:-23px;transform:translateX(-50%);margin:0}}@media(min-width:998px){.xmtrader-content p.sub-text{font-size:22px}.xmt-home-promo-left h2{font-size:30px !important}.xmt-home-promo-right{padding:0 !important}.xmt-home-promo-left p{font-size:16px}.android_app--header img{top:0;transform:translateY(-65%);margin-left:20px}}.btn{text-shadow:none !important}button{outline:none !important;border:0;background:0}a.btn,button.btn{text-transform:uppercase;font-weight:700;text-align:center;color:#fff;white-space:normal;line-height:1;padding:8px 20px !important;display:inline-block;vertical-align:middle;*vertical-align:auto;*zoom:1;*display:inline;-moz-user-select:none;-webkit-user-select:none;-khtml-user-select:none;-o-user-select:none;-ms-user-select:none;user-select:none;-webkit-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;background:0;border:1px solid #fff;-webkit-transform:translateZ(0)}.rtl-lang a.btn,.rtl-lang button.btn,html[lang="fa"] a.btn,html[lang="fa"] button.btn{font-weight:400}a.btn.text-nowrap,button.btn.text-nowrap{white-space:nowrap}a.btn:hover,button.btn:hover{color:#fff}a.btn.btn-full,button.btn.btn-full{width:100%}a.btn.btn-big,button.btn.btn-big{font-size:26px;border-width:2px;padding:5px 20px;line-height:1;line-height:normal;letter-spacing:.025em}a.btn.btn-big:hover,button.btn.btn-big:hover{opacity:.5;filter:alpha(opacity=50)}a.btn.btn-red .fa,a.btn.btn--primary_green .fa,a.btn.btn-green .fa,a.btn.btn--secondary_red .fa,button.btn.btn-green .fa,button.btn.btn--secondary_red .fa,a.btn.btn-black .fa,button.btn.btn-red .fa,button.btn.btn--primary_green .fa{font-size:18px;vertical-align:middle;margin-right:15px}a.btn.btn-solid,button.btn.btn-solid{color:#fff;background-color:#888;border:0;text-transform:uppercase;font-size:20px;text-shadow:0 1px 0 rgba(0,0,0,0.75)}.btn.btn-block{max-width:450px}a.btn.btn-solid,button.btn.btn-red,.btn.btn-red,button.btn.btn--primary_green,.btn.btn--primary_green,.btn.btn-blck,button.btn.btn-grey{font-size:24px;letter-spacing:.5px !important}.btn-big i.fa{margin-left:20px}a.btn.btn-solid:hover,button.btn.btn-solid:hover{background-color:#666}a.btn.btn-solid.btn-gray,button.btn.btn-solid.btn-gray{background-color:#868686}a.btn.btn-solid.btn-gray:hover,button.btn.btn-solid.btn-gray:hover{background-color:#777}a.btn.btn-drop,button.btn.btn-drop{padding-right:25px;position:relative;font-size:14px;letter-spacing:.5px;color:#ccc;border-color:#ccc !important;padding:9px 20px 6px 20px !important}html[lang="pl"] .btn.btn-drop,html[lang="es"] .btn.btn-drop{padding:9px 20px 6px 20px !important}button.btn.btn-drop>i{position:relative;top:-1px}a.btn.btn-drop:after,button.btn.btn-drop:after{content:'';content:'';width:0;height:0;display:block;border-style:solid;position:absolute;border-width:5px 5px 0 5px;border-color:#ccc transparent transparent transparent;position:absolute;right:8px;top:50%;margin-top:-2px;-webkit-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease}.btn-red small,.btn--primary_green small,.btn-green small,.btn--secondary_red small,.btn-gray small{display:block;margin-top:2px;font-size:12px;font-weight:bold;text-shadow:none !important;text-transform:none}html[lang="hi"] .btn-red small,html[lang="hi"] .btn--primary_green small,html[lang="hi"] .btn-green small,html[lang="hi"] .btn--secondary_red small,html[lang="hi"] .btn-gray small{line-height:16px}.open a.btn.btn-drop,.open button.btn.btn-drop{color:#fff}.open a.btn.btn-drop:after,.open button.btn.btn-drop:after{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);-o-transform:rotate(180deg);transform:rotate(180deg)}.btn.nextprev{min-width:100px;padding:8px 30px !important}a.btn.btn-red .fa,a.btn.btn--primary_green .fa,a.btn.btn-green .fa,a.btn.btn--secondary_red .fa,a.btn.btn-gray .fa,a.btn.btn-black .fa,button.btn.btn-red .fa,button.btn.btn--primary_green .fa,button.btn.btn-green .fa,button.btn.btn--secondary_red .fa,button.btn.btn-gray .fa,button.btn.btn- .fa{font-size:18px;vertical-align:middle;margin-right:15px}.btn.nextprev i.fa{margin:0}.btn-prev:before{content:"\f060";font-family:FontAwesome;margin-right:15px}.btn-next:after{content:"\f061";font-family:FontAwesome;margin-left:15px}a.btn.btn-red,button.btn.btn-red,a.btn.btn--primary_green,button.btn.btn--primary_green{border-color:#29a643 !important;color:#29a643 !important;background:none !important}a.btn.btn-red:hover,button.btn.btn-red:hover,a.btn.btn--primary_green:hover,button.btn.btn--primary_green:hover{border-color:#FFF !important;color:#FFF !important;background:#29a643 !important}a.btn.btn-green,button.btn.btn-green,a.btn.btn--secondary_red,button.btn.btn--secondary_red{border-color:#d51820 !important;color:#d51820 !important;background:none !important}a.btn.btn-green:hover,button.btn.btn-green:hover,a.btn.btn--secondary_red:hover,button.btn.btn--secondary_red:hover{border-color:#FFF !important;color:#FFF !important;background:#d51820 !important}a.btn.btn-solid.btn-red,button.btn.btn-solid.btn-red,a.btn.btn-solid.btn--primary_green,button.btn.btn-solid.btn--primary_green{background-color:#29a643 !important;color:#fff !important}a.btn.btn-solid.btn-red:hover,button.btn.btn-solid.btn-red:hover,a.btn.btn-solid.btn--primary_green:hover,button.btn.btn-solid.btn--primary_green:hover{background-color:#238c38 !important;color:#fff !important}a.btn.btn-solid.btn-green,button.btn.btn-solid.btn-green,a.btn.btn-solid.btn--secondary_red,button.btn.btn-solid.btn--secondary_red{background-color:#d51820 !important;color:#fff !important}a.btn.btn-solid.btn-green:hover,button.btn.btn-solid.btn-green:hover,a.btn.btn-solid.btn--secondary_red:hover,button.btn.btn-solid.btn--secondary_red:hover{background-color:#b30000 !important;color:#fff !important}a.btn.btn-solid.btn-blue,button.btn.btn-solid.btn-blue{background-color:#31708f !important;color:#fff !important}a.btn.btn-solid.btn-blue:hover,button.btn.btn-solid.btn-blue:hover{background-color:#275973 !important;color:#fff !important}.btn-gray-o{color:#6c6c6d !important;background:none !important;border:1px solid #6c6c6d !important}a.btn.btn-solid.btn-gray-o,button.btn.btn-solid.btn-gray-o{color:#6c6c6d !important;background:none !important;border:1px solid #6c6c6d !important}a.btn.btn-solid.btn-gray-o:hover,button.btn.btn-solid.btn-gray-o:hover{color:#fff !important;background-color:#6c6c6d !important;border:1px solid #6c6c6d !important}.btn-black-o{color:#000 !important;background:none !important;border:1px solid #000 !important}a.btn.btn-solid.btn-black-o,button.btn.btn-solid.btn-black-o{color:#000 !important;background:none !important;border:1px solid #000 !important}.btn-black-o .fa,a.btn.btn-solid.btn-black-o .fa,button.btn.btn-solid.btn-black-o .fa{margin-left:10px;font-size:23px}.rtl-lang .btn-black-o .fa,.rtl-lang a.btn.btn-solid.btn-black-o .fa,.rtl-lang button.btn.btn-solid.btn-black-o .fa{margin-left:0;margin-right:10px}a.btn.btn-solid.btn-black-o:hover,button.btn.btn-solid.btn-black-o:hover{color:#fff !important;background-color:#000 !important;border:1px solid #000 !important}.btn-dark{color:#fff !important;background:#454545 !important;border:1px solid #000 !important}a.btn.btn-solid.btn-dark,button.btn.btn-solid.btn-dark{color:#fff !important;background:#454545 !important;border:1px solid #000 !important}.btn-dark .fa,a.btn.btn-solid.btn-dark .fa,button.btn.btn-solid.btn-dark .fa{margin-left:10px;font-size:23px}.rtl-lang .btn-dark .fa,.rtl-lang a.btn.btn-solid.btn-dark .fa,.rtl-lang button.btn.btn-solid.btn-dark .fa{margin-left:0;margin-right:10px}a.btn.btn-solid.btn-dark:hover,button.btn.btn-solid.btn-dark:hover{color:#fff !important;background-color:#454545 !important;border:1px solid #000 !important}a.btn-orange,button.btn-orange{color:#fff !important;background-color:#fea812 !important;border-color:transparent !important}a.btn-orange:hover,a.btn-orange:focus,button.btn-orange:hover,button.btn-orange:focus{color:#fff !important;background-color:#ea9e26 !important}a.btn-orange-o,button.btn-orange-o{color:#fea812 !important;background-color:transparent !important;border-color:#fea812 !important}a.btn-orange-o:hover,a.btn-orange-o:focus,button.btn-orange-o:hover,button.btn-orange-o:focus{color:#fff !important;background-color:#fea812 !important}.btn-black{display:block;margin:0 auto;font-size:24px;text-shadow:none;color:#fff;background-color:#111 !important}.btn-black:hover{opacity:.8;background-color:#000 !important}.btn.btn-green:hover,.btn.btn--secondary_red:hover{background-color:#238c38 !important}.btn-gray{display:block;margin:0 auto;font-size:24px;text-shadow:none;color:#fff;background-color:#6c6c6c !important}.stment-btn{width:100%}.stment-btn .btn{float:left;padding:10px 12px !important}.stment-btn .btn+.btn{margin-left:5%}.stment-btn button:nth-child(1){width:15%}.stment-btn button:nth-child(2){width:60% !important}.stment-btn button:nth-child(3){width:15%}.stment-btn .btn:hover{background-color:#595959 !important}.btn-group .btn.btn-default{font-size:14px;font-weight:bold;text-transform:uppercase;height:28px;line-height:15px;border-radius:0;padding:6px}.btn-group .btn:nth-child(1).btn-default,.btn-group .btn.btn-default:not(.active){background:white;border-radius:0;box-shadow:1px 1px 5px rgba(0,0,0,0.2);background-image:-webkit-linear-gradient(top,white 40%,#f0f0f0);background-image:-moz-linear-gradient(top,white 40%,#f0f0f0);background-image:-o-linear-gradient(top,white 40%,#f0f0f0);background-image:linear-gradient(to bottom,white 40%,#f0f0f0)}.btn-group .btn:nth-child(1).btn-default.active{background:#26d53f;box-shadow:inset 0 1px 2px rgba(0,0,0,0.15),inset 0 0 3px rgba(0,0,0,0.2);color:#fff;text-shadow:0 1px rgba(0,0,0,0.2)}a.btn.btn-solid.btn-blue.info-lbgr{background-color:#1c8cc3 !important}a.btn.btn-solid.btn-blue.info-lbgr:hover{background-color:#3981a7 !important}.txt-with-btn{width:287px !important}.greenRed-btns .btn{display:block;max-width:500px;margin:0 auto}.greenRed-btns .btn.btn-red,.greenRed-btns .btn.btn--primary_green{font-size:30px;padding:15px 20px !important}.greenRed-btns .btn.btn-green,.greenRed-btns .btn.btn--secondary_red{font-size:24px;padding:10px 20px !important}.greenRed-btns .btn.btn-outline{font-size:24px}.btn-appstore,.btn-playstore{position:relative;display:block;margin:0 auto;text-align:center;max-width:116px}.btn.no-arrow{cursor:default}a.btn.btn-drop.no-arrow::after,button.btn.btn-drop.no-arrow::after{display:none}.main-site.hp-v17 .btn-red small,.main-site.hp-v17 .btn--primary_green small,.main-site.hp-v17 .btn-green small,.main-site.hp-v17 .btn--secondary_red small,.main-site.hp-v17 .btn-gray small{font-size:13px !important;font-weight:300}.main-site.hp-v17 .btn.btn-gray{border-color:#6c6c6c !important;color:#6c6c6c !important;background-color:transparent !important}.main-site.hp-v17 .btn.btn-gray:hover,.main-site.hp-v17 .btn.btn-gray:focus{color:#fff !important;background-color:#6c6c6c !important}.hp-v17.partners a.btn.btn-solid.btn-gray,.hp-v17.partners button.btn.btn-solid.btn-gray{color:#fff !important;background-color:#868686 !important}.btn.btn-applynow{padding:8px 80px !important}.main-site.hp-v17 a.btn.btn-solid,.main-site.hp-v17 button.btn.btn-red,.main-site.hp-v17 .btn.btn-red,.main-site.hp-v17 button.btn.btn--primary_green,.main-site.hp-v17 .btn.btn--primary_green,.main-site.hp-v17 .btn.btn-green,.main-site.hp-v17 .btn.btn--secondary_red,.main-site.hp-v17 .btn.btn-gray,.main-site.hp-v17 #awards-content .btn{font-size:24px}html[lang="si"] .main-site.hp-v17 #awards-content .btn{line-height:1.2}.btn.btn-yellow.center-block{font-size:28px}.btn-yellow{max-width:410px;font-size:30px;color:#000;padding:8px 20px;line-height:normal;background-color:#f6d72f;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}.btn-yellow:hover,.btn-yellow:focus{color:#000;background-color:#e6d72f}.btn-disabled{pointer-events:none}.rtl-lang.main-site.hp-v17 .btn .fa{margin-right:0;margin-left:15px}.rtl-lang a.btn.btn-red .fa.fa-pencil-square-o,.rtl-lang a.btn.btn--primary_green .fa.fa-pencil-square-o,.rtl-lang a.btn.btn-green .fa.fa-download,.rtl-lang a.btn.btn--secondary_red .fa.fa-download,.rtl-lang a.btn.btn-red .fa.fa-arrow-right,.rtl-lang a.btn.btn--primary_green .fa.fa-arrow-right,.rtl-lang a.btn.btn-green .fa.fa-arrow-right,.rtl-lang a.btn.btn--secondary_red .fa.fa-arrow-right,.rtl-lang a.btn.btn-red .fa.fa-file-pdf-o,.rtl-lang a.btn.btn--primary_green .fa.fa-file-pdf-o{margin-left:15px;margin-right:0}.rtl-lang a.btn.btn-drop,.rtl-lang button.btn.btn-drop{padding:11px 20px 6px 20px !important}.rtl-lang a.btn.btn-red .fa,.rtl-lang a.btn.btn--primary_green .fa,.rtl-lang a.btn.btn-green .fa,.rtl-lang a.btn.btn--secondary_red .fa,.rtl-lang a.btn.btn-black .fa,.rtl-lang button.btn.btn-red .fa,.rtl-lang button.btn.btn--primary_green .fa{margin-right:0}.rtl-lang a.btn.btn-red i.fa.fa-plus-circle,.rtl-lang a.btn.btn--primary_green i.fa.fa-plus-circle{margin-left:15px}.rtl-lang button.btn.btn-solid.btn-gray{padding:6px 0 !important}.rtl-lang button.btn.btn-solid.btn-gray small{padding-top:0;margin-top:1px}.rtl-lang .btn-group>.btn{position:relative;float:right}html[lang="bn"] .btn-red small,html[lang="bn"] .btn--primary_green small,html[lang="bn"] .btn-green small,html[lang="bn"] .btn--secondary_red small,html[lang="bn"] .btn-gray small{display:block;margin-top:5px;font-size:12px;text-shadow:none !important;text-transform:none}html[lang="bn"] a.btn small{font-weight:300}html[lang="bn"] a.btn.btn-solid,html[lang="bn"] button.btn.btn-red,html[lang="bn"] .btn.btn-red,html[lang="bn"] button.btn.btn--primary_green,html[lang="bn"] .btn.btn--primary_green,html[lang="bn"] .btn.btn-blck,html[lang="bn"] button.btn.btn-grey{font-size:22px}html[lang="bn"] a.btn.btn-solid.btn-red,html[lang="bn"] button.btn.btn-solid.btn-red,html[lang="bn"] a.btn.btn-solid.btn--primary_green,html[lang="bn"] button.btn.btn-solid.btn--primary_green{padding:9px 11px !important}html[lang="bn"] a.btn,html[lang="bn"] button.btn{padding:8px 11px !important}html[lang="bn"] a.btn.btn-drop,html[lang="bn"] button.btn.btn-drop{padding:10px 20px 6px 20px !important}html[lang="zh_CN"] .main-site.hp-v17 .btn-red small,html[lang="zh_CN"] .main-site.hp-v17 .btn--primary_green small,html[lang="zh_CN"] .main-site.hp-v17 .btn-green small,html[lang="zh_CN"] .main-site.hp-v17 .btn-gray small{margin-top:5px}html[lang="el"] button.btn.btn-drop{height:35px;line-height:13px}html[lang="el"] a.btn.btn-solid,html[lang="si"] a.btn.btn-solid,html[lang="el"] button.btn.btn-red,html[lang="si"] button.btn.btn-red,html[lang="el"] .btn.btn-red,html[lang="si"] .btn.btn-red,html[lang="el"] button.btn.btn--primary_green,html[lang="si"] button.btn.btn--primary_green,html[lang="el"] .btn.btn--primary_green,html[lang="si"] .btn.btn--primary_green,html[lang="el"] .btn.btn-green,html[lang="si"] .btn.btn-green,html[lang="el"] .btn.btn--secondary_red,html[lang="si"] .btn.btn--secondary_red,html[lang="el"] .btn.btn-blck,html[lang="si"] .btn.btn-blck{font-size:17px;line-height:normal}html[lang="el"] .input-group-btn:last-child>.btn,html[lang="el"] .input-group-btn:last-child>.btn-group{line-height:38px}html[lang="es"] a.btn,html[lang="es"] button.btn{padding:8px 14px !important}html[lang="fa"] .btn-group>.btn{position:relative;float:right}html[lang="fa"] a.btn.btn-red .fa.fa-pencil-square-o,html[lang="fa"] a.btn.btn--primary_green .fa.fa-pencil-square-o,html[lang="fa"] a.btn.btn-green .fa.fa-download,html[lang="fa"] a.btn.btn--secondary_red .fa.fa-download,html[lang="fa"] a.btn.btn-red .fa.fa-arrow-right,html[lang="fa"] a.btn.btn--primary_green .fa.fa-arrow-right,html[lang="fa"] a.btn.btn-green .fa.fa-arrow-right,html[lang="fa"] a.btn.btn--secondary_red .fa.fa-arrow-right,html[lang="fa"] a.btn.btn-red .fa.fa-file-pdf-o,html[lang="fa"] a.btn.btn--primary_green .fa.fa-file-pdf-o{margin-left:15px;margin-right:0}html[lang="fa"] a.btn.btn-drop,html[lang="fa"] button.btn.btn-drop{padding:11px 20px 6px 20px !important}html[lang="fa"] a.btn.btn-red .fa,html[lang="fa"] a.btn.btn--primary_green .fa,html[lang="fa"] a.btn.btn-green .fa,html[lang="fa"] a.btn.btn--secondary_red .fa,html[lang="fa"] a.btn.btn-black .fa,html[lang="fa"] button.btn.btn-red .fa,html[lang="fa"] button.btn.btn-red .fa,html[lang="fa"] button.btn.btn-red .fa,html[lang="fa"] button.btn.btn--primary_green .fa{margin-right:0}html[lang="fa"] a.btn.btn-red i.fa.fa-plus-circle{margin-left:15px}html[lang="fa"] a.btn.btn-solid.btn-green,html[lang="fa"] button.btn.btn-solid.btn-green,html[lang="fa"] a.btn.btn-solid.btn--secondary_red,html[lang="fa"] button.btn.btn-solid.btn--secondary_red{font-size:20px}html[lang="fa"] a.btn.btn-solid,html[lang="fa"] button.btn.btn-red,html[lang="fa"] .btn.btn-red,html[lang="fa"] button.btn.btn--primary_green,html[lang="fa"] .btn.btn--primary_green,html[lang="fa"] .btn.btn-blck{font-size:21px}html[lang="fa"] button.btn.btn-solid.btn-gray{padding:6px 0 !important}html[lang="fa"] button.btn.btn-solid.btn-gray small{padding-top:0;margin-top:1px}html[lang="fa"] .main-site.hp-v17 .btn .fa{margin-right:0;margin-left:15px}html[lang="fr"] a.btn.btn-drop,html[lang="fr"] button.btn.btn-drop{padding:11px 20px 6px 20px !important}html[lang="ja"] a.btn.btn-solid,html[lang="ja"] button.btn.btn-red,html[lang="ja"] .btn.btn-red,html[lang="ja"] button.btn.btn--primary_green,html[lang="ja"] .btn.btn--primary_green,html[lang="ja"] .btn.btn-blck{font-size:22px}html[lang="ko"] a.btn,html[lang="ko"] button.btn{padding:8px 19px !important}html[lang="ko"] a.btn.btn-solid,html[lang="ko"] button.btn.btn-red,html[lang="ko"] .btn.btn-red,html[lang="ko"] button.btn.btn--primary_green,html[lang="ko"] .btn.btn--primary_green,html[lang="ko"] .btn.btn-blck{font-size:22px}html[lang="ms"] a.btn.btn-solid,html[lang="ms"] button.btn.btn-red,html[lang="ms"] .btn.btn-red,html[lang="ms"] button.btn.btn--primary_green,html[lang="ms"] .btn.btn--primary_green,html[lang="ms"] .btn.btn-blck .smaller-font-22{font-size:22px}html[lang="ph"] a.btn.btn-solid,html[lang="ph"] button.btn.btn-red,html[lang="ph"] .btn.btn-red,html[lang="ph"] button.btn.btn--primary_green,html[lang="ph"] .btn.btn--primary_green,html[lang="ph"] .btn.btn-blck{letter-spacing:0 !important}html[lang="ph"] a.btn,html[lang="ph"] button.btn{padding:8px 19px !important}html[lang="pl"] a.btn,html[lang="pl"] button.btn{padding:8px 11px !important}html[lang="ru"] a.btn.btn-solid,html[lang="ru"] button.btn.btn-red,html[lang="ru"] .btn.btn-red,html[lang="ru"] button.btn.btn--primary_green,html[lang="ru"] .btn.btn--primary_green,html[lang="ru"] .btn.btn-blck{font-size:22px;letter-spacing:0 !important}html[lang="ru"] a.btn.btn-drop,html[lang="ru"] button.btn.btn-drop{padding:11px 20px 6px 20px !important}html[lang="th"] a.btn.btn-drop,html[lang="th"] button.btn.btn-drop{padding:11px 20px 6px 20px !important}html[lang="th"] a.btn,html[lang="th"] button.btn{padding:8px 19px !important}html[lang="th"] a.btn.btn-solid,html[lang="th"] button.btn.btn-red,html[lang="th"] .btn.btn-red,html[lang="th"] button.btn.btn--primary_green,html[lang="th"] .btn.btn--primary_green,html[lang="th"] .btn.btn-blck{font-size:24px}html[lang="th"] a.btn.btn-solid,html[lang="th"] button.btn.btn-red,html[lang="th"] .btn.btn-red,html[lang="th"] button.btn.btn--primary_green,html[lang="th"] .btn.btn--primary_green,html[lang="th"] .btn.btn-blck .smaller-font-22{font-size:22px}html[lang="th"].main-site.hp-v17 .btn-red small,html[lang="th"].main-site.hp-v17 .btn--primary_green small,html[lang="th"].main-site.hp-v17 .btn-green small,html[lang="th"].main-site.hp-v17 .btn--secondary_red small,html[lang="th"].main-site.hp-v17 .btn-gray small{margin-top:8px}html[lang="vn"] a.btn.btn-solid,html[lang="vn"] button.btn.btn-red,html[lang="vn"] .btn.btn-red,html[lang="vn"] button.btn.btn--primary_green,html[lang="vn"] .btn.btn--primary_green,html[lang="vn"] button.btn.btn-green,html[lang="vn"] .btn.btn-green,html[lang="vn"] button.btn.btn--secondary_red,html[lang="vn"] .btn.btn--secondary_red,html[lang="vn"] .btn.btn-blck{font-size:19px}@media(min-width:768px){.btn-group span{width:100%;padding-left:117px;display:block}.rtl-lang .btn-group span{padding-left:0;padding-right:115px}html[lang="fa"] .btn-group span{padding-left:0;padding-right:115px}}@media(max-width:1290px){a.btn.btn-big,button.btn.btn-big{font-size:22px}}@media(max-width:991px){.webinars .btn{max-width:300px}}@media(max-width:510px){.btn.btn-block{max-width:350px}}.dis5{height:5px;clear:both}.dis10{height:10px;clear:both}.dis15{height:15px;clear:both}.dis20{height:20px;clear:both}.dis25{height:25px;clear:both}.dis30{height:30px;clear:both}.dis35{height:35px;clear:both}.dis40{height:40px;clear:both}.dis45{height:45px;clear:both}.dis50{height:50px;clear:both}.dis55{height:55px;clear:both}.dis60{height:60px;clear:both}.dis65{height:65px;clear:both}.dis70{height:70px;clear:both}.dis75{height:75px;clear:both}.dis80{height:80px;clear:both}.dis85{height:85px;clear:both}.dis90{height:90px;clear:both}.dis95{height:95px;clear:both}.dis100{height:100px;clear:both}.width5{width:5%}.width10{width:10%}.width15{width:15%}.width20{width:20%}.full-width{width:100%}.half-width{width:50%}.left-text{text-align:left}.right-text{text-align:right}.left{float:left}.rtl-lang .left,html[lang="fa"] .left{float:right}.right{float:right}.rtl-lang .right,html[lang="fa"] .right{float:left}.rtl-lang .pull-right,html[lang="fa"] .pull-right{float:left !important}.rtl-lang .pull-left,html[lang="fa"] .pull-left{float:right !important}.center{vertical-align:middle}.img-center{margin:0 auto}.ltr{direction:ltr !important}.rtl-lang{direction:rtl !important}.center-block{float:none !important}.center-text{text-align:center !important}.text-center{text-align:center !important}.col-top{vertical-align:top}.col-middle{vertical-align:middle}.col-bottom{vertical-align:bottom}.text-right{text-align:right}.rtl-lang .text-left,html[lang="fa"] .text-left,html[lang="ur"] .text-md-left{text-align:right}.padl5{padding-left:5px}.padl10{padding-left:10px}.padl15{padding-left:15px}.rtl-lang .padl15,html[lang="fa"] .padl15{padding-right:15px}.padl20{padding-left:25px}.padl25{padding-left:25px}.no_margin{margin:0 !important}.top5{margin-top:5px !important}.top10{margin-top:10px !important}.top15{margin-top:15px !important}.top20{margin-top:20px !important}.top25{margin-top:25px !important}.top30{margin-top:30px !important}.top35{margin-top:35px !important}.top40{margin-top:40px !important}.top45{margin-top:45px !important}.top50{margin-top:50px !important}.top55{margin-top:55px !important}.top60{margin-top:60px !important}.top65{margin-top:65px !important}.top70{margin-top:70px !important}.top75{margin-top:75px !important}.top80{margin-top:80px !important}.top85{margin-top:85px !important}.top90{margin-top:90px !important}.top95{margin-top:95px !important}.top100{margin-top:100px !important}.top115{margin-top:115px !important}.top150{margin-top:150px !important}.top170{margin-top:170px !important}.top190{margin-top:190px !important}.top305{margin-top:305px !important}.bottom40{margin-bottom:40px !important}.bottom20{margin-bottom:20px !important}.bottom15{margin-bottom:15px !important}.bottom5{margin-bottom:5px !important}.right10{margin-right:10px !important}.rtl-lang .right10,html[lang="fa"] .right10{margin-right:0 !important;margin-left:10px !important}.right15{margin-right:15px !important}.right30{margin-right:30px !important}.rtl-lang .right30,html[lang="fa"] .right30{margin-right:0 !important;margin-left:30px !important}.reset{margin:0;padding:0}.left30{margin-left:30px !important}.green{color:#29a643 !important}.red{color:#d72027}.white{color:#fff !important}.black{color:#000}.lgray{color:#ccc}.dgray{color:#4a4a4a}.bg-gray{background-color:#f1f1f1}.gray{background-color:#f7f7f7}.bg-black{background-color:#000}.text-underline{text-decoration:underline !important}.middle80{line-height:80px}.lowercase{text-transform:lowercase}.lowercase:first-letter {text-transform:uppercase}.capitalize{text-transform:capitalize}.bold{font-weight:bold !important}.lineh13{line-height:1.3}.border{border:1px solid #ddd;padding:20px}.no-border{border:0}.noborder{border:none !important}.pointer{cursor:pointer !important}.grabbing{cursor:grabbing}.dataTB{clear:both}.top-5{top:-5px !important}.inline-block{display:inline-block !important}.fs14{font-size:14px}.fs35{font-size:35px}.fs40{font-size:40px}.fs50{font-size:50px}.fs55{font-size:55px}.fs100{font-size:100px}.fs110{font-size:110px}.fs150{font-size:150px}.fs200{font-size:200px}.test-class{display:none}.under{position:relative}.under:before{content:'';width:30px;height:1px;display:block;position:absolute;bottom:0;left:0;background-color:#ccc}html[lang="fr"] .btn.font21{font-size:21px !important}.xmf-r90{display:inline-block;filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=1);-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg)}.xmf-r180{display:inline-block;filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}.xmf-r270{display:inline-block;filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=3);-webkit-transform:rotate(270deg);-ms-transform:rotate(270deg);transform:rotate(270deg)}.xmf-hflip{display:inline-block;filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=0);-webkit-transform:scale(-1,1);-ms-transform:scale(-1,1);transform:scale(-1,1)}.xmf-vflip{display:inline-block;filter:progid:DXImageTransform.Microsoft.BasicImage(rotation=2);-webkit-transform:scale(1,-1);-ms-transform:scale(1,-1);transform:scale(1,-1)}:root .xmf-r90,:root .xmf-r180,:root .xmf-r270,:root .xmf-hflip,:root .xmf-vflip{filter:none}.xmf-xs{font-size:25px}.xmf-sm{font-size:50px}.xmf-md{font-size:80px}.xmf-lg{font-size:100px}.xmf-xl{font-size:150px}.xmf-bordered,.xmf-rounded,.xmf-filled{padding:10px;padding:.2em;border:solid 2px #333;border:solid .025em #333}.xmf-rounded{border-radius:50%}.xmf-filled{background-color:#333;color:#fff !important}.xmf-bordered.red,.xmf-rounded.red,.xmf-filled.red{border-color:#d51820}.xmf-filled.red{background-color:#d51820}.xmf-bordered.green,.xmf-rounded.green,.xmf-filled.green{border-color:#29a643}.xmf-filled.green{background-color:#29a643}.xmf-bordered.lgray,.xmf-rounded.lgray,.xmf-filled.lgray{border-color:#ccc}.xmf-filled.lgray{background-color:#ccc}.xmf-bordered.black,.xmf-rounded.black,.xmf-filled.black{border-color:#000}.xmf-filled.black{background-color:#000}@media(min-width:992px){.text-md-left{text-align:left}.rtl-lang .text-md-left,html[lang="fa"] .text-md-left{text-align:left}}.display-flex{display:flex}.display-flex--wrap{flex-wrap:wrap}@-webkit-keyframes goUp{0{-webkit-transform:none;transform:none}100%{-webkit-transform:translate3d(0,-100px,0);transform:translate3d(0,-100px,0)}}@keyframes goUp{0{-webkit-transform:none;transform:none}100%{-webkit-transform:translate3d(0,-100px,0);transform:translate3d(0,-100px,0)}}@-webkit-keyframes goDown{0{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{-webkit-transform:none;transform:none}}@keyframes goDown{0{-webkit-transform:translate3d(0,-100%,0);transform:translate3d(0,-100%,0)}100%{-webkit-transform:none;transform:none}}.affix-top{top:10%;position:fixed;z-index:999}.sticky-bar{display:none;position:fixed;top:0;width:100%;background-color:#111;z-index:999;-moz-box-shadow:0 0 3px 0 #000;-webkit-box-shadow:0 0 3px 0 #000;box-shadow:0 0 3px 0 #000}.sticky-bar.active{display:block;-webkit-animation-duration:.8s;animation-duration:.8s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:goDown;animation-name:goDown}.sticky-bar .content{position:relative;display:table;max-width:1000px;height:85px;margin:0 auto;padding:0;color:#fff;font-size:16px}.sticky-bar .content>div{display:table-cell;vertical-align:middle}.sticky-bar .content .btn{font-size:20px}html[lang="ar"] .sticky-bar .content .btn,html[lang="ja"] .sticky-bar .content .btn,html[lang="tw"] .sticky-bar .content .btn{font-size:18px}html[lang="bn"] .sticky-bar .content .btn{font-size:17px}html[lang="ur"] .sticky-bar .content .btn{font-size:16px}html[lang="fa"] .sticky-bar .content .btn{font-size:11px}html[lang="el"] .sticky-bar .content .btn,html[lang="vn"] .sticky-bar .content .btn{font-size:16px !important;letter-spacing:0 !important}.rtl-lang .sticky-bar .content .btn,html[lang="fa"] .sticky-bar .content .btn{margin-left:50px;margin-right:0}.sticky-bar .content .btn .fa{display:inline-block;margin-left:10px;margin-right:0;font-size:20px;vertical-align:middle;text-align:right}.rtl-lang .sticky-bar .content .btn .fa{margin-left:0;margin-right:10px}.sticky-bar .content .text{width:68%;padding-right:35px}html[lang="bn"] .sticky-bar .content .text{width:67%}html[lang="ms"] .sticky-bar .content .text{width:initial}.sticky-bar .content p{text-align:center;padding:0;margin:0}.sticky-bar .content .fa-times{position:relative;font-size:25px;margin-left:35px;vertical-align:middle;text-align:right;color:#d4d4d4;padding:0 10px;border-left:1px solid #d4d4d4;border-right:1px solid #d4d4d4;cursor:pointer}.rtl-lang .sticky-bar .content .fa-times,html[lang="fa"] .sticky-bar .content .fa-times{left:-15%;right:initial}.sticky-bar .content .fa-times:hover{color:#444}.sticky-bar.deactive{display:block;-webkit-animation-duration:.8s;animation-duration:.8s;-webkit-animation-fill-mode:both;animation-fill-mode:both;-webkit-animation-name:goUp;animation-name:goUp}a.scroll-top{display:none;position:fixed;bottom:35px;right:20px;color:#ccc;border:1px solid #ccc;width:55px;height:50px;z-index:999;transition:none}.rtl-lang a.scroll-top,html[lang="fa"] a.scroll-top{right:initial;left:20px}a.scroll-top i.fa{display:block;font-size:48px;text-align:center;line-height:51px}a.scroll-top:hover{color:#d51820;border:1px solid #d51820}#risk-block{position:fixed;width:100%;z-index:601;display:block;bottom:0}#cookies-block{display:none;padding:5px 0;background:rgba(37,37,37,0.9);border-top:1px solid #111;z-index:-1;position:fixed;width:100%;bottom:0}#risk-block{background:#efefef;border-top:1px solid #ccc;color:#333;padding:10px;text-align:center;font-size:13px}.rtl-lang #risk-block,html[lang="fa"] #risk-block{direction:rtl}#risk-block>.wrap{position:relative;margin:0 auto;max-width:1200px;min-height:23px}#risk-block .link{font-weight:bold;color:#333;text-decoration:underline !important;display:inline-block}#risk-block p{margin-bottom:0}#risk-block .text-wrap strong,#risk-block .text-wrap .fa{color:#d51820}#notify-recording-block>.wrap{position:relative;margin:0 auto;text-align:center}#notify-recording-block .text-wrap,#notify-recording-block .btn-wrap{display:inline-block;vertical-align:middle;margin:0 15px}#notify-recording-block .btn-wrap{position:absolute;top:0;right:15px;bottom:0;margin:auto 0;height:28px}#cookies-block .text-wrap a,#notify-recording-block .link{font-weight:bold;color:#fff;text-decoration:underline !important}#cookies-block .text-wrap a:hover,#notify-recording-block .link:hover{color:#d51820}#notify-recording-block p{display:inline-block;margin:0;padding:0;vertical-align:middle}#notify-recording-block p{color:#cbcbcb}#notify-recording-block .btn{font-size:12px !important;text-transform:capitalize}#cookies-block .wrap{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px;-webkit-box-align:center !important;-ms-flex-align:center !important;align-items:center !important}#cookies-block .text-wrap,#cookies-block .btn-wrap{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px;text-align:center}#cookies-block .text-wrap{color:#fff}#cookies-block .text-wrap p{margin-bottom:0}.risk-block-pt.fixed{font-size:11px;border:1px solid #d5d5d5}.risk-block-pt.fixed{position:fixed;display:block;left:0;top:50%;width:170px;margin:-200px 0 0 0;width:192px;z-index:9999}.risk-block-pt.fixed>ul>li{padding:10px}.risk-block-pt.fixed>ul>li+li{border-top:2px solid #d5d5d5}.risk-block-pt.fixed>ul>li{display:block;width:100%}#js-riskCloseButton{position:absolute;color:#333;font-size:15px;top:-42px;right:15px;background:#efefef;padding:5px 10px;border:1px solid #ccc;border-bottom:0}#js-riskCloseButton.minimise>i::before{content:"\f078"}#js-riskCloseButton.minimise.up>i::before{content:"\f077"}.rtl-lang #js-riskCloseButton,html[lang="fa"] #js-riskCloseButton{left:15px;right:auto}#js-cookieBarHeight{background-color:#000}#xmas-holidays{background-color:#252525;color:white;font-size:11px;text-align:center}.xmas-holidays-wrapper{padding:12px 40px;margin:0 auto;position:relative;display:inline-block}.xmas-holidays-wrapper p{margin-bottom:0}.xmas-holidays-wrapper p a{display:inline-block;font-weight:600}.xmas-holidays-wrapper button{font-size:14px;position:absolute;top:0;bottom:0;right:10px;margin:auto 0}.rtl-lang .xmas-holidays-wrapper button,html[lang="fa"] .xmas-holidays-wrapper button{right:auto;left:10px}#sb-live-education{background-color:#252525;color:white;font-size:12px;text-align:center;font-weight:600}.sb-live-education-wrapper{padding:12px 40px;margin:0 auto;position:relative;display:inline-block}.sb-live-education-wrapper p{margin-bottom:0}.sb-live-education-wrapper p a{display:inline-block;font-weight:600}.sb-live-education-wrapper button{font-size:14px;position:absolute;top:0;bottom:0;right:0;margin:auto 0}.sb-live-education-wrapper span.badge--live{background:#d51820;color:#fff;font-size:12px;font-weight:600;margin-left:15px;border-radius:3px;display:-webkit-inline-box;display:-ms-inline-flexbox;display:inline-flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:58px;height:24px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.sb-live-education-wrapper span.badge--live .fa-play{padding-right:5px;font-size:10px}.rtl-lang .sb-live-education-wrapper span.badge--live{margin-right:15px}.rtl-lang .sb-live-education-wrapper span.badge--live .fa-play{padding-left:5px}.rtl-lang .sb-live-education-wrapper button,html[lang="fa"] .sb-live-education-wrapper button{right:auto;left:10px}.plp-aff-promo-sticky{background:#414141;color:#fff;padding:15px 0;display:flex;justify-content:center;align-content:center;align-items:center}.plp-aff-promo-sticky a{color:#fff;text-decoration:underline !important}.plp-aff-promo-sticky p{font-weight:700;font-size:14px;padding:0 15px}html[lang="si"] .plp-aff-promo-sticky p{line-height:1.7}#sb-usa{background-color:#252525;color:white;font-size:12px;text-align:center;font-weight:600}#sb-usa .sb-usa-wrapper{padding:12px 40px}@media(min-width:425px){.xmas-holidays-wrapper{padding:12px 70px}}@media(min-width:768px){#cookies-block .text-wrap{-webkit-box-flex:0;-ms-flex:0 0 75%;flex:0 0 75%;max-width:75%}#cookies-block .btn-wrap{-webkit-box-flex:0;-ms-flex:0 0 25%;flex:0 0 25%;max-width:25%}html[lang="si"] .plp-aff-promo-sticky p{line-height:1.5}}@media(min-width:992px){a.scroll-top{bottom:55px}#risk-block{padding:10px 100px;font-size:14px}#risk-block.risk-block__de{font-size:16px}#js-riskCloseButton{top:0;right:-25px;background:0;padding:0;border:0}.rtl-lang #js-riskCloseButton,html[lang="fa"] #js-riskCloseButton{left:-25px;right:auto}}@media(max-width:1567px){.risk-block-pt.fixed{display:none}}@media(max-width:991px){.sticky-bar .content .btn{padding:6px 5px 6px 20px;font-size:20px;margin-left:10px}.sticky-bar .content .fa-times{right:0}}header{background-color:#000;position:relative;z-index:600}header .logo,header .promo-logo,header .promo-logo-svg{padding:0 !important}header .navbar-brand{display:inline-block;float:none;margin-left:0 !important;height:auto !important}header .navbar-brand>img{height:39px}body.xmtd header .navbar-brand>img{height:48px}.xmtd .navbar-brand.promo-logo,.xmtd .navbar-brand.promo-logo-svg{left:unset;padding-left:0 !important;margin-left:0 !important}.header-top{position:relative;z-index:9999;border-bottom:1px solid #262626}.header-top ul{list-style:none;padding-left:0;float:left;margin:0}.header-top ul li{float:left}.header-top ul li+li{margin-left:19px}.header-top .user-nav{padding:22px 21px 19px 21px;border-left:1px solid #262626;border-right:1px solid #262626}.header-top .links-nav{padding:24px 15px;border-left:1px solid #262626;border-right:1px solid #262626;line-height:1}.header-top .links-nav li{font-size:12px;position:relative;color:#fff}.header-top .links-nav a{color:#fff}.header-top .links-nav .link-new:before{content:'';background:url('https://cloud.xm-cdn.com/static/common/icons/new.png?v=a50646425347aa21fcc5f130e1974ed1');background-image:url('https://cloud.xm-cdn.com/static/common/icons/new.svg?v=976cfba33e76a9c56f5fbf9558a5af9d'),none;width:23px;height:9px;display:block;position:absolute;top:100%;left:50%;margin-left:-12px;margin-top:5px}.header-top .buttons-nav{float:right;padding:15px 13px 15px 0;border-right:1px solid #262626}.header-top .buttons-nav li+li{margin-left:15px}.header-top .buttons-nav a{letter-spacing:.5px;filter:alpha(opacity=50);-webkit-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease}.header-top .buttons-nav .btn-white{color:#ccc;border:1px solid #ccc}.header-top .buttons-nav .btn-white.btn-red--outline{border:1px solid #d51820}.header-top .buttons-nav .btn-feature{border:2px solid #fff;color:#fff;padding:7px 20px !important}.header-top .buttons-nav a [class^="fa"]{margin-right:5px;font-size:inherit}.header-top .buttons-nav a:hover{opacity:.8;filter:alpha(opacity=80)}.header-top .buttons-nav a.btn-green,.header-top .buttons-nav a.btn--secondary_red,.header-top .buttons-nav a.btn-red,.header-top .buttons-nav a.btn--primary_green{font-size:initial !important;font-size:medium !important}.header-top{background-color:#000}.header-top a.btn,button.btn{padding:7px 20px}#main-nav.container-fluid{background-color:#000}.navbar-default .navbar-collapse,.navbar-default .navbar-form{border:0}h1.pagetitle{font-size:0;width:1px;height:1px;display:inline-block;overflow:hidden;position:absolute !important;border:0 !important;padding:0 !important;margin:0 !important;clip:rect(1px,1px,1px,1px)}h1.navbar-brand{margin:0;padding:0}.navbar-header{padding:5px 0 12px 0}.header-top .links-nav,.header-top .buttons-nav,.main-nav ul li .dropdown .nav-bottom-bar{-webkit-transform:translateZ(0)}.header-top .buttons-nav{position:relative;z-index:9}ul#languages{display:none;list-style:none;margin:0;padding:0}ul#languages.noflags li{padding-left:20px}ul#languages li:first-child{border-bottom:1px solid #000;border-top:0}ul#languages li{width:100%;border-bottom:1px solid #000;border-top:1px solid #2d2d2d}ul#languages li a{display:block;width:100%;font-size:13px;color:#fff;padding:14px 0 12px 0}ul#languages li:hover a{color:#999}ul#languages li .flag-icon{position:relative;display:inline-block;top:-2px;width:37.5px;height:25px;margin-right:15px}input[type=checkbox]#languages{position:absolute;top:-9999px;left:-9999px}input[type=checkbox]#languages ~ ul#main-nav{display:block}input[type=checkbox]#languages:checked ~ ul#main-nav,input[type=checkbox]#languages:checked ~ ul.sidebar-btn{display:none !important}input[type=checkbox]#languages ~ ul#language{display:none !important}input[type=checkbox]#languages:checked ~ ul#language{display:block !important}.language-nav [class^="fa"]{color:#fff}.site-menu{width:300px;height:100%;position:absolute;top:0;left:-300px;background:#428bca;padding:15px}.toggleLeftNav,.toggleRightNav{display:inline-block;font-size:20px;color:#fff;float:left;vertical-align:middle;-webkit-animation-name:bounceIn;animation-name:bounceIn;-webkit-animation-duration:.75s;animation-duration:.75s}.toggleLeftNav:hover,.toggleRightNav:hover{color:#fff !important}.toggleLeftNav{position:relative;left:-15px;padding:15px 30px}.toggleRightNav{position:relative;right:-15px;padding:15px 30px}.toggleLeftNav span{margin-left:5px}.toggleRightNav span{margin-right:5px}.toggleLeftNav [class^="fa"].fa-times,.toggleRightNav [class^="fa"].fa-times{display:none}.toggleLeftNav span,.toggleRightNav span{position:relative;text-transform:uppercase;top:0;font-size:18px;vertical-align:baseline}.toggleRightNav{float:right}.navbar{background-color:transparent;border:0;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;margin:0}#main-nav.navbar-nav>li>a{position:relative !important;z-index:999;font-size:20px !important;padding-top:13px !important;padding-bottom:17px !important}.main-nav .default>li{position:inherit;display:inherit}.main-nav .default>li>a{position:inherit !important;display:inherit !important}.main-nav a{text-transform:uppercase;font-size:20px;color:#fff !important;padding:13px;line-height:1}.main-nav ul{list-style:none}.main-nav ul li{cursor:pointer}.main-nav ul li a{display:block;position:relative}.main-nav ul li .dropdown .wrap .block ul li i[class^="fa"],.main-nav ul li .dropdown .wrap .block ul li i.xmFont{margin-right:10px;width:18px}.form-logo .navbar-header{margin:27px 0 26px 0 !important;padding:0 !important}.main-nav .block>span{position:relative;display:block;top:0;left:0;text-transform:uppercase;font-size:20px;width:100%;line-height:normal;border:0;margin:0;padding:0;color:#fff;text-align:left;float:left;clear:both}.drop-nav{display:none}.buttons-sm{list-style:none;padding-left:0;padding:0 15px;display:none;margin-bottom:28px}.buttons-sm:before,.buttons-sm:after{content:" ";display:table}.buttons-sm:after{clear:both}.buttons-sm li{width:48%;float:left}.buttons-sm li+li{float:right}.buttons-sm li a{width:100%}.navbar-toggle{border:0;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;background-color:#fff;width:30px;height:20px;position:relative;padding:0;-webkit-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease;margin-top:10px}.navbar-toggle:before,.navbar-toggle:after{content:'';position:absolute;width:100%;height:4px;left:0;top:4px;display:block;background-color:#000}.navbar-toggle:after{top:12px}.user-nav a{float:left;font-size:11px;color:#999;-webkit-transition:all .3s ease;-o-transition:all .3s ease;transition:all .3s ease}.user-nav a:hover{opacity:.6;filter:alpha(opacity=60)}.languages{position:relative;display:block}.languages .dropdown-menu{border:1px solid #999;background-color:#000;-moz-border-radius:0;-webkit-border-radius:0;border-radius:0;margin-top:15px;left:auto;right:0;width:310px;padding:10px;padding-bottom:0}.languages .dropdown-menu.noflags{padding-left:20px}.languages .dropdown-menu:after{content:'';content:'';width:0;height:0;display:block;border-style:solid;position:absolute;border-width:0 6.5px 6.5px 6.5px;border-color:transparent transparent black transparent;position:absolute;bottom:100%;right:8.5px}.languages .dropdown-menu:before{content:'';width:0;height:0;display:block;border-style:solid;position:absolute;border-width:0 8px 8px 8px;border-color:transparent transparent #999 transparent;position:absolute;bottom:100%;right:7px}.languages .dropdown-menu li{width:33.33%;float:left;margin:0 0 10px 0 !important}.languages .dropdown-menu.noflags li{box-sizing:border-box;padding-left:13px}.languages .dropdown-menu a{padding:0;opacity:1;filter:alpha(opacity=100);color:#fff;font-size:11px;float:left;line-height:1;line-height:15px}.languages .dropdown-menu a:hover{background-color:transparent;color:#fff;text-decoration:underline !important}[lang="ja"] .languages.single-col .dropdown-menu{padding:0 8px 0 14px}ul#language li{margin-bottom:5px}ul#language li a{font-size:14px !important}ul#language li .flag-icon{width:22.5px;height:15px}.languages [class^="fa"]{font-size:33px;color:#fff;float:right;margin-top:10px;margin-right:15px;vertical-align:middle}.flags-sprite{display:block;float:left;margin-right:5px;background-image:url("https://cloud.xm-cdn.com/static/xm/common/flags/flags-icons-sprite-alt.png?v=06da1542355f3bbdb2ef44c1b7fe1b95");background-repeat:no-repeat;width:22.5px;height:15px;background-size:838px 15px}.flags-sprite[class*="lg-"]{width:37.5px;height:25px;background-size:1397.5px 25px}.flags-sprite.sm-en{background-position:0 0}.flags-sprite.lg-en{background-position:0 0}.flags-sprite.sm-jp{background-position:-24px 0}.flags-sprite.lg-jp{background-position:-40px 0}.flags-sprite.sm-my{background-position:-48px 0}.flags-sprite.lg-my{background-position:-80px 0}.flags-sprite.sm-cn,.flags-sprite.sm-tw{background-position:-72px 0}.flags-sprite.lg-cn,.flags-sprite.lg-tw{background-position:-120px 0}.flags-sprite.sm-el{background-position:-96px 0}.flags-sprite.lg-el{background-position:-160px 0}.flags-sprite.sm-hu{background-position:-120px 0}.flags-sprite.lg-hu{background-position:-200px 0}.flags-sprite.sm-ru{background-position:-144px 0}.flags-sprite.lg-ru{background-position:-240px 0}.flags-sprite.sm-id{background-position:-168px 0}.flags-sprite.lg-id{background-position:-280px 0}.flags-sprite.sm-fr{background-position:-192px 0}.flags-sprite.lg-fr{background-position:-320px 0}.flags-sprite.sm-it{background-position:-216px 0}.flags-sprite.lg-it{background-position:-360px 0}.flags-sprite.sm-se{background-position:-240px 0}.flags-sprite.lg-se{background-position:-400px 0}.flags-sprite.sm-de{background-position:-264px 0}.flags-sprite.lg-de{background-position:-440px 0}.flags-sprite.sm-pl{background-position:-288px 0}.flags-sprite.lg-pl{background-position:-480px 0}.flags-sprite.sm-ar{background-position:-312px 0}.flags-sprite.lg-ar{background-position:-520px 0}.flags-sprite.sm-es{background-position:-336px 0}.flags-sprite.lg-es{background-position:-560px 0}.flags-sprite.sm-kr{background-position:-360px 0}.flags-sprite.lg-kr{background-position:-600px 0}.flags-sprite.sm-pt{background-position:-384px 0}.flags-sprite.lg-pt{background-position:-640px 0}.flags-sprite.sm-tr{background-position:-408px 0}.flags-sprite.lg-tr{background-position:-680px 0}.flags-sprite.sm-vn{background-position:-432px 0}.flags-sprite.lg-vn{background-position:-720px 0}.flags-sprite.sm-th{background-position:-456px 0}.flags-sprite.lg-th{background-position:-760px 0}.flags-sprite.sm-ph{background-position:-480px 0}.flags-sprite.lg-ph{background-position:-800px 0}.flags-sprite.sm-nl{background-position:-504px 0}.flags-sprite.lg-nl{background-position:-840px 0}.flags-sprite.sm-cz{background-position:-528px 0}.flags-sprite.lg-cz{background-position:-880px 0}.flags-sprite.sm-ir{background-position:-552px 0}.flags-sprite.lg-ir{background-position:-920px 0}.flags-sprite.sm-bn{background-position:-576px 0}.flags-sprite.lg-bn{background-position:-960px 0}.flags-sprite.sm-au{background-position:-600px 0}.flags-sprite.lg-au{background-position:-1000px 0}.flags-sprite.sm-mn{background-position:-624px 0}.flags-sprite.lg-mn{background-position:-1040px 0}.flags-sprite.sm-hr{background-position:-648px 0}.flags-sprite.lg-hr{background-position:-1080px 0}.flags-sprite.sm-sr{background-position:-672px 0}.flags-sprite.lg-sr{background-position:-1120px 0}.flags-sprite.sm-lt{background-position:-696px 0}.flags-sprite.lg-lt{background-position:-1160px 0}.flags-sprite.sm-ro{background-position:-720px 0}.flags-sprite.lg-ro{background-position:-1200px 0}.flags-sprite.sm-ur{background-position:-744px 0}.flags-sprite.lg-ur{background-position:-1240px 0}.flags-sprite.sm-in{background-position:-768px 0}.flags-sprite.lg-in{background-position:-1280px 0}.flags-sprite.sm-si{background-position:-792px 0}.flags-sprite.lg-si{background-position:-1320px 0}.flags-sprite.sm-uz{background-position:-816px 0}.flags-sprite.lg-uz{background-position:-1359px 0}.languages.single-col .dropdown-menu{width:auto;min-width:98px;padding:0 8px 0 20px}.languages.single-col .dropdown-menu li{padding:8px;margin:0 !important;width:100%}.single-col a.btn.btn-drop,.single-col button.btn.btn-drop{padding:9px 20px 6px 20px !important}header .xm-trading-logo{position:relative;display:block;text-indent:-9999px;width:140px;height:48px;margin-left:0;background:url('https://cloud.xm-cdn.com/static/common/logo/xmtrading.svg?v=ccd5caa7e7c0f45bbcb3cdf4d2e65700');background-repeat:no-repeat;background-size:100%;z-index:9}header .xm-trading-xmas-logo{position:relative;display:block;text-indent:-9999px;width:140px;height:48px;margin-left:0;background:url('https://cloud.xm-cdn.com/static/common/logo/xmas_xmtrading.png?v=b35c2b1b1ba63e0dcab3c6fac5d0eddb');background-repeat:no-repeat;background-size:100%;z-index:9}header .xmas-logo{position:relative;display:block;text-indent:-9999px;width:140px;height:48px;margin-left:0;background:url('https://cloud.xm-cdn.com/static/common/logo/xmas_xm.png?v=a3147dd653c0a0d510e66e1fd86eba60');background-repeat:no-repeat;z-index:9}#main-nav span.new{top:-2px}span.new{text-transform:uppercase;font-size:10px;padding:1px 8px 2px 8px;margin-left:10px;font-weight:bold;position:relative;background:red;border-radius:0;color:white;top:-1px}span.new:after{right:99%;top:50%;border:solid transparent;content:" ";height:0;width:0;position:absolute;pointer-events:none;border-color:rgba(213,24,32,0);border-right-color:#F00;border-width:5px;margin-top:-5px}.badge-arrow{display:inline-block;font-weight:700;color:#fff;line-height:1.2;padding:3px 4px;position:relative;margin-right:.5em;background-color:#d51820;position:relative;vertical-align:middle;font-size:10px;text-transform:uppercase;white-space:nowrap}.rtl-lang .badge-arrow,html[lang="fa"] .badge-arrow{margin-right:0;margin-left:.5em}.badge-arrow--small{font-size:9px;line-height:1}.badge-arrow::after{content:" ";display:block;position:absolute;top:0;bottom:0;left:100%;margin:auto 0;width:0;height:0;border-top:.4em solid transparent;border-bottom:.4em solid transparent;border-left:.5em solid #d51820}.rtl-lang .badge-arrow::after,html[lang="fa"] .badge-arrow::after{left:auto;right:100%;border-left:0;border-right:.5em solid #d51820}.badge-arrow__wrapper{position:relative}.badge-arrow__wrapper .badge-arrow{position:absolute;top:0;right:100%;margin-right:1em}.rtl-lang .badge-arrow__wrapper .badge-arrow,html[lang="fa"] .badge-arrow__wrapper .badge-arrow{right:auto;left:100%;margin-right:0;margin-left:1em}.badge-arrow__wrapper .badge-arrow--small{top:1px}.xm-operated{float:left;font-size:11px;color:#fff;padding:25px 15px;border-left:1px solid #262626;border-right:1px solid #262626;height:62px;line-height:1.3;max-width:500px}.xm-operated>p{margin:0;padding:0}.rtl-lang .xm-operated,[lang="fa"] .xm-operated{float:right}.rtl-lang .xm-operated{max-width:375px}[lang="fr"] .xm-operated,[lang="de"] .xm-operated,[lang="th"] .xm-operated,[lang="ph"] .xm-operated,[lang="fa"] .xm-operated{max-width:400px}[lang="el"] .xm-operated,[lang="vn"] .xm-operated{max-width:370px;padding:10px}[lang="bn"] .xm-operated{max-width:385px;line-height:1.4}.rtl-lang .nav{padding-right:0}.rtl-lang .navbar-nav>li{float:right}.rtl-lang .main-nav ul li .dropdown .box p{line-height:16px}.rtl-lang .header-top .buttons-nav{float:left;padding:15px 0 15px 13px;border-right:0;border-left:1px solid #262626}.rtl-lang .header-top a.btn{padding:9px 8px !important}.rtl-lang .header-top .buttons-nav .btn-white,.rtl-lang a.btn.btn-drop,.rtl-lang button.btn.btn-drop{font-size:14px}.rtl-lang .header-top .buttons-nav .btn-feature{padding:8px 20px !important}.rtl-lang .header-top ul li{float:right;direction:ltr}.rtl-lang .header-top .buttons-nav li+li{margin-left:0;margin-right:15px}.rtl-lang .header-top .buttons-nav [class^="fa"]{float:right;margin-left:5px}.rtl-lang .header-top .links-nav{padding:24px 15px;border-left:1px solid #262626;border-right:1px solid #262626;line-height:1;float:right}.rtl-lang .partners .header-top .links-nav li{font-size:11px}.rtl-lang .header-top .links-nav li{font-size:11px}.rtl-lang .members_area #main-nav.navbar-nav>li>a{padding:10px 13px}.rtl-lang .flags-sprite{float:right;margin-left:5px}.rtl-lang #main-nav.partnersNavMenu>li>a{padding:10px 12px}.rtl-lang #main-nav.navbar-nav>li>a{font-size:17px !important}.rtl-lang .main-nav ul li .dropdown .wrap .block h3{text-align:right;float:left}.rtl-lang .main-nav ul li .dropdown .wrap .block h3{text-align:right}.rtl-lang .main-nav ul li .dropdown .wrap .block ul li i[class^="fa"],.rtl-lang .main-nav ul li .dropdown .wrap .block ul li i.xmFont{margin-left:10px;margin-right:0;float:right}.rtl-lang .main-nav .block span>.xm-font{margin-right:0;margin-left:15px}.rtl-lang .main-nav .block>span{text-align:right;white-space:nowrap;display:flex;align-items:center}.rtl-lang .main-nav .main_nav_platforms .block{max-width:207px}.rtl-lang .languages .dropdown-menu a{width:100%;text-align:right}.rtl-lang .languages .dropdown-menu{left:0;right:auto}.rtl-lang .languages .dropdown-menu:after{right:initial;left:8.5px}.rtl-lang .languages .dropdown-menu:before{right:initial;left:7px}.rtl-lang ul#languages li .flag-icon{margin-left:15px}.rtl-lang .toggleLeftNav span{margin-left:0;margin-right:5px}.rtl-lang .toggleRightNav span{margin-left:5px;margin-right:0}html[lang="bn"] .header-top .buttons-nav .btn-feature{padding:7px 15px !important}html[lang="bn"] .header-top ul li+li{margin-left:15px}html[lang="bn"] #main-nav.navbar-nav>li>a{font-size:17px !important}html[lang="si"] #main-nav.navbar-nav>li>a{padding-right:7px !important;padding-left:7px !important;font-size:1.15em !important}html[lang="bn"] .partners #main-nav.navbar-nav>li>a{font-size:16px !important}html[lang="bn"] .members_area #main-nav.navbar-nav>li>a{font-size:14px !important;padding-left:0;padding-right:13px}html[lang="bn"] ul.buttons-nav li a.btn{white-space:nowrap}html[lang="zh_CN"] .header-top .links-nav li{font-size:13px}html[lang="zh_CN"] #main-nav.navbar-nav>li>a{font-weight:bold}html[lang="zh_CN"] .header-top .buttons-nav li a.qq.btn.btn-white{background-color:#a8e2fd;background-image:url("https://cloud.xm-cdn.com/static/common/icons/qq_penguin.png?v=41ac70303887e090bfacb2675b7d55fd");background-size:20%;background-position:13px 4px;background-repeat:no-repeat;border-color:#a8e2fd;color:#000;padding-left:42px !important}html[lang="zh_CN"] .main-nav ul li .dropdown .wrap .block h3{font-weight:normal}html[lang="cs"] .header-top .buttons-nav a.btn{padding:8px 13px !important}html[lang="de"] .members_area #main-nav.navbar-nav>li>a{padding:10px 14px}html[lang="de"] .header-top .links-nav li{font-size:11px}html[lang="de"] .header-top ul li+li{margin-left:17px}html[lang="de"] #main-nav.partnersNavMenu>li>a{padding:15px 8px !important;font-size:18px !important}html[lang="de"] .members_area #main-nav.navbar-nav>li>a{padding:10px 7px;font-size:18px !important}html[lang="el"] .header-top .buttons-nav a.btn-red,html[lang="el"] .header-top .buttons-nav a.btn--primary_green{padding:11.5px 9px !important}html[lang="el"] .header-top button.btn.btn-drop{padding:10px 20px 8px 20px !important}html[lang="el"] #main-nav.navbar-nav>li>a{font-size:15px !important;padding-left:7px;padding-right:7px}html[lang="el"] #main-nav.navbar-nav.partnersNavMenu>li>a{padding-left:6px;padding-right:6px}html[lang="el"] .partners .header-top .buttons-nav a.btn-red,html[lang="el"] .partners .header-top .buttons-nav a.btn--primary_green{font-size:11px !important}html[lang="el"] .header-top a.btn{padding:10px 9px !important}html[lang="el"] .header-top ul li+li{margin-left:10px}html[lang="el"] .header-top .buttons-nav li+li{margin-left:10px}html[lang="el"] .header-top a.btn.btn-white,html[lang="el"] .header-top a.btn.btn-solid.btn-red,html[lang="el"] .header-top a.btn.btn-solid.btn--primary_green{height:35px;line-height:13px}html[lang="el"] .main-nav ul li .dropdown .wrap .block h3{font-size:18px;text-transform:uppercase}html[lang="el"] .main-nav a,html[lang="el"] .main-nav ul li .dropdown .wrap .block h3,html[lang="el"] .main-nav ul li .dropdown .box h2{font-weight:bold}html[lang="el"] .main-nav ul li .dropdown .box h2{font-weight:400}html[lang="el"] .main-nav ul li .dropdown .wrap .block h3{font-size:18px;font-weight:normal}html[lang="el"] .main-nav .block>span{font-size:18px;text-transform:uppercase}html[lang="en"] #main-nav.partnersNavMenu>li>a{padding:10px 12px}html[lang="es"] #main-nav.partnersNavMenu>li>a{padding:15px 8px !important}html[lang="es"] .members_area #main-nav.navbar-nav>li>a{padding:10px 9px}html[lang="es"] .partners #main-nav.navbar-nav>li>a{font-size:19px !important}html[lang="es"] .partners .navbar.navbar-default ul.buttons-nav li a{font-size:13px !important;padding-right:14px !important}html[lang="fa"] .nav{padding-right:0}html[lang="fa"] .main-nav ul li .dropdown .box p{line-height:16px}html[lang="fa"] .main-nav ul li .dropdown .wrap .block h3{text-align:right;float:left}html[lang="fa"] .main-nav ul li .dropdown .wrap .block h3{text-align:right}html[lang="fa"] .main-nav ul li .dropdown .wrap .block ul li i[class^="fa"],html[lang="fa"] .main-nav ul li .dropdown .wrap .block ul li i.xm-font{margin-left:10px;margin-right:0;float:right}html[lang="fa"] #main-nav.navbar-nav>li>a{font-size:16px !important}html[lang="fa"] .members_area #main-nav.navbar-nav>li>a{font-size:16px !important}html[lang="fa"] .members_area #main-nav.navbar-nav>li>a{padding:10px 10px}html[lang="fa"] .main-nav .block span>.xm-font{margin-right:0;margin-left:5px}html[lang="fa"] .main-nav .block>span{text-align:right}html[lang="fa"] .header-top a.btn{padding:9px !important}html[lang="fa"] .header-top ul li+li{margin-right:13px;margin-left:0}html[lang="fa"] .header-top ul li{float:right;direction:ltr}html[lang="fa"] .header-top .buttons-nav li+li{margin-left:0;margin-right:15px}html[lang="fa"] .header-top .links-nav{padding:24px 15px;border-left:1px solid #262626;border-right:1px solid #262626;line-height:1;float:right}html[lang="fa"] .header-top .buttons-nav a [class^="fa"]{float:left;padding:15px 0 15px 13px;border-right:0}html[lang="fa"] .header-top .buttons-nav a [class^="fa"]{margin-left:5px}html[lang="fa"] .header-top .buttons-nav a.btn-white,html[lang="fa"] .header-top .buttons-nav a.btn-drop,html[lang="fa"] .header-top .buttons-nav a.btn-red,html[lang="fa"] .header-top .buttons-nav a.btn--primary_green{font-size:13px !important}html[lang="fa"] .header-top .buttons-nav li a.telegram.btn.btn-white{background-color:#0097e8;border-color:#0097e8;color:#fff;margin-left:0;padding:6px !important;line-height:20px;text-transform:none}html[lang="fa"] .header-top .buttons-nav li a.telegram.btn.btn-white [class^="fa"]{margin-right:0;margin-left:5px;font-size:16px}html[lang="fa"] .header-top .buttons-nav [class^="fa"]{float:right}html[lang="fa"] .navbar-nav>li{float:right}html[lang="fa"] .toggleLeftNav span{margin-left:0;margin-right:5px}html[lang="fa"] .toggleRightNav span{margin-left:5px;margin-right:0}html[lang="fa"] .flags-sprite{float:right;margin-left:5px}html[lang="fa"] .languages .dropdown-menu a{width:100%;text-align:right}html[lang="fa"] .languages .dropdown-menu{left:0;right:auto}html[lang="fa"] .languages .dropdown-menu:after{right:initial;left:8.5px}html[lang="fa"] .languages .dropdown-menu:before{right:initial;left:7px}html[lang="fa"] ul#languages li .flag-icon{margin-left:15px}html[lang="fr"] #main-nav.navbar-nav>li>a{padding-left:7px;padding-right:7px}html[lang="fr"] .members_area #main-nav.navbar-nav>li>a{font-size:19px !important}html[lang="fr"] .header-top a.btn{padding:9px 17px !important}html[lang="fr"] .partners .navbar.navbar-default ul.buttons-nav li a{font-size:13px !important}html[lang="hu"] .members_area #main-nav.navbar-nav>li>a{font-size:19px !important}html[lang="hu"] .members_area .nav>li>a{padding:10px 10px}html[lang="hu"] #main-nav.partnersNavMenu>li>a{padding:15px 14px !important}html[lang="hu"] .partners #main-nav.navbar-nav>li>a{font-size:18px !important}html[lang="id"] .members_area #main-nav.navbar-nav>li>a{padding-left:10px;padding-right:10px}html[lang="it"] .members_area .navbar-nav>li>a{padding:10px 9px}html[lang="ja"] #main-nav.navbar-nav>li>a{font-size:17px !important;font-weight:bold;padding:10px 13px}html[lang="ja"] ul#main-nav{margin-top:5px}html[lang="ja"] .members_area #main-nav.navbar-nav>li>a{padding:10px 9px;font-size:16px !important}html[lang="ja"] .header-top .links-nav a{font-size:11px;font-weight:bold}html[lang="ja"] .header-top .buttons-nav a.btn-red,html[lang="ja"] .header-top .buttons-nav a.btn--primary_green{padding:11.5px 9px !important}html[lang="ja"] .header-top button.btn.btn-drop{padding:10px 20px 8px 20px !important}html[lang="ja"] .header-top a.btn{padding:10.5px 9px !important}html[lang="ja"] .header-top .buttons-nav .btn-white,html[lang="ja"] .header-top .buttons-nav a.btn-green,html[lang="ja"] .header-top .buttons-nav a.btn--secondary_red,html[lang="ja"] .header-top .buttons-nav a.btn-red,html[lang="ja"] .header-top .buttons-nav a.btn--primary_green,html[lang="ja"] a.btn.btn-drop,html[lang="ja"] button.btn.btn-drop{font-size:11px !important}html[lang="ja"] .header-top .buttons-nav .btn-feature{padding:9px 20px !important}html[lang="ko"] .main-nav ul li .dropdown .wrap .block h3{font-weight:normal}html[lang="ko"] .header-top a.btn.btn-solid.btn-red,html[lang="ko"] .header-top a.btn.btn-solid.btn--primary_green{padding:9px 15px !important}html[lang="ko"] .header-top a.btn.btn-white{padding:9px 15px !important}html[lang="ko"] .header-top button.btn.btn-drop{padding:9px 20px 8px 20px !important}html[lang="ko"] .header-top ul li+li{margin-left:10px}html[lang="ko"] .header-top .buttons-nav li+li{margin-left:10px}html[lang="ko"] .toggleLeftNav span,html[lang="ko"] .toggleRightNav span{font-weight:bold}html[lang="ms"] #main-nav.navbar-nav>li>a{padding:10px 10px}html[lang="ms"] .main-site #main-nav.navbar-nav .main-nav ul{position:relative;top:7px}html[lang="nl"] .members_area #main-nav.navbar-nav>li>a{padding:10px 12px}html[lang="nl"] .partners #main-nav.navbar-nav>li>a{font-size:19px !important}html[lang="ph"] .header-top ul li+li{margin-left:10px}html[lang="pl"] .partners header .nav>li>a,.members_area header .nav>li>a{padding:10px 12px}html[lang="pl"] .partners #main-nav.navbar-nav>li>a{font-size:19px !important}html[lang="pl"] .header-top .links-nav li{font-size:11px;position:relative;color:#fff}html[lang="pt"] #main-nav.partnersNavMenu>li>a{padding:15px 8px !important}html[lang="pt"] .members_area #main-nav.navbar-nav>li>a{padding:10px 8px}html[lang="ru"] .partners #main-nav.navbar-nav>li>a{font-size:18px !important}html[lang="ru"] .partners .header-top .links-nav li{font-size:11px !important}html[lang="ru"] .header-top a.btn{padding:9px !important}html[lang="sv"] .header-top ul li+li{margin-left:12px}html[lang="sv"] .header-top a.btn.btn-solid.btn-red,html[lang="sv"] .header-top a.btn.btn-solid.btn--primary_green{padding:8px 13px !important}html[lang="sv"] .header-top a.btn.btn-white{padding:8px 13px !important}html[lang="th"] .main-nav .block ul li a{font-size:15px !important}html[lang="th"] .main-nav ul li .dropdown .wrap .block h3{font-weight:normal}html[lang="th"] #main-nav.navbar-nav>li>a{font-size:19px !important;padding-left:6px;padding-right:6px}html[lang="th"] #main-nav.partnersNavMenu>li>a{padding:15px 4px !important}html[lang="th"] .header-top a.btn.btn-solid.btn-red,html[lang="th"] .header-top a.btn.btn-solid.btn--primary_green{padding:9px 15px !important}html[lang="th"] .header-top a.btn.btn-white{padding:9px 15px !important}html[lang="th"] .header-top ul li+li{margin-left:10px}html[lang="th"] .header-top .buttons-nav li+li{margin-left:10px}html[lang="tr"] #main-nav.partnersNavMenu>li>a{padding:15px 8px !important}html[lang="tw"] #main-nav.navbar-nav>li>a{font-weight:bold}html[lang="tw"] .main-nav ul li .dropdown .wrap .block h3{font-weight:normal}html[lang="tw"] .header-top .links-nav li{font-size:13px}html[lang="tw"] .header-top .buttons-nav li a.qq.btn.btn-white{background-color:#a8e2fd;background-image:url("https://cloud.xm-cdn.com/static/common/icons/qq_penguin.png?v=41ac70303887e090bfacb2675b7d55fd");background-size:20%;background-position:13px 4px;background-repeat:no-repeat;border-color:#a8e2fd;color:#000;padding-left:42px !important}html[lang="vn"] .main-nav a,html[lang="vn"] .main-nav ul li .dropdown .wrap .block h3,html[lang="vn"] .main-nav ul li .dropdown .box h2{font-weight:bold}html[lang="vn"] .main-nav ul li .dropdown .box h2{font-weight:400}html[lang="vn"] .main-nav ul li .dropdown .wrap .block h3{font-size:18px;font-weight:normal}html[lang="vn"] #main-nav.navbar-nav>li>a{font-size:15px !important;padding-left:7px;padding-right:7px}html[lang="vn"] .main-nav ul li .dropdown .wrap .block h3{font-size:18px;text-transform:uppercase}html[lang="vn"] .header-top a.btn.btn-solid.btn-red,html[lang="vn"] .header-top a.btn.btn-solid.btn--primary_green{padding:10px 15px !important}html[lang="vn"] .header-top a.btn.btn-white{padding:9px 15px !important}html[lang="vn"] .header-top ul li+li{margin-left:10px}html[lang="vn"] .header-top .buttons-nav li+li{margin-left:10px}html[lang="vn"] .header-top .buttons-nav a.btn-white,html[lang="vn"] .header-top .buttons-nav a.btn-drop,html[lang="vn"] .header-top .buttons-nav a.btn-red,html[lang="vn"] .header-top .buttons-nav a.btn--primary_green{font-size:13px !important}html[lang="vn"] .toggleLeftNav span,html[lang="vn"] .toggleRightNav span{text-transform:uppercase}html[lang="si"] .partners .header-top ul li+li{margin-left:10px}html[lang="si"] .partners .header-top .links-nav a{font-size:11px}html[lang="si"] .partners .header-top .buttons-nav a.btn-red,html[lang="si"] .partners .header-top .buttons-nav a.btn--primary_green{font-size:11px !important}#st_gdpr_iframe{left:0 !important;right:-5000px}@media(min-width:992px) and (max-width:1299px){html[lang="en"] .members_area #main-nav.navbar-nav>li>a{font-size:17px !important}html[lang="es"] .members_area #main-nav.navbar-nav>li>a{font-size:17px !important}html[lang="it"] .members_area #main-nav.navbar-nav>li>a{font-size:17px !important}html[lang="ja"] .members_area #main-nav.navbar-nav>li>a{font-size:15px !important}html[lang="ph"] .members_area #main-nav.navbar-nav>li>a{font-size:17px !important}html[lang="pt"] .members_area #main-nav.navbar-nav>li>a{font-size:17px !important}html[lang="ru"] .members_area #main-nav.navbar-nav>li>a{font-size:16px !important}}@media(max-width:1290px) and (min-width:991px){html[lang="de"] #main-nav.navbar-nav>li>a{font-size:18px !important}html[lang="ph"] #main-nav.navbar-nav>li>a{font-size:18px !important}html[lang="ru"] #main-nav.navbar-nav>li>a{font-size:17px !important}html[lang="th"] #main-nav.navbar-nav>li>a{font-size:18px !important}}@media(max-width:1199px) and (min-width:992px){html[lang="de"] .members_area #main-nav.navbar-nav>li>a{font-size:18px !important}html[lang="ms"] .members_area #main-nav.navbar-nav>li>a{font-size:17px !important}html[lang="ph"] .members_area #main-nav.navbar-nav>li>a{font-size:16px !important}html[lang="ru"] .members_area #main-nav.navbar-nav>li>a{font-size:15px !important}html[lang="ru"] header .navbar-brand>img{height:36px}html[lang="ru"] .navbar-header .promo-logo-svg{left:191px}}@media(max-width:1249px) and (min-width:992px){html[lang="fr"] .members_area #main-nav.navbar-nav>li>a{font-size:17px !important}}@media(max-width:991px) and (min-width:768px){.showNavLeft #main-nav #navigation-collapse{left:-320px !important}}@media(min-width:768px){.rtl-lang .navbar-header{float:right}.rtl-lang .navbar-right{float:left !important}.rtl-lang .navbar-nav>li{float:right}html[lang="fa"] .navbar-header{float:right}html[lang="fa"] .navbar-right{float:left !important}html[lang="fa"] .navbar-nav>li{float:right}}@media(min-width:992px){header .center-logo{display:none}#main-nav.container-fluid{padding:0 !important}.main-nav{position:relative;margin-top:21px}.main-nav ul li.selected{background-color:#d51820 !important;height:45px;z-index:9}.main-nav ul li .dropdown{position:absolute;display:none;width:100%;min-height:465px;float:left;left:0;right:0;margin:17px 0 0 0;background-color:#000;border-top:1px solid #262626;border-bottom:1px solid #444;cursor:auto;z-index:9}.main-site.xmtd .main-nav ul li .dropdown{min-height:420px}.main-nav ul li .dropdown .nav-bottom-bar{position:absolute;width:100%;height:74px;float:left;left:0;right:0;bottom:-75px;clear:both;background-color:#252525}.main-nav .nav-bottom-bar .container,.main-nav .nav-bottom-bar .container>.row>div{height:75px}.main-nav .nav-bottom-bar p{position:relative;top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);font:18px Arial,sans-serif;color:#fff;padding:0;margin:0}.main-nav li.selected>a:after{position:absolute;display:block;content:"";width:10px;height:10px;top:66px;left:0;right:0;margin:0 auto;border-left:12px solid transparent;border-right:12px solid transparent;border-top:12px solid #000;cursor:none;z-index:999}.main-nav li.selected>a:before{position:absolute;display:block;content:"";width:10px;height:10px;top:68px;left:0;right:0;margin:0 auto;border-left:12px solid transparent;border-right:12px solid transparent;border-top:12px solid #262626;cursor:none;z-index:999}.main-nav .nav-bottom-bar a{position:relative;top:50%;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);font-weight:700;text-transform:uppercase;font-size:20px;padding:7px;margin:0}.main-nav .wrap{position:relative;display:-webkit-box !important;display:-moz-box !important;display:-ms-flexbox !important;display:-webkit-flex !important;display:flex !important;flex-direction:row;-webkit-flex-direction:row;-ms-flex-pack:justify;flex-wrap:nowrap;margin:60px 0 0 0}.main-nav .block{display:block !important;flex-grow:1;-webkit-flex-grow:1;-webkit-box-flex:1;float:left}.main-nav .block:last-child{margin-right:0}.main-nav .block ul{width:207px;float:left;margin:10px 0;padding:0;list-style:none}.main-nav .block li:hover{background-color:#000 !important}.main-nav .block li a:hover{color:#d51820 !important}.main-nav .block span>.xmFont,.main-nav .block span>.fa-kit{vertical-align:middle;position:relative;font-size:50px;margin-right:15px;color:#fff}.rtl-lang .main-nav .block span>.xmFont,.rtl-lang .main-nav .block span>.fa-kit{margin-right:0;margin-left:15px;float:right}.main-nav .block ul{float:left;clear:both}.main-nav .block ul li{clear:both;padding:0 0 12px 0;margin:15px 0 0 0;border-bottom:1px solid #222}.main-nav .block ul li:last-child{border-bottom:0}.main-nav .block ul li a{font:normal 16px Arial,sans-serif;color:#fff !important;text-transform:none;margin:0;padding:0 !important}.main-nav .dropdown .box{max-width:212px;float:left;margin:60px 0 0 0}.main-nav .box>span{display:block;font-size:29px;line-height:normal;color:#a0a0a0;padding:0;margin:0 0 25px 0}.main-nav .dropdown .box p{font:12px Arial,sans-serif;color:#c2c2c2}.main-nav .dropdown .line{position:relative;width:1px;height:310px;margin:55px 40px 0 40px;float:left;background-color:#666}#main-nav.navbar-nav>li>a [class^="fa"]{display:none}#main-nav .canvas-text-bar{display:none}html[lang="si"] #main-nav.navbar-nav>li>a{padding-right:6px !important;padding-left:6px !important;font-size:1em !important}.rtl-lang .main-nav ul li .dropdown .wrap .block ul{float:right}.rtl-lang .main-nav ul li .dropdown .wrap .block h3 i.account,.rtl-lang .main-nav ul li .dropdown .wrap .block h3 i.stats,.rtl-lang .main-nav ul li .dropdown .wrap .block h3 i.trading,.rtl-lang .main-nav ul li .dropdown .wrap .block h3 i.desktop,.rtl-lang .main-nav ul li .dropdown .wrap .block h3 i.tablet,.rtl-lang .main-nav ul li .dropdown .wrap .block h3 i.mobile,.rtl-lang .main-nav ul li .dropdown .wrap .block h3 i.learn,.rtl-lang .main-nav ul li .dropdown .wrap .block h3 i.market,.rtl-lang .main-nav ul li .dropdown .wrap .block h3 i.tool,.rtl-lang .main-nav ul li .dropdown .wrap .block h3 i.about{margin-left:15px;float:right;margin-right:0}.rtl-lang .main-nav ul li .dropdown .box{float:right}.rtl-lang .main-nav ul li .dropdown .line{float:right}html[lang="el"] .main-nav ul li .dropdown .nav-bottom-bar p{font-size:17px}html[lang="el"] .main-nav ul li .dropdown .wrap .block ul li a{font-weight:300}html[lang="el"] .main-nav ul li .dropdown .box h2{font-size:27px}html[lang="fa"] .main-nav ul li .dropdown .wrap .block ul{float:right}html[lang="fa"] .main-nav ul li .dropdown .wrap .block h3 i.account,html[lang="fa"] .main-nav ul li .dropdown .wrap .block h3 i.stats,html[lang="fa"] .main-nav ul li .dropdown .wrap .block h3 i.trading,html[lang="fa"] .main-nav ul li .dropdown .wrap .block h3 i.desktop,html[lang="fa"] .main-nav ul li .dropdown .wrap .block h3 i.tablet,html[lang="fa"] .main-nav ul li .dropdown .wrap .block h3 i.mobile,html[lang="fa"] .main-nav ul li .dropdown .wrap .block h3 i.learn,html[lang="fa"] .main-nav ul li .dropdown .wrap .block h3 i.market,html[lang="fa"] .main-nav ul li .dropdown .wrap .block h3 i.tool,html[lang="fa"] .main-nav ul li .dropdown .wrap .block h3 i.about{margin-left:15px;float:right;margin-right:0}html[lang="fa"] .main-nav ul li .dropdown .box{float:right}html[lang="fa"] .main-nav ul li .dropdown .line{float:right}html[lang="vn"] .main-nav ul li .dropdown .nav-bottom-bar p{font-size:17px}html[lang="vn"] .main-nav ul li .dropdown{min-height:440px}html[lang="vn"] .main-nav ul li .dropdown .wrap .block ul li a{font-weight:300}html[lang="vn"] .main-nav ul li .dropdown .box h2{font-size:27px}a[nav-label="new"]:after{display:none !important}a[nav-label="new"]:before{content:'';width:5px;height:5px;margin-left:3px;background:#d51820;border-radius:50%;display:inline-block;transform:translateY(-180%)}html[lang="ru"] .header-top .links-nav,html[lang="bn"] .header-top .links-nav{padding:24px 13px}html[lang="bn"] .header-top .links-nav li{font-size:11px}html[lang="si"] .partners #main-nav.navbar-nav>li>a{font-size:12px !important;padding:13px 10px 17px 10px !important}}@media(min-width:1200px){.navbar-header{position:relative;padding:5px 0 10px 0}.navbar-header .promo-logo{position:absolute;padding:0 !important;left:218px}.navbar-header .promo-logo-svg{padding:0 !important}.main-nav .block ul{width:248px}.rtl-lang .navbar-header .promo-logo,.rtl-lang .navbar-header .promo-logo-svg{right:220px;left:0}html[lang="en"] .members_area #main-nav.navbar-nav>li>a{padding:10px}html[lang="ph"] .members_area #main-nav.navbar-nav>li>a{font-size:16px !important;padding-left:6px !important;padding-right:6px !important}html[lang="ru"] .members_area #main-nav.navbar-nav>li>a{font-size:15px !important;padding-left:7px !important;padding-right:7px !important}html[lang="sv"] .members_area #main-nav.navbar-nav>li>a{padding-left:13px !important;padding-right:13px !important}html[lang="si"] #main-nav.navbar-nav>li>a{padding-right:7px !important;padding-left:7px !important;font-size:1.15em !important}html[lang="fa"] .navbar-header .promo-logo{position:absolute;padding:0;right:140px;left:0}html[lang="fa"] .navbar-header .promo-logo-svg{position:absolute;padding:0;right:140px;left:0}html[lang="ru"] .header-top .links-nav,html[lang="bn"] .header-top .links-nav{padding:24px 13px}html[lang="bn"] .header-top .links-nav li{font-size:11px}html[lang="si"] .partners #main-nav.navbar-nav>li>a{font-size:15px !important}html[lang="it"] #main-nav.navbar-nav>li>a{font-size:18px !important;padding-right:10px;padding-left:10px}html[lang="de"] #main-nav.navbar-nav>li>a{font-size:18px !important}}@media(min-width:1249px){html[lang="el"] .members_area #main-nav.navbar-nav>li>a{padding-left:6px !important;padding-right:6px !important}}@media(min-width:1290px){html[lang="ph"] .main-nav a:not(.btn){padding:8px}html[lang="ru"] .main-nav a:not(.btn){padding:8px}html[lang="ru"] #main-nav.navbar-nav>li>a{font-size:19px !important}.navbar-header{padding:5px 0 20px 0}}@media(max-width:1290px){.main-nav{box-shadow:none}.main-nav a:not(.btn){padding:8px !important;padding-top:0 !important;font-size:16px !important}.main-nav .navbar-brand.logo,.main-nav .navbar-brand.promo-logo-svg{padding-left:0 !important;padding-right:0 !important}html[lang="el"] #main-nav.navbar-nav>li>a{padding-left:5px !important;padding-right:5px !important;font-size:14px !important}html[lang="el"] .partners .header-top .links-nav li{font-size:11px}html[lang="vn"] #main-nav.navbar-nav>li>a{padding-left:5px !important;padding-right:5px !important;font-size:14px !important}}@media(max-width:1199px){.navbar-header{position:relative}.rtl-lang .navbar-header .promo-logo{right:220px;left:0}.rtl-lang .navbar-header .promo-logo-svg{right:220px;left:0}.main-nav ul li .dropdown .box.platform,.main-nav ul li .dropdown .box.platform .line{display:none}.xm-operated{padding:15px;max-width:302px}.xmbz-operated{padding:15px !important}.xm-operated>p{line-height:normal}[lang="el"] .xm-operated{max-width:170px;padding:10px}[lang="vn"] .xm-operated{max-width:175px;padding:10px}[lang="hu"] .xm-operated,[lang="th"] .xm-operated{max-width:230px;padding:10px}[lang="fr"] .xm-operated,[lang="fa"] .xm-operated{max-width:218px;padding:10px}.rtl-lang .xm-operated,[lang="fa"] .xm-operated{max-width:195px}[lang="de"] .xm-operated,[lang="ph"] .xm-operated{max-width:224px;padding:10px}[lang="sv"] .xm-operated{max-width:250px;padding:15px}[lang="nl"] .xm-operated{max-width:265px;padding:15px}[lang="bn"] .xm-operated{max-width:185px;padding:15px;line-height:1.4}[lang="es"] .xm-operated{max-width:277px}[lang="pt"] .xm-operated{max-width:278px}[lang="cs"] .xm-operated{max-width:296px}[lang="id"] .xm-operated{max-width:315px}[lang="ko"] .xm-operated{max-width:250px}[lang="zh_CN"] .xm-operated,[lang="tw"] .xm-operated,[lang="pl"] .xm-operated{padding:15px;max-width:231px}[lang="pl"] .xm-operated{padding:15px;max-width:295px}.rtl-lang #main-nav.navbar-nav.nav-logo>li>a{font-size:15px !important}html[lang="bn"] .partners .header-top .buttons-nav a.btn{font-size:12px !important}html[lang="en"] #main-nav.navbar-nav.nav-logo>li>a{font-size:17px !important}html[lang="el"] #main-nav.navbar-nav.nav-logo>li>a{font-size:12px !important}html[lang="fa"] #main-nav.navbar-nav.nav-logo>li>a{font-size:15px !important}html[lang="fr"] #main-nav.navbar-nav.nav-logo>li>a{font-size:18px !important}html[lang="ja"] #main-nav.navbar-nav.nav-logo>li>a{font-size:14px !important}html[lang="ms"] #main-nav.navbar-nav.nav-logo>li>a{font-size:17px !important}html[lang="ms"] .members_area #main-nav.navbar-nav>li>a{font-size:18px !important}html[lang="ru"] #main-nav.navbar-nav.nav-logo>li>a{font-size:16px !important}html[lang="th"] #main-nav.navbar-nav.nav-logo>li>a{font-size:16px !important}html[lang="tr"] #main-nav.navbar-nav.nav-logo>li>a{font-size:19px !important}html[lang="vn"] #main-nav.navbar-nav.nav-logo>li>a{font-size:14px !important}html[lang="fa"] .partners.xmtd .header-top .buttons-nav a.btn{font-size:12px !important}html[lang="ru"] .partners.xmtd .header-top .buttons-nav a.btn{font-size:14px !important}html[lang="th"] .partners.xmtd .header-top .buttons-nav a.btn{font-size:13px !important}html[lang="vn"] .partners.xmtd .header-top .buttons-nav a.btn{font-size:11px !important}}@media(max-width:991px){.animating.showNavLeft.left-side .site-canvas{transform:translate3d(300px,0,0);-webkit-transform:translate3d(300px,0,0)}.animating.showNavLeft.right-side .site-canvas{transform:translate3d(-300px,0,0);-webkit-transform:translate3d(-300px,0,0)}.animating.showNavRight.left-side .site-canvas{transform:translate3d(-300px,0,0);-webkit-transform:translate3d(-300px,0,0)}.animating.showNavRight.right-side .site-canvas{transform:translate3d(300px,0,0);-webkit-transform:translate3d(300px,0,0)}.showNavLeft.menu-visible .site-canvas{left:320px}.showNavRight.menu-visible .site-canvas{right:300px}.animating.showNavLeft #main-nav .navbar-collapse.collapse,.menu-visible.showNavLeft #main-nav .navbar-collapse.collapse{display:block !important}.showNavLeft #main-nav #navigation-collapse{position:absolute;top:65px;left:-305px;width:320px;padding:0;overflow:auto !important;padding-bottom:5px}.showNavLeft #main-nav #navigation-collapse .container{width:auto}.showNavRight ul#languages{display:block !important;position:absolute;top:65px;right:-300px;width:300px;padding:0 15px;overflow:auto !important;padding-bottom:5px}.showNavLeft.menu-visible .toggleLeftNav,.showNavLeft.animating .toggleLeftNav{position:absolute;top:1px;left:-300px;padding:15px 0;width:300px;text-align:left;border-bottom:1px solid #333;-webkit-animation-name:none;animation-name:none;-webkit-animation-duration:0;animation-duration:0}.showNavRight.menu-visible .toggleRightNav,.showNavRight.animating .toggleRightNav{position:absolute;top:1px;right:-300px;padding:15px 30px;width:300px;text-align:right;border-bottom:1px solid #333;-webkit-animation-name:none;animation-name:none;-webkit-animation-duration:0;animation-duration:0}.showNavLeft.menu-visible #cookies-block,.showNavRight.menu-visible #cookies-block,.showNavLeft.menu-visible #risk-block,.showNavRight.menu-visible #risk-block{display:none !important}.showNavLeft.menu-visible .toggleLeftNav [class^="fa"].fa-times{position:absolute;transform:translate(-50%,-50%);top:50%;right:10px;display:block}.showNavRight.menu-visible .toggleRightNav [class^="fa"].fa-times{position:absolute;transform:translate(-50%,-50%);top:50%;left:20px;display:block}#main-nav.navbar-nav>li>a [class^="fa"],#main-nav.navbar-nav .navbar-nav__list>li>a [class^="fa"]{display:inline-block;width:12px;font-size:14px;margin-right:18px;vertical-align:middle;float:left;line-height:22px}.rtl-lang #main-nav.navbar-nav>li>a [class^="fa"],.rtl-lang #main-nav.navbar-nav .navbar-nav__list>li>a [class^="fa"]{margin-left:26px;margin-right:0;float:right}#main-nav.navbar-nav>li a{border-top:1px solid #2d2d2d;border-bottom:1px solid #000}#main-nav.navbar-nav>li:first-child a{border-top:0}#main-nav.navbar-nav>li:last-child a{border-bottom:0}#main-nav.navbar-nav .navbar-nav__list>li a{border-top:0;border-bottom:0}.navbar-header{padding:27px 0 26px 0 !important}.navbar-header{padding:0 0 20px 0}.main-nav ul li .dropdown .wrap .block ul li a{font-weight:300;font-size:18px !important;letter-spacing:.5px;padding-bottom:8px;padding-top:8px}.main-nav ul li .dropdown .wrap .block ul li a:hover{color:#ccc !important}#main-nav.navbar-nav>li>a,#main-nav.navbar-nav .navbar-nav__list>li>a{padding:14px 0 14px 0 !important;text-transform:none !important;font-size:13px !important;color:#fff !important;line-height:20px}#main-nav.navbar-nav .navbar-nav__list>li>a{padding:9px 0 !important;font-weight:300}#main-nav.navbar-nav>li>a:hover,#main-nav.navbar-nav .navbar-nav__list>li>a:hover{color:#999 !important}.navbar-header{float:none}.navbar-toggle{display:block}.navbar-collapse{border-top:1px solid transparent}.navbar-collapse.collapse{display:none !important}.navbar-nav{float:none !important;margin:0 6px}.navbar-nav>li{float:none}.navbar-nav>li>a{padding-top:10px;padding-bottom:10px}.navbar-collapse.collapse.in{display:block !important}.collapsing{overflow:hidden !important}.flags-sprite{margin-right:15px}ul#languages li{display:block;float:left}ul#languages li a{display:block;float:left;line-height:25px}header .center-logo{display:block;text-align:center;margin:20px auto 15px}.rtl-lang header .center-logo{direction:ltr}header .navbar-brand{margin-left:0 !important}.site-canvas .toggle-bar-line{display:block;border-bottom:1px solid #444}.rtl-lang .flags-sprite,html[lang="fa"] .flags-sprite{margin-left:15px}#main-nav .canvas-text-bar{display:block;float:left;margin-top:44px;width:250px;clear:both;color:#888;font-size:12px}.main-nav ul li .dropdown .wrap .block{margin-left:60px}.rtl-lang #main-nav.navbar-nav>li{width:100%}.rtl-lang #main-nav.navbar-nav>li>a{width:100%;padding:14px 0 14px 14px !important}.rtl-lang #main-nav.navbar-nav>li>a [class^="fa"]{margin-left:18px}.rtl-lang #main-nav.navbar-nav>li>a .fa-long-arrow-right:before{content:"\f178"}html[lang="fa"] #main-nav.navbar-nav>li{width:100%}html[lang="fa"] #main-nav.navbar-nav>li>a{width:100%;padding:14px 0 14px 14px !important}html[lang="fa"] #main-nav.navbar-nav>li>a [class^="fa"]{margin-left:18px}html[lang="fa"] #main-nav.navbar-nav>li>a .fa-long-arrow-right:before{content:"\f178"}#main-nav.navbar-nav>li .navbar-nav__toggleArrow>.fa-chevron-down{font-size:14px;line-height:23px;float:right;margin-right:0}.rtl-lang #main-nav.navbar-nav>li .navbar-nav__toggleArrow>.fa-chevron-down{float:left;margin-left:0}#main-nav.navbar-nav>li .navbar-nav__toggleArrow[aria-expanded="true"]>.fa-chevron-down::before{content:"\f077"}#main-nav.navbar-nav .navbar-nav__list{color:#fff;padding:20px 0 20px 20px;font-size:13px;border-top:1px solid #2d2d2d;border-bottom:1px solid #000;background:#1d1d1d}.rtl-lang #main-nav.navbar-nav .navbar-nav__list{padding:10px 26px 10px 0}#main-nav.navbar-nav .navbar-nav__listTitle{padding:14px 0;font-weight:700;cursor:auto}#main-nav.navbar-nav .navbar-nav__listTitle:first-child{padding-top:0}.navbar-nav__buttons{margin-top:50px}.navbar-nav__buttons a{margin-bottom:10px}.navbar-nav__buttons a [class^="fa"]{margin-right:5px;font-size:18px}.navbar-nav__buttons .navbar-nav__buttons--primary,.navbar-nav__buttons .navbar-nav__buttons--secondary{font-family:"Roboto",sans-serif;text-transform:none;font-size:15px}.navbar-nav__buttons .navbar-nav__buttons--primary{color:#6c6c6d !important;background:none !important;border:1px solid #6c6c6d !important}.navbar-nav__buttons .navbar-nav__buttons--secondary{color:#29a643 !important;background:none !important;border-color:#29a643 !important}}@media(max-width:767px){.main-nav>ul a,.main-nav>ul button{font-size:16px !important}html[lang="vn"] .toggleLeftNav,html[lang="vn"] .toggleRightNav{padding:15px 20px}}@media(max-height:768px){.main-nav ul li .dropdown{margin:12px 0 0 0}.main-nav ul li.selected>a:before{top:63px}.main-nav ul li.selected>a:after{top:61px}.header-top .links-nav{padding:20px 15px}.header-top .buttons-nav{padding:10px 13px 10px 0}.navbar-header{padding:0 0 25px 0}}.mega-menu__badge.badge{position:relative;top:-2px;right:0;margin-top:auto;margin-bottom:auto;margin-left:3px;background-color:#d51820;text-transform:uppercase;font-size:10px;color:white;display:inline-block;padding:3px;padding-right:4px;line-height:.9;border-radius:unset;font-weight:700}html[lang="vn"] .mega-menu__badge.badge{margin-left:0;right:-20px}.rtl-lang .mega-menu__badge.badge{margin-left:0;margin-right:15px}html[lang="cs"] .mega-menu__badge.badge{margin-left:14px}.mega-menu__badge.badge--arrow::after{border-left-color:#d51820;border-right-color:#d51820}.badge--arrow::after{content:" ";display:inline-block;position:absolute;top:0;bottom:0;right:100%;margin:auto 0;width:0;height:0;border-top:.4em solid transparent;border-bottom:.4em solid transparent;border-right-width:.5em;border-right-style:solid}.rtl-lang .badge--arrow::after{left:100%;right:initial;border-left-width:.5em;border-left-style:solid;border-right-width:0}.main-nav .block ul li a{display:inline !important;position:relative}.main-nav ul li .nav-bottom-bar a{display:block;position:relative}a[nav-label="new"]:after{content:'';width:5px;height:5px;margin-left:3px;background:#d51820;border-radius:50%;display:inline-block;transform:translateY(-180%)}#mobileAppBar{position:relative;display:none;width:100%;background-color:#353535;height:95px;padding:0 25px;margin:0;float:left;z-index:999;border-bottom:1px solid #444}#mobileAppBar>a{display:block;padding-left:100px;padding-top:30px;height:95px}.rtl-lang #mobileAppBar>a,html[lang="fa"] #mobileAppBar>a{padding-left:35px;padding-right:80px}#mobileAppBar>.close-bar{display:none;position:absolute;left:25px;z-index:999;top:0;bottom:0;width:32px;height:32px;margin:auto 0;padding:5px}#mobileAppBar>.close-bar:before{content:"\f00d";font-family:FontAwesome;font-size:27px;color:#8e8e8e !important;line-height:normal}#mobileAppBar>a:after{position:absolute;display:block;top:0;bottom:0;right:0;content:"\f105";font-family:FontAwesome;font-size:40px;height:40px;color:#fff;margin:auto 0;vertical-align:middle;line-height:normal}#mobileAppBar .icon-wrap{position:absolute;top:13px;left:0;font-size:60px;width:80px;height:82px;border-radius:10px;border:7px solid #000;border-top:18px solid #000;border-bottom:0;border-bottom-left-radius:0;border-bottom-right-radius:0;background-color:#000}.rtl-lang #mobileAppBar .icon-wrap,html[lang="fa"] #mobileAppBar .icon-wrap{left:auto;right:0}#mobileAppBar .icon-wrap:after{content:"";position:absolute;top:-9px;border-radius:5px;width:17px;height:4px;background-color:#fff;left:0;right:0;margin:0 auto}#mobileAppBar .icon-wrap .fa{display:block}#mobileAppBar.android,#mobileAppBar.iphone{display:block}#mobileAppBar .icon-wrap:before{position:relative;display:block;content:"";font-family:FontAwesome;text-align:center;width:100%;height:100%;margin:0 auto;font-size:45px;color:#fff;line-height:60px;border-radius:5px;border:1px solid #444;background-color:#fff;border-bottom:0;border-bottom-left-radius:0;border-bottom-right-radius:0}#mobileAppBar.android .icon-wrap:before{content:"\f17b";color:#29a643}#mobileAppBar.iphone .icon-wrap:before{content:"\f179";color:#a6b1b7}#mobileAppBar.android>a:after{color:#29a643}#mobileAppBar.iphone>a:after{color:#a6b1b7}.rtl-lang #mobileAppBar.iphone>a:after,.rtl-lang #mobileAppBar.android>a:after,html[lang="fa"] #mobileAppBar.iphone>a:after,html[lang="fa"] #mobileAppBar.android>a:after{content:"\f104";left:0;right:auto}#mobileAppBar .text-wrap{color:#fff}.rtl-lang #mobileAppBar .text-wrap,html[lang="fa"] #mobileAppBar .text-wrap{margin-right:15px}#mobileAppBar .text-wrap h3{font-weight:700;text-transform:uppercase;font-size:25px;color:#fff;letter-spacing:normal;margin:0 0 5px 0}.rtl-lang #mobileAppBar .text-wrap h3,html[lang="fa"] #mobileAppBar .text-wrap h3{text-align:right}html[lang="ru"] #mobileAppBar .text-wrap h3{font-size:20px}.rtl-lang #mobileAppBar .text-wrap h3,html[lang="el"] #mobileAppBar .text-wrap h3{font-size:16px}html[lang="ja"] #mobileAppBar .text-wrap h3{font-size:15px}html[lang="fa"] #mobileAppBar .text-wrap h3{font-size:13px}html[lang="zh_CN"] #mobileAppBar .text-wrap h3,html[lang="tw"] #mobileAppBar .text-wrap h3,html[lang="ko"] #mobileAppBar .text-wrap h3{font-weight:bold}html[lang="el"] #mobileAppBar .text-wrap h3{font-weight:400}html[lang="ko"] #mobileAppBar .text-wrap h3{letter-spacing:0}html[lang="tr"] #mobileAppBar .text-wrap h3{text-transform:uppercase}#mobileAppBar .text-wrap p{font-size:14px;font-weight:normal;color:#fff;line-height:16px;padding-right:20px}.rtl-lang #mobileAppBar .text-wrap p,html[lang="fa"] #mobileAppBar .text-wrap p{padding-right:0;padding-left:20px;text-align:right}html[lang="ru"] #mobileAppBar .text-wrap p{font-size:13px}@media(min-width:361px){html[lang="th"] #mobileAppBar .text-wrap h3{font-size:16px;letter-spacing:0;padding-top:8px}html[lang="bn"] #mobileAppBar .text-wrap h3{font-size:17px;letter-spacing:0;padding-top:8px}html[lang="bn"] #mobileAppBar .text-wrap p{font-size:12px}}@media(max-width:360px){#mobileAppBar>a{padding-left:80px}#mobileAppBar .icon-wrap{width:70px}#mobileAppBar .text-wrap h3{font-size:15px}html[lang="bn"] #mobileAppBar .text-wrap h3{font-size:12px}#mobileAppBar .text-wrap p{font-size:12px}html[lang="ru"] #mobileAppBar .text-wrap h3{font-size:17px}html[lang="ja"] #mobileAppBar .text-wrap p{font-size:12px}}.ribbon{width:auto;height:50px;position:absolute;right:39px;text-align:left;overflow:visible}.ribbon::before{position:absolute;z-index:-1;content:'';display:block;border:4px solid #bf0001}.ribbon span{position:absolute;display:inline-table;width:auto;padding:4px 5px 5px 5px;background-color:#ff0001;box-shadow:0 3px 8px rgba(0,0,0,.1);color:#fff;font:700 10px/1 'Lato',sans-serif;text-shadow:0 1px 1px rgba(0,0,0,.2);text-transform:uppercase;text-align:left;z-index:1;left:0}.ribbon-top-left{top:3px;left:-13px}.ribbon-top-left::before{top:19px;left:0;transform:rotate(-90deg);border-top-color:transparent;border-left-color:transparent}.ribbon-top-left span{right:-20px;top:0}.half-rect.left,.half-rect.right{width:5%;height:100%;top:0;opacity:1;position:absolute;z-index:2}.half-rect.left{background-image:linear-gradient(180deg,rgba(43,43,43,0) 0,rgba(0,0,0,1) 100%);background-image:-moz-linear-gradient(180deg,rgba(43,43,43,0) 0,rgba(0,0,0,1) 100%);background-image:-webkit-linear-gradient(180deg,rgba(43,43,43,0) 0,rgba(0,0,0,1) 100%);background-image:-o-linear-gradient(180deg,rgba(43,43,43,0) 0,rgba(0,0,0,1) 100%);background-image:-ms-linear-gradient(180deg,rgba(43,43,43,0) 0,rgba(0,0,0,1) 100%);left:0}.half-rect.right{background-image:linear-gradient(0,rgba(43,43,43,0) 0,rgba(0,0,0,1) 100%);background-image:-moz-linear-gradient(0,rgba(43,43,43,0) 0,rgba(0,0,0,1) 100%);background-image:-webkit-linear-gradient(0,rgba(43,43,43,0) 0,rgba(0,0,0,1) 100%);background-image:-o-linear-gradient(0,rgba(43,43,43,0) 0,rgba(0,0,0,1) 100%);background-image:-ms-linear-gradient(0,rgba(43,43,43,0) 0,rgba(0,0,0,1) 100%);right:0}#hero-content{position:relative;text-align:center}#hero-content .block{position:relative;padding-top:35px;z-index:9;color:#fff}#hero-content .block .mobileslide a{color:#fff;text-decoration:underline !important}#hero-content .block .mobileslide a:hover,#hero-content .block .mobileslide a:focus{color:#d51820;text-decoration:none !important}#hero-content .single-item{height:166px;overflow:hidden}html[lang="el"] #hero-content .single-item{height:180px}.rtl-lang #hero-content .single-item,html[lang="fa"] #hero-content .single-item{direction:ltr}#hero-content .single-item>div+div{display:none}.rtl-lang #hero-content .title{direction:rtl}#hero-content .title{display:block;font-size:43px;font-weight:normal;line-height:normal;margin:0;padding:0 15px}#singleWebinar #hero-content .title,#seminars #hero-content .title{font-size:43px}html[lang="bn"] #hero-content .title,html[lang="cs"] #hero-content .title,html[lang="el"] #hero-content .title,html[lang="nl"] #hero-content .title,html[lang="ph"] #hero-content .title,html[lang="pt"] #hero-content .title,html[lang="tr"] #hero-content .title{font-size:37px}html[lang="de"] #hero-content .title,html[lang="fr"] #hero-content .title,html[lang="hu"] #hero-content .title,html[lang="it"] #hero-content .title,html[lang="pl"] #hero-content .title,html[lang="ru"] #hero-content .title,html[lang="vn"] #hero-content .title{font-size:33px}#hero-content p{font-size:20px}#hero-content,#hero-content .img{display:block;position:absolute;width:100%;background:#000}#hero-content::before,.mannySponsor #hero-content::before,#hero-content .img::before{content:"";display:block;position:absolute;width:100%;height:100%;background-color:rgba(0,0,0,0.7);z-index:2}#seminars #hero-content,#careers #hero-content,#singleWebinar #hero-content,#foundation #hero-content{display:block;position:relative;width:100%;background:#000 url("https://cloud.xm-cdn.com/static/xm/pages/homepage/homepage-2023.jpg") repeat-x center top}.mannySponsor #seminars #hero-content,.mannySponsor #singleWebinar #hero-content,.mannySponsor #foundation #hero-content{display:block;position:relative;width:100%;background:#000 url("https://cloud.xm-cdn.com/static/xm/pages/manny_sponsorship/homepage-manny-2023.jpg") repeat-x center top;z-index:1}#hero-content .apply-link{font-size:14px;color:#b0b0b0}#hero-content .buttons-wrap{position:relative;z-index:9;background:0;max-width:785px;margin:0 auto;padding:0}#hero-content .buttons-wrap.buttons-wrap--single{max-width:100%}#hero-content .buttons-wrap .btn{position:relative;max-width:450px;font-size:30px;padding:12px 20px !important;text-transform:uppercase;line-height:30px}.hp-v17 #hero-content .buttons-wrap .btn{min-height:63px;padding:8px 20px !important}html[lang="ph"] .hp-v17 #hero-content .buttons-wrap .btn{padding:8px 18px !important}html[lang="bn"] .hp-v17 #hero-content .buttons-wrap .btn,html[lang="si"] .hp-v17 #hero-content .buttons-wrap .btn{padding:8px 10px !important}html[lang="vn"] #hero-content .buttons-wrap .btn{font-size:29px}html[lang="el"] #hero-content .buttons-wrap .btn,html[lang="ko"] #hero-content .buttons-wrap .btn{font-size:28px}html[lang="bn"] #hero-content .buttons-wrap .btn{font-size:22px}html[lang="fa"] #hero-content .buttons-wrap .btn,html[lang="ko"] .main-site.xmbz.hp-v17 #hero-content .buttons-wrap .btn,html[lang="ur"] .main-site.xmbz.hp-v17 #hero-content .buttons-wrap .btn,html[lang="tr"] .main-site.xmbz.hp-v17 #hero-content .buttons-wrap .btn{font-size:27px}html[lang="hu"] .main-site.xmbz.hp-v17 #hero-content .buttons-wrap .btn{font-size:26px}html[lang="zh_CN"] #hero-content .buttons-wrap .btn,html[lang="tw"] #hero-content .buttons-wrap .btn,html[lang="el"] .main-site.xmbz.hp-v17 #hero-content .buttons-wrap .btn,html[lang="es"] .hp-v17.partners #hero-content .buttons-wrap .btn,html[lang="fr"] .hp-v17.partners #hero-content .buttons-wrap .btn,html[lang="nl"] .hp-v17.partners #hero-content .buttons-wrap .btn,html[lang="ru"] .hp-v17.partners #hero-content .buttons-wrap .btn,html[lang="th"] .hp-v17.partners #hero-content .buttons-wrap .btn,html[lang="vn"] .hp-v17.partners #hero-content .buttons-wrap .btn,html[lang="si"] .hp-v17.partners #hero-content .buttons-wrap .btn{font-size:25px}html[lang="el"] .partners #hero-content .buttons-wrap .btn{font-size:22px}html[lang="bn"] .hp-v17.partners #hero-content .buttons-wrap .btn{font-size:20px}html[lang="el"] .hp-v17.partners #hero-content .buttons-wrap .btn{font-size:18px}html[lang="si"] #hero-content .buttons-wrap .btn{line-height:33px;font-size:20px}html[lang="bn"] #hero-content .buttons-wrap .btn,html[lang="hi"] #hero-content .buttons-wrap .btn{line-height:37px}.rtl-lang #hero-content .buttons-wrap .btn,html[lang="fa"] #hero-content .buttons-wrap .btn{line-height:25px}#hero-content .buttons-wrap .btn small{line-height:1}html[lang="si"] #hero-content .buttons-wrap .btn small,html[lang="si"] .stripe-main .stripe-main__desc{line-height:1.2}.rtl-lang #hero-content .buttons-wrap .btn small,html[lang="fa"] #hero-content .buttons-wrap .btn small,html[lang="el"] #hero-content .buttons-wrap .btn small{margin-bottom:2px}.rtl-lang #hero-content .buttons-wrap .btn small,html[lang="fa"] #hero-content .buttons-wrap .btn small,html[lang="si"] #hero-content .buttons-wrap .btn small{margin-top:10px}html[lang="zh_CN"] #hero-content .buttons-wrap .btn small,html[lang="el"] #hero-content .buttons-wrap .btn small,html[lang="ko"] #hero-content .buttons-wrap .btn small,html[lang="tw"] #hero-content .buttons-wrap .btn small,html[lang="vn"] #hero-content .buttons-wrap .btn small{margin-top:5px}#hero-content .stripe{position:relative;z-index:9;background-color:#fff;height:160px;padding:0}#hero-content .stripe .row{margin:0;display:flex;flex-wrap:wrap}#hero-content .stripe em{display:table-cell;height:70px;font-size:70px;line-height:70px;font-style:normal;font-weight:300;text-transform:uppercase;border:0;color:#d72027;float:none;margin:0;padding:0;white-space:nowrap}html[lang="ja"] .stripe em,html[lang="ko"] .stripe em,html[lang="pt"] .stripe em,html[lang="th"] .stripe em,html[lang="tw"] .stripe em,html[lang="vn"] .stripe em,html[lang="el"] .stripe em{font-size:45px;font-weight:300 !important}#singleWebinar #hero-content .stripe em,#seminars #hero-content .stripe em{width:80px;font-size:60px;height:60px;line-height:60px;padding-right:10px;text-align:center;vertical-align:middle}.rtl-lang #seminars #hero-content .stripe em,html[lang="fa"] #seminars #hero-content .stripe em,.rtl-lang #singleWebinar #hero-content .stripe em,html[lang="fa"] #singleWebinar #hero-content .stripe em{padding-right:0;padding-left:10px}.partners #hero-content .stripe em{padding-right:15px}.partners #hero-content .stripe em .xmFont{font-weight:600 !important}.rtl-lang .partners #hero-content .stripe em,html[lang="fa"] .partners #hero-content .stripe em{padding:0}html[lang="bn"] .partners #hero-content .stripe em,html[lang="th"] .partners #hero-content .stripe em{font-size:58px}html[lang="el"] .partners #hero-content .stripe em{font-size:60px}#hero-content .stripe span{vertical-align:middle;display:table-cell;height:70px;font-size:18px;font-weight:500;color:#4a4a4a;line-height:1;font-weight:normal;text-align:left;float:none;padding:0}html[lang="uz"] .partners #hero-content .stripe span{height:inherit}html[lang="el"] .stripe span,html[lang="ja"] .stripe span,html[lang="ko"] .stripe span,html[lang="th"] .stripe span,html[lang="tw"] .stripe span,html[lang="vn"] .stripe span{text-transform:capitalize}html[lang="si"] #hero-content .stripe span{line-height:19px}html[lang="th"] #hero-content .stripe span,html[lang="hi"] #hero-content .stripe span{line-height:23px}#singleWebinar #hero-content .stripe span,#seminars #hero-content .stripe span{line-height:normal;padding-left:10px}.rtl-lang #seminars #hero-content .stripe span,html[lang="fa"] #seminars #hero-content .stripe span,.rtl-lang #singleWebinar #hero-content .stripe span,html[lang="fa"] #singleWebinar #hero-content .stripe span{padding-right:10px;padding-left:0;text-align:right}#hero-content #luckDrawIcon{margin-top:-2px}#hero-content #luckDrawIcon .row{padding-top:35px}#hero-content .stripe .col4{position:relative;width:50%;vertical-align:top;display:block;padding:20px 0;float:left}#singleWebinar #hero-content .stripe.no-lucky-draw .col4.instructor,#seminars #hero-content .stripe.no-lucky-draw .col4.instructor{display:block}#singleWebinar #hero-content .stripe.no-lucky-draw .col4.lucky-draw,#singleWebinar #hero-content .stripe .col4.instructor,#seminars #hero-content .stripe.no-lucky-draw .col4.lucky-draw,#seminars #hero-content .stripe .col4.instructor{display:none}#hero-content .stripe .wrap{display:table;text-align:center;width:100%}#hero-content .stripe .header{font-size:16px;border-bottom:1px solid #d7d7d7;padding:10px}#hero-content .stripe .text-wrap{position:relative;display:inline-block}#hero-content .stripe .text-wrap p{font-size:16px;margin:0}#hero-content .stripe .text-wrap a{color:#d51820}#hero-content .stripe .text-wrap img{position:absolute;top:-44px;right:-195px}#hero-content.video .video-player-block{display:inline-block}#hero-content.video .block .xm-play-solid{font-size:52px}#hero-content.video .video-player-block:hover .xm-play-solid{color:#d51820}#hero-content.video #imgAsync.loaded{-webkit-background-size:cover !important;-moz-background-size:cover !important;-o-background-size:cover !important;background-size:cover !important;background-repeat:no-repeat !important}#hero-content.video .block{padding-top:84px !important}#hero-content.video .block .xm-play-solid{font-size:80px}#hero-content.video .video-player-block{height:208px}#hero-content.video .icon-player{display:block;width:80px;height:80px;margin:0 auto}#hero-content .video-player{position:relative;width:100%;height:0;padding-bottom:56.5%}#hero-content .video-player iframe{position:absolute;top:0;left:0;width:100%;height:100%}#hero-content .modal{text-align:center;padding:0 !important}#hero-content .modal::before{content:'';display:inline-block;height:100%;vertical-align:middle;margin-right:-4px}#hero-content #modal-video .modal-dialog{display:inline-block;text-align:left;vertical-align:middle;position:relative;width:70%}#hero-content #modal-video .close{right:0;position:absolute;color:#ccc;font-size:45px;top:-55px}.stripe-main{position:relative;z-index:9;background-color:#fff;margin-bottom:-120px}.stripe-main .stripe-main__wrapper{display:flex;flex-wrap:wrap}html[lang="nl"] .stripe-main .stripe-main__wrapper,html[lang="el"] .stripe-main .stripe-main__wrapper{padding:0}.stripe-main .stripe-main__item{flex:1 0 50%;text-align:center;padding:17px 0;max-width:50%}.stripe-main__inner{display:inline-block;text-align:center;width:140px}.stripe-main .stripe-main__title{font-size:44px;color:#d72027;text-transform:uppercase;font-family:"Bebas","BebasExt",sans-serif;font-weight:300;line-height:1}html[lang="bn"] .stripe-main .stripe-main__title{line-height:70px}.stripe-main .stripe-main__desc{font-size:15px;line-height:1}html[lang="el"] .stripe-main .stripe-main__desc,html[lang="ja"] .stripe-main .stripe-main__desc,html[lang="ko"] .stripe-main .stripe-main__desc,html[lang="th"] .stripe-main .stripe-main__desc,html[lang="tw"] .stripe-main .stripe-main__desc,html[lang="vn"] .stripe-main .stripe-main__desc{text-transform:capitalize}html[lang="el"] .stripe-main .stripe-main__desc{font-size:14px}@media(min-width:400px){.stripe-main__inner{text-align:left}html[lang="nl"] .stripe-main__inner{text-align:center}.rtl-lang .stripe-main__inner{text-align:right}}@media(min-width:768px){.stripe-main{margin-bottom:-60px}.stripe-main .stripe-main__wrapper,html[lang="nl"] .stripe-main .stripe-main__wrapper,html[lang="el"] .stripe-main .stripe-main__wrapper{align-items:center;flex-wrap:nowrap;padding:38px 0}.stripe-main .stripe-main__item{flex:1 0 25%;padding:0 2px}.stripe-main .stripe-main__item+.stripe-main__item{border-right:0;border-left:1px solid #ebebeb}.rtl-lang .stripe-main .stripe-main__item+.stripe-main__item{border-right:1px solid #ebebeb;border-left:0}.stripe-main__inner{display:flex;align-items:center;justify-content:center;width:auto}html[lang="el"] .stripe-main__inner,html[lang="hu"] .stripe-main__inner,html[lang="nl"] .stripe-main__inner,html[lang="uz"] .stripe-main__inner{flex-direction:column;align-items:center}.stripe-main .stripe-main__title{font-size:40px}.stripe-main .stripe-main__desc{padding:5px}html[lang="el"] .stripe-main .stripe-main__desc{font-size:15px;text-align:center}html[lang="hu"] .stripe-main .stripe-main__desc{text-align:center}}@media(min-width:992px){.stripe-main{padding:0;margin:0;height:140px}#hero-content .stripe .wrap{padding:0 15px}.stripe-main .stripe-main__title{font-size:60px}html[lang="hu"] .stripe-main .stripe-main__title,html[lang="uz"] .stripe-main .stripe-main__title{font-size:46px}html[lang="nl"] .stripe-main .stripe-main__title,html[lang="el"] .stripe-main .stripe-main__title{font-size:52px}.stripe-main .stripe-main__desc{font-size:18px}html[lang="el"] .stripe-main .stripe-main__desc,html[lang="hu"] .stripe-main .stripe-main__desc,html[lang="nl"] .stripe-main .stripe-main__desc{text-align:left}html[lang="hu"] .stripe-main .stripe-main__desc,html[lang="nl"] .stripe-main .stripe-main__desc,html[lang="uz"] .stripe-main .stripe-main__desc{font-size:15px}html[lang="si"] .stripe-main .stripe-main__desc{font-size:16px;line-height:1.3}html[lang="el"] .stripe-main__inner,html[lang="hu"] .stripe-main__inner,html[lang="nl"] .stripe-main__inner,html[lang="uz"] .stripe-main__inner{flex-direction:row}}@media(min-width:1200px){.stripe-main .stripe-main__title{font-size:70px;padding:0 5px}html[lang="hu"] .stripe-main .stripe-main__title,html[lang="uz"] .stripe-main .stripe-main__title{font-size:54px}html[lang="el"] .stripe-main .stripe-main__desc,html[lang="uz"] .stripe-main .stripe-main__desc{font-size:18px}html[lang="hu"] .stripe-main .stripe-main__desc{font-size:16px}html[lang="nl"] .stripe-main .stripe-main__title{font-size:60px}html[lang="nl"] .stripe-main .stripe-main__desc{font-size:18px}}@media(min-width:992px){#hero-content,#hero-content .img{height:521px}#foundation #hero-content,#foundation #hero-content .img{height:387px}#hero-content .block{padding-top:85px;min-height:361px}#foundation #hero-content .block{padding-top:125px}#hero-content .stripe .text-wrap{position:relative;display:inline-block}#hero-content .stripe .row{padding-top:35px}#hero-content .stripe .col4{width:25%;display:table-cell;padding:0;float:none}#singleWebinar #hero-content .stripe.no-lucky-draw .col4,#seminars #hero-content .stripe.no-lucky-draw .col4{width:33.33%}#singleWebinar #hero-content .stripe.no-lucky-draw .col4.instructor,#singleWebinar #hero-content .stripe .col4.instructor,#seminars #hero-content .stripe.no-lucky-draw .col4.instructor,#seminars #hero-content .stripe .col4.instructor{display:table-cell}#hero-content .stripe .col4+.col4{border-left:1px solid #ebebeb}.rtl-lang #hero-content .stripe .col4+.col4,html[lang="fa"] #hero-content .stripe .col4+.col4{border-left:0;border-right:1px solid #ebebeb}#singleWebinar #hero-content .stripe.no-lucky-draw .text-wrap,#seminars #hero-content .stripe.no-lucky-draw .text-wrap{margin-left:-10%}.rtl-lang #hero-content .stripe span,html[lang="fa"] #hero-content .stripe span{text-align:right}html[lang="si"] #hero-content .buttons-wrap .btn small{margin-top:0}}@media(max-width:1199px){#hero-content .slick-dots{display:none !important}#hero-content .stripe em{font-size:60px;padding:0 10px}#singleWebinar #hero-content .stripe em,#seminars #hero-content .stripe em{padding:0 5px;margin-bottom:10px}html[lang="th"] .main-site.hp-v17 #hero-content .stripe .wrap,html[lang="th"] .main-site.hp-v17 #hero-content .stripe span{padding:0}}@media(max-width:991px){#hero-content h2{font-size:35px}#hero-content p{font-size:18px;padding:0 20px}#hero-content{background:#000 !important;height:100%}.mannySponsor #hero-content{background:#000 !important;height:100%}html[lang="cs"] .hp-v17.partners #hero-content .buttons-wrap .btn,html[lang="ko"] .main-site.xmbz.hp-v17 #hero-content .buttons-wrap .btn,html[lang="pt"] .hp-v17.partners #hero-content .buttons-wrap .btn,html[lang="tr"] .main-site.xmbz.hp-v17 #hero-content .buttons-wrap .btn{font-size:25px}html[lang="es"] .hp-v17.partners #hero-content .buttons-wrap .btn,html[lang="fr"] .hp-v17.partners #hero-content .buttons-wrap .btn,html[lang="hu"] .main-site.xmbz.hp-v17 #hero-content .buttons-wrap .btn,html[lang="nl"] .hp-v17.partners #hero-content .buttons-wrap .btn,html[lang="ph"] .hp-v17.partners #hero-content .buttons-wrap .btn,html[lang="ru"] .hp-v17.partners #hero-content .buttons-wrap .btn,html[lang="th"] .hp-v17.partners #hero-content .buttons-wrap .btn,html[lang="vn"] .hp-v17.partners #hero-content .buttons-wrap .btn{font-size:23px}html[lang="bn"] .hp-v17.partners #hero-content .buttons-wrap .btn{font-size:20px}html[lang="el"] .hp-v17.partners #hero-content .buttons-wrap .btn{font-size:17px}#hero-content .stripe .text-wrap img{display:none}#hero-content .stripe{height:auto}#hero-content .stripe em{display:inline-block;font-size:50px;vertical-align:middle;margin-right:0}html[lang="si"] .partners #hero-content .stripe em{font-size:40px}html[lang="si"] .partners #hero-content .stripe .wrap{padding:0 5px}#singleWebinar #hero-content .stripe em,#seminars #hero-content .stripe em{font-size:60px}.rtl-lang #singleWebinar #hero-content .stripe em,html[lang="fa"] #singleWebinar #hero-content .stripe em,.rtl-lang #seminars #hero-content .stripe em,html[lang="fa"] #seminars #hero-content .stripe em{padding:0}#hero-content .stripe span{display:block;font-size:16px;padding:0 15px;clear:both;text-align:center}html[lang="zh_CN"] .stripe span{text-transform:capitalize}.rtl-lang #singleWebinar #hero-content .stripe span,html[lang="fa"] #singleWebinar #hero-content .stripe span,.rtl-lang #seminars #hero-content .stripe span,html[lang="fa"] #seminars #hero-content .stripe span{padding:0;text-align:center}}@media(max-width:767px){.half-rect.left,.half-rect.right{display:none}#hero-content .title{padding:0}#hero-content .title,#singleWebinar #hero-content .title,#seminars #hero-content .title{font-size:35px}#hero-content p{font-size:17px}}@media(max-width:450px){html[lang="zh_CN"] .main-site.xmbz.hp-v17 #hero-content .buttons-wrap .btn,html[lang="el"] .main-site.xmbz.hp-v17 #hero-content .buttons-wrap .btn,html[lang="tr"] .main-site.xmbz.hp-v17 #hero-content .buttons-wrap .btn{font-size:22px}html[lang="ko"] .main-site.xmbz.hp-v17 #hero-content .buttons-wrap .btn{font-size:20px}html[lang="bn"] .hp-v17 #hero-content .buttons-wrap .btn{padding:8px 5px !important}html[lang="bn"] #hero-content .buttons-wrap .btn{font-size:20px !important}}@media(max-width:374px){.hp-v17 #hero-content .buttons-wrap .btn{min-height:0;line-height:1.1}html[lang="ph"] #hero-content .buttons-wrap .btn,html[lang="pl"] #hero-content .buttons-wrap .btn{font-size:27px}html[lang="el"] #hero-content .buttons-wrap .btn{font-size:26px}html[lang="cs"] #hero-content .buttons-wrap .btn{font-size:25px}.rtl-lang #hero-content .buttons-wrap .btn,html[lang="fa"] #hero-content .buttons-wrap .btn,html[lang="vn"] #hero-content .buttons-wrap .btn{font-size:24px}html[lang="bn"] #hero-content .buttons-wrap .btn{font-size:23px}html[lang="cs"] #hero-content .buttons-wrap .btn small,html[lang="de"] #hero-content .buttons-wrap .btn small,html[lang="el"] #hero-content .buttons-wrap .btn small,html[lang="es"] #hero-content .buttons-wrap .btn small,html[lang="id"] #hero-content .buttons-wrap .btn small,html[lang="it"] #hero-content .buttons-wrap .btn small{font-size:12px !important}}.slick-prev:before,.slick-next:before{position:relative;font-family:"Font Awesome 6 Pro";font-size:45px;color:#959595;text-align:center;vertical-align:middle}.slick-prev:before{content:"\f104"}.slick-next:before{content:"\f105"}.slick-slide{outline:0}.slick-slide a{text-decoration:underline !important;color:#fff}.slick-slide a:hover{color:#d72027}#hero-content .slick-slide a:hover,#hero-content .slick-slide a:focus{color:#d51820;text-decoration:none !important}.slick-prev,.slick-next{font-size:0;line-height:0;position:absolute;top:50%;display:block;width:55px;height:55px;padding:0;-webkit-transform:translate(0,-50%);-ms-transform:translate(0,-50%);transform:translate(0,-50%);cursor:pointer;color:transparent;border:0;outline:0;background:transparent;z-index:9}.slick-prev{left:0}.slick-next{right:0}.slick-prev:hover,.slick-prev:focus,.slick-next:hover,.slick-next:focus{color:transparent;outline:0;background:transparent}.slick-prev:hover:before,.slick-prev:focus:before,.slick-next:hover:before,.slick-next:focus:before{opacity:1}.slick-prev.slick-disabled:before,.slick-next.slick-disabled:before{opacity:.25}.slick-dots{position:absolute;display:block;width:100%;padding:0;margin:0;list-style:none;text-align:center}.slick-dots li{position:relative;display:inline-block;vertical-align:middle;width:3px;height:3px;margin:0 8px;padding:0;cursor:pointer}.slick-dots li button{font-size:0;line-height:0;display:block;width:3px;height:3px;padding:3px;cursor:pointer;color:transparent;border:0;outline:0;border-radius:100%;border:1px solid #959595;background:transparent}.slick-dots li.slick-active button{background:#959595}.slick-dots li button:hover,.slick-dots li button:focus{outline:0}.slick-dots li button:hover:before,.slick-dots li button:focus:before{opacity:1}.slick-dots li.slick-active button:before{opacity:.75;color:black}.slick-prev,.slick-next{position:absolute;display:inline-block;vertical-align:middle}.slick-prev{left:-15px}.slick-next{right:-15px}#hero-content .slick-loading .slick-list{background:#fff url('https://cloud.xm-cdn.com/assets/img/pages/home/ajax-loader.gif?v1.0') center center no-repeat}.rtl-lang #payments-carousel{direction:ltr}html[lang="fa"] #payments-carousel{direction:ltr}#js-xmOnTvLogos.owl-carousel{padding:0 30px}#js-xmOnTvLogos.owl-carousel .owl-item img{width:auto}#js-xmOnTvLogos .owl-prev,#js-xmOnTvLogos .owl-next{position:absolute;font-size:50px;color:#989898;height:50px;top:0;bottom:0;margin:auto 0}#js-xmOnTvLogos .owl-prev i,#js-xmOnTvLogos .owl-next i{vertical-align:top}#js-xmOnTvLogos .owl-prev{left:0}#js-xmOnTvLogos .owl-next{right:0}#js-xmOnTvLogos img{height:70px}.slider-wrapper{padding:0}.slider-wrapper .slick-dots{position:initial;padding:0 0 20px 0}.slider-wrapper .slick-dots.desk{width:70%;text-align:right}.accTypesSlider,.accTypesIndex,.accTypesMobSlider{float:left}.accTypesSlider{width:70%}.accTypesIndex{width:30%}.accTypesIndex .divTable.sharesAccount,.accTypesMobSlider{width:100%}.accTypesSlider .divTable.sharesAccount,.accTypesMobSlider .divTable.sharesAccount{width:200px}.accTypesSlider .divTable.sharesAccount{margin-bottom:0 !important}.accTypesMobSlider .divTable+.divTable,.accTypesSlider .divTable+.divTable{margin-top:0 !important}.accTypesSlider:after,.accTypesMobSlider:after{box-shadow:inset -10px 0 4px -6px rgba(0,0,0,0.20);content:"";display:block;width:7px;position:absolute;right:0;top:0;bottom:0}.accTypesSlider.lastSlide:after,.accTypesMobSlider.lastSlide:after{box-shadow:inset 10px 0 4px -6px rgba(0,0,0,0.20);left:0}.accTypesSlider .divTable.sharesAccount{border-left:1px solid #ddd}.accTypesIndex .divTable.sharesAccount .content:first-of-type{padding-top:60px}.accTypesSlider .divTable div:nth-child(3).content ul,.accTypesIndex .divTable div:nth-child(2).content ul{background-color:#fff}.accTypesSlider .slick-slide a,.accTypesMobSlider .slick-slide a{text-decoration:none !important}.accTypesMobSlider .divTable.sharesAccount{border-left:1px solid #ddd}.accTypesMobSlider .divTable .content ul li{display:block}.accTypesMobSlider .divTable .content ul li.text{width:100%}.accTypesMobSlider .divTable.sharesAccount .content .btn{width:100%;max-width:250px}.accTypesMobSlider .divTable .content ul li.title,.accTypesMobSlider .divTable .content ul li.text{padding:10px;text-align:center;height:initial}.main-site.hp-v17 #hero-content,#seminars #hero-content{display:block;position:relative;width:100%;background:#000 url("https://cloud.xm-cdn.com/static/xm/pages/homepage/homepage-2023.webp?v=eb7d610a500bee893cab0b0d46b6a23f") repeat-x center top;z-index:1}.main-site.mannySponsor.hp-v17 #hero-content,.mannySponsor #seminars #hero-content{display:block;position:relative;width:100%;background:#000 url("https://cloud.xm-cdn.com/static/xm/pages/manny_sponsorship/Manny-homepage-2023.webp") repeat-x center top;z-index:1}@media(min-width:320px) and (max-width:575px){.slider-wrapper{padding:0 15px}.accTypesMobSlider .slick-prev{left:-35px}.accTypesMobSlider .slick-next{right:-35px}.accTypesMobSlider .divTable.sharesAccount{width:240px}.accTypesSlider,.accTypesIndex,.slider-wrapper .slick-dots.desk{display:none !important}}@media(min-width:576px){.accTypesSlider .divTable.sharesAccount{width:315px}.accTypesSlider{width:70%}.accTypesIndex{width:30%;position:relative}.slider-wrapper{padding:0 30px}.accTypesSlider .slick-next{right:-60px}.accTypesIndex .slick-prev{left:-60px}.accTypesMobSlider,.slider-wrapper .slick-dots.mob{display:none !important}}.step-4-items{margin:0;padding:0;list-style:none}.step-4-items li{display:inline-block;width:24%;vertical-align:top}.option-type p{max-width:160px;font-size:14px;color:#000;margin:30px auto 0 auto;font-weight:normal;text-align:center}.option-type.info p{max-width:100%;font-size:14px;color:#000;text-align:left;margin:0 auto 30px auto}.rtl-lang .option-type.info p,html[lang="fa"] .option-type.info p{text-align:right}.option-type .btn{margin:0 !important}.option-type.info p span{color:#d51820 !important}.option-type span{color:#d51820}.feature-item,.feature-item3,.feature-item4,.feature-item7,.feature-item6,.feature-item5,.feature-item8,.feature-item9{position:relative;display:inline-block;padding:20px;min-height:150px;vertical-align:top}#foundation .feature-item,#foundation .feature-item3,#foundation .feature-item4,#foundation .feature-item7,#foundation .feature-item6,#foundation .feature-item5,#foundation .feature-item8,#foundation .feature-item9{border:0}html[lang="fa"] .feature-item,html[lang="fa"] .feature-item3,html[lang="fa"] .feature-item4,html[lang="fa"] .feature-item7,html[lang="fa"] .feature-item6,html[lang="fa"] .feature-item5,html[lang="fa"] .feature-item9{border-right:0;border-left:1px solid #f3f3f3}.feature-item4{width:280px}.feature-item5{width:185px}.feature-item6{width:190px}.feature-item7{width:163px}.feature-item8{width:142px}.feature-item9{width:120px;padding:12px}.feature-item p,.feature-item4 p,.feature-item7 p,.feature-item6 p,.feature-item5 p,.feature-item8 p,.feature-item9 p{text-align:center;font-size:18px;font-weight:400;margin-top:30px;line-height:22px}html[lang="hi"] .feature-item p,html[lang="hi"] .feature-item4 p,html[lang="hi"] .feature-item7 p,html[lang="hi"] .feature-item6 p,html[lang="hi"] .feature-item5 p,html[lang="hi"] .feature-item8 p,html[lang="hi"] .feature-item9 p{line-height:28px}#careers .feature-item5 p,#foundation .feature-item5 p{margin-top:20px;font-size:16px}html[lang="zh_CN"] .feature-item p,html[lang="zh_CN"] .feature-item4 p,html[lang="zh_CN"] .feature-item7 p,html[lang="zh_CN"] .feature-item6 p,html[lang="zh_CN"] .feature-item5 p,html[lang="zh_CN"] .feature-item9 p,html[lang="tw"] .feature-item p,html[lang="tw"] .feature-item4 p,html[lang="tw"] .feature-item7 p,html[lang="tw"] .feature-item6 p,html[lang="tw"] .feature-item5 p,html[lang="tw"] .feature-item9 p{line-height:24px}html[lang="el"] .feature-item p,html[lang="el"] .feature-item4 p,html[lang="el"] .feature-item7 p,html[lang="el"] .feature-item6 p,html[lang="el"] .feature-item5 p,html[lang="el"] .feature-item9 p,html[lang="vn"] .feature-item p,html[lang="vn"] .feature-item4 p,html[lang="vn"] .feature-item7 p,html[lang="vn"] .feature-item6 p,html[lang="vn"] .feature-item5 p,html[lang="vn"] .feature-item9 p,html[lang="si"] .feature-item p,html[lang="si"] .feature-item4 p,html[lang="si"] .feature-item7 p,html[lang="si"] .feature-item6 p,html[lang="si"] .feature-item5 p,html[lang="si"] .feature-item9 p{font-size:16px}#careers .feature-item5 h3,#foundation .feature-item5 h3{font-size:17px;margin-top:0}.feature-item4:nth-child(4n){border:0}.device i{opacity:.2}.device .xm-font,.device .xmFont{font-size:100px;color:#000}.device:hover i{opacity:1}.device:hover p{color:#444}.device p{color:#ccc}.device.active{font-weight:normal}.device.active i{opacity:1}.device.active p{color:#444}.zero-account .box{border:1px solid #ccc;padding:20px}.zero-account h3{font-weight:bold;font-size:18px}.zero-account .num{font-weight:bold;font-size:25px;color:#d51820}.zero-account hr{border-top:1px solid #d51820 !important}.zero-account .flag-icon{width:30px;height:20px;margin-top:5px;margin-bottom:5px}.rtl-lang .zero-account .flag-icon,html[lang="fa"] .zero-account .flag-icon{float:none}.forms-pdf h4{max-width:160px;font-size:16px !important;font-weight:400 !important;color:#262626 !important;margin:20px auto 0 auto;text-align:center}html[lang="bn"] .forms-pdf h4{line-height:1.3}.forms-pdf .box{padding:10px 0}.forms-pdf .box:hover{background-color:#f7f7f7}.forms-pdf .box:hover h4{color:#d51820}.regulation .col-md-4,.regulation .col-md-6{border-left:4px solid #f7f7f7}.rtl-lang .regulation .col-md-4,.rtl-lang .regulation .col-md-6,html[lang="fa"] .regulation .col-md-4,html[lang="fa"] .regulation .col-md-6{border-right:4px solid #f7f7f7;border-left:0}.regulation h3,.regulation h4,.regulation p{margin:0;padding:0}.regulation h4{font-size:13px !important;color:#444;margin-top:5px}.regulation h3{font-size:18px !important;font-weight:bold !important;color:#d51820 !important;border:none !important;text-align:left}.rtl-lang .regulation h3,html[lang="fa"] .regulation h3{text-align:right}.regulation p{font-size:14px;font-weight:normal;color:#000}.regulation .flag-icon{display:inline-block;width:37.5px;height:25px;margin-top:8px;overflow:hidden;vertical-align:-50%}.rtl-lang .regulation .flag-icon,html[lang="fa"] .regulation .flag-icon{float:none}.regulation span.red{display:block;font-size:14px !important;color:#d51820}.rtl-lang .regulation a.btn.btn-solid.btn-red,html[lang="fa"] .regulation a.btn.btn-solid.btn-red{font-size:20px}.about-xm .box-border1,.about-xm .box-border2{border:1px solid #ddd;padding:20px}.about-xm .box-border2{padding:40px}.about-xm .box-border1 small,.about-xm .box-border1 p.big{font-size:21px;font-weight:300}.about-xm .box-border1 h4{font-size:53px;color:#d51820}html[lang="zh_CN"] .about-xm .box-border1 h4,html[lang="ko"] .about-xm .box-border1 h4,html[lang="th"] .about-xm .box-border1 h4,html[lang="tw"] .about-xm .box-border1 h4{letter-spacing:-2px}.award-container{display:flex;flex-wrap:wrap;justify-content:center}.award-box{flex:1 0 100%;margin:20px 5px;padding:20px;max-width:245px;border:5px solid #f1f1f1}.award-box h3{font-size:14px !important}.award-container.award-container--home{display:flex;flex-wrap:wrap;justify-content:space-around}.award-box.award-box--home{border:0;flex:0 1 35%;margin:0;padding:0;max-width:unset;text-align:left}.rtl-lang .award-box.award-box--home{text-align:right}.award-box.award-box--home .award-img{height:71px;width:70px}.award-box.award-box--home .award-img img{max-width:100%}.award-box h3{font-size:14px !important}html[lang="hi"] .award-box h3{line-height:25px !important}@media(min-width:640px){.award-box{flex:1 0 50%;margin:20px}.award-container{justify-content:space-between}}@media(min-width:768px){.award-container.award-container--home{justify-content:space-between}.award-box.award-box--home{flex:0 0 144px}.award-box.award-box--home .award-img{width:90px}}@media(min-width:992px){.award-box{flex:1 0 21%}.award-container{justify-content:flex-start}.award-box.award-box--home{flex:1 0 33%;max-width:230px;margin:0 10px 10px;text-align:center;padding:15px 10px 15px 10px}.rtl-lang .award-box.award-box--home{text-align:center}.award-box.award-box--home .award-img{width:auto}}@media(min-width:992px) and (max-width:1200px){.award-container.award-container--home{max-width:750px;margin:auto}}@media(min-width:1201px){.award-box.award-box--home{flex:0 1 170px;padding:0}.award-container.award-container--home{justify-content:flex-start}.metatrader-row{display:flex;justify-content:flex-start;flex-wrap:wrap}.metatrader-row .feature-item8{flex-basis:16.6666667%;max-width:16.6666667%}}.webinars h4{font-size:34px;font-weight:300;color:#444}.webinars h4 .fa{font-size:60px;vertical-align:middle;margin-right:10px;color:#d51820}.benefit-account{background-color:#f7f7f7}.benefit-account h2{margin:0}.benefit-account em,.benefit-account .wrap{display:table-cell;vertical-align:middle}.benefit-account em{position:relative;font-size:45px;font-style:normal;text-align:left;padding-right:15px}.rtl-lang .benefit-account em,html[lang="fa"] .benefit-account em{padding-right:0;padding-left:15px}.benefit-account em::after{position:absolute;content:"";height:70px;right:0;border-right:1px solid #acacac}.rtl-lang .benefit-account em::after,html[lang="fa"] .benefit-account em::after{right:auto;left:0}.benefit-account .wrap{position:relative;width:100%;font-size:18px;padding-left:100px}.rtl-lang .benefit-account .wrap,html[lang="fa"] .benefit-account .wrap{padding-left:0;padding-right:100px}.benefit-account .wrap p{position:relative;margin:7% 0;line-height:20px}html[lang="th"] .benefit-account .wrap p,html[lang="si"] .benefit-account .wrap p{line-height:25px}.benefit-account .wrap>i{position:absolute;display:inline-block;left:15px;top:0;bottom:0;margin:auto 0;font-size:80px;height:80px}.rtl-lang .benefit-account .wrap>i,html[lang="fa"] .benefit-account .wrap>i{right:15px;left:initial}html[lang="bn"] .benefit-account .btn.btn-red,html[lang="bn"] .benefit-account .btn.btn-green{font-size:22px}html[lang="bn"] .benefit-account .btn-red small,html[lang="bn"] .benefit-account .btn-green small{margin-top:5px}html[lang="el"] .main-site.hp-v17 .benefit-account .btn-red small,html[lang="el"] .main-site.hp-v17 .benefit-account .btn-green small{position:relative;top:-4px;margin-top:0}.education-item{position:relative;display:inline-block;width:115px;min-height:150px;vertical-align:top;border-right:1px solid #f3f3f3}.education-item h3{font-size:12px;text-transform:uppercase;margin-top:20px}.education-item p{text-align:center;font-size:14px;font-weight:400;line-height:22px;color:#000}a:hover .education-item{background-color:#f7f7f7}.education-item:nth-child(4n){border:0}.feature-broker article{position:relative;padding-left:120px}.rtl-lang .feature-broker article,html[lang="fa"] .feature-broker article{padding-left:0;padding-right:120px}.feature-broker article>i{position:absolute;top:0;left:0;font-size:100px}.rtl-lang .feature-broker article>i,html[lang="fa"] .feature-broker article>i{left:initial;right:0}.feature-broker article hr{width:15%;margin:30px 0}.feature-broker .main-title{display:block;font-size:30px;font-weight:500;line-height:1.1;color:inherit;text-align:center}.feature-broker .subtext{font-size:14px;text-align:center}.feature-broker h2{margin:0}.feature-box h4{font-size:18px;font-weight:500;margin:0;padding:0;color:#000}.feature-box p{font-size:14px}.feature-broker--responsive{background:#f7f7f7}.platform-list{list-style:none;padding:0;margin:0}.platform-list li{position:relative;display:block;-moz-transition:none;-webkit-transition:none;-o-transition:color 0 ease-in;transition:none}.platform-list li span{display:inline-block}.platform-list li>a{display:block;font-size:14px;color:#434343;text-decoration:none;padding:15px 0 15px 0;vertical-align:middle;-moz-transition:none;-webkit-transition:none;-o-transition:color 0 ease-in;transition:none}.platform-list li:hover a{font-weight:bold}.platform-list li .fa:nth-of-type(1),.platform-list li .fa:nth-of-type(2){font-size:18px}.platform-list li .fa:nth-of-type(1){margin-right:7px;width:18px}.platform-list li .xmFont:nth-of-type(1),.platform-list li .xmFont:nth-of-type(2){font-size:18px}.platform-list li .xmFont:nth-of-type(1){margin-right:7px}.rtl-lang .platform-list li .fa:nth-of-type(1),html[lang="fa"] .platform-list li .fa:nth-of-type(1){margin-left:7px;margin-right:0}.rtl-lang .platform-list li .xmFont:nth-of-type(1),html[lang="fa"] .platform-list li .xmFont:nth-of-type(1){margin-left:7px;margin-right:0}.platform-list li .fa:nth-of-type(2){position:relative;top:3px;float:right;color:#999}.platform-list li+li{border-top:1px solid #d7d7d7}.platform-list li:hover .fa:nth-of-type(2){color:#d51820}.platform-list li::before{position:absolute;content:"\f054";top:10px;right:0;font-family:FontAwesome;font-size:20px;color:#ccc}.rtl-lang .platform-list li::before,html[lang="fa"] .platform-list li::before{content:"\f053";left:0;right:initial}.platform-list li:hover::before{color:#d51820}.platform-list__hr{margin:0;border-top:1px solid #d7d7d7}@media(min-width:992px){.zero-account .col-md-3{padding:0 25px}.zero-account .col-md-3:nth-child(1)::before{border-left:0}.step-4-items li+li{border-left:1px solid #f3f3f3}.partner-advantage .xm-font{position:relative;top:-10px}.regulation h4{height:27px}.about-xm .box-border{display:table;border-collapse:separate;border-spacing:30px 0;width:105.5%;margin-left:-30px}.rtl-lang .about-xm .box-border,html[lang="fa"] .about-xm .box-border{margin-right:-30px}.about-xm .box-border1,.about-xm .box-border2{display:table-cell;width:33.33%}}@media(min-width:768px){.benefit-account .row{display:table;width:100%;margin-left:0;margin-right:0}.about-xm .box-border1 h4{font-size:62px}}@media(max-width:991px){.step-4-items li{display:inline-block;width:49%;margin-bottom:50px}.partner-advantage{text-align:center}}@media(max-width:767px){.feature-icons .feature-item6,.feature-icons .feature-item4{width:50%;float:left}.feature-icons .feature-item6,.feature-icons .feature-item4{border-right:0}.feature-icons .feature-item6:first-child,.feature-icons .feature-item4:first-child{border-right:1px solid #f3f3f3}.award-wrap h2{text-align:center}.benefit-account em:after{position:absolute;content:"";height:55px;right:0;border-right:1px solid #acacac;bottom:0;top:0;margin:auto 0}.benefit-account .wrap{padding-left:15px}.regulation{text-align:center}.regulation p{padding:0 20px;text-align:left}.regulation h2,.regulation h3,.regulation h4,.regulation a,.regulation span.red{display:block;text-align:center}.rtl-lang .regulation h3,html[lang="fa"] .regulation h3{text-align:center}.regulation a{max-width:350px;display:inline-block}.regulation p,.regulation .flag-container{text-align:center}}@media(max-width:320px){.platform-list li .fa:nth-of-type(1){margin-right:5px}.platform-list li>a{font-size:13px}}.social-competitions__home{padding:15px 0 15px;background-color:#f7f7f7;color:#fff}.social-competitions__home-bg{background:radial-gradient(85.26% 68.21% at 72.69% 17.36%,#205089 0,#0f2240 100%);color:#fff;font-family:"Roboto",sans-serif;position:relative;z-index:1;min-height:485px;display:flex;align-items:center;justify-content:center;z-index:1}.social-competitions__home-bg::before,.social-competitions__home-bg::after{content:"";position:absolute;top:0;left:0}.social-competitions__home-bg::before{background:url('https://cloud.xm-cdn.com/static/xm/pages/social_competitions/homepage/homepg-bg-elements-mob.png');background-size:135%;background-repeat:no-repeat !important;background-position:45% top !important;height:100%;width:100%;mix-blend-mode:luminosity;z-index:-1}.social-competitions__home-bg::after{background:url('https://cloud.xm-cdn.com/static/xm/pages/social_competitions/homepage/homepg-bg-candlesticks-mob.png');mix-blend-mode:overlay;background-size:contain !important;background-repeat:no-repeat !important;background-position:center 30px !important;width:100%;height:100%;position:absolute;top:0;left:0;opacity:.4;z-index:-2}.social-competitions__content{max-width:290px}.social-competitions__home p{font-size:14px}.social-competitions__home h2{font-size:27px !important;line-height:1;margin-bottom:15px}.social-competitions__home small{font-size:12px}.social-competitions__home .btn{max-width:345px !important;margin-top:5px;font-family:"Bebas","BebasExt",sans-serif}@media(min-width:414px){.social-competitions__home-bg::before{background-size:cover !important}}@media(min-width:768px){.social-competitions__home{padding:30px 0}.social-competitions__home h2{font-size:36px !important}.social-competitions__home p{font-size:16px}.social-competitions__content{max-width:550px}.social-competitions__home-bg{padding:40px 0;z-index:1;height:auto;min-height:auto}.social-competitions__home-bg::before{background:url('https://cloud.xm-cdn.com/static/xm/pages/social_competitions/homepage/homepg-bg-elements-tablet.png');background-size:108% !important;background-repeat:no-repeat !important;background-position:65% top !important}.social-competitions__home-bg::after{background:url('https://cloud.xm-cdn.com/static/xm/pages/social_competitions/homepage/homepg-bg-candlesticks-tablet.png');mix-blend-mode:overlay;background-size:auto !important;background-repeat:no-repeat !important;background-position:center 30px !important}}@media(min-width:992px){.social-competitions__home h2{font-size:40px !important}.social-competitions__home p{font-size:18px}.social-competitions__home-bg::before{background-size:100% !important;background-position:63% 16% !important}.social-competitions__content{max-width:770px}}@media(min-width:1200px){.social-competitions__home-bg{padding:70px 0;z-index:1}.social-competitions__home-bg::before{background:url('https://cloud.xm-cdn.com/static/xm/pages/social_competitions/homepage/homepg-bg-elements-desktop.png');background-size:107% !important;background-repeat:no-repeat !important;background-position:63% top !important}.social-competitions__home-bg::after{background:url('https://cloud.xm-cdn.com/static/xm/pages/social_competitions/homepage/homepg-bg-candlesticks-desktop.png');mix-blend-mode:overlay;background-size:auto !important;background-repeat:no-repeat !important;background-position:center 30px !important}}.section-rounded-cards{background:#f7f7f7}.section-rounded-cards.xmza{background:#fff}.cards_wrapper{display:flex;justify-content:space-between;flex-direction:column-reverse}.rounded-cards{background:#000;color:#fff;border-radius:12px;padding:40px 30px 160px;position:relative;flex:0 1 100%;display:flex;flex-direction:column;justify-content:space-between}.rounded-cards-label{border-radius:14px;padding:5px 10px;background:radial-gradient(2306.34% 453.74% at 43.87% -122.00%,rgba(255,255,255,0.17) 29.31%,rgba(255,255,255,0.07) 100%)}.rounded-cards-title{font-size:26px !important;line-height:1.1;margin-bottom:0;position:relative}html[lang="sv"] .rounded-cards-title,html[lang="ar"] .rounded-cards-title,html[lang="ph"] .rounded-cards-title,html[lang="ko"] .rounded-cards-title{line-height:1.2}html[lang="hi"] .rounded-cards-title{line-height:1.3}.rounded-cards-desc{position:relative;z-index:2;margin:0}.rounded-cards-desc.rounded-cards-desc--title{color:#FFF;font-size:18px;font-style:normal;font-weight:700;line-height:35px}.rounded-cards.social-competitions{background:radial-gradient(62.36% 62.14% at 89.13% 90.86%,#205089 0,#0f2240 100%)}.rounded-cards.copytrading{background:url('https://cloud.xm-cdn.com/static/xm/pages/homepage/copy-trading-homepage-bg.webp'),radial-gradient(85.26% 68.21% at 72.69% 17.36%,#292f39 0,#070707 100%);background-size:cover;background-position:center;overflow:hidden;margin-bottom:20px}a.rounded-cards-url{border:none !important;display:flex !important;align-items:center;width:fit-content;padding:0 !important;font-size:20px;font-weight:400;position:relative;z-index:2}html[lang="si"] a.rounded-cards-url,html[lang="vn"] a.rounded-cards-url{font-size:18px}html[lang="ko"] a.rounded-cards-url.btn,html[lang="ko"] button.rounded-cards-url.btn,html[lang="ph"] a.rounded-cards-url.btn,html[lang="ph"] button.rounded-cards-url.btn,html[lang="es"] a.rounded-cards-url.btn,html[lang="es"] button.rounded-cards-url.btn,html[lang="pl"] a.rounded-cards-url.btn,html[lang="pl"] button.rounded-cards-url.btn,html[lang="th"] a.rounded-cards-url.btn,html[lang="th"] button.rounded-cards-url.btn{padding:0 !important}a.rounded-cards-url:hover{color:#29a643}.rounded-cards-url .arrow{height:14px;width:30px;transition:250ms all ease;cursor:pointer;display:flex;align-items:center;margin-left:5px}.rtl-lang .rounded-cards-url .arrow{margin-left:auto;margin-right:5px}.rounded-cards-url .arrow path{transition:250ms all ease;fill:#fff;height:100%}.rounded-cards-url:hover .arrow path{d:path("M21,6.1c0,0.3-0.3,0.6-0.6,0.6H0.6C0.3,6.7,0,6.4,0,6.1c0-0.3,0.3-0.6,0.6-0.6h19.8  C20.7,5.5,21,5.8,21,6.1z M17.2,0.7l4.6,4.8c0.3,0.3,0.3,0.8,0,1.1l-4.6,4.8c-0.3,0.3-0.7,0.3-1,0c-0.3-0.3-0.3-0.8,0-1.1l3.6-3.7  c-0.1-0.1-0.2-0.3-0.2-0.5s0.1-0.4,0.2-0.5l-3.6-3.7c-0.3-0.3-0.3-0.8,0-1.1C16.5,0.4,16.9,0.4,17.2,0.7z");d:"M21,6.1c0,0.3-0.3,0.6-0.6,0.6H0.6C0.3,6.7,0,6.4,0,6.1c0-0.3,0.3-0.6,0.6-0.6h19.8  C20.7,5.5,21,5.8,21,6.1z M17.2,0.7l4.6,4.8c0.3,0.3,0.3,0.8,0,1.1l-4.6,4.8c-0.3,0.3-0.7,0.3-1,0c-0.3-0.3-0.3-0.8,0-1.1l3.6-3.7  c-0.1-0.1-0.2-0.3-0.2-0.5s0.1-0.4,0.2-0.5l-3.6-3.7c-0.3-0.3-0.3-0.8,0-1.1C16.5,0.4,16.9,0.4,17.2,0.7z";fill:#29a643}.rtl-lang .rounded-cards-url .arrow{transform:rotate(180deg)}.rounded-cards-icon{position:absolute;width:100%;right:0;bottom:10px}.rounded-cards-icon img{width:100%}.rounded-cards-icon--copytrading{right:10px;max-width:280px}.rtl-lang .rounded-cards-icon.rounded-cards-icon--copytrading{left:10px;right:unset}.rtl-lang .rounded-cards-icon{left:0;right:auto}.rounded-cards-icon--social{width:175px}@media(max-width:400px){html[lang="si"] a.rounded-cards-url{font-size:14px}html[lang="vn"] a.rounded-cards-url{font-size:16px}}@media(min-width:768px){.rounded-cards{padding:40px 30px 100px}.rounded-cards-title{font-size:36px !important}html[lang="id"] .rounded-cards-title,html[lang="hu"] .rounded-cards-title{font-size:33px !important}.rounded-cards-desc{font-size:17px !important;max-width:295px}html[lang="en"] .rounded-cards-desc--social{max-width:280px}.rounded-cards-icon--social{width:230px}}@media(min-width:992px){.cards_wrapper{flex-direction:row}.rounded-cards{padding:40px;flex:0 1 49%}.rounded-cards.copytrading{margin-bottom:0}html[lang="sv"] .rounded-cards-desc,html[lang="zh_CN"] .rounded-cards-desc{max-width:265px}.rounded-cards-icon{width:230px}html[lang="el"] .rounded-cards-icon,html[lang="sv"] .rounded-cards-icon,html[lang="ph"] .rounded-cards-icon,html[lang="si"] .rounded-cards-icon,html[lang="es"] .rounded-cards-icon,html[lang="vn"] .rounded-cards-icon,html[lang="nl"] .rounded-cards-icon,html[lang="tr"] .rounded-cards-icon,html[lang="id"] .rounded-cards-icon,html[lang="it"] .rounded-cards-icon,html[lang="hu"] .rounded-cards-icon{width:210px}html[lang="si"] .rounded-cards-icon{width:187px}.rounded-cards-icon.rounded-cards-icon--copytrading,html[lang="it"] .rounded-cards-icon.rounded-cards-icon--copytrading{right:0;width:185px}html[lang="ms"] .rounded-cards-icon.rounded-cards-icon--copytrading,html[lang="tr"] .rounded-cards-icon.rounded-cards-icon--copytrading{width:175px}html[lang="zh_CN"] .rounded-cards-icon.rounded-cards-icon--copytrading{width:225px}}@media(min-width:1200px){html[lang="fr"] .rounded-cards-title,html[lang="es"] .rounded-cards-title{max-width:400px}html[lang="nl"] .rounded-cards-title{max-width:385px}html[lang="vn"] a.rounded-cards-url{font-size:20px}html[lang="sv"] .rounded-cards-desc{max-width:310px}html[lang="tr"] .rounded-cards-desc,html[lang="it"] .rounded-cards-desc,html[lang="ko"] .rounded-cards-desc,html[lang="hi"] .rounded-cards-desc{max-width:295px}.rounded-cards-icon,html[lang="el"] .rounded-cards-icon,html[lang="sv"] .rounded-cards-icon,html[lang="ph"] .rounded-cards-icon,html[lang="nl"] .rounded-cards-icon,html[lang="tr"] .rounded-cards-icon,html[lang="it"] .rounded-cards-icon{width:265px}html[lang="pt"] .rounded-cards-icon,html[lang="si"] .rounded-cards-icon,html[lang="hu"] .rounded-cards-icon,html[lang="de"] .rounded-cards-icon,html[lang="vn"] .rounded-cards-icon,html[lang="tw"] .rounded-cards-icon{width:225px}html[lang="ms"] .rounded-cards-icon,html[lang="es"] .rounded-cards-icon,html[lang="pl"] .rounded-cards-icon,html[lang="id"] .rounded-cards-icon,html[lang="ko"] .rounded-cards-icon,html[lang="th"] .rounded-cards-icon{width:250px}.rounded-cards-icon.rounded-cards-icon--copytrading,html[lang="el"] .rounded-cards-icon.rounded-cards-icon--copytrading,html[lang="sv"] .rounded-cards-icon.rounded-cards-icon--copytrading,html[lang="ph"] .rounded-cards-icon.rounded-cards-icon--copytrading,html[lang="ko"] .rounded-cards-icon.rounded-cards-icon--copytrading{width:225px}html[lang="ms"] .rounded-cards-icon.rounded-cards-icon--copytrading,html[lang="nl"] .rounded-cards-icon.rounded-cards-icon--copytrading,html[lang="tr"] .rounded-cards-icon.rounded-cards-icon--copytrading,html[lang="it"] .rounded-cards-icon.rounded-cards-icon--copytrading,html[lang="id"] .rounded-cards-icon.rounded-cards-icon--copytrading{width:235px}}</style>
+		<!-- All in One SEO 4.5.6 - aioseo.com -->
+		<title>Trading Forex &amp; CFD pada Saham, Indeks, Minyak dan Emas</title>
+		<meta name="description" content="XM menawarkan trading forex, CFD pada saham, indeks saham, minyak dan emas pada MT4 dan MT5. Trading online dengan broker forex teregulasi." />
+		<meta name="robots" content="max-image-preview:large" />
+		<link rel="canonical" href="https://www.xmindonesiatrade.com/id/" />
+		<link rel="next" href="https://www.xmindonesiatrade.com/id/page/2" />
+		<meta name="generator" content="All in One SEO (AIOSEO) 4.5.6" />
+		<meta property="og:locale" content="en_US" />
+		<meta property="og:site_name" content="XM ID – Trading dengan Broker Dunia tepercaya" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Trading Forex &amp; CFD pada Saham, Indeks, Minyak dan Emas" />
+		<meta property="og:description" content="XM menawarkan trading forex, CFD pada saham, indeks saham, minyak dan emas pada MT4 dan MT5. Trading online dengan broker forex teregulasi." />
+		<meta property="og:url" content="https://www.xmindonesiatrade.com/id/" />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content="Trading Forex &amp; CFD pada Saham, Indeks, Minyak dan Emas" />
+		<meta name="twitter:description" content="XM menawarkan trading forex, CFD pada saham, indeks saham, minyak dan emas pada MT4 dan MT5. Trading online dengan broker forex teregulasi." />
+		<meta name="google" content="nositelinkssearchbox" />
+		<script type="application/ld+json" class="aioseo-schema">
+			{"@context":"https:\/\/schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https:\/\/www.xmindonesiatrade.com\/id#breadcrumblist","itemListElement":[{"@type":"ListItem","@id":"https:\/\/www.xmindonesiatrade.com\/id\/#listItem","position":1,"name":"Home"}]},{"@type":"CollectionPage","@id":"https:\/\/www.xmindonesiatrade.com\/id#collectionpage","url":"https:\/\/www.xmindonesiatrade.com\/id","name":"Trading Forex & CFD pada Saham, Indeks, Minyak dan Emas","description":"XM menawarkan trading forex, CFD pada saham, indeks saham, minyak dan emas pada MT4 dan MT5. Trading online dengan broker forex teregulasi.","inLanguage":"en-US","isPartOf":{"@id":"https:\/\/www.xmindonesiatrade.com\/id\/#website"},"breadcrumb":{"@id":"https:\/\/www.xmindonesiatrade.com\/id#breadcrumblist"},"about":{"@id":"https:\/\/www.xmindonesiatrade.com\/id\/#organization"}},{"@type":"Organization","@id":"https:\/\/www.xmindonesiatrade.com\/id\/#organization","name":"XM ID","url":"https:\/\/www.xmindonesiatrade.com\/id\/"},{"@type":"WebSite","@id":"https:\/\/www.xmindonesiatrade.com\/id\/#website","url":"https:\/\/www.xmindonesiatrade.com\/id\/","name":"XM ID","description":"Trading dengan Broker Dunia tepercaya","inLanguage":"en-US","publisher":{"@id":"https:\/\/www.xmindonesiatrade.com\/id\/#organization"}}]}
+		</script>
+		<!-- All in One SEO -->
+
+<link rel="https://api.w.org/" href="https://www.xmindonesiatrade.com/id/wp-json/" />
+
+<link rel="alternate" href="https://www.xm.com/au/" hreflang="en-AU" /><link rel="alternate" href="https://www.xmbroker-fx.com/my/" hreflang="ms-MY" /><link rel="alternate" href="https://www.xmcnbroker.com/cn/" hreflang="zh-Hans-TW" /><link rel="alternate" href="https://www.xmcnbroker.com/tw/" hreflang="zh-Hant-TW" /><link rel="alternate" href="https://www.xm.com/el/" hreflang="el-GR" /><link rel="alternate" href="https://www.xm.com/hu/" hreflang="hu-HU" /><link rel="alternate" href="https://www.xm.com/ru/" hreflang="ru-RU" /><link rel="alternate" href="https://www.xmindonesiatrade.com/id/" hreflang="id-ID" /><link rel="alternate" href="https://www.xm.com/fr/" hreflang="fr" /><link rel="alternate" href="https://www.xm.com/it/" hreflang="it-IT" /><link rel="alternate" href="https://www.xm.com/se/" hreflang="sv-SE" /><link rel="alternate" href="https://www.xm.com/de/" hreflang="de-DE" /><link rel="alternate" href="https://www.xm.com/pl/" hreflang="pl-PL" /><link rel="alternate" href="https://www.xm.com/es/" hreflang="es" /><link rel="alternate" href="https://www.xm.com/kr/" hreflang="ko-KR" /><link rel="alternate" href="https://www.xm.com/pt/" hreflang="pt" /><link rel="alternate" href="https://www.xmfxtrader.net/tr/" hreflang="tr-TR" /><link rel="alternate" href="https://www.xmasianbroker.com/vn/" hreflang="vi-VN" /><link rel="alternate" href="https://www.xm.com/ph/" hreflang="tl-PH" /><link rel="alternate" href="https://www.xm.com/th/" hreflang="th-TH" /><link rel="alternate" href="https://www.xm.com/nl/" hreflang="nl-NL" /><link rel="alternate" href="https://www.xm.com/cz/" hreflang="cs-CZ" /><link rel="alternate" href="https://www.xm.com/" hreflang="en" /><link rel="alternate" href="https://www.xmza.com/" hreflang="en-ZA" /><link rel="alternate" href="https://www.xmarabia.net/ar/" hreflang="ar" /><link rel="alternate" href="https://www.xm.com/fa/" hreflang="fa" /><link rel="alternate" href="https://www.xm.com/bn/" hreflang="bn" /><link rel="alternate" href="https://www.xm.com/ur/" hreflang="ur" /><link rel="alternate" href="https://www.xm.com/hi/" hreflang="hi" /><link rel="alternate" href="https://www.xm.com/si/" hreflang="si" /><link rel="alternate" href="https://www.xm.com/uz/" hreflang="uz" />
+    
+    <script>
+        var appConfig = {
+            xmSecureHost: 'https://www.xmindonesiatrade.com',
+            maSecureHost: 'https://my.xmindonesiatrade.com',
+            homeLinkSuffix: 'id',
+            langCode: 'id',
+            country: 'ID',
+            gatewayBaseUrl: 'https://apigw.tp-serv.com/',
+            sessionExpirationTime: '2024-04-09T12:31:36+00:00',
+            cssIcons: '{"xmFont":{"Spread-plus-1":"xmFont fa-kit fa-xm-spread-plus-1","Spread3":"xmFont fa-kit fa-xm-spread3","Spread-plus-3":"xmFont fa-kit fa-xm-spread-plus-3","Spread5":"xmFont fa-kit fa-xm-spread5","News":"xmFont fa-kit fa-xm-news","Zoom-news":"xmFont fa-kit fa-xm-zoom-news","Support-on":"xmFont fa-kit fa-xm-support-on","Support-off":"xmFont fa-kit fa-xm-support-off","Leverage-50":"xmFont fa-kit fa-xm-leverage-50","Envelope-remove":"xmFont fa-kit fa-xm-envelope-remove","Display-off":"xmFont fa-kit fa-xm-display-off","Playlist-solid":"xmFont fa-kit fa-xm-playlist-solid","Playlist-outline":"xmFont fa-kit fa-xm-playlist-outline","Live-video":"xmFont fa-kit fa-xm-live-video","Leverage-30":"xmFont fa-kit fa-xm-leverage-30","Percent":"xmFont fa-kit fa-xm-percent","Islam":"xmFont fa-kit fa-xm-islam","Depositor":"xmFont fa-kit fa-xm-depositor","Abacus":"xmFont fa-kit fa-xm-abacus","Acrobat":"xmFont fa-kit fa-xm-acrobat","Add-user":"xmFont fa-kit fa-xm-add-user","Add-users":"xmFont fa-kit fa-xm-add-users","Android":"xmFont fa-kit fa-xm-android","AndroidLogo-phone":"xmFont fa-kit fa-xm-androidlogo-phone","AndroidLogo-tablet":"xmFont fa-kit fa-xm-androidlogo-tablet","Android-phone":"xmFont fa-kit fa-xm-android-phone","Android-tablet":"xmFont fa-kit fa-xm-android-tablet","Apple":"xmFont fa-kit fa-xm-apple","Apple-ipad":"xmFont fa-kit fa-xm-apple-ipad","Apple-iphone":"xmFont fa-kit fa-xm-apple-iphone","Arrow-circle":"xmFont fa-kit fa-xm-arrow-circle","Arrows":"xmFont fa-kit fa-xm-arrows","Award":"xmFont fa-kit fa-xm-award","Bank":"xmFont fa-kit fa-xm-bank","Bar-chart":"xmFont fa-kit fa-xm-bar-chart","Birthday":"xmFont fa-kit fa-xm-birthday","Bitcoin":"xmFont fa-kit fa-xm-bitcoin","Bitcoin-wallet":"xmFont fa-kit fa-xm-bitcoin-wallet","Briefcase":"xmFont fa-kit fa-xm-briefcase","Building":"xmFont fa-kit fa-xm-building","Bull":"xmFont fa-kit fa-xm-bull","Bull-solid":"xmFont fa-kit fa-xm-bull-solid","Calculator":"xmFont fa-kit fa-xm-calculator","Calendar":"xmFont fa-kit fa-xm-calendar","Calendar-check":"xmFont fa-kit fa-xm-calendar-check","Camera":"xmFont fa-kit fa-xm-camera","Candlestick":"xmFont fa-kit fa-xm-candlestick","Certificate":"xmFont fa-kit fa-xm-certificate","Certified":"xmFont fa-kit fa-xm-certified","Chart":"xmFont fa-kit fa-xm-chart","Chart-24h":"xmFont fa-kit fa-xm-chart-24h","Chart-50":"xmFont fa-kit fa-xm-chart-50","Chart-55":"xmFont fa-kit fa-xm-chart-55","Chart-100":"xmFont fa-kit fa-xm-chart-100","Chart-300":"xmFont fa-kit fa-xm-chart-300","Chart-bars2":"xmFont fa-kit fa-xm-chart-bars2","Chart-bars-arrow":"xmFont fa-kit fa-xm-chart-bars-arrow","Chart-candlestick":"xmFont fa-kit fa-xm-chart-candlestick","Chart-high":"xmFont fa-kit fa-xm-chart-high","Chart-line":"xmFont fa-kit fa-xm-chart-line","Chart-line-low":"xmFont fa-kit fa-xm-chart-line-low","Chart-pie":"xmFont fa-kit fa-xm-chart-pie","Chart-search":"xmFont fa-kit fa-xm-chart-search","Chat":"xmFont fa-kit fa-xm-chat","Check-circle":"xmFont fa-kit fa-xm-check-circle","Checklist":"xmFont fa-kit fa-xm-checklist","Checklist-clock":"xmFont fa-kit fa-xm-checklist-clock","Check-round":"xmFont fa-kit fa-xm-check-round","Check-shield":"xmFont fa-kit fa-xm-check-shield","Cheers":"xmFont fa-kit fa-xm-cheers","Click":"xmFont fa-kit fa-xm-click","Clock":"xmFont fa-kit fa-xm-clock","Cloud":"xmFont fa-kit fa-xm-cloud","Cloud-download":"xmFont fa-kit fa-xm-cloud-download","Cloud-upload":"xmFont fa-kit fa-xm-cloud-upload","Coffee":"xmFont fa-kit fa-xm-coffee","Coins":"xmFont fa-kit fa-xm-coins","Corded-phone":"xmFont fa-kit fa-xm-corded-phone","Creditcard":"xmFont fa-kit fa-xm-creditcard","Database-dollar":"xmFont fa-kit fa-xm-database-dollar","Director":"xmFont fa-kit fa-xm-director","Display":"xmFont fa-kit fa-xm-display","Displays":"xmFont fa-kit fa-xm-displays","Document":"xmFont fa-kit fa-xm-document","Document-check":"xmFont fa-kit fa-xm-document-check","Documents":"xmFont fa-kit fa-xm-documents","Document-zoom":"xmFont fa-kit fa-xm-document-zoom","Dollar-bag":"xmFont fa-kit fa-xm-dollar-bag","Dollar-circle":"xmFont fa-kit fa-xm-dollar-circle","Dollar-drop":"xmFont fa-kit fa-xm-dollar-drop","Dollar-round":"xmFont fa-kit fa-xm-dollar-round","Dollar-settings":"xmFont fa-kit fa-xm-dollar-settings","Download":"xmFont fa-kit fa-xm-download","Drop":"xmFont fa-kit fa-xm-drop","Earth":"xmFont fa-kit fa-xm-earth","Envelope":"xmFont fa-kit fa-xm-envelope","Facebook":"xmFont fa-kit fa-xm-facebook","Fifty-plus":"xmFont fa-kit fa-xm-fifty-plus","Gears":"xmFont fa-kit fa-xm-gears","Gift":"xmFont fa-kit fa-xm-gift","Globe":"xmFont fa-kit fa-xm-globe","Gold":"xmFont fa-kit fa-xm-gold","Google-plus":"xmFont fa-kit fa-xm-google-plus","Hand-coins":"xmFont fa-kit fa-xm-hand-coins","Happy":"xmFont fa-kit fa-xm-happy","High-bars":"xmFont fa-kit fa-xm-high-bars","History":"xmFont fa-kit fa-xm-history","Imac":"xmFont fa-kit fa-xm-imac","Imac-apple":"xmFont fa-kit fa-xm-imac-apple","Infinity":"xmFont fa-kit fa-xm-infinity","Instagram":"xmFont fa-kit fa-xm-instagram","Install-pc":"xmFont fa-kit fa-xm-install-pc","Install-phone":"xmFont fa-kit fa-xm-install-phone","Install-tablet":"xmFont fa-kit fa-xm-install-tablet","Ipad":"xmFont fa-kit fa-xm-ipad","Iphone":"xmFont fa-kit fa-xm-iphone","Key":"xmFont fa-kit fa-xm-key","Laptop":"xmFont fa-kit fa-xm-laptop","Letter":"xmFont fa-kit fa-xm-letter","Leverage-100":"xmFont fa-kit fa-xm-leverage-100","Leverage-500":"xmFont fa-kit fa-xm-leverage-500","Leverage-888":"xmFont fa-kit fa-xm-leverage-888","Lifevest":"xmFont fa-kit fa-xm-lifevest","Like":"xmFont fa-kit fa-xm-like","Like-bubble":"xmFont fa-kit fa-xm-like-bubble","Link":"xmFont fa-kit fa-xm-link","Linked-in":"xmFont fa-kit fa-xm-linked-in","Linux":"xmFont fa-kit fa-xm-linux","Location":"xmFont fa-kit fa-xm-location","Location-map":"xmFont fa-kit fa-xm-location-map","Lock":"xmFont fa-kit fa-xm-lock","Lock-check":"xmFont fa-kit fa-xm-lock-check","Lock-open":"xmFont fa-kit fa-xm-lock-open","Low-price":"xmFont fa-kit fa-xm-low-price","Metatrader":"xmFont fa-kit fa-xm-metatrader","Mic":"xmFont fa-kit fa-xm-mic","Mobile-chart":"xmFont fa-kit fa-xm-mobile-chart","Mt4":"xmFont fa-kit fa-xm-mt4","Mt5":"xmFont fa-kit fa-xm-mt5","Multiple-prices":"xmFont fa-kit fa-xm-multiple-prices","Multiterminal":"xmFont fa-kit fa-xm-multiterminal","Music":"xmFont fa-kit fa-xm-music","No-credit-card":"xmFont fa-kit fa-xm-no-credit-card","No-dollar":"xmFont fa-kit fa-xm-no-dollar","No-image":"xmFont fa-kit fa-xm-no-image","Olympic":"xmFont fa-kit fa-xm-olympic","On-off":"xmFont fa-kit fa-xm-on-off","Paperclip":"xmFont fa-kit fa-xm-paperclip","Paper-history":"xmFont fa-kit fa-xm-paper-history","Paper-pen":"xmFont fa-kit fa-xm-paper-pen","Pc":"xmFont fa-kit fa-xm-pc","Pc-window":"xmFont fa-kit fa-xm-pc-window","Pdf-large":"xmFont fa-kit fa-xm-pdf-large","Pdf-small":"xmFont fa-kit fa-xm-pdf-small","Pdf-thin":"xmFont fa-kit fa-xm-pdf-thin","Pencil-form":"xmFont fa-kit fa-xm-pencil-form","Pencil-lock":"xmFont fa-kit fa-xm-pencil-lock","Pie-chart":"xmFont fa-kit fa-xm-pie-chart","Piggy-bank":"xmFont fa-kit fa-xm-piggy-bank","Play-outline":"xmFont fa-kit fa-xm-play-outline","Play-solid":"xmFont fa-kit fa-xm-play-solid","Post":"xmFont fa-kit fa-xm-post","Producer":"xmFont fa-kit fa-xm-producer","Promotions":"xmFont fa-kit fa-xm-promotions","Puzzle":"xmFont fa-kit fa-xm-puzzle","Qq":"xmFont fa-kit fa-xm-qq","Qq-line":"xmFont fa-kit fa-xm-qq-line","Qq-solid":"xmFont fa-kit fa-xm-qq-solid","Question":"xmFont fa-kit fa-xm-question","Quote":"xmFont fa-kit fa-xm-quote","Refresh-dollar":"xmFont fa-kit fa-xm-refresh-dollar","Responsive":"xmFont fa-kit fa-xm-responsive","Safe":"xmFont fa-kit fa-xm-safe","Scale":"xmFont fa-kit fa-xm-scale","Seminar":"xmFont fa-kit fa-xm-seminar","Shapes":"xmFont fa-kit fa-xm-shapes","Share":"xmFont fa-kit fa-xm-share","Shield-dollar":"xmFont fa-kit fa-xm-shield-dollar","Signal":"xmFont fa-kit fa-xm-signal","Signals":"xmFont fa-kit fa-xm-signals","Speed":"xmFont fa-kit fa-xm-speed","Spread25":"xmFont fa-kit fa-xm-spread25","Sprinter":"xmFont fa-kit fa-xm-sprinter","Stamp":"xmFont fa-kit fa-xm-stamp","Star":"xmFont fa-kit fa-xm-star","Stop-sign":"xmFont fa-kit fa-xm-stop-sign","Stopwatch":"xmFont fa-kit fa-xm-stopwatch","Strategy":"xmFont fa-kit fa-xm-strategy","Support":"xmFont fa-kit fa-xm-support","Support24-5":"xmFont fa-kit fa-xm-support24-5","Thunder":"xmFont fa-kit fa-xm-thunder","Time":"xmFont fa-kit fa-xm-time","Tools":"xmFont fa-kit fa-xm-tools","Trader":"xmFont fa-kit fa-xm-trader","Trash":"xmFont fa-kit fa-xm-trash","Twitter":"xmFont fa-kit fa-xm-twitter","Uninstall-pc":"xmFont fa-kit fa-xm-uninstall-pc","Upload-document":"xmFont fa-kit fa-xm-upload-document","Up-percent":"xmFont fa-kit fa-xm-up-percent","User":"xmFont fa-kit fa-xm-user","User-care":"xmFont fa-kit fa-xm-user-care","User-check":"xmFont fa-kit fa-xm-user-check","User-height":"xmFont fa-kit fa-xm-user-height","User-id":"xmFont fa-kit fa-xm-user-id","User-profile":"xmFont fa-kit fa-xm-user-profile","Users":"xmFont fa-kit fa-xm-users","User-upgrade":"xmFont fa-kit fa-xm-user-upgrade","Video-camera":"xmFont fa-kit fa-xm-video-camera","Video-chart":"xmFont fa-kit fa-xm-video-chart","Video-player":"xmFont fa-kit fa-xm-video-player","Wallet":"xmFont fa-kit fa-xm-wallet","Water-bill":"xmFont fa-kit fa-xm-water-bill","Web-development":"xmFont fa-kit fa-xm-web-development","Webinar":"xmFont fa-kit fa-xm-webinar","Website":"xmFont fa-kit fa-xm-website","Webtrader":"xmFont fa-kit fa-xm-webtrader","Wheat":"xmFont fa-kit fa-xm-wheat","Withdraw":"xmFont fa-kit fa-xm-withdraw","Withdraw-dollar":"xmFont fa-kit fa-xm-withdraw-dollar","World":"xmFont fa-kit fa-xm-world","Youku-outline":"xmFont fa-kit fa-xm-youku-outline","Youku-solid":"xmFont fa-kit fa-xm-youku-solid","Youtube-play":"xmFont fa-kit fa-xm-youtube-play","Zero-comma":"xmFont fa-kit fa-xm-zero-comma","Zero-dot":"xmFont fa-kit fa-xm-zero-dot","Zero-fees":"xmFont fa-kit fa-xm-zero-fees","Zero-one":"xmFont fa-kit fa-xm-zero-one","Zoom":"xmFont fa-kit fa-xm-zoom","Zoom-gear":"xmFont fa-kit fa-xm-zoom-gear","Zoom-in":"xmFont fa-kit fa-xm-zoom-in","Zoom-out":"xmFont fa-kit fa-xm-zoom-out","Excel":"xmFont fa-kit fa-xm-excel","Word":"xmFont fa-kit fa-xm-word","Transaction-history":"xmFont fa-kit fa-xm-transaction-history","Speaker":"xmFont fa-kit fa-xm-speaker","Document-search":"xmFont fa-kit fa-xm-document-search","Usd-25":"xmFont fa-kit fa-xm-usd-25","Usd-20":"xmFont fa-kit fa-xm-usd-20","Usd-15":"xmFont fa-kit fa-xm-usd-15","Usd-10":"xmFont fa-kit fa-xm-usd-10","25-Usd":"xmFont fa-kit fa-xm-25-usd","Percent-100":"xmFont fa-kit fa-xm-percent-100","Percent-10":"xmFont fa-kit fa-xm-percent-10","Mobile-devices":"xmFont fa-kit fa-xm-mobile-devices","Graduation":"xmFont fa-kit fa-xm-graduation","Email-new":"xmFont fa-kit fa-xm-email-new","Details":"xmFont fa-kit fa-xm-details","Notifications":"xmFont fa-kit fa-xm-notifications","Handshake":"xmFont fa-kit fa-xm-handshake","Wechat":"xmFont fa-kit fa-xm-wechat","User-circle":"xmFont fa-kit fa-xm-user-circle","XM-app":"xmFont fa-kit fa-xm-app","Download-circle":"xmFont fa-kit fa-xm-download-circle","Logo-no-bull":"xmFont fa-kit fa-xm-logo-no-bull","Document-time":"xmFont fa-kit fa-xm-document-time","Language":"xmFont fa-kit fa-xm-language","Circle-arrow":"xmFont fa-kit fa-xm-circle-arrow","Chart-dollar":"xmFont fa-kit fa-xm-chart-dollar","Search-no-result":"xmFont fa-kit fa-xm-search-no-result","Hand-gift":"xmFont fa-kit fa-xm-hand-gift","Non-withdraw-dollar":"xmFont fa-kit fa-xm-non-withdraw-dollar","Withdraw-dollar-check":"xmFont fa-kit fa-xm-withdraw-dollar-check","Hand_dollar_borders":"xmFont fa-kit fa-xm-hand-dollar-borders","Leverage-250":"xmFont fa-kit fa-xm-leverage-250","Bitcoin-circle":"xmFont fa-kit fa-xm-bitcoin-circle","Support24-7":"xmFont fa-kit fa-xm-support24-7","Leverage-1000":"xmFont fa-kit fa-xm-leverage-1000","Logo-xmtd":"xmFont fa-kit fa-xm-logo-xmtd","XMTD-app":"xmFont fa-kit fa-xm-xmtd-app","Leverage-1-1000":"xmFont fa-kit fa-xm-leverage-1-1000","Leverage-1-500":"xmFont fa-kit fa-xm-leverage-1-500","Leverage-1-250":"xmFont fa-kit fa-xm-leverage-1-250","xmWarning":"xmFont fa-kit fa-xm-warning","Wallet-plus":"xmFont fa-kit fa-xm-wallet-plus","Leverage-1-200":"xmFont fa-kit fa-xm-leverage-1-200","Turbo-stocks":"xmFont fa-kit fa-xm-turbo-stocks","Leverage-1-20":"xmFont fa-kit fa-xm-leverage-1-20","Chart-high2":"xmFont fa-kit fa-xm-chart-high2","Winner":"xmFont fa-kit fa-xm-winner","Traders":"xmFont fa-kit fa-xm-traders","Skills":"xmFont fa-kit fa-xm-skills","Strategy-1":"xmFont fa-kit fa-xm-strategy-1","Reputation":"xmFont fa-kit fa-xm-reputation","Stars-Bars":"xmFont fa-kit fa-xm-stars-bars","Dollar-Bag-1":"xmFont fa-kit fa-xm-dollar-bag-1","XM-Gift-2":"xmFont fa-kit fa-xm-gift2","Winner-star":"xmFont fa-kit fa-xm-winner-star","Copy-trading":"xmFont fa-kit fa-xm-copytrading","Register":"xmFont fa-kit fa-xm-register","Deposit":"xmFont fa-kit fa-xm-deposit","Tick":"xmFont fa-kit fa-xm-tick","Ultra-low":"xmFont fa-kit fa-xm-ultra-low","Copy-trading-candle":"xmFont fa-kit fa-xm-copytrading-candle","Hand-candle":"xmFont fa-kit fa-xm-hand-candle","Chart-shield":"xmFont fa-kit fa-xm-chart-shield","User-shield":"xmFont fa-kit fa-xm-user-shield","Check-stopwatch":"xmFont fa-kit fa-xm-check-stopwatch","Copy-strategies":"xmFont fa-kit fa-xm-copy-strategies","Community":"xmFont fa-kit fa-xm-community","Hand-arrows":"xmFont fa-kit fa-xm-hand-arrows","Leverage-3000":"xmFont fa-kit fa-xm-leverage-3000","Business":"xmFont fa-kit fa-xm-business","Person":"xmFont fa-kit fa-xm-person","Leverage-20-1":"xmFont fa-kit fa-xm-leverage-20-1","Exclusive-location":"xmFont fa-kit fa-xm-exclusive-location","Competitions-trophy":"xmFont fa-kit fa-xm-competitions-trophy","Leverage-200":"xmFont fa-kit fa-xm-leverage-200","Kakao":"xmFont fa-kit fa-xm-kakao","Naver":"xmFont fa-kit fa-xm-naver","Briefcase-expanded":"xmFont fa-kit fa-xm-briefcase-expanded","Touch":"xmFont fa-kit fa-xm-touch"}}',
+            disclaimerRiskDocLink: 'https://cloud.xm-cdn.com/static/pdf/System-PDFs/XMGlobal-Risk-Disclosures-for-Financial-Instruments.pdf?v=6294d0191b6f1461fc70859d40df1a71',
+            termsAndConditionsDocLink: 'https://cloud.xm-cdn.com/static/pdf/System-PDFs/XMGlobal-Client-Agreement-Terms-and-Conditions-of-Business.pdf?v=22647d4005144658126c7c14d0cc76f3',
+            conflictsOfInterestDocLink: 'https://cloud.xm-cdn.com/static/pdf/System-PDFs/XMGlobal-Conflicts-of-Interest-Policy.pdf?v=09065e410b2c03a866d4827b02eabfdc',
+            openRealUrl: 'https://www.xmindonesiatrade.com/goto/profile/id',
+            publicPath: 'https://assets.xm-cdn.com/research-portal/',
+            cdnHost: 'https://assets.xm-cdn.com',
+            environment: 'production', // possible values: staging, development, production
+            brandId: 'xmbz',
+        };
+    </script>
+<script src="https://kit.fontawesome.com/0677960cd8.js" crossorigin="anonymous"></script>
+    <script>
+        (function() {
+            'use strict';
+
+            function sample(rate, daysValid) {
+                var cookieName = '_fs_usr';
+                try {
+                    if (document.cookie.indexOf(cookieName + '=true') > -1 || document.cookie.indexOf(cookieName + '=false') > -1) {
+                        return document.cookie.indexOf(cookieName + '=true') > -1;
+                    } else {
+                        var shouldSample = Math.random() < rate / 100;
+                        var days = daysValid !== undefined && daysValid > 0 ? daysValid : 30;
+                        var date = new Date();
+                        date.setTime(date.getTime() + days * 60 * 1000);
+                        document.cookie = cookieName + '=' + shouldSample + '; expires=' + date.toGMTString() + '; path=/';
+                        return shouldSample;
+                    }
+                } catch (err) {
+                    console.error('FullStory unavailable, unable to sample user');
+                    return false;
+                }
+            }
+
+            var fullstory_config = {
+                rate: 15,
+                daysValid: 1440,
+                environment: "production",
+                brand_id: "xmbz",
+                country: "ID",
+            }
+
+            if (sample(fullstory_config.rate, fullstory_config.daysValid)) {
+                if (fullstory_config.environment == 'development') {
+                    console.log('FullStory is loaded | Brand ID is ' + fullstory_config.brand_id + ' Country is ' + fullstory_config.country + ' and fs_org_value is ' + '19B2HB');
+                    window['_fs_ready'] = function() {
+                        // This URL will take you to the current time within the session replay
+                        var sessionUrlAtTime = FS.getCurrentSessionURL(true);
+                    };
+                }
+                //FullStory Snippet!
+                window['_fs_debug']=false;window['_fs_host']='fullstory.com';window['_fs_script']='edge.fullstory.com/s/fs.js';window['_fs_org']='19B2HB';window['_fs_namespace']='FS';(function(m,n,e,t,l,o,g,y){if(e in m){if(m.console&&m.console.log){m.console.log('FullStory namespace conflict. Please set window["_fs_namespace"].')}return}g=m[e]=function(a,b,s){g.q?g.q.push([a,b,s]):g._api(a,b,s)};g.q=[];o=n.createElement(t);o.async=1;o.crossOrigin='anonymous';o.src='https://'+_fs_script;y=n.getElementsByTagName(t)[0];y.parentNode.insertBefore(o,y);g.identify=function(i,v,s){g(l,{uid:i},s);if(v){g(l,v,s)}};g.setUserVars=function(v,s){g(l,v,s)};g.event=function(i,v,s){g('event',{n:i,p:v},s)};g.anonymize=function(){g.identify(!!0)};g.shutdown=function(){g("rec",!1)};g.restart=function(){g("rec",!0)};g.log=function(a,b){g("log",[a,b])};g.consent=function(a){g("consent",!arguments.length||a)};g.identifyAccount=function(i,v){o='account';v=v||{};v.acctId=i;g(o,v)};g.clearUserCookie=function(){};g.setVars=function(n,p){g('setVars',[n,p])};g._w={};y='XMLHttpRequest';g._w[y]=m[y];y='fetch';g._w[y]=m[y];if(m[y]){m[y]=function(){return g._w[y].apply(this,arguments)}}g._v="1.3.0"})(window,document,window['_fs_namespace'],'script','user');
+            } else {
+                if (fullstory_config.environment == 'development') {
+                    console.log('This user is not included in the segmentation rules of FullStory | Brand ID is ' + fullstory_config.brand_id + ' Country is ' + fullstory_config.country + ' and fs_org_value is ' + '19B2HB');
+                }
+            }
+        }());
+    </script>
+
+
+<script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"true","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"SJ-9b6bd49e-c9a6-484a-945b-fd37c5c606a5","rua.cook":"true","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch"}]);</script>
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="FX72H-U393W-CNX6U-WRWHF-88HB7",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"FX72H-U393W-CNX6U-WRWHF-88HB7";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n="true"=="true"?1:0,t="cookiepresent",a="m4jcgkixhoukszpmk5ya-f-d917233d9-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"36","ak.cp":"1137547","ak.ai":parseInt("677135",10),"ak.ol":"0","ak.cr":27,"ak.ipv":4,"ak.proto":"h2","ak.rid":"7a255d3","ak.r":45578,"ak.a2":n,"ak.m":"a","ak.n":"essl","ak.bpcip":"103.18.35.0","ak.cport":50530,"ak.gh":"23.59.168.165","ak.quicv":"","ak.tlsv":"tls1.3","ak.0rtt":"","ak.csrc":"-","ak.acc":"","ak.t":"1709987696","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==mmO7wAsmqIvw2oxOe60sFsOpgXTQiZP09+YSQ03WZQIOlsFKW+R8PUSrHjfemG7e5Ha8pZwVUbXc4JDnnWRD/xpK4dYV8qiU7kjjbtMMn3eW44p7TK3i2h+08e2+logV5zDuGVyT8ff/XEmIaa5MG1HFH6btivhxI2p8iDVEGVNHgZjUiJ3CapCuFLZZQAmh2xaoQ/x0WQyiFjfDB5ZIdqMgjdfsvnXpm3Jo4qO/7TpC2Gn/BBEo5fMcpJHZmWeKgHqbhVVGmHxT8aJT8+KUD26PZJsER3xiZ+eMULmVzHNVeg8r0KtE+OfRryqZOv+HNWFnLmgwzcnR6KSA96IfAgKsM8KR1jDh74cXwg483HyVVIahVqVunrpUxgRUHRU1B4dPihrFF4AXN3jGcYmPluGZ4+YZ97O+N6vr9o2llJA=","ak.pv":"274","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+
+<body class="main-site xmbz hp-v17 loading">
+    <script>
+    var cookieDomain = '.xmindonesiatrade.com';
+    var countryCurrent = 'ID';
+    var languagePref = 'id';
+    var group = '6';
+    var homeLink = 'https://www.xmindonesiatrade.com/id';
+    var hostLink = 'https://www.xmindonesiatrade.com';
+    var brandId = 'xmbz';
+    var visitorDetailsDeviceInfo = '{"mobile":false,"phone":false,"tablet":false,"android":false,"ios":false}';
+</script>
+<script>
+    function setGdprCookies() {
+        var domainName = ".xmindonesiatrade.com";
+        var cookieGroupsDefaultValues = {'functional': 1, 'analytical': 0, 'promotional': 0, 'preferences': 0};
+        var today = new Date();
+        var today_180 = today.setDate(today.getDate() + 180);
+        for (var cookieType in cookieGroupsDefaultValues) {
+            if ((new RegExp('xmck_' + cookieType, 'gi').exec(document.cookie)) == null) {
+                document.cookie = 'xmck_' + cookieType + '=' + cookieGroupsDefaultValues[cookieType] + '; path=/; domain=' + domainName + '; expired=' + today_180.toString();
+            }
+        }
+    }
+    setGdprCookies();
+</script>
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KPSPFZ"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+
+    
+    gtag('consent', 'default', {
+        'ad_storage': 'denied',
+        'ad_user_data': 'denied',
+        'ad_personalization': 'denied',
+        'analytics_storage': 'granted'
+    });
+
+    if (!window.cookiesCallback) {
+        window.cookiesCallback = function (promotional) {
+            if (promotional) {
+                gtag('consent', 'update', {
+                    'ad_storage': 'granted',
+                    'ad_user_data': 'granted',
+                    'ad_personalization': 'granted'
+                });
+            } else {
+                gtag('consent', 'update', {
+                    'ad_storage': 'denied',
+                    'ad_user_data': 'denied',
+                    'ad_personalization': 'denied'
+                });
+            }
+        };
+    }
+</script>
+<!-- End Google Tag Manager -->
+<style>
+    #xm_app_stickyHeader {
+        background: #1e1e1e;
+    }
+    #xm_app_stickyHeader .col-md-12 {
+        padding-left: 7px;
+        padding-right: 7px;
+    }
+    .xm_app_stickyHeader__container {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        max-width: 490px;
+        margin: 0 auto;
+    }
+    .xm_app_stickyHeader__container p.no_margin {
+        color: #fff;
+        font-weight: bold;
+        font-size: 12px;
+        margin-left: 7px !important;
+    }
+    .xm_app_stickyHeader__container .iconWrapper_container {
+        margin-left: 24px;
+        margin-right: 10px;
+    }
+    html[lang="el"] .xm_app_stickyHeader__container .iconWrapper_container {
+        margin-left: 12px;
+    }
+    .xm_app_stickyHeader__container .iconWrapper_container .appIcons,
+    .xm_app_stickyHeader__container .iconWrapper_container a img {
+        width: 90px;
+    }
+    .xm_app_stickyHeader__wrapper-icon-text, .xm_app_stickyHeader__wrapper-apps-dl {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .xm_app_stickyHeader__wrapper-icon-text p {
+        font-size: 14px;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    }
+    .xm_app_stickyHeader__wrapper-icon-text p:last-child {
+        font-size: 10px;
+        font-weight: normal;
+    }
+    .xm_app_stickyHeader__wrapper-apps-dl {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+    #btnXMappStickyHeader i {
+        color: #696969;
+    }
+    #xm_app_stickyHeader .iconWrapper {
+        display: none;
+    }
+    .xm_app_stickyHeader__download {
+        background: #272727;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        height: 57px;
+        width: 60px;
+        margin-right: 2px;
+    }
+    .xm_app_stickyHeader__download i {
+        color: #29A643;
+        font-size: 34px;
+    }
+    .rtl-lang .xm_app_stickyHeader__container .iconWrapper_container {
+        margin-right: 24px;
+        margin-left: 10px;
+    }
+    .rtl-lang .xm_app_stickyHeader__container p.no_margin {
+        margin-left: 0 !important;
+        margin-right: 7px !important;
+    }
+</style>
+    <div id="xm_app_stickyHeader" class="hidden-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="xm_app_stickyHeader__container text-left">
+                        <div class="xm_app_stickyHeader__wrapper-icon-text">
+                            <img class="xm_app_stickyHeader__icon" src="https://cloud.xm-cdn.com/static/www/pages/xmapp/xmapp-icon.webp?v=57092ddbbc339c6f050eed2271e679d3" alt="XM App Icon" width="43">
+                                <p class="hidden-xs no_margin">Trading Di mana Saja dengan <strong>Aplikasi MT4 & MT5 XM</strong> Semua dalam Satu.</p>
+                        </div>
+                        <div class="xm_app_stickyHeader__wrapper-apps-dl">
+                            <div class="text-center">
+                                <div class="iconWrapper_container">
+            <img class="appIcons appstore-img img-responsive" content="XMapp-AppStore" content-type="id" placement="bottom-end" placement-rtl="bottom-start"src="https://cloud.xm-cdn.com/static/xm/pages/xmapp/xmapp_appstore_dark.svg" alt="XMApp App Store">
+                    <img class="appIcons android-img img-responsive" content="XMapp-PlayStore" content-type="id" placement="bottom-start" placement-rtl="bottom-end"src="https://cloud.xm-cdn.com/static/xm/pages/xmapp/android-badge-white.svg?v=59c8cf84b682b868c98748f724b883d9" alt="XMApp Android">
+            </div>
+<div hidden>
+    <div>
+        <div class="xm_app_barcode_container" id="XMapp-AppStore">
+            <div>
+                <img width="160" data-logo="https://cloud.xm-cdn.com/static/xm/pages/xmapp/apple-logo-square.svg?v=6c3e01bbe2dd20d21c26ffe17b9b57eb" data-link="https://xm.onelink.me/CYt8/c7bfb246?is_retargeting=true&affId=115458&affIdTs=1709555247&clickId=2740fa42-42a3-4dfd-a651-54f3c68e3cff&clickIdTs=1709555247&gId=2094&gIdTs=1709987470&refererUrl=https://www.xmindonesiatrade.com/id/id/&af_dp=xm://register?type=real" class="qrcode center-block" alt="">
+            </div>
+            <div class="xm_app_barcode_text">
+                <p class="no_margin">Scan untuk Mengunduh <strong>Aplikasi XM</strong> di App Store</p>
+                <a href="https://www.xmindonesiatrade.com/id/xm-app">Baca Lebih Lanjut</a>
+            </div>
+        </div>
+        <div class="xm_app_barcode_container" id="XMapp-PlayStore">
+            <div>
+                <img width="160" data-logo="https://cloud.xm-cdn.com/static/xm/pages/xmapp/android-icon.svg?v=e3eafa19936d7826255d47e94da4fb2a" data-link="https://xm.onelink.me/CYt8/e9e13f57?is_retargeting=true&affId=115458&affIdTs=1709555247&clickId=2740fa42-42a3-4dfd-a651-54f3c68e3cff&clickIdTs=1709555247&gId=2094&gIdTs=1709987470&refererUrl=https://www.xmindonesiatrade.com/id/id/&af_dp=xm://register?type=real" class="qrcode center-block" alt="">
+            </div>
+            <div class="xm_app_barcode_text">
+                <p class="no_margin">Pindai untuk mengunduh aplikasi Android kami</p>
+                <a href="https://www.xmindonesiatrade.com/id/apk-app-download">Baca Lebih Lanjut</a>
+            </div>
+        </div>
+    </div>
+</div>
+                            </div>
+                            <button type="button" id="btnXMappStickyHeader"><i class="fa fa-times" aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="layout">
+
+    
+    
+    
+    <div class="site-canvas">
+
+    <header>
+<nav class="navbar navbar-default" role="navigation">
+    <div class="header-top">
+    <div class="container">
+                    <ul class="links-nav hidden-xs hidden-sm">
+                <li>
+                    <a href="https://www.xmindonesiatrade.com/id/">
+                        Halaman Utama XM                    </a>
+                </li>
+                                    <li>
+                        <a href="https://www.xmindonesiatrade.com/goto/members/id" target="_blank">
+                            Login Anggota                        </a>
+                    </li>
+                
+                
+                <li>
+                    <a href="https://www.xmindonesiatrade.com/id/support">
+                        Bantuan                    </a>
+                </li>
+                <li>
+                                                <a href="https://www.xmindonesiatrade.com/id/account-types">
+                                XM Ultra Low                            </a>
+                                        </li>
+            </ul>
+        
+        <ul class="buttons-nav hidden-xs hidden-sm">
+        <li class="hidden-sm hidden-md">
+                                    <a href="https://www.xmindonesiatrade.com/goto/members/id" class="btn btn-white" target="_blank">
+                        <i class="fa fa-lock"></i>LOGIN ANGGOTA                    </a>
+                            </li>
+
+            
+                            <li class="hidden-sm">
+                    <a href="https://www.xmindonesiatrade.com/id/help-center/home" class="btn btn-white">
+                        PUSAT BANTUAN                    </a>
+                </li>
+            
+            <li class="hidden-sm">
+                                                            <a href="https://www.xmindonesiatrade.com/goto/profile/id" class="btn btn-solid btn-red">
+                            BUKA AKUN                        </a>
+                                                </li>
+            
+        <li class="languages ">
+                            <button class="dropdown-toggle btn btn-drop" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    <i class="flags-sprite sm-id"></i><span>Indonesia</span>
+                </button>
+                <ul class="dropdown-menu flags-wrap" role="menu" aria-labelledby="dropdownMenu1">
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-en"></i><span>English</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/my/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-my"></i><span>Malay</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/cn/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-cn"></i><span>简体中文</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/tw/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-tw"></i><span>繁體中文</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/el/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-el"></i><span>Ελληνικά</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/hu/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-hu"></i><span>Magyar</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/ru/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-ru"></i><span>Русский</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/fr/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-fr"></i><span>Français</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/it/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-it"></i><span>Italiano</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/se/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-se"></i><span>Svenska</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/de/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-de"></i><span>Deutsch</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/pl/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-pl"></i><span>Polski</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/ar/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-ar"></i><span>العربية</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/es/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-es"></i><span>Español</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/kr/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-kr"></i><span>한국어</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/pt/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-pt"></i><span>Português</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/vn/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-vn"></i><span>Tiếng Việt</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/th/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-th"></i><span>ภาษาไทย</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/ph/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-ph"></i><span>Filipino</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/nl/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-nl"></i><span>Dutch</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/cz/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-cz"></i><span>Česky</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/bn/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-bn"></i><span>বাংলা</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/ur/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-ur"></i><span>اردو</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/tr/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-tr"></i><span>Türkçe</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/hi/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-in"></i><span>हिंदी</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/si/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-si"></i><span>සිංහල</span>
+                            </a>
+                        </li>
+                                            <li role="presentation">
+                            <a href="https://www.xmindonesiatrade.com/uz/?prln=1" role="menuitem" tabindex="-1">
+                                <i class="flags-sprite sm-uz"></i><span>O'zbekcha</span>
+                            </a>
+                        </li>
+                                    </ul>
+                    </li>
+
+            </ul>
+
+    </div>
+</div>
+
+<div id="main-nav" class="container-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="toggle-bar visible-xs visible-sm">
+                <button class="toggleLeftNav">
+                    <i class="fa fa-bars"></i><span>Menu</span>
+                    <i class="fa fa-times"></i>
+                </button>
+                                    <button class="toggleRightNav">
+                        <span>BAHASA</span><i class="fa fa-globe"></i>
+                        <i class="fa fa-times"></i>
+                    </button>
+                            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="toggle-bar-line"></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="center-logo">
+                                    <h1 class="pagetitle">
+                        Forex                    </h1>
+                
+                
+                <a class="navbar-brand logo"
+                   href="https://www.xmindonesiatrade.com/id/">
+                    <img src="https://cloud.xm-cdn.com/static/xm/common/logos/XMLogo-2021_homepage.svg" alt="XM Logo" >
+                </a>
+
+                                        <a class="navbar-brand  promo-logo-svg"
+                           href="https://www.xmindonesiatrade.com/id/cryptocurrencies">
+                            <img src="https://cloud.xm-cdn.com/static/newsletters/Cryptocurrencies/HP_Icons/cryptos-hp-icon-id.svg?v=92c6eb6e87c35dd45b3644a3633bbd90" alt="Crypto CFDs" >
+                        </a>
+                    
+            </div>
+        </div>
+    </div>
+            <ul id="languages"></ul>
+        <div class="collapse navbar-collapse main-nav" id="navigation-collapse">
+        <div class="container">
+            <div class="navbar-header hidden-xs hidden-sm">
+                <a class="navbar-brand logo"
+                   href="https://www.xmindonesiatrade.com/id/">
+                    <img src="https://cloud.xm-cdn.com/static/xm/common/logos/XMLogo-2021_homepage.svg" alt="XM Logo" >
+                </a>
+                                        <!-- Logo Icon for all other languages -->
+                        <a class="navbar-brand  promo-logo-svg"
+                           href="https://www.xmindonesiatrade.com/id/cryptocurrencies">
+                            <img src="https://cloud.xm-cdn.com/static/newsletters/Cryptocurrencies/HP_Icons/cryptos-hp-icon-id.svg?v=92c6eb6e87c35dd45b3644a3633bbd90" alt="Crypto CFDs" >
+                        </a>
+                                                </div>
+            <ul id="main-nav" class="nav navbar-nav navbar-right default nav-logo hidden-xs hidden-sm">
+    <li class="main_nav_home">
+        <a href="https://www.xmindonesiatrade.com/id/">
+            Depan        </a>
+    </li>
+    <li class="main_nav_trading">
+        <a href="#">
+            Trading        </a>
+        <div class="dropdown">
+    <div class="container">
+         <!-- Disabled for Social Competetions and Copy Trading Entry -->
+                <div class="wrap capitalize_text">
+            <div class="block">
+                <span>
+                   <i class="xmFont fa-kit fa-xm-user-id"></i>Akun Perdagangan                </span>
+                <ul>
+                                            <li class="menu-account-types">
+                            <a href="https://www.xmindonesiatrade.com/id/account-types">
+                                Tipe Akun Trading                            </a>
+                        </li>
+                                        <!--  -->
+                    <!--<li class="menu-account-funding">
+                        <a href="/account-funding">
+                                                    </a>
+                    </li>
+                    <li class="menu-funds-withdrawal">
+                        <a href="/funds-withdrawal">
+                                                    </a>
+                    </li>-->
+
+                                            <li class="menu-ultra-low">
+                            <a href="https://www.xmindonesiatrade.com/id/account-types/ultra-low">
+                                Akun Ultra Low                            </a>
+                        </li>
+                    
+                                            <li class="menu-islamic">
+                            <a href="https://www.xmindonesiatrade.com/id/islamic">
+                                Akun Islami                            </a>
+                        </li>
+                    
+                </ul>
+            </div>
+            <div class="block">
+                <span>
+                    <i class="xmFont fa-kit fa-xm-candlestick"></i>Instrumen                </span>
+                <ul>
+                    <li class="menu-forex-trading">
+                        <a href="https://www.xmindonesiatrade.com/id/forex-trading">
+                            Trading Forex                        </a>
+                    </li>
+                                            <li class="menu-cryptocurrencies">
+                            <a href="https://www.xmindonesiatrade.com/id/cryptocurrencies">
+                                Mata uang Kripto                                                            </a>
+                        </li>
+                                                            <li class="menu-stocks">
+                        <a href="https://www.xmindonesiatrade.com/id/stocks">
+                            CFD Saham                        </a>
+                    </li>
+                                                                <li class="menu-turbo-stocks">
+                            <a href="https://www.xmindonesiatrade.com/id/turbo-stocks">
+                                Saham Turbo                                <div class="mega-menu__badge badge">BARU</div>
+                            </a>
+                        </li>
+                                                            <li class="menu-commodities">
+                        <a href="https://www.xmindonesiatrade.com/id/commodities">
+                            Komoditas                        </a>
+                    </li>
+                    <li class="menu-equity-indices">
+                        <a href="https://www.xmindonesiatrade.com/id/equity-indices">
+                            Indeks Ekuitas                        </a>
+                    </li>
+                    <li class="menu-precious-metals">
+                        <a href="https://www.xmindonesiatrade.com/id/precious-metals">
+                            Logam Mulia                        </a>
+                    </li>
+                    <li class="menu-energies">
+                        <a href="https://www.xmindonesiatrade.com/id/energies">
+                            Energi                        </a>
+                    </li>
+                    
+                                            <li class="menu-shares">
+                            <a href="https://www.xmindonesiatrade.com/id/shares">
+                                Saham                            </a>
+                        </li>
+                                    </ul>
+            </div>
+            <div class="block">
+                <span>
+                    <i class="xmFont fa-kit fa-xm-chart-bars-arrow"></i>Kondisi                </span>
+                <ul>
+                    <li class="menu-execution-policy">
+                        <a href="https://www.xmindonesiatrade.com/id/execution-policy">
+                            Kebijakan Eksekusi                        </a>
+                    </li>
+                    <li class="menu-spreads">
+                        <a href="https://www.xmindonesiatrade.com/id/spreads">
+                            Spread                        </a>
+                    </li>
+                                            <li class="menu-margin-and-leverage">
+                            <a href="https://www.xmindonesiatrade.com/id/margin-and-leverage">
+                                Margin dan Leverage                            </a>
+                        </li>
+                                        <li class="menu-overnight-positions">
+                        <a href="https://www.xmindonesiatrade.com/id/overnight-positions">
+                            Posisi menginap                        </a>
+                    </li>
+                    <li class="menu-trading-hours">
+                        <a href="https://www.xmindonesiatrade.com/id/trading-hours">
+                            Jam Perdagangan                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Social Competetions and Copy Trading Entry -->
+                            <div class="block">
+                    <span>
+                        <i class="xmFont fa-kit fa-xm-copytrading"></i>SOSIAL                    </span>
+                    <ul>
+                                            <li class="menu-social-copy-trading">
+                            <a href="https://www.xmindonesiatrade.com/id/social-copy-trading">
+                                Copy Trading                                <div class="mega-menu__badge badge">BARU</div>
+                            </a>
+                        </li>
+                                            <li class="menu-social-competition">
+                            <a href="https://www.xmindonesiatrade.com/id/social-competitions">
+                                Kompetisi                                <div class="mega-menu__badge badge">BARU</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                    </div>
+        <div class="nav-bottom-bar hidden-xs hidden-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>
+                            Trading Forex, CFD Kripto, Saham, Logam Mulia dan Energi pada platform trading kami                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://www.xmindonesiatrade.com/goto/profile/id" class="btn btn-solid btn-full btn-red">
+                            Buka Akun Riil                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    </li>
+
+    <li class="main_nav_platforms">
+        <a href="#">
+            PLATFORM        </a>
+        <div class="dropdown">
+    <div class="container">
+        <div class="box platform hidden-xs hidden-sm">
+                        <div class="block xm_app_mainNavPlatforms">
+                    <span>
+                        <i class="xmFont fa-kit fa-xm-app"></i>
+                        APLIKASI XM                    </span>
+                    <h3>Unduh Sekarang!</h3>
+                    <small>Sesuai untuk MT4 & MT5</small>
+                    <hr>
+                    <p>Trading di mana saja dengan <strong>Aplikasi semua dalam satu XM. Tersedia untuk MT4 & MT5</strong>.</p>
+                    <div class="iconWrapper_container">
+            <img class="appIcons appstore-img img-responsive" content="XMapp-AppStore" content-type="id" placement="bottom-end" placement-rtl="bottom-start"src="https://cloud.xm-cdn.com/static/xm/pages/xmapp/xmapp_appstore_dark.svg" alt="XMApp App Store">
+                    <img class="appIcons android-img img-responsive" content="XMapp-PlayStore" content-type="id" placement="bottom-start" placement-rtl="bottom-end"src="https://cloud.xm-cdn.com/static/xm/pages/xmapp/android-badge-white.svg?v=59c8cf84b682b868c98748f724b883d9" alt="XMApp Android">
+            </div>
+<div hidden>
+    <div>
+        <div class="xm_app_barcode_container" id="XMapp-AppStore">
+            <div>
+                <img width="160" data-logo="https://cloud.xm-cdn.com/static/xm/pages/xmapp/apple-logo-square.svg?v=6c3e01bbe2dd20d21c26ffe17b9b57eb" data-link="https://xm.onelink.me/CYt8/c7bfb246?is_retargeting=true&affId=115458&affIdTs=1709555247&clickId=2740fa42-42a3-4dfd-a651-54f3c68e3cff&clickIdTs=1709555247&gId=2094&gIdTs=1709987470&refererUrl=https://www.xmindonesiatrade.com/id/id/&af_dp=xm://register?type=real" class="qrcode center-block" alt="">
+            </div>
+            <div class="xm_app_barcode_text">
+                <p class="no_margin">Scan untuk Mengunduh <strong>Aplikasi XM</strong> di App Store</p>
+                <a href="https://www.xmindonesiatrade.com/id/xm-app">Baca Lebih Lanjut</a>
+            </div>
+        </div>
+        <div class="xm_app_barcode_container" id="XMapp-PlayStore">
+            <div>
+                <img width="160" data-logo="https://cloud.xm-cdn.com/static/xm/pages/xmapp/android-icon.svg?v=e3eafa19936d7826255d47e94da4fb2a" data-link="https://xm.onelink.me/CYt8/e9e13f57?is_retargeting=true&affId=115458&affIdTs=1709555247&clickId=2740fa42-42a3-4dfd-a651-54f3c68e3cff&clickIdTs=1709555247&gId=2094&gIdTs=1709987470&refererUrl=https://www.xmindonesiatrade.com/id/id/&af_dp=xm://register?type=real" class="qrcode center-block" alt="">
+            </div>
+            <div class="xm_app_barcode_text">
+                <p class="no_margin">Pindai untuk mengunduh aplikasi Android kami</p>
+                <a href="https://www.xmindonesiatrade.com/id/apk-app-download">Baca Lebih Lanjut</a>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+                    </div>
+        <div class="line hidden-xs hidden-sm">
+        </div>
+        <div class="wrap capitalize_text">
+                            <div class="block">
+                <span>
+                    <i class="xmFont fa-kit fa-xm-pc"></i>PC / Mac                </span>
+                    <ul>
+                        <li class="menu-mt4">
+                            <a href="https://www.xmindonesiatrade.com/id/mt4">
+                                <i class="fa fa-windows hidden-xs hidden-sm"></i>MT4 untuk PC                            </a>
+                        </li>
+                        <li class="menu-metatrader-mac">
+                            <a href="https://www.xmindonesiatrade.com/id/metatrader-mac">
+                                <i class="fa fa-apple hidden-xs hidden-sm"></i>MT4 untuk Mac                            </a>
+                        </li>
+                                                    <li class="menu-multiterminal">
+                                <a href="https://www.xmindonesiatrade.com/id/multiterminal">
+                                    <i class="fa fa-windows hidden-xs hidden-sm"></i>MT4 Multiterminal                                </a>
+                            </li>
+                                                <li class="menu-webtrader">
+                            <a href="https://www.xmindonesiatrade.com/id/mt4-webtrader">
+                                <i class="fa fa-desktop hidden-xs hidden-sm"></i>MT4 WebTrader                            </a>
+                        </li>
+                    </ul>
+                </div>
+                        <div class="block">
+                                    <div class="hidden-xs hidden-sm dis50"></div>
+                                <ul>
+                    <li class="menu-mt4">
+                        <a href="https://www.xmindonesiatrade.com/id/mt5">
+                            <i class="fa fa-windows hidden-xs hidden-sm"></i>MT5 untuk PC                        </a>
+                    </li>
+                    <li class="menu-metatrader-mac">
+                        <a href="https://www.xmindonesiatrade.com/id/mt5-mac">
+                            <i class="fa fa-apple hidden-xs hidden-sm"></i>MT5 untuk Mac                        </a>
+                    </li>
+
+                    <li class="menu-webtrader">
+                        <a href="https://www.xmindonesiatrade.com/id/mt5-webtrader">
+                            <i class="fa fa-desktop hidden-xs hidden-sm"></i>MT5 WebTrader                        </a>
+                    </li>
+                    <!--<li class="menu-webtrader">
+                        <a href="">
+                            <i class=" hidden-xs hidden-sm"></i>                        </a>
+                    </li>-->
+                </ul>
+            </div>
+            <div class="block">
+                <span>
+                    <i class="xmFont fa-kit fa-xm-iphone"></i>Smartphone                </span>
+                <ul>
+                                            <li class="menu-iphone">
+                            <a href="https://www.xmindonesiatrade.com/id/iphone">
+                                <i class="fa fa-apple hidden-xs hidden-sm"></i>MT4 untuk iPhone                            </a>
+                        </li>
+                        <li class="menu-android-phone">
+                            <a href="https://www.xmindonesiatrade.com/id/android">
+                                <i class="fa fa-android hidden-xs hidden-sm"></i>MT4 untuk Android                            </a>
+                        </li>
+                                        <li class="menu-iphone">
+                        <a href="https://www.xmindonesiatrade.com/id/mt5-iphone">
+                            <i class="fa fa-apple hidden-xs hidden-sm"></i>MT5 untuk iPhone                        </a>
+                    </li>
+                    <li class="menu-android-phone">
+                        <a href="https://www.xmindonesiatrade.com/id/mt5-android">
+                            <i class="fa fa-android hidden-xs hidden-sm"></i>MT5 untuk Android                        </a>
+                    </li>
+                                            <li>
+                            <a href="https://www.xmindonesiatrade.com/id/xm-app">
+                                <i class="xmFont fa-kit fa-xm-logo-no-bull"></i>Aplikasi XM untuk iPhone                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.xmindonesiatrade.com/id/apk-app-download">
+                                <i class="xmFont fa-kit fa-xm-logo-no-bull"></i>Aplikasi XM untuk Android                            </a>
+                        </li>
+                                    </ul>
+            </div>
+            <div class="block">
+                <span>
+                    <i class="xmFont fa-kit fa-xm-ipad"></i>Tablet                </span>
+                <ul>
+                                            <li class="menu-ipad">
+                            <a href="https://www.xmindonesiatrade.com/id/ipad">
+                                <i class="fa fa-apple hidden-xs hidden-sm"></i>MT4 untuk iPad                            </a>
+                        </li>
+                        <li class="menu-android">
+                            <a href="https://www.xmindonesiatrade.com/id/android-tablet">
+                                <i class="fa fa-android hidden-xs hidden-sm"></i>MT4 untuk Android                            </a>
+                        </li>
+                                        <li class="menu-ipad">
+                        <a href="https://www.xmindonesiatrade.com/id/mt5-ipad">
+                            <i class="fa fa-apple hidden-xs hidden-sm"></i>MT5 untuk iPad                        </a>
+                    </li>
+                    <li class="menu-android">
+                        <a href="https://www.xmindonesiatrade.com/id/mt5-android-tablet">
+                            <i class="fa fa-android hidden-xs hidden-sm"></i>MT5 untuk Android                        </a>
+                    </li>
+
+                                            <li>
+                            <a href="https://www.xmindonesiatrade.com/id/xm-app">
+                                <i class="xmFont fa-kit fa-xm-logo-no-bull"></i>Aplikasi XM untuk iPad                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.xmindonesiatrade.com/id/apk-app-download">
+                                <i class="xmFont fa-kit fa-xm-logo-no-bull"></i>Aplikasi XM untuk Android                            </a>
+                        </li>
+                                    </ul>
+            </div>
+        </div>
+        <div class="nav-bottom-bar hidden-xs hidden-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>
+                            Trading Forex, CFD Kripto, Saham, Logam Mulia dan Energi pada platform trading kami                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://www.xmindonesiatrade.com/goto/profile/id" class="btn btn-solid btn-full btn-red">
+                            Buka Akun Riil                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    </li>
+
+    <li class="main_nav_research">
+        <a href="#">
+            <i class="fa fa-graduation-cap"></i>RISET & EDUKASI        </a>
+        <div class="dropdown">
+    <div class="container">
+        <div class="box hidden-xs hidden-sm">
+                            <span>RISET & EDUKASI</span>
+                <p>Pusat Riset dan Edukasi kami menawarkan berita harian pada sesi trading utama bersama dengan beberapa berita singkat harian pada semua peristiwa pasar penting yang juga membentuk pasar global.</p>
+                <p>Diisi oleh 20 profesional multibahasa, kami menyajikan edukasi yang bervariasi untuk memberdayakan klien kami dengan keunggulan yang bersaing.</p>
+                <div class="dis20"></div>
+                <p>Peringatan Resiko : Trading pada produk margin melibatkan resiko yang tinggi.</p>
+                    </div>
+        <div class="line hidden-xs hidden-sm">
+        </div>
+        <div class="wrap capitalize_text">
+
+            <div class="block">
+    <span>
+        <i class="xmFont fa-kit fa-xm-chart-search"></i>Riset    </span>
+    <ul>
+                    <li class="menu-research">
+                <a href="https://www.xmindonesiatrade.com/id/research/overview">
+                    Ringkasan Pasar                </a>
+            </li>
+                            <li class="menu-research">
+                    <a href="https://www.xmindonesiatrade.com/id/research/discover/marketPulse">
+                        Pandangan                    </a>
+                    <div class="mega-menu__badge badge">BARU</div>
+                </li>
+                        <li class="menu-research">
+                <a href="https://www.xmindonesiatrade.com/id/research/analysis">
+                    Riset XM                </a>
+            </li>
+                            <li class="menu-research">
+                    <a href="https://www.xmindonesiatrade.com/id/research/tradeIdeas">
+                        Ide Trading                    </a>
+                </li>
+                <li class="menu-research">
+                    <a href="https://www.xmindonesiatrade.com/id/research/technicalSummaries">
+                        Ringkasan Teknis                    </a>
+                </li>
+                        <li class="menu-research">
+                <a href="https://www.xmindonesiatrade.com/id/research/economicCalendar">
+                    Kalender Ekonomi                </a>
+            </li>
+            <li class="menu-research">
+                <a href="https://www.xmindonesiatrade.com/id/research/videos">
+                    XM TV                </a>
+            </li>
+            <li class="menu-research">
+                <a href="https://www.xmindonesiatrade.com/id/research/podcast">
+                    Podcast                </a>
+            </li>
+            </ul>
+</div>
+<div class="block">
+    <span>
+        <i class="xmFont fa-kit fa-xm-chart"></i>Pusat Pembelajaran    </span>
+    <ul>
+                    <li class="menu-tutorials">
+                <a href="https://www.xmindonesiatrade.com/id/live-player/xmlive">
+                    XM Live                </a>
+            </li>
+                                    <li class="menu-tutorials">
+            <a class="redirect-modal-trigger" href="https://www.xmindonesiatrade.com/id/live-player/id-local-advanced">
+                    Ruang Lanjutan Indonesia                </a>
+            </li>
+                        <li class="menu-tutorials">
+                <a href="https://www.xmindonesiatrade.com/id/education-rooms">
+                    Edukasi Live                </a>
+            </li>
+            <li class="menu-tutorials">
+                <a href="https://www.xmindonesiatrade.com/id/english-education-schedule">
+                    Jadwal Edukasi Live                </a>
+            </li>
+        
+                                                                <li class="menu-webinars">
+                        <a href="https://www.xmindonesiatrade.com/id/webinars">
+                                                            Webinar Forex & CFD                                                    </a>
+                    </li>
+                                                
+                    <li class="menu-tutorials">
+                                    <a class="redirect-modal-trigger" href="https://www.xmindonesiatrade.com/id/educational-videos">
+                        Video Edukasi                    </a>
+                            </li>
+        
+                                
+            
+            
+                            <li class="menu-tutorials">
+                    <a href="https://www.xmindonesiatrade.com/id/tutorials">
+                        Tutorial Platform                    </a>
+                </li>
+            
+            
+            
+            
+                        
+            
+            
+            
+                        
+            </ul>
+</div>
+<div class="block">
+    <span>
+        <i class="xmFont fa-kit fa-xm-tools"></i>Alat    </span>
+    <ul>
+                                    <li class="menu-forex-signals">
+                    <a href="https://www.xmindonesiatrade.com/id/trading-tools">
+                        Alat-alat Trading                    </a>
+                </li>
+                            
+                                    <li class="menu-mql5">
+                    <a href="https://www.xmindonesiatrade.com/id/mql5">
+                        Trading Otomatis MQL5                    </a>
+                </li>
+                                    <li class="menu-forex-calculators">
+            <a href="https://www.xmindonesiatrade.com/id/forex-calculators">
+                Kalkulator Forex            </a>
+        </li>
+    </ul>
+</div>
+        </div>
+        <div class="nav-bottom-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>
+                            Trading Forex, CFD Kripto, Saham, Logam Mulia dan Energi pada platform trading kami                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://www.xmindonesiatrade.com/goto/profile/id" class="btn btn-solid btn-full btn-red">
+                            Buka Akun Riil                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    </li>
+
+            <li class="main_nav_promotions">
+            <a href="https://www.xmindonesiatrade.com/id/promotions">
+                PROMOSI            </a>
+        </li>
+    
+    <li class="main_nav_about">
+        <a href="#">
+            PERIHAL        </a>
+        <div class="dropdown">
+    <div class="container">
+        <div class="box hidden-xs hidden-sm">
+            <span>PERIHAL</span>
+            <p>XM menetapkan standar yang tinggi untuk layanannya karena kualitas sangat penting bagi kami dan juga bagi klien. Kami percaya layanan finansial serbaguna memerlukan fleksibilitas dalam berpikir dan kebijakan bisnis yang terpadu.</p>
+            <p>Misi kami adalah untuk mengimbangi permintaan pasar global dan menerima tujuan investasi klien kami dengan pikiran terbuka.</p>
+            <div class="dis20"></div>
+            <p>Peringatan Resiko : Trading pada produk margin melibatkan resiko yang tinggi.</p>
+        </div>
+        <div class="line hidden-xs hidden-sm">
+        </div>
+        <div class="wrap capitalize_text">
+            <div class="block">
+                <span>
+                    <i class="xmFont fa-kit fa-xm-user-profile"></i>PERIHAL                </span>
+                <ul>
+                    <li class="menu-about">
+                        <a href="https://www.xmindonesiatrade.com/id/about">
+                            Siapa itu XM Group?                        </a>
+                    </li>
+
+                    <li class="menu-regulation">
+                        <a href="https://www.xmindonesiatrade.com/id/regulation">
+                            Peraturan                        </a>
+                    </li>
+                                        <li class="menu-legal-documents">
+                        <a href="https://www.xmindonesiatrade.com/id/legal-documents">
+                            Dokumen legal                        </a>
+                    </li>
+                                    </ul>
+            </div>
+            <div class="block">
+                <div class="hidden-xs hidden-sm dis50"></div>
+                <ul>
+                    
+                                            <li class="menu-company-news">
+                            <a href="https://www.xmindonesiatrade.com/id/category/company-news">
+                                Berita                            </a>
+                        </li>
+                    
+                                            <li class="menu-foundation">
+                            <a href="https://www.xmindonesiatrade.com/id/xm-csr">
+                                Tanggung Jawab Sosial Perusahaan                            </a>
+                        </li>
+                                                                                    <li class="menu-support">
+                            <a href="https://www.xmindonesiatrade.com/id/support">
+                                Bantuan                            </a>
+                        </li>
+                                    </ul>
+            </div>
+            <div class="block">
+                <div class="hidden-xs hidden-sm dis50"></div>
+                <ul>
+                    
+                    
+                                            <li>
+                            <a href="https://www.xmindonesiatrade.com/id/xm-awards">
+                                Penghargaan XM                            </a>
+                        </li>
+                    
+                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/complaints">
+                            Pengaduan                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="nav-bottom-bar hidden-xs hidden-sm">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        <p>
+                            Trading Forex, CFD Kripto, Saham, Logam Mulia dan Energi pada platform trading kami                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="https://www.xmindonesiatrade.com/goto/profile/id" class="btn btn-solid btn-full btn-red">
+                            Buka Akun Riil                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </li>
+
+    <li class="main_nav_partners">
+        <a href="https://partners.xmindonesiatrade.com/id">
+            <i class="fa fa-users"></i>KEMITRAAN        </a>
+    </li>
+</ul>
+<ul id="main-nav" class="nav navbar-nav navbar-right default visible-xs visible-sm capitalize_text">
+    <li>
+        <a href="https://www.xmindonesiatrade.com/id/">
+            <i class="fa fa-home"></i><span>Depan</span>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.xmindonesiatrade.com/goto/members/id" target="_blank">
+            <i class="fa fa-lock"></i><span>Login Anggota</span>
+        </a>
+    </li>
+    <li>
+        <a href="https://my.xmindonesiatrade.com/id/payment/deposit" target="_blank">
+            <i class="fa fa-credit-card"></i><span>Pendanaan</span>
+        </a>
+    </li>
+
+            <li>
+            <a href="https://www.xmindonesiatrade.com/id/promotions">
+                <i class="fa fa-gift"></i><span>Promosi</span>
+            </a>
+        </li>
+    
+    
+    <li>
+        <a class="navbar-nav__toggleArrow" data-toggle="collapse" href="#tradingMenu" role="button" aria-expanded="false" aria-controls="tradingMenu">
+            <i class="fa fa-area-chart" aria-hidden="true"></i><span>Trading</span> <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
+        <div id="tradingMenu" class="collapse">
+            <ul class="navbar-nav__list">
+                <li class="navbar-nav__listTitle"><span>Akun Perdagangan</span></li>
+                                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/account-types">
+                            <i class="fa fa-signal"></i>Tipe Akun Trading                        </a>
+                    </li>
+                                                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/account-types/ultra-low">
+                            <i class="fa fa-signal"></i><span>Akun Ultra Low</span>
+                        </a>
+                    </li>
+                                                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/islamic">
+                            <i class="fa fa-signal"></i><span>Akun Islami</span>
+                        </a>
+                    </li>
+                                <li class="navbar-nav__listTitle"><span>Instrumen</span></li>
+                <li>
+                    <a href="https://www.xmindonesiatrade.com/id/forex-trading">
+                        <i class="fa fa-usd" aria-hidden="true"></i>
+                        <span>Trading Forex</span>
+                    </a>
+                </li>
+                                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/cryptocurrencies">
+                            <i class="fa fa-btc" aria-hidden="true"></i>
+                            <span>Mata uang Kripto                            </span>
+                        </a>
+                    </li>
+                                                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/stocks">
+                            <i class="fa fa-cc-mastercard" aria-hidden="true"></i>
+                            <span>
+                                CFD Saham                            </span>
+                        </a>
+                    </li>
+                                                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/turbo-stocks">
+                            <i class="fa fa-cc-mastercard" aria-hidden="true"></i><span>Saham Turbo                            <div class="mega-menu__badge badge">BARU</div></span>
+                        </a>
+                    </li>
+                                                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/commodities">
+                            <i class="fa fa-envira" aria-hidden="true"></i><span>Komoditas</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/equity-indices">
+                            <i class="fa fa-database" aria-hidden="true"></i><span>Indeks Ekuitas</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/precious-metals">
+                            <i class="fa fa-cubes" aria-hidden="true"></i><span>Logam Mulia</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/energies">
+                            <i class="fa fa-tint" aria-hidden="true"></i><span>Energi</span>
+                        </a>
+                    </li>
+                
+                                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/shares">
+                            <i class="fa fa-google" aria-hidden="true"></i><span>Saham</span>
+                        </a>
+                    </li>
+                                <li class="navbar-nav__listTitle"><span>Kondisi</span></li>
+                <li>
+                    <a href="https://www.xmindonesiatrade.com/id/execution-policy">
+                        <i class="fa fa-signal" aria-hidden="true"></i><span>Kebijakan Eksekusi</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.xmindonesiatrade.com/id/spreads">
+                        <i class="fa fa-signal" aria-hidden="true"></i><span>Spread</span>
+                    </a>
+                </li>
+                                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/margin-and-leverage">
+                            <i class="fa fa-signal" aria-hidden="true"></i><span>Margin dan Leverage</span>
+                        </a>
+                    </li>
+                                <li>
+                    <a href="https://www.xmindonesiatrade.com/id/overnight-positions">
+                        <i class="fa fa-signal" aria-hidden="true"></i><span>Posisi menginap</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.xmindonesiatrade.com/id/trading-hours">
+                        <i class="fa fa-signal" aria-hidden="true"></i><span>Jam Perdagangan</span>
+                    </a>
+                </li>
+                                <li class="navbar-nav__listTitle"><span>SOSIAL</span></li>
+                                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/social-copy-trading">
+                            <i class="fa-kit fa-xm-winner-star" aria-hidden="true"></i><span>Copy Trading                            <div class="mega-menu__badge badge">BARU</div></span>
+                        </a>
+                    </li>
+                                <li>
+                    <a href="https://www.xmindonesiatrade.com/id/social-competitions">
+                        <i class="fa-kit fa-xm-winner-star" aria-hidden="true"></i><span>Kompetisi                        <div class="mega-menu__badge badge">BARU</div></span>
+                    </a>
+                </li>
+                            </ul>
+        </div>
+    </li>
+
+    <li>
+        <a href="https://www.xmindonesiatrade.com/id/platforms">
+            <i class="fa fa-desktop"></i><span>Platform</span>
+        </a>
+    </li>
+
+    <li>
+        <a class="navbar-nav__toggleArrow" data-toggle="collapse" href="#researchMenu" role="button" aria-expanded="false" aria-controls="researchMenu">
+            <i class="fa fa-pie-chart" aria-hidden="true"></i><span>Riset & Edukasi</span>
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
+        <div id="researchMenu" class="collapse">
+            <ul class="navbar-nav__list">
+    <li class="navbar-nav__listTitle">Riset</li>
+    <li>
+        <a href="https://www.xmindonesiatrade.com/id/research/overview" target="_blank">
+            <i class="fa fa-area-chart"></i><span>Ringkasan Pasar</span>
+        </a>
+    </li>
+            <li>
+            <a href="https://www.xmindonesiatrade.com/id/research/discover/marketPulse">
+                <i class="fa fa-newspaper-o"></i><span>Pandangan</span>
+                <div class="mega-menu__badge badge">BARU</div>
+            </a>
+        </li>
+    
+    <li>
+        <a href="https://www.xmindonesiatrade.com/id/research/analysis">
+            <i class="fa fa-leanpub"></i><span>Riset XM</span>
+        </a>
+    </li>
+            <li>
+            <a href="https://www.xmindonesiatrade.com/id/research/tradeIdeas">
+                <i class="fa fa-bar-chart"></i><span>Ide Trading</span>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.xmindonesiatrade.com/id/research/technicalSummaries">
+                <i class="fa fa-search"></i><span>Ringkasan Teknis</span>
+            </a>
+        </li>
+        <li>
+        <a href="https://www.xmindonesiatrade.com/id/research/economicCalendar">
+            <i class="fa fa-calendar"></i><span>Kalender Ekonomi</span>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.xmindonesiatrade.com/id/research/videos">
+            <i class="fa fa-film"></i><span>XM TV</span>
+        </a>
+    </li>
+    <li>
+        <a href="https://www.xmindonesiatrade.com/id/research/podcast">
+            <i class="fa fa-podcast"></i><span>Podcast</span>
+        </a>
+    </li>
+<li class="navbar-nav__listTitle">Pusat Pembelajaran </li>
+
+    <li>
+        <a href="https://www.xmindonesiatrade.com/id/live-player/xmlive">
+            <i class="fa fa-video-camera" aria-hidden="true"></i><span>XM Live</span>
+        </a>
+    </li>
+                    <li class="menu-tutorials">
+            <a class="redirect-modal-trigger" href="https://www.xmindonesiatrade.com/id/live-player/id-local-advanced">
+            <i class="fa fa-briefcase" aria-hidden="true"></i><span>Ruang Lanjutan Indonesia</span>
+            </a>
+        </li>
+        <li>
+        <a href="https://www.xmindonesiatrade.com/id/education-rooms">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Edukasi Live</span>
+        </a>
+    </li>   
+    <li>
+        <a href="https://www.xmindonesiatrade.com/id/english-education-schedule">
+            <i class="fa fa-graduation-cap" aria-hidden="true"></i><span>Jadwal Edukasi Live</span>
+        </a>
+    </li>
+
+                        <li>
+                <a href="https://www.xmindonesiatrade.com/id/webinars">
+                    <i class="fa fa-headphones"></i>
+                                            Webinar Forex & CFD                                    </a>
+            </li>
+            
+            <li>
+                            <a class="redirect-modal-trigger" href="https://www.xmindonesiatrade.com/id/educational-videos">
+                    <i class="fa fa-futbol-o" aria-hidden="true"></i>Video Edukasi                </a>
+                    </li>
+    
+                
+    
+            <li>
+            <a href="https://www.xmindonesiatrade.com/id/tutorials">
+                <i class="fa fa-desktop"></i>Tutorial Platform            </a>
+        </li>
+    
+    
+    
+        
+    
+    <!-- Temporary menu link removal, Covid-19 issue Malaysia (&& ($general['prefix'] !== 'my')) -->
+        <!-- Temporary menu link removal, Covid-19 issue Philippines and Vietnam (($general['prefix'] !== 'ph'))-->
+        <!-- Temporary menu link removal, Covid-19 issue ES ($general['prefix'] !== 'es')-->
+    
+<li class="navbar-nav__listTitle">Alat</li>
+
+            <li>
+            <a href="https://www.xmindonesiatrade.com/id/trading-tools">
+                <i class="fa fa-cogs" aria-hidden="true"></i>Alat-alat Trading            </a>
+        </li>
+    
+            <li>
+            <a href="https://www.xmindonesiatrade.com/id/mql5">
+                <i class="fa fa-bar-chart"></i>Trading Otomatis MQL5            </a>
+        </li>
+    <li>
+    <a href="https://www.xmindonesiatrade.com/id/forex-calculators">
+        <i class="fa fa-calculator"></i>Kalkulator Forex    </a>
+</li></ul>
+        </div>
+    </li>
+
+    <li>
+        <a class="navbar-nav__toggleArrow" data-toggle="collapse" href="#aboutMenu" role="button" aria-expanded="false" aria-controls="aboutMenu">
+            <i class="fa fa-briefcase" aria-hidden="true"></i><span>Perihal</span> <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </a>
+        <div id="aboutMenu" class="collapse">
+            <ul class="navbar-nav__list">
+                <li class="navbar-nav__listTitle">Perihal XM</li>
+                <li>
+                    <a href="https://www.xmindonesiatrade.com/id/about">
+                        <i class="fa fa-briefcase"></i><span>Siapa itu XM Group?</span>
+                    </a>
+                </li>
+
+                                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/xm-csr">
+                            <i class="fa fa-heart"></i><span>Tanggung Jawab Sosial Perusahaan</span>
+                        </a>
+                    </li>
+                
+                
+                <li>
+                    <a href="https://www.xmindonesiatrade.com/id/complaints">
+                        <i class="fa fa-info-circle"></i><span>Pengaduan</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.xmindonesiatrade.com/id/support">
+                        <i class="fa fa-envelope"></i><span>Bantuan</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://www.xmindonesiatrade.com/id/regulation">
+                        <i class="fa fa-gavel"></i><span>Peraturan</span>
+                    </a>
+                </li>
+
+                
+                
+                                <li>
+                    <a href="https://www.xmindonesiatrade.com/id/legal-documents">
+                        <i class="fa fa-file-text"></i><span>Dokumen legal</span>
+                    </a>
+                </li>
+                
+                                <li>
+                    <a href="https://www.xmindonesiatrade.com/id/category/company-news">
+                        <i class="fa fa-list-alt"></i><span>Berita</span>
+                    </a>
+                </li>
+                
+                                <li>
+                    <a href="https://www.xmindonesiatrade.com/id/xm-awards">
+                        <i class="fa fa-trophy"></i><span>Penghargaan XM</span>
+                    </a>
+                </li>
+                            </ul>
+        </div>
+    </li>
+
+    <li>
+        <a href="https://www.xmindonesiatrade.com/id/help-center/home">
+            <i class="fa fa-question-circle"></i><span>Pusat Bantuan</span>
+        </a>
+    </li>
+
+    <li>
+        <a href="https://partners.xmindonesiatrade.com/id">
+            <i class="fa fa-refresh"></i><span>Kemitraan</span>
+        </a>
+    </li>
+
+    
+    
+</ul>
+
+<div class="navbar-nav__buttons visible-xs visible-sm">
+    <a href="https://www.xmindonesiatrade.com/goto/members/id" class="btn btn-block navbar-nav__buttons--primary" target="_blank">
+        <i class="fa fa-lock"></i><span>Login Anggota</span>
+    </a>
+</div>
+
+<div class="navbar-nav__xmapp visible-xs visible-sm">
+    <div class="navbar-nav__xmapp--wrapper">
+        <div class="navbar-nav__xmapp--left">
+            <div>
+                <img class="xm_app_stickyHeader__icon" src="https://cloud.xm-cdn.com/static/www/pages/xmapp/xmapp-icon.webp?v=57092ddbbc339c6f050eed2271e679d3" alt="XM App Icon">
+            </div>
+            <div>
+                                    <p>
+                        Aplikasi MT4 & MT5 XM                    </p>
+                    <small>
+                        Aplikasi MT4 & MT5 XM semua dalam satu                    </small>
+                            </div>
+        </div>
+        <div class="navbar-nav__xmapp--right">
+            <a class="navbar-nav__xmapp--link" href="https://xm.onelink.me/CYt8/c7bfb246?is_retargeting=true&affId=115458&affIdTs=1709555247&clickId=2740fa42-42a3-4dfd-a651-54f3c68e3cff&clickIdTs=1709555247&gId=2094&gIdTs=1709987470&refererUrl=https://www.xmindonesiatrade.com/id/id/&af_dp=xm://register?type=real">
+                <i class="xmFont fa-kit fa-xm-download-circle"></i>
+            </a>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+</div>
+</nav>
+</header>
+    <div id="new-live-chat-icon" class="widget-container">
+    <div class="widget">
+        <div class="widget__wrap">
+            <div class="widget__text" style="display: none">Bantuan</div>
+            <div class="widget__img"></div>
+        </div>
+    </div>
+
+            <div id="livechatWidget" style="display: none">
+            <div>
+                <img src="https://cloud.xm-cdn.com/static/chat-widget/icons/live-chat-icon-lite.svg" alt="live-chat-icon">
+            </div>
+        </div>
+    </div>
+
+<div class="widget-options" id="widgetOptions" style="display: none">
+    <div class="widget-options__head">
+        <h4>Bagaimana kami bisa membantu Anda?</h4>
+        <p>Pilih bagaimana Anda ingin menerima layanan bantuan.</p>
+    </div>
+    <div class="widget-options__body">
+
+                    <!--    LiveChat    -->
+            <div class="option option__livechat">
+                <div class="option__wrap">
+                    <img class="option__icon img-fluid" src="https://cloud.xm-cdn.com/static/chat-widget/icons/livechat_24x24.svg" alt="Live Chat">
+                    <p class="option__text">Live Chat</p>
+                </div>
+
+
+                <div class="disclaimer">
+                    <h4>Ketentuan Live Chat</h4>
+                    <p>Dengan menggunakan Live Chat kami, Anda setuju bahwa semua data pribadi yang diberikan melalui Live Chat akan diproses oleh kami, sesuai dengan <a href="https://www.xmindonesiatrade.com/id/privacy-policy" target="_blank">Kebijakan Privasi</a> kami untuk menerima layanan bantuan dari tim Pengalaman Pelanggan kami.</p>
+                    <a id="startLiveChat" class="btn btn-solid btn-red btn-block">
+                        Mulai Chat                    </a>
+                </div>
+
+            </div>
+        
+                    <!--    WhatsApp    -->
+            <div class="option option__whatsapp">
+                <div class="option__wrap">
+                    <img class="option__icon img-fluid" src="https://cloud.xm-cdn.com/static/chat-widget/icons/whatsapp_24x24.svg" alt="WhatsApp">
+                    <p class="option__text">WhatsApp</p>
+                </div>
+
+                <div class="qr_code_container hidden-xs">
+                    <h4>Cara Mengakses</h4>
+                    <p>Pindai kode QR di bawah untuk menghubungi kami dari smartphone Anda atau <a class="red" href="https://api.whatsapp.com/send?phone=66622837424" target="_blank">buka WhatsApp di desktop Anda</a>.</p>
+                    <div class="text-center">
+                        <img src="https://cloud.xm-cdn.com/static/my/help-center/XMBZNewWhatsappNumber1.png?v=96c0b6b74ea43ed507e93ee8ff7b7a39" alt="Whatsapp qr">
+                    </div>
+                </div>
+
+                <div class="disclaimer">
+                    <h4>Ketentuan Chat WhatsApp</h4>
+                    <p>Dengan menggunakan fitur WhatsApp Chat, Anda setuju bahwa semua data pribadi yang diberikan kepada XM Global Limited oleh Anda melalui WhatsApp akan diproses, sesuai dengan <a href="https://www.xmindonesiatrade.com/id/privacy-policy" target="_blank">Kebijakan Privasi</a> kami dan sesuai dengan <a href="https://livechat-whatsapp-business.99bits.xyz/privacy-policy.html" target="_blank">Kebijakan Privasi</a> aplikasi, untuk menerima layanan bantuan dari tim Pengalaman Pelanggan kami.</p>
+                    <a id="start-whatsapp" href="https://api.whatsapp.com/send?phone=66622837424" target="_blank" class="btn btn-solid btn-red btn-block">
+                        Mulai Chat                    </a>
+                </div>
+            </div>
+        
+                    <!--    Line    -->
+            <div class="option option__linechat">
+                <div class="option__wrap">
+                    <img class="option__icon img-fluid" src="https://cloud.xm-cdn.com/static/chat-widget/icons/line_24x24.svg" alt="Live Chat">
+                    <p class="option__text">Line</p>
+                </div>
+
+                <div class="qr_code_container hidden-xs">
+                    <h4>Cara Mengakses</h4>
+                    <p>Pindai kode QR di bawah ini dengan smartphone Anda</p>
+                    <div class="text-center">
+                        <img src="https://cloud.xm-cdn.com/static/www/pages/clientsupport/line-qr-code-bw.png?v=89b45f8352156c813dea97f7a6c016c0" alt="Line App qr">
+                    </div>
+                </div>
+
+                <div class="disclaimer">
+                    <h4>Ketentuan LINE Chat</h4>
+                    <p>Dengan menggunakan fitur Line Chat, Anda setuju bahwa semua data pribadi yang diberikan kepada XM Global Limited oleh Anda melalui Line akan diproses, sesuai dengan <a href="https://www.xmindonesiatrade.com/id/privacy-policy" target="_blank">Kebijakan Privasi</a> kami dan sesuai dengan <a href="https://www.livechat-apps.com/line/privacy" target="_blank">Kebijakan Privasi</a> aplikasi, untuk menerima layanan bantuan dari tim Pengalaman Pelanggan kami.</p>
+                    <div class="text-center">
+                        <a id="start-line" href="https://line.me/R/oaMessage/@xmsupport/" target="_blank" class="btn btn-solid btn-red btn-block">
+                            Mulai Chat                        </a>
+                    </div>
+                </div>
+
+            </div>
+        
+        
+        
+
+        <a href="https://www.xmindonesiatrade.com/id/help-center/home" class="option help-center">
+            <div class="option__wrap">
+                <img class="option__icon img-fluid" src="https://cloud.xm-cdn.com/static/chat-widget/icons/helpcenter_24x24.svg" alt="Pusat Bantuan">
+                <p class="option__text">Pusat Bantuan</p>
+            </div>
+        </a>
+    </div>
+</div>
+
+<script type="text/javascript">
+    window.addEventListener('load', function() {
+
+        document.querySelector('.widget__text').removeAttribute("style");
+        var is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(window.navigator.userAgent);
+
+        var liveChatDisclaimer = getCookie('livechatDisclaimer'),
+            lineChatDisclaimer = getCookie('linechatDisclaimer'),
+            whatsAppDisclaimer = getCookie('whatsAppDisclaimer'),
+            viberChatDisclaimer = getCookie('viberchatDisclaimer'),
+            telegramDisclaimer = getCookie('telegramDisclaimer');
+
+        var liveChatActive = sessionStorage.getItem("xm-liveChat-visitorEngaged");
+        if (liveChatActive === 'true') {
+            document.querySelector('.widget').style.display = 'none';
+        }
+
+
+        function getCookie(name) {
+            var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
+            return v ? v[2] : null;
+        }
+
+
+        if (liveChatDisclaimer == 1 && document.querySelector('.option__livechat') != null) {
+            document.querySelector('.option__livechat').setAttribute('no_disclaimer', "");
+        }
+
+        if (lineChatDisclaimer == 1 && document.querySelector('.option__linechat') != null) {
+            document.querySelector('.option__linechat').setAttribute('no_disclaimer', "");
+            document.querySelector('.option__linechat').querySelector('.disclaimer').style.display = 'none';
+        }
+
+        if (whatsAppDisclaimer == 1 && document.querySelector('.option__whatsapp') != null) {
+            document.querySelector('.option__whatsapp').setAttribute('no_disclaimer', "");
+            document.querySelector('.option__whatsapp').querySelector('.disclaimer').style.display = 'none';
+        }
+
+        if (viberChatDisclaimer == 1 && document.querySelector('.option__viberchat') != null) {
+            document.querySelector('.option__viberchat').setAttribute('no_disclaimer', "");
+            document.querySelector('.option__viberchat').querySelector('.disclaimer').style.display = 'none';
+        }
+
+        if (telegramDisclaimer == 1 && document.querySelector('.option__telegram') != null) {
+            document.querySelector('.option__telegram').setAttribute('no_disclaimer', "");
+            document.querySelector('.option__telegram').querySelector('.disclaimer').style.display = 'none';
+        }
+
+        if(is_mobile && document.querySelector('.option__linechat') != null) {
+            document.querySelector('#start-line').style.display = 'block';
+            document.querySelector('.option__linechat').querySelector('.qr_code_container').style.display = 'none';
+        }
+
+        if(is_mobile && document.querySelector('.option__whatsapp') != null) {
+            document.querySelector('#start-whatsapp').style.display = 'block';
+            document.querySelector('.option__whatsapp').querySelector('.qr_code_container').style.display = 'none';
+        }
+
+        if(is_mobile && document.querySelector('.option__viberchat') != null) {
+            document.querySelector('#start-viber').style.display = 'block';
+            document.querySelector('.option__viberchat').querySelector('.qr_code_container').style.display = 'none';
+        }
+
+        if(is_mobile && document.querySelector('.option__telegram') != null) {
+            document.querySelector('#start-telegram').style.display = 'block';
+            document.querySelector('.option__telegram').querySelector('.qr_code_container').style.display = 'none';
+        }
+
+        if(!is_mobile && document.querySelector('.option__linechat') != null) {
+            document.querySelector('#start-line').style.display = 'none';
+        }
+
+        if(!is_mobile && document.querySelector('.option__whatsapp') != null) {
+            document.querySelector('#start-whatsapp').style.display = 'none';
+        }
+
+        if(!is_mobile && document.querySelector('.option__viberchat') != null) {
+            document.querySelector('#start-viber').style.display = 'none';
+        }
+
+        if(!is_mobile && document.querySelector('.option__telegram') != null) {
+            document.querySelector('#start-telegram').style.display = 'none';
+        }
+
+        /**
+         * Get value of a single key available in the QueryString
+         */
+        function getQueryStringValue(key) {
+            return decodeURIComponent(window.location.search.replace(new RegExp("^(?:.*[&\\?]" + encodeURIComponent(key).replace(/[\.\+\*]/g, "\\$&") + "(?:\\=([^&]*))?)?.*$", "i"), "$1"));
+        }
+
+        var widgetOptions = document.querySelector('#widgetOptions'),
+            livechatWidget = document.querySelector('#livechatWidget'),
+            widget = document.querySelector('.widget'),
+            options = document.querySelector('.widget-options__body'),
+            liveChat = document.querySelector('#custom-livechat'),
+            whatsappLink = document.querySelector('#start-whatsapp')?.href,
+            lineappLink = document.querySelector('#start-line')?.href,
+            viberappLink = document.querySelector('#start-viber')?.href,
+            telegramAppLink = document.querySelector('#start-telegram')?.href;
+
+        function hoverEffect(event) {
+            if (this.classList.contains('widget--active')) return;
+            if (event.type === "mouseenter") {
+                this.classList.add('widget--hover');
+            } else {
+                this.classList.remove('widget--hover');
+            }
+        }
+
+        function closeOptions() {
+            widget.classList.remove('widget--active');
+            widgetOptions.style.display = 'none';
+            resetOptions();
+        }
+
+        function toggleOptions() {
+            // Show Support Options
+            widgetOptions.style.display = 'block';
+            if (widget.classList.contains('widget--active')) {
+                widgetOptions.style.display = 'none';
+                resetOptions();
+            }
+            widget.classList.remove('widget--hover');
+            widget.classList.toggle('widget--active');
+        }
+
+        function resetOptions() {
+            var activeOption = document.querySelector('.option--active');
+            var allOptions = document.querySelectorAll('.option');
+            var getLineCookie = getCookie('linechatDisclaimer');
+            var getWhatsappCookie = getCookie('whatsAppDisclaimer');
+            var getViberCookie = getCookie('viberchatDisclaimer');
+            var getTelegramCookie = getCookie('telegramDisclaimer');
+
+            if (activeOption) {
+                activeOption.classList.remove('option--active');
+            }
+
+            if (allOptions.length) {
+                for (var i = 0; i < allOptions.length; i++) {
+                    allOptions[i].style.display = 'block';
+                }
+            }
+
+            if(getLineCookie == 1 && document.querySelector('.option__linechat') != null ) {
+                document.querySelector('.option__linechat').querySelector('.disclaimer').style.display = 'none';
+            }
+
+            if( getWhatsappCookie == 1 && document.querySelector('.option__whatsapp') != null ) {
+                document.querySelector('.option__whatsapp').querySelector('.disclaimer').style.display = 'none';
+            }
+
+            if(getViberCookie == 1 && document.querySelector('.option__viberchat') != null ) {
+                document.querySelector('.option__viberchat').querySelector('.disclaimer').style.display = 'none';
+            }
+
+            if(getTelegramCookie == 1 && document.querySelector('.option__telegram') != null ) {
+                document.querySelector('.option__telegram').querySelector('.disclaimer').style.display = 'none';
+            }
+        }
+
+        function updateWidget(type) {
+            widget.style.display = "none";
+            widgetOptions.style.display = "none";
+            livechatWidget.style.display = "block";
+        }
+
+        function resetWidget() {
+            widget.style.display = "block";
+            liveChat.style.display = "none";
+            widgetOptions.style.display = "none";
+            livechatWidget.style.display = "none";
+        }
+
+
+        if (getQueryStringValue('open') === 'livechat') {
+            toggleOptions();
+        }
+
+        widget.addEventListener('mouseenter', hoverEffect);
+        widget.addEventListener('mouseleave', hoverEffect);
+        widget.addEventListener('click', toggleOptions);
+        options.addEventListener('click', function(e) {
+
+            // Hide other options and show active
+            if (e.target.classList.contains('option') && !e.target.classList.contains('help-center')) {
+                e.target.classList.add('option--active');
+                var allOptions = document.querySelectorAll('.option:not(.option--active)');
+
+                for (var i = 0; i < allOptions.length; i++) {
+                    allOptions[i].style.display = 'none';
+                }
+            }
+            // Livechat specific actions
+            if (e.target.hasAttribute("no_disclaimer") && e.target.classList.contains('option__livechat')) {
+                closeOptions();
+                updateWidget();
+                liveChat.style.display = "block";
+            }
+            // Whatsapp specific actions
+            if (is_mobile && e.target.classList.contains('option__whatsapp') && e.target.hasAttribute("no_disclaimer")) {
+                window.open(whatsappLink, "_blank");
+                closeOptions();
+            }
+            // Linechat specific actions
+            if (is_mobile && e.target.classList.contains('option__linechat') && e.target.hasAttribute("no_disclaimer")) {
+                window.open(lineappLink, "_blank");
+                closeOptions();
+            }
+
+            // Viber specific actions
+            if (is_mobile && e.target.classList.contains('option__viberchat') && e.target.hasAttribute("no_disclaimer")) {
+                window.open(viberappLink, "_blank");
+                closeOptions();
+            }
+
+            // Telegram specific actions
+            if (is_mobile && e.target.classList.contains('option__telegram') && e.target.hasAttribute("no_disclaimer")) {
+                window.open(telegramAppLink, "_blank");
+                closeOptions();
+            }
+
+            // Hide qrcode for mobile devices
+            if (is_mobile && e.target.classList.contains('option__linechat')) {
+                document.querySelector('.option__linechat').querySelector('.qr_code_container').style.display = 'none';
+            }
+
+            // Hide qrcode for mobile devices
+            if (is_mobile && e.target.classList.contains('option__whatsapp')) {
+                document.querySelector('.option__whatsapp').querySelector('.qr_code_container').style.display = 'none';
+            }
+
+            // Hide qrcode for mobile devices
+            if (is_mobile && e.target.classList.contains('option__viberchat')) {
+                document.querySelector('.option__viberchat').querySelector('.qr_code_container').style.display = 'none';
+            }
+
+            // Hide qrcode for mobile devices
+            if (is_mobile && e.target.classList.contains('option__telegram')) {
+                document.querySelector('.option__telegram').querySelector('.qr_code_container').style.display = 'none';
+            }
+        });
+
+        document.querySelector('#startLiveChat')?.addEventListener('click', function(e) {
+            e.preventDefault();
+            closeOptions();
+            updateWidget();
+            liveChat.style.display = "block";
+        });
+
+        document.querySelector('#start-whatsapp')?.addEventListener('click', function(e) {
+            closeOptions();
+        });
+
+        document.querySelector('#start-viber')?.addEventListener('click', function(e) {
+            closeOptions();
+        });
+
+        document.querySelector('#start-telegram')?.addEventListener('click', function(e) {
+            closeOptions();
+        });
+
+        document.querySelector('#widget-back-button')?.addEventListener('click', function(e) {
+            e.preventDefault();
+            resetWidget();
+            resetOptions();
+            toggleOptions();
+        });
+
+        // Show bubble widget
+        document.querySelector('#new-live-chat-icon').style.display = 'block';
+    })
+</script>
+
+    
+<style>
+    #hero-content span.apply-link a {
+        color: #b0b0b0;
+    }
+</style>
+<div id="hero-content">
+    <div class="half-rect left"></div>
+    <div class="half-rect right"></div>
+    <div class="container">
+        <div class="block">
+            <div class="visible-xs mobileslide">
+                <span class="title"><strong>Mulai Trading dengan Bonus hingga $5,000</strong></span>
+                <div class="dis10"></div>
+                <p>
+                    Trading Forex, CFD Kripto, Saham, Indeks, Logam dan Energi dengan leverage hingga 1000:1 dan tanpa requote.                </p>
+            </div>
+            <div class="single-item hidden-xs">
+                                        <div>
+                            <span class="title"><strong>Rujuk Teman dan Raih Penghasilan di XM</strong></span>
+                            <div class="dis10"></div>
+                            <p>
+                                Rujuk teman Anda untuk bergabung & raih hingga $150 per rujukan. *S&K berlaku — <a href="https://www.xmindonesiatrade.com/id/refer-a-friend">Rujuk Sekarang</a>                            </p>
+                        </div>
+                                            <div>
+                            <span class="title"><strong>Anda Memiliki yang Diperlukan untuk Menang?</strong></span>
+                            <div class="dis10"></div>
+                            <p>
+                                Berkompetisi untuk Uang, Hadiah atau Akun Manajer Strategi Terdanai — S&K berlaku — <a href="https://www.xmindonesiatrade.com/id/social-competitions">Lanjut Baca</a>                            </p>
+                        </div>
+                                            <div>
+                            <span class="title"><strong>Saham Turbo XM — Cara Baru untuk Trading</strong></span>
+                            <div class="dis10"></div>
+                            <p>
+                                CFD Saham dengan 200:1 leverage, masa berlaku harian dan spread sangat rendah. <a href="https://www.xmindonesiatrade.com/id/turbo-stocks">Baca Lebih Lanjut</a>                            </p>
+                        </div>
+                                            <div>
+                            <span class="title"><strong>Mulai trading CFD Kripto</strong></span>
+                            <div class="dis10"></div>
+                            <p>
+                                Lebih dari 30 Pasang Kripto — Tanpa Komisi — Trading 24/7 — Leverage hingga 500:1. <a href="https://www.xmindonesiatrade.com/id/cryptocurrencies">Buka Akun</a>                            </p>
+                        </div>
+                                            <div>
+                            <span class="title"><strong>Trading dengan Leverage 1000:1</strong></span>
+                            <div class="dis10"></div>
+                            <p>
+                                Kini tersedia – Untuk klien dengan ekuitas di bawah $40.000 – S&K berlaku – <a href="https://www.xmindonesiatrade.com/id/margin-and-leverage">Lanjut baca</a>.                            </p>
+                        </div>
+                                            <div>
+                            <span class="title"><strong>Tanpa Swap pada Mata Uang Mayor & Logam</strong></span>
+                            <div class="dis10"></div>
+                            <p>
+                                Tidak ada biaya semalam pada trading Emas, EURUSD, USDJPY, EURJPY, GBPUSD dan <a href="https://www.xmindonesiatrade.com/id/account-types/ultra-low">lainnya</a>                            </p>
+                        </div>
+                                            <div>
+                            <span class="title"><strong>Trading Forex dengan Spread Sangat Rendah</strong></span>
+                            <div class="dis10"></div>
+                            <p>
+                                XM Ultra Low - Nol Re-Quote – Nol Penolakan                            </p>
+                        </div>
+                                            <div>
+                            <span class="title"><strong>Nikmati keamanan dari Grup Dengan Multi Regulasi</strong></span>
+                            <div class="dis10"></div>
+                            <p>
+                                ASIC – CYSEC – FSC – DFSA                            </p>
+                        </div>
+                                            <div>
+                            <span class="title"><strong>Edukasi Trading, Kapanpun Yang Anda Inginkan</strong></span>
+                            <div class="dis10"></div>
+                            <p>
+                                Sesi Live Mingguan dalam Bahasa Indonesia. <a href="https://www.xmindonesiatrade.com/id/live-player/id-local-advanced">Pelajari Lebih Lanjut.</a>                            </p>
+                        </div>
+                                            <div>
+                            <span class="title"><strong>Trading dengan 10 Platform Tepercaya</strong></span>
+                            <div class="dis10"></div>
+                            <p>
+                                MT4, MT5, XM WebTrader                            </p>
+                        </div>
+                                </div>
+            <div class="dis30 visible-xs"></div>
+            <div class="buttons-wrap buttons-wrap--single">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <a href="https://www.xmindonesiatrade.com/goto/profile/id" class="btn btn-solid btn-red btn-block">
+                <div>
+                    Buka Akun                </div>
+                <div class="text">
+                    <small>
+                        Trading dengan dana Akun Riil atau Akun Demo                    </small>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>            <div class="dis15"></div>
+                                                <span class="apply-link">
+                        Bonus <strong>tidak dapat ditarik</strong> dan hanya profit yang dapat ditarik. <a href="https://cloud.xm-cdn.com/static/pdf/System-PDFs/XMGlobal-Client-Agreement-Terms-and-Conditions-of-Business.pdf?v=22647d4005144658126c7c14d0cc76f3">S&K berlaku</a>.                    </span>                
+                                        <div class="dis50"></div>
+        </div>
+        <div class="stripe-main">
+            <div class="stripe-main__wrapper">
+                
+<div class="stripe-main__item">
+    <div class="stripe-main__inner">
+        <div class="stripe-main__title">1000+</div>
+        <div class="stripe-main__desc">Instrumen<br>Trading</div>
+    </div>
+</div>
+<div class="stripe-main__item">
+    <div class="stripe-main__inner">
+                    <div class="stripe-main__title">24/7</div>
+            <div class="stripe-main__desc">Trading CFD<br>Kripto</div>
+            </div>
+</div>
+<div class="stripe-main__item">
+    <div class="stripe-main__inner">
+                        <div class="stripe-main__title">1000:1</div>
+                <div class="stripe-main__desc">Leverage</div>
+                </div>
+</div>
+<div class="stripe-main__item">
+    <div class="stripe-main__inner">
+                    <div class="stripe-main__desc">Bonus<br>hingga</div>
+            <div class="stripe-main__title">$5.000</div>
+            </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<style>
+    #hero-content .title.small {
+        font-size:36px;
+    }
+</style>
+
+<div class="clearfix"></div>
+
+    
+        <section class="section-rounded-cards ">
+                    <div class="dis90 visible-lg"></div>
+            <div class="dis70 visible-md"></div>
+            <div class="dis20 visible-sm"></div>
+            <div class="dis100 visible-sm"></div>
+            <div class="dis80 visible-xs"></div>
+            <div class="dis100 visible-xs"></div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="cards_wrapper">
+                        
+
+<div class="rounded-cards social-competitions">
+    <div class="rounded-cards-text-content">
+        <small class="rounded-cards-label">
+            KOMPETISI XM        </small>
+        <div class="dis10"></div>
+        <h2 class="rounded-cards-title">
+            Menangkan Bagian Anda dari $120.000!        </h2>
+        <div class="dis10"></div>
+        <p class="rounded-cards-desc rounded-cards-desc--social rounded-cards-desc--title">
+            Entri Gratis        </p>
+        <p class="rounded-cards-desc rounded-cards-desc--social">
+            Kompetisi Riil dan Demo XM.            Dua kompetisi berbeda. Dua cara untuk memenangkan hadiah uang tunai.        </p>
+    
+    </div>
+    <div class="dis15 visible-xs visible-sm"></div>
+    <div class="dis15 hidden-xs hidden-sm"></div>
+    <div class="dis100 hidden-xs hidden-sm"></div>
+    <a class="btn rounded-cards-url" href="https://www.xmindonesiatrade.com/id/social-competitions">
+        <span>MULAI BERKOMPETISI</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="arrow">
+            <path d="M10,6.1c0,0.3-0.3,0.6-0.6,0.6H0.6C0.3,6.7,0,6.4,0,6.1c0-0.3,0.3-0.6,0.6-0.6h8.8 C9.7,5.5,10,5.8,10,6.1z M6.2,0.7l4.6,4.8c0.3,0.3,0.3,0.8,0,1.1l-4.6,4.8c-0.3,0.3-0.7,0.3-1,0c-0.3-0.3-0.3-0.8,0-1.1l3.6-3.7 C8.7,6.4,8.6,6.2,8.6,6s0.1-0.4,0.2-0.5L5.2,1.8C4.9,1.5,4.9,1,5.2,0.7C5.5,0.4,5.9,0.4,6.2,0.7z" fill="#fff"></path>
+        </svg>
+    </a>
+    <div class="rounded-cards-icon rounded-cards-icon--social">
+        <img src="https://cloud.xm-cdn.com/static/xm/pages/homepage/home_page_competitions_card_icon.webp" alt="Social Competition" class="img-responsive">
+    </div>
+</div>                        <div class="rounded-cards copytrading">
+                            <div class="rounded-cards-text-content">
+                                <small class="rounded-cards-label">
+                                    COPY TRADING XM                                </small>
+                                <div class="dis10"></div>
+                                <h2 class="rounded-cards-title">
+                                    Trading Seperti Ahlinya dengan Cepat                                </h2>
+                                <div class="dis10"></div>
+                                <p class="rounded-cards-desc">
+                                    Dapatkan profit dengan trading, apa pun pengalaman Anda.                                </p>
+                            </div>
+                            <div class="dis15 visible-xs visible-sm"></div>
+                            <div class="dis15 hidden-xs hidden-sm"></div>
+                            <div class="dis100 hidden-xs hidden-sm"></div>
+                            <a class="btn rounded-cards-url" href="https://www.xmindonesiatrade.com/id/social-copy-trading">
+                                <span>MULAI COPY TRADING</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="arrow">
+                                    <path d="M10,6.1c0,0.3-0.3,0.6-0.6,0.6H0.6C0.3,6.7,0,6.4,0,6.1c0-0.3,0.3-0.6,0.6-0.6h8.8 C9.7,5.5,10,5.8,10,6.1z M6.2,0.7l4.6,4.8c0.3,0.3,0.3,0.8,0,1.1l-4.6,4.8c-0.3,0.3-0.7,0.3-1,0c-0.3-0.3-0.3-0.8,0-1.1l3.6-3.7 C8.7,6.4,8.6,6.2,8.6,6s0.1-0.4,0.2-0.5L5.2,1.8C4.9,1.5,4.9,1,5.2,0.7C5.5,0.4,5.9,0.4,6.2,0.7z" fill="#fff"></path>
+                                </svg>
+                            </a>
+                            <div class="rounded-cards-icon rounded-cards-icon--copytrading">
+                                <img src="https://cloud.xm-cdn.com/static/xm/pages/homepage/copy-trading-networking-icon-sm.webp" alt="Copy Trading" class="img-responsive visible-xs visible-sm" width="280">
+                                <img src="https://cloud.xm-cdn.com/static/xm/pages/homepage/copy-trading-networking-icon-lg.webp" alt="Copy Trading" class="img-responsive hidden-xs hidden-sm">
+                            </div>
+                            <div class="dis20 visible-xs visible-sm"></div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+                    <div class="dis70 visible-md visible-lg"></div>
+            </section>
+            <div class="dis70 visible-md visible-lg"></div>
+    
+
+    <!-- XMTD Homepage -->
+    <section class="accents-responsive visible-xs visible-sm">
+            <div class="dis70 visible-xs"></div>
+        <div class="dis70 visible-sm"></div>
+        <div class="container">
+        <h2 class="text-center no_margin">
+            Dunia dengan Kesempatan Trading        </h2>
+        <div class="dis40"></div>
+        <div class="accents-responsive_wrapper">
+                                <div class="accent">
+                        <a href="https://www.xmindonesiatrade.com/id/forex-trading">
+                        <div>
+                            <i class="xmFont fa-kit fa-xm-chart red"></i>
+                        </div>
+                            <div class="dis10"></div>
+                            <em>Trading Forex</em>
+                            <p class="no_margin">50+ <br>Pasangan Mata Uang</p>
+                        </a>
+                    </div>
+                                <div class="accent">
+                        <a href="https://www.xmindonesiatrade.com/id/cryptocurrencies">
+                        <div>
+                            <i class="xmFont fa-kit fa-xm-bitcoin-circle red"></i>
+                        </div>
+                            <div class="dis10"></div>
+                            <em>CFD Kripto</em>
+                            <p class="no_margin">Bitcoin, Ethereum, <br>Ripple dan lainnya</p>
+                        </a>
+                    </div>
+                                <div class="accent">
+                        <a href="https://www.xmindonesiatrade.com/id/equity-indices">
+                        <div>
+                            <i class="xmFont fa-kit fa-xm-high-bars red"></i>
+                        </div>
+                            <div class="dis10"></div>
+                            <em>CFD pada Indeks</em>
+                            <p class="no_margin">Indeks<br>mayor</p>
+                        </a>
+                    </div>
+                                <div class="accent">
+                        <a href="https://www.xmindonesiatrade.com/id/commodities">
+                        <div>
+                            <i class="xmFont fa-kit fa-xm-wheat red"></i>
+                        </div>
+                            <div class="dis10"></div>
+                            <em>Komoditas CFD</em>
+                            <p class="no_margin">Gula, coklat, gandum<br>dan banyak lagi</p>
+                        </a>
+                    </div>
+                                <div class="accent">
+                        <a href="https://www.xmindonesiatrade.com/id/stocks">
+                        <div>
+                            <i class="xmFont fa-kit fa-xm-chart-bars-arrow red"></i>
+                        </div>
+                            <div class="dis10"></div>
+                            <em>CFD pada Stock</em>
+                            <p class="no_margin">Lebih dari 600<br>perusahaan</p>
+                        </a>
+                    </div>
+                                <div class="accent">
+                        <a href="https://www.xmindonesiatrade.com/id/precious-metals">
+                        <div>
+                            <i class="xmFont fa-kit fa-xm-gold red"></i>
+                        </div>
+                            <div class="dis10"></div>
+                            <em>CFD pada logam</em>
+                            <p class="no_margin">Emas, Palladium<br>dan lainnya</p>
+                        </a>
+                    </div>
+                                <div class="accent">
+                        <a href="https://www.xmindonesiatrade.com/id/energies">
+                        <div>
+                            <i class="xmFont fa-kit fa-xm-thunder red"></i>
+                        </div>
+                            <div class="dis10"></div>
+                            <em>CFD pada Energi</em>
+                            <p class="no_margin">Minyak, Gas dan semua <br>energi utama</p>
+                        </a>
+                    </div>
+                    </div>
+        <div class="text-center visible-xs">
+            <a href="https://www.xmindonesiatrade.com/goto/profile/id" class="btn btn-solid btn-red btn-block">
+                <div>
+                    BUKA AKUN                </div>
+            </a>
+        </div>
+    </div>
+    <div class="dis50 visible-xs"></div>
+    <div class="dis20 visible-sm"></div>
+</section>
+
+<section class="xm_app_intro">
+                <div class="dis50 visible-xs"></div>
+            <div class="dis70 visible-sm"></div>
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2 class="no_margin">
+                    Trading Forex, CFD Kripto, Saham, Logam Mulia dan Lainnya                </h2>
+                <div class="dis10"></div>
+                <p class="no_margin">Di mana Saja, Kapan Saja dengan <strong>Aplikasi MT4 & MT5XM kami</strong></p>
+            </div>
+            <div class="dis45"></div>
+            <div class="xm_app_intro__inner">
+                <div class="xm_app_intro__img">
+                    <img src="https://cloud.xm-cdn.com/static/xm/pages/xmapp/3d-mobile-crypto.webp?v=526dba0c6dd7ed6711d7aab29710964f" alt="" class="img-responsive center-block xmapp_iso" width="455">
+                </div>
+                <div class="xm_app_intro_desc">
+                    <div class="dis40 hidden-xs"></div>
+                    <div class="dis50 visible-md visible-lg"></div>
+                    <div class="hidden-xs">
+                        <div class="xm_app_intro-list">
+                            <i class="xmFont fa-kit fa-xm-mobile-chart red"></i>
+                            <ul>
+                                <li><h3><strong>Trading</strong> Dimana Saja</h3></li>
+                                <li>
+                                    <p class="no_margin">
+                                        Akses ke lebih dari 1.000 instrumen, semua di satu tempat (berlaku pada MT4 & MT5)                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div class="xm_app_intro-list" >
+                            <i class="xmFont fa-kit fa-xm-user-circle red"></i>
+                            <ul>
+                                <li><h3><strong>Kelola</strong> Akun Anda</h3></li>
+                                <li><p class="no_margin">Sesuaikan pengaturan Anda dan danai akun Anda, semua dalam aplikasi</p></li>
+                            </ul>
+                        </div>
+                        <hr>
+                        <div class="xm_app_intro-list">
+                            <i class="xmFont fa-kit fa-xm-chart-search red"></i>
+                            <ul>
+                                <li><h3><strong>Temukan</strong> Trading Anda Selanjutnya</h3></li>
+                                <li><p class="no_margin">Manfaatkan grafik lanjutan dan lebih dari 90 indikator trading</p></li>
+                            </ul>
+                        </div>
+                    </div>
+                                            <div class="visible-xs text-center xm_app_intro-compatible">
+                            <div class="dis10"></div>
+                            <p>Sesuai untuk MT5</p>
+                        </div>
+                                        <div class="dis65 visible-md visible-lg"></div>
+                    <div class="dis35 visible-sm"></div>
+                    <div class="dis50 visible-xs"></div>
+                    <div class="iconWrapper pageXMapp-icons--light text-center">
+
+                    
+<div class="xmapp visible-qrcode">
+    <div class="visible-qrcode__img">
+        <img width="160" data-logo="https://cloud.xm-cdn.com/static/xm/pages/xmapp/apple-logo-square.svg?v=6c3e01bbe2dd20d21c26ffe17b9b57eb" data-link="https://xm.onelink.me/CYt8/c7bfb246?is_retargeting=true&affId=115458&affIdTs=1709555247&clickId=2740fa42-42a3-4dfd-a651-54f3c68e3cff&clickIdTs=1709555247&gId=2094&gIdTs=1709987470&refererUrl=https://www.xmindonesiatrade.com/id/id/&af_dp=xm://register?type=real" class="qrcode" alt="">
+        <div class="visible-qrcode__text">
+            <p class="no_margin">Scan untuk Mengunduh <strong>Aplikasi XM</strong> di App Store</p>
+        </div>
+    </div>
+    <div class="visible-qrcode__img">
+        <img width="160" data-logo="https://cloud.xm-cdn.com/static/xm/pages/xmapp/android-icon.svg?v=e3eafa19936d7826255d47e94da4fb2a" data-link="https://xm.onelink.me/CYt8/e9e13f57?is_retargeting=true&affId=115458&affIdTs=1709555247&clickId=2740fa42-42a3-4dfd-a651-54f3c68e3cff&clickIdTs=1709555247&gId=2094&gIdTs=1709987470&refererUrl=https://www.xmindonesiatrade.com/id/id/&af_dp=xm://register?type=real" class="qrcode" alt="">
+        <div class="visible-qrcode__text">
+            <p class="no_margin">Pindai untuk mengunduh aplikasi Android kami</p>
+        </div>
+    </div>
+</div>
+                    </div>
+                    <div class="dis15"></div>
+                    <p class="xm_app_intro_readmore">Untuk mempelajari lebih lanjut mengenai Aplikasi XM terbaru, <a href="https://www.xmindonesiatrade.com/id/apk-app-download">klik disini</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+            <div class="dis40 visible-xs"></div>
+        <div class="dis60 visible-sm"></div>
+        <div class="dis70 visible-md visible-lg"></div>
+    </section>
+<section class="visible-xs visible-sm  view-platforms">
+
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="view-platforms__wrapper">
+                    <div class="view-platforms__content">
+                        <h3>
+                            Buat akun MT4 atau MT5 dan trading di semua perangkat Anda                        </h3>
+                        <div class="dis25 visible-xs"></div>
+                        <div class="dis15 visible-sm visible-md visible-lg"></div>
+                        <a href="https://www.xmindonesiatrade.com/id/platforms">Lihat semua Platform</a>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="news-responsive visible-xs visible-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4">
+                <div class="notification-wrapper">
+                    <div class="tabbable">
+                             <div class="border title-block-wrap visible-md visible-lg">
+        Grup Berita    </div>
+    <h2 class="text-center title-block-wrap visible-xs visible-sm">
+        Grup Berita    </h2>
+<div id="company-news" class="tab-pane">
+    <div class="wrap-news clone-0">
+        <div class="news">
+        <div class="internal-wrapper">
+            <div class="wrapper__top">
+                <div class="title">
+                    <a href="https://www.xmindonesiatrade.com/id/important-notification-daylight-savings-2024-97507?category=company-news" class="lineh13">
+                        Pemberitahuan Penting — Waktu Musim Panas 2024                    </a>
+                </div>
+                <small class="date">
+                    8 Maret, 2024 at 13:29 GMT                </small>
+                <p>Kami ingin menginformasikan kepada Anda bahwa jam trading pada berbagai instrumen akan mengalami perubahan karena Waktu Musim Panas yang akan berlangsung mulai pada [..]</p>            </div>
+            <div class="wrapper__bottomvisible-xs visible-sm">
+                <a href="https://www.xmindonesiatrade.com/id/important-notification-daylight-savings-2024-97507?category=company-news" class="btn btn-solid btn-gray-o btn--custom">
+                    Baca Lebih Lanjut                </a>
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="internal-wrapper">
+            <div class="wrapper__top">
+                <div class="title">
+                    <a href="https://www.xmindonesiatrade.com/id/xm-helps-enhance-life-quality-in-egypt-97499?category=company-news" class="lineh13">
+                        XM Mendorong Standar Hidup yang Layak di Mesir                    </a>
+                </div>
+                <small class="date">
+                    23 Februari, 2024 at 8:47 GMT                </small>
+                <p>Pada tanggal 3 Januari 2024, XM bekerja sama dengan Haya Karima, salah satu lembaga amal yang besar di Kairo, dalam rangka peningkatan standar [..]</p>            </div>
+            <div class="wrapper__bottomvisible-xs visible-sm">
+                <a href="https://www.xmindonesiatrade.com/id/xm-helps-enhance-life-quality-in-egypt-97499?category=company-news" class="btn btn-solid btn-gray-o btn--custom">
+                    Baca Lebih Lanjut                </a>
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="internal-wrapper">
+            <div class="wrapper__top">
+                <div class="title">
+                    <a href="https://www.xmindonesiatrade.com/id/february-bank-holidays-notification-2024-97490?category=company-news" class="lineh13">
+                        Pemberitahuan Penting – Libur Bank Februari                    </a>
+                </div>
+                <small class="date">
+                    5 Februari, 2024 at 13:12 GMT                </small>
+                <p>Kami ingin menginformasikan Anda bahwa karena beberapa hari libur nasional di bulan Februari, jam trading berbagai instrumen akan berubah mulai pada tanggal 9 [..]</p>            </div>
+            <div class="wrapper__bottomvisible-xs visible-sm">
+                <a href="https://www.xmindonesiatrade.com/id/february-bank-holidays-notification-2024-97490?category=company-news" class="btn btn-solid btn-gray-o btn--custom">
+                    Baca Lebih Lanjut                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+            <div class="visible-xs visible-sm">
+            <div class="line-link">
+                <a href="https://www.xmindonesiatrade.com/id/category/company-news" class="red view-all">
+                </i> Lihat Semua                </a>
+            </div>
+        </div>
+        <div class="visible-md visible-lg">
+            <div class="line-link">
+                <a href="https://www.xmindonesiatrade.com/id/category/company-news" class="red view-all">
+                    <i class="fa fa-arrow-right"></i> Lihat Semua                </a>
+            </div>
+        </div>
+    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="carousel-wrapper visible-xs visible-sm ">
+    <div class="container">
+        <div class="row text-center">
+            <div class="col-md-12">
+                <h2 class="section__main-title no_margin">
+                    Dapatkan lebih dari akun trading di XM                </h2>
+                <div class="dis45 visible-xs"></div>
+                <div class="dis35 visible-sm"></div>
+                <div class="dis50 visible-md visible-lg"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="owl-carousel owl-theme owl-loaded" id="carouselList">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage">
+                     
+                                                                            <div class="owl-item">
+                                                        <div class="info-box">
+                                                            <div class="info-box__icon red">
+                                                                <i class="xmFont fa-kit fa-xm-user"></i>
+                                                            </div>
+                                                            <p class="info-box--title">Manajer<br>Akun Personal</p>
+                                                            
+                                                        </div>
+                                                </div>
+                                                                                        <div class="owl-item">
+                                                        <div class="info-box">
+                                                            <div class="info-box__icon red">
+                                                                <i class="xmFont fa-kit fa-xm-chart-search"></i>
+                                                            </div>
+                                                            <p class="info-box--title">Akses gratis ke<br>Penelitian Pasar Forex</p>
+                                                            
+                                                        </div>
+                                                </div>
+                                                                                        <div class="owl-item">
+                                                        <div class="info-box">
+                                                            <div class="info-box__icon red">
+                                                                <i class="xmFont fa-kit fa-xm-display"></i>
+                                                            </div>
+                                                            <p class="info-box--title">Akses gratis ke<br>Webinar Forex Harian</p>
+                                                            
+                                                        </div>
+                                                </div>
+                                                                                        <div class="owl-item">
+                                                        <div class="info-box">
+                                                            <div class="info-box__icon red">
+                                                                <i class="xmFont fa-kit fa-xm-video-player"></i>
+                                                            </div>
+                                                            <p class="info-box--title">Akses gratis ke<br>Video Tutorial</p>
+                                                            
+                                                        </div>
+                                                </div>
+                                                                                        <div class="owl-item">
+                                                        <div class="info-box">
+                                                            <div class="info-box__icon red">
+                                                                <i class="xmFont fa-kit fa-xm-signals"></i>
+                                                            </div>
+                                                            <p class="info-box--title">Akses harian ke<br>Sinyal Trading Forex</p>
+                                                            
+                                                        </div>
+                                                </div>
+                                                                                        <div class="owl-item">
+                                                        <div class="info-box">
+                                                            <div class="info-box__icon red">
+                                                                <i class="xmFont fa-kit fa-xm-displays"></i>
+                                                            </div>
+                                                            <p class="info-box--title">10 Platform untuk<br>Dipilih dari.<br>Piranti manapun, kapan pun</p>
+                                                            
+                                                        </div>
+                                                </div>
+                                                                                        <div class="owl-item">
+                                                        <div class="info-box">
+                                                            <div class="info-box__icon red">
+                                                                <i class="xmFont fa-kit fa-xm-chart-pie"></i>
+                                                            </div>
+                                                            <p class="info-box--title">Gratis<br>Sinyal Trading</p>
+                                                            
+                                                        </div>
+                                                </div>
+                                                                                        <div class="owl-item">
+                                                        <div class="info-box">
+                                                            <div class="info-box__icon red">
+                                                                <i class="xmFont fa-kit fa-xm-calendar"></i>
+                                                            </div>
+                                                            <p class="info-box--title">Berita harian <br>Seputar Pasar Forex</p>
+                                                            
+                                                        </div>
+                                                </div>
+                                                                                        <div class="owl-item">
+                                                        <div class="info-box">
+                                                            <div class="info-box__icon red">
+                                                                <i class="xmFont fa-kit fa-xm-support-on"></i>
+                                                            </div>
+                                                            <p class="info-box--title">24/7<br>Bantuan Langsung</p>
+                                                            
+                                                        </div>
+                                                </div>
+                                                                </div>
+                    </div>
+                </div>
+                                    <div class="dis45 visible-xs"></div>
+                    <div class="dis20 visible-sm"></div>
+                    <div class="text-center">
+                        <a href="https://www.xmindonesiatrade.com/goto/profile/id" class="btn btn-solid btn-red btn-block">
+                            <div>
+                                BUKA AKUN                            </div>
+                        </a>
+                    </div>
+                            </div>
+        </div>
+    </div>
+</div>
+<div class="benefit-account visible-lg">
+    <div class="dis70"></div>
+    <section class="container">
+        <h2 class="text-center">
+            Dapatkan lebih dari sekedar Akun Trading Forex dan CFD di XM        </h2>
+        <div class="dis10"></div>
+        <div class="dis60"></div>
+
+        <div class="row">
+            
+                    <div class="col-sm-6 col-md-4">
+                        <em>01</em>
+                        <div class="wrap">
+                            <i class="xmFont fa-kit fa-xm-user red"></i>
+                            <p>Manajer<br>Akun Personal</p>
+                        </div>
+                    </div>
+                    <div class="dis15 visible-xs"></div>
+                                                        
+                    <div class="col-sm-6 col-md-4">
+                        <em>02</em>
+                        <div class="wrap">
+                            <i class="xmFont fa-kit fa-xm-chart-search red"></i>
+                            <p>Akses gratis ke<br>Penelitian Pasar Forex</p>
+                        </div>
+                    </div>
+                    <div class="dis15 visible-xs"></div>
+                                        <div class="dis60 visible-sm"></div>                
+                    <div class="col-sm-6 col-md-4">
+                        <em>03</em>
+                        <div class="wrap">
+                            <i class="xmFont fa-kit fa-xm-display red"></i>
+                            <p>Akses gratis ke<br>Webinar Forex Harian</p>
+                        </div>
+                    </div>
+                    <div class="dis15 visible-xs"></div>
+                    <div class="dis60 hidden-xs hidden-sm"></div>                                    
+                    <div class="col-sm-6 col-md-4">
+                        <em>04</em>
+                        <div class="wrap">
+                            <i class="xmFont fa-kit fa-xm-video-player red"></i>
+                            <p>Akses gratis ke<br>Video Tutorial</p>
+                        </div>
+                    </div>
+                    <div class="dis15 visible-xs"></div>
+                                        <div class="dis60 visible-sm"></div>                
+                    <div class="col-sm-6 col-md-4">
+                        <em>05</em>
+                        <div class="wrap">
+                            <i class="xmFont fa-kit fa-xm-signals red"></i>
+                            <p>Akses harian ke<br>Sinyal Trading Forex</p>
+                        </div>
+                    </div>
+                    <div class="dis15 visible-xs"></div>
+                                                        
+                    <div class="col-sm-6 col-md-4">
+                        <em>06</em>
+                        <div class="wrap">
+                            <i class="xmFont fa-kit fa-xm-displays red"></i>
+                            <p>10 Platform untuk<br>Dipilih dari.<br>Piranti manapun, kapan pun</p>
+                        </div>
+                    </div>
+                    <div class="dis15 visible-xs"></div>
+                    <div class="dis60 hidden-xs hidden-sm"></div>                    <div class="dis60 visible-sm"></div>                
+                    <div class="col-sm-6 col-md-4">
+                        <em>07</em>
+                        <div class="wrap">
+                            <i class="xmFont fa-kit fa-xm-chart-pie red"></i>
+                            <p>Gratis<br>Sinyal Trading</p>
+                        </div>
+                    </div>
+                    <div class="dis15 visible-xs"></div>
+                                                        
+                    <div class="col-sm-6 col-md-4">
+                        <em>08</em>
+                        <div class="wrap">
+                            <i class="xmFont fa-kit fa-xm-calendar red"></i>
+                            <p>Berita harian <br>Seputar Pasar Forex</p>
+                        </div>
+                    </div>
+                    <div class="dis15 visible-xs"></div>
+                                        <div class="dis60 visible-sm"></div>                
+                    <div class="col-sm-6 col-md-4">
+                        <em>09</em>
+                        <div class="wrap">
+                            <i class="xmFont fa-kit fa-xm-support-on red"></i>
+                            <p>24/7<br>Bantuan Langsung</p>
+                        </div>
+                    </div>
+                    <div class="dis15 visible-xs"></div>
+                                                                </div>
+
+        <div class="dis80"></div>
+        <div class="text-center">
+                            <a href="https://www.xmindonesiatrade.com/goto/profile/id" class="btn btn-solid btn-red btn-block">
+                    <div>
+                        BUKA AKUN                    </div>
+
+                    <small>
+                        Trading dengan dana Akun Riil atau Akun Demo                    </small>
+                </a>
+                                        <div class="risk-wrap">
+                            <span>Bonus <strong>tidak dapat ditarik</strong> dan hanya profit yang dapat ditarik. <a href="https://cloud.xm-cdn.com/static/pdf/System-PDFs/XMGlobal-Terms-and-Conditions-Bonus-Program.pdf?v=89139b2e7137fbe56be950628279b483">S&K berlaku</a>.</span>
+                        </div>
+                                        </div>
+        <div class="dis70"></div>
+    </section>
+</div>
+
+<div class="platforms-content hidden-xs hidden-sm">
+    <section class="container">
+
+        <div class="dis70"></div>
+        <span class="main-title">
+            MT4, MT5, XM WebTrader        </span>
+
+        <div class="dis15"></div>
+                    <p class="subtext">
+                Trading di lebih dari 1000 instrumen. Kapan pun, dimana pun                <br>                    Forex dan CFD pada Mata Uang Kripto, Saham, Komoditas, Indeks Saham, Logam dan Energi.                </p>
+                
+                    <img src="https://cloud.xm-cdn.com/static/xm/pages/xmapp/hp-responsive-platforms-comp.webp?v=3893398e9393b494e317634c39febfc4" alt="" class="img-responsive center-block" width="1140">
+        
+        
+        <div class="text-center">
+            <a href="https://www.xmindonesiatrade.com/id/platforms" class="btn btn-red btn-block"><i class="fa fa-desktop" aria-hidden="true"></i>LIHAT PLATFORM KAMI</a>
+        </div>
+
+    </section>
+</div>
+<div class="dis70 hidden-xs hidden-sm"></div>
+<section class="accents hidden-xs hidden-sm">
+    <div class="container">
+                            <div class="accent">
+                        <a href="https://www.xmindonesiatrade.com/id/forex-trading">
+                        <span>
+                            <i class="xmFont fa-kit fa-xm-chart red"></i>
+                        </span>
+                            <em>Trading Forex</em>
+                            <p>50+ <br>Pasangan Mata Uang</p>
+                        </a>
+                    </div>
+                                <div class="accent">
+                        <a href="https://www.xmindonesiatrade.com/id/cryptocurrencies">
+                        <span>
+                            <i class="xmFont fa-kit fa-xm-bitcoin-circle red"></i>
+                        </span>
+                            <em>CFD Kripto</em>
+                            <p>Bitcoin, Ethereum, <br>Ripple dan lainnya</p>
+                        </a>
+                    </div>
+                                <div class="accent">
+                        <a href="https://www.xmindonesiatrade.com/id/equity-indices">
+                        <span>
+                            <i class="xmFont fa-kit fa-xm-high-bars red"></i>
+                        </span>
+                            <em>CFD pada Indeks</em>
+                            <p>Indeks<br>mayor</p>
+                        </a>
+                    </div>
+                                <div class="accent">
+                        <a href="https://www.xmindonesiatrade.com/id/commodities">
+                        <span>
+                            <i class="xmFont fa-kit fa-xm-wheat red"></i>
+                        </span>
+                            <em>Komoditas CFD</em>
+                            <p>Gula, coklat, gandum<br>dan banyak lagi</p>
+                        </a>
+                    </div>
+                                <div class="accent">
+                        <a href="https://www.xmindonesiatrade.com/id/stocks">
+                        <span>
+                            <i class="xmFont fa-kit fa-xm-chart-bars-arrow red"></i>
+                        </span>
+                            <em>CFD pada Stock</em>
+                            <p>Lebih dari 600<br>perusahaan</p>
+                        </a>
+                    </div>
+                                <div class="accent">
+                        <a href="https://www.xmindonesiatrade.com/id/turbo-stocks">
+                        <span>
+                            <i class="xmFont fa-kit fa-xm-turbo-stocks red"></i>
+                        </span>
+                            <em>Saham Turbo</em>
+                            <p>CFD Saham Populer dengan Leverage 200:1</p>
+                        </a>
+                    </div>
+                                <div class="accent">
+                        <a href="https://www.xmindonesiatrade.com/id/precious-metals">
+                        <span>
+                            <i class="xmFont fa-kit fa-xm-gold red"></i>
+                        </span>
+                            <em>CFD pada logam</em>
+                            <p>Emas, Palladium<br>dan lainnya</p>
+                        </a>
+                    </div>
+                                <div class="accent">
+                        <a href="https://www.xmindonesiatrade.com/id/energies">
+                        <span>
+                            <i class="xmFont fa-kit fa-xm-thunder red"></i>
+                        </span>
+                            <em>CFD pada Energi</em>
+                            <p>Minyak, Gas dan semua <br>energi utama</p>
+                        </a>
+                    </div>
+                </div>
+</section>
+<div class="dis70 hidden-xs hidden-sm"></div>
+<section class="hp-tabs-content container hidden-xs hidden-sm">
+    <span class="main-title">Persiapkan dengan pusat berita dan analisa kami</span>
+    <div class="dis30"></div>
+    <div class="row">
+        
+<div class="col-lg-3 col-md-4">
+    <div class="notification-wrapper">
+        <div class="tabbable">
+                 <div class="border title-block-wrap visible-md visible-lg">
+        Grup Berita    </div>
+    <h2 class="text-center title-block-wrap visible-xs visible-sm">
+        Grup Berita    </h2>
+<div id="company-news" class="tab-pane">
+    <div class="wrap-news clone-0">
+        <div class="news">
+        <div class="internal-wrapper">
+            <div class="wrapper__top">
+                <div class="title">
+                    <a href="https://www.xmindonesiatrade.com/id/important-notification-daylight-savings-2024-97507?category=company-news" class="lineh13">
+                        Pemberitahuan Penting — Waktu Musim Panas 2024                    </a>
+                </div>
+                <small class="date">
+                    8 Maret, 2024 at 13:29 GMT                </small>
+                <p>Kami ingin menginformasikan kepada Anda bahwa jam trading pada berbagai instrumen akan mengalami perubahan karena Waktu Musim Panas yang akan berlangsung mulai pada [..]</p>            </div>
+            <div class="wrapper__bottomvisible-xs visible-sm">
+                <a href="https://www.xmindonesiatrade.com/id/important-notification-daylight-savings-2024-97507?category=company-news" class="btn btn-solid btn-gray-o btn--custom">
+                    Baca Lebih Lanjut                </a>
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="internal-wrapper">
+            <div class="wrapper__top">
+                <div class="title">
+                    <a href="https://www.xmindonesiatrade.com/id/xm-helps-enhance-life-quality-in-egypt-97499?category=company-news" class="lineh13">
+                        XM Mendorong Standar Hidup yang Layak di Mesir                    </a>
+                </div>
+                <small class="date">
+                    23 Februari, 2024 at 8:47 GMT                </small>
+                <p>Pada tanggal 3 Januari 2024, XM bekerja sama dengan Haya Karima, salah satu lembaga amal yang besar di Kairo, dalam rangka peningkatan standar [..]</p>            </div>
+            <div class="wrapper__bottomvisible-xs visible-sm">
+                <a href="https://www.xmindonesiatrade.com/id/xm-helps-enhance-life-quality-in-egypt-97499?category=company-news" class="btn btn-solid btn-gray-o btn--custom">
+                    Baca Lebih Lanjut                </a>
+            </div>
+        </div>
+    </div>
+    <div class="news">
+        <div class="internal-wrapper">
+            <div class="wrapper__top">
+                <div class="title">
+                    <a href="https://www.xmindonesiatrade.com/id/february-bank-holidays-notification-2024-97490?category=company-news" class="lineh13">
+                        Pemberitahuan Penting – Libur Bank Februari                    </a>
+                </div>
+                <small class="date">
+                    5 Februari, 2024 at 13:12 GMT                </small>
+                <p>Kami ingin menginformasikan Anda bahwa karena beberapa hari libur nasional di bulan Februari, jam trading berbagai instrumen akan berubah mulai pada tanggal 9 [..]</p>            </div>
+            <div class="wrapper__bottomvisible-xs visible-sm">
+                <a href="https://www.xmindonesiatrade.com/id/february-bank-holidays-notification-2024-97490?category=company-news" class="btn btn-solid btn-gray-o btn--custom">
+                    Baca Lebih Lanjut                </a>
+            </div>
+        </div>
+    </div>
+    </div>
+            <div class="visible-xs visible-sm">
+            <div class="line-link">
+                <a href="https://www.xmindonesiatrade.com/id/category/company-news" class="red view-all">
+                </i> Lihat Semua                </a>
+            </div>
+        </div>
+        <div class="visible-md visible-lg">
+            <div class="line-link">
+                <a href="https://www.xmindonesiatrade.com/id/category/company-news" class="red view-all">
+                    <i class="fa fa-arrow-right"></i> Lihat Semua                </a>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+</div>
+<div class="col-lg-6 col-md-4" id="dashboard-container">
+    <div class="border title-block-wrap">
+    Kurs Live XM Group    </div>
+    <div id="dashboard-wrap">
+                <div>
+            <b>EURUSD</b>
+            <i class="green-bar-nbr">35,0</i>
+            <span class="color-bar green-bar" style="width: 35%;"></span>
+            <i class="red-bar-nbr">65,0</i>
+            <span class="color-bar red-bar" style="width: 65%;"></span>
+        </div>
+                <div>
+            <b>USDJPY</b>
+            <i class="green-bar-nbr">44,3</i>
+            <span class="color-bar green-bar" style="width: 44.3%;"></span>
+            <i class="red-bar-nbr">55,7</i>
+            <span class="color-bar red-bar" style="width: 55.7%;"></span>
+        </div>
+                <div>
+            <b>EURJPY</b>
+            <i class="green-bar-nbr">25,6</i>
+            <span class="color-bar green-bar" style="width: 25.6%;"></span>
+            <i class="red-bar-nbr">74,4</i>
+            <span class="color-bar red-bar" style="width: 74.4%;"></span>
+        </div>
+                <div>
+            <b>GBPJPY</b>
+            <i class="green-bar-nbr">37,0</i>
+            <span class="color-bar green-bar" style="width: 37%;"></span>
+            <i class="red-bar-nbr">63,0</i>
+            <span class="color-bar red-bar" style="width: 63%;"></span>
+        </div>
+                <div>
+            <b>EURGBP</b>
+            <i class="green-bar-nbr">65,4</i>
+            <span class="color-bar green-bar" style="width: 65.4%;"></span>
+            <i class="red-bar-nbr">34,6</i>
+            <span class="color-bar red-bar" style="width: 34.6%;"></span>
+        </div>
+                <div>
+            <b>GOLD</b>
+            <i class="green-bar-nbr">8,4</i>
+            <span class="color-bar green-bar" style="width: 8.4%;"></span>
+            <i class="red-bar-nbr">91,6</i>
+            <span class="color-bar red-bar" style="width: 91.6%;"></span>
+        </div>
+                <div>
+            <b>OIL</b>
+            <i class="green-bar-nbr">19,3</i>
+            <span class="color-bar green-bar" style="width: 19.3%;"></span>
+            <i class="red-bar-nbr">80,7</i>
+            <span class="color-bar red-bar" style="width: 80.7%;"></span>
+        </div>
+                <div>
+            <b>JP225</b>
+            <i class="green-bar-nbr">21,9</i>
+            <span class="color-bar green-bar" style="width: 21.9%;"></span>
+            <i class="red-bar-nbr">78,1</i>
+            <span class="color-bar red-bar" style="width: 78.1%;"></span>
+        </div>
+                <div>
+            <b>SILVER</b>
+            <i class="green-bar-nbr">78,0</i>
+            <span class="color-bar green-bar" style="width: 78%;"></span>
+            <i class="red-bar-nbr">22,0</i>
+            <span class="color-bar red-bar" style="width: 22%;"></span>
+        </div>
+                <div>
+            <b>GER40</b>
+            <i class="green-bar-nbr">19,0</i>
+            <span class="color-bar green-bar" style="width: 19%;"></span>
+            <i class="red-bar-nbr">81,0</i>
+            <span class="color-bar red-bar" style="width: 81%;"></span>
+        </div>
+                <div>
+            <b>US30</b>
+            <i class="green-bar-nbr">50,9</i>
+            <span class="color-bar green-bar" style="width: 50.9%;"></span>
+            <i class="red-bar-nbr">49,1</i>
+            <span class="color-bar red-bar" style="width: 49.1%;"></span>
+        </div>
+                <span class="indicator buy">Beli</span>
+        <span class="indicator fifty">50%</span>
+        <span class="indicator sell">Jual</span>
+    </div>
+</div>
+<div class="col-lg-3 col-md-4" id="research-wrap">
+                        <div class="tabbable three-tab hidden-xs hidden-sm">
+            <ul class="nav nav-tabs">
+                <li class="title-block-wrap">
+                    <a href="https://www.xmindonesiatrade.com/id/xm-on-tv">SIARAN XM</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active " id="xmOnTv">
+    <div class="wrap-videos clone-0">
+        <div class="xmvideo single-video" data-link="https://www.xmindonesiatrade.com/id/xm-on-tv"></div>
+        <div class="g-ytsubscribe top20" data-channel="xmglobal" data-count="default"></div>
+        <div class="dis15"></div>
+        <div class="xmvideo" data-role="listing-horizontal" data-max=5 data-link="https://www.xmindonesiatrade.com/id/xm-on-tv"></div>
+    </div>
+    <div class="line-link">
+        <a href="https://www.xmindonesiatrade.com/id/xm-on-tv" class="red view-all">
+            <i class="fa fa-arrow-right"></i>Lihat semua Video        </a>
+    </div>
+</div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+<div class="dis70 hidden-xs hidden-sm"></div>
+<div id="awards-content">
+    <div class="dis45 visible-xs"></div>
+    <div class="dis65 hidden-xs"></div>
+    <div class="container">
+        <h2 class="text-center hidden-xs hidden-sm">
+            Penghargaan dan Pencapaian Terbaru XM Group        </h2>
+        <h2 class="text-center visible-xs visible-sm">
+            Penghargaan Terbaru XM Group        </h2>
+        <div class="dis20"></div>
+        <div class="dis30"></div>
+        <div class="award-container award-container--home">
+                                            <div class="award-box award-box--home ">
+                    <div class="award-img">
+                        <img src="https://cloud.xm-cdn.com/static/xm/pages/awards/wf-awards-customer-service.webp" alt="Layanan Pelanggan Forex Terbaik" height="71">
+                    </div>
+                    <div class="dis10 visible-xs"></div>
+                    <div class="dis25 hidden-xs"></div>
+                    <p class="hidden-xs hidden-sm clone-1">Layanan Pelanggan Forex Terbaik</p>
+                    <h4 class="visible-xs visible-sm">Layanan Pelanggan Forex Terbaik</h4>
+                    <hr>
+                    <h4 class="hidden-xs hidden-sm">Dianugerahi oleh World Finance Forex Awards 2023</h4>
+                    <p class="visible-xs visible-sm">Dianugerahi oleh World Finance Forex Awards 2023</p>
+                    <div class="dis40 visible-xs"></div>
+                </div>
+                                            <div class="award-box award-box--home ">
+                    <div class="award-img">
+                        <img src="https://cloud.xm-cdn.com/static/xm/pages/awards/wf-awards-eu.webp" alt="Broker Forex Terbaik, Eropa" height="71">
+                    </div>
+                    <div class="dis10 visible-xs"></div>
+                    <div class="dis25 hidden-xs"></div>
+                    <p class="hidden-xs hidden-sm clone-1">Broker Forex Terbaik, Eropa</p>
+                    <h4 class="visible-xs visible-sm">Broker Forex Terbaik, Eropa</h4>
+                    <hr>
+                    <h4 class="hidden-xs hidden-sm">Dianugerahi oleh World Finance Forex Awards 2023</h4>
+                    <p class="visible-xs visible-sm">Dianugerahi oleh World Finance Forex Awards 2023</p>
+                    <div class="dis40 visible-xs"></div>
+                </div>
+                                            <div class="award-box award-box--home ">
+                    <div class="award-img">
+                        <img src="https://cloud.xm-cdn.com/static/xm/pages/awards/wf-awards-australasia.webp" alt="Broker Forex Terbaik, Australasia" height="71">
+                    </div>
+                    <div class="dis10 visible-xs"></div>
+                    <div class="dis25 hidden-xs"></div>
+                    <p class="hidden-xs hidden-sm clone-1">Broker Forex Terbaik, Australasia</p>
+                    <h4 class="visible-xs visible-sm">Broker Forex Terbaik, Australasia</h4>
+                    <hr>
+                    <h4 class="hidden-xs hidden-sm">Dianugerahi oleh World Finance Forex Awards 2023</h4>
+                    <p class="visible-xs visible-sm">Dianugerahi oleh World Finance Forex Awards 2023</p>
+                    <div class="dis40 visible-xs"></div>
+                </div>
+                                            <div class="award-box award-box--home ">
+                    <div class="award-img">
+                        <img src="https://cloud.xm-cdn.com/static/xm/pages/awards/wf-awards-latam.webp" alt="Broker Forex Terbaik, Amerika Latin" height="71">
+                    </div>
+                    <div class="dis10 visible-xs"></div>
+                    <div class="dis25 hidden-xs"></div>
+                    <p class="hidden-xs hidden-sm clone-1">Broker Forex Terbaik, Amerika Latin</p>
+                    <h4 class="visible-xs visible-sm">Broker Forex Terbaik, Amerika Latin</h4>
+                    <hr>
+                    <h4 class="hidden-xs hidden-sm">Dianugerahi oleh World Finance Forex Awards 2023</h4>
+                    <p class="visible-xs visible-sm">Dianugerahi oleh World Finance Forex Awards 2023</p>
+                    <div class="dis40 visible-xs"></div>
+                </div>
+                                            <div class="award-box award-box--home hidden-xs hidden-sm">
+                    <div class="award-img">
+                        <img src="https://cloud.xm-cdn.com/static/xm/pages/awards/wf-awards-mddleeast.webp" alt="Broker Forex Terbaik, Timur Tengah" height="71">
+                    </div>
+                    <div class="dis10 visible-xs"></div>
+                    <div class="dis25 hidden-xs"></div>
+                    <p class="hidden-xs hidden-sm clone-1">Broker Forex Terbaik, Timur Tengah</p>
+                    <h4 class="visible-xs visible-sm">Broker Forex Terbaik, Timur Tengah</h4>
+                    <hr>
+                    <h4 class="hidden-xs hidden-sm">Dianugerahi oleh World Finance Forex Awards 2023</h4>
+                    <p class="visible-xs visible-sm">Dianugerahi oleh World Finance Forex Awards 2023</p>
+                    <div class="dis40 visible-xs"></div>
+                </div>
+                                            <div class="award-box award-box--home hidden-xs hidden-sm">
+                    <div class="award-img">
+                        <img src="https://cloud.xm-cdn.com/static/xm/pages/awards/cfi-most-reliable-2023.webp" alt="Broker Tepercaya, Global 2023" height="71">
+                    </div>
+                    <div class="dis10 visible-xs"></div>
+                    <div class="dis25 hidden-xs"></div>
+                    <p class="hidden-xs hidden-sm clone-1">Broker Tepercaya, Global 2023</p>
+                    <h4 class="visible-xs visible-sm">Broker Tepercaya, Global 2023</h4>
+                    <hr>
+                    <h4 class="hidden-xs hidden-sm">Diberikan oleh CFI.co 2023</h4>
+                    <p class="visible-xs visible-sm">Diberikan oleh CFI.co 2023</p>
+                    <div class="dis40 visible-xs"></div>
+                </div>
+                    </div>
+        <div class="dis50 hidden-xs"></div>
+        <div class="text-center">
+            <a href="https://www.xmindonesiatrade.com/id/xm-awards" class="btn btn-gray btn-block">
+                <i class="fa fa-trophy hidden-xs hidden-sm" aria-hidden="true"></i>
+                LIHAT PENGHARGAAN KAMI            </a>
+        </div>
+        <div class="dis70 hidden-xs hidden-sm"></div>
+    </div>
+</div>
+<div class="dis50 visible-xs"></div>
+<div class="dis70 hidden-xs"></div>
+<div class="feature-broker--responsive visible-xs visible-sm">
+    <div class="dis45 visible-xs"></div>
+    <div class="dis65 visible-sm"></div>
+    <div class="container">
+        <h2 class="text-center no_margin">Pilih broker yang Besar, Adil dan Manusia</h2>
+        <div class="dis45 visible-xs"></div>
+        <div class="dis35 visible-sm"></div>
+        <p class="text-center no_margin">
+            Terdapat alasan mengapa lebih dari 10 juta klien memilih XM untuk Trading Forex, Mata Uang Kripto, Komoditas, Saham, Logam dan Energi.        </p>
+        <div class="dis45 visible-xs"></div>
+        <div class="dis40 visible-sm"></div>
+        <div class="buttons-wrap buttons-wrap--single">
+    <div class="row text-center">
+        <div class="col-md-12">
+            <a href="https://www.xmindonesiatrade.com/goto/profile/id" class="btn btn-solid btn-red btn-block">
+                <div>
+                    Buka Akun                </div>
+                <div class="text">
+                    <small>
+                        Trading dengan dana Akun Riil atau Akun Demo                    </small>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>    </div>
+    <div class="dis50 visible-xs"></div>
+    <div class="dis70 visible-sm"></div>
+</div>
+<div class="feature-broker hidden-xs hidden-sm">
+    <div class="container">
+        <span class="main-title">
+            Pilih broker yang Besar, Adil dan Manusia        </span>
+        <div class="dis15"></div>
+        <p class="subtext">
+            Terdapat alasan mengapa lebih dari 10 juta klien memilih XM untuk Trading Forex, Mata Uang Kripto, Komoditas, Saham, Logam dan Energi.        </p>
+
+        <div class="dis60"></div>
+        <div class="row">
+
+            <!-- Licensed and Regulated Broker -->
+            <div class="col-sm-6">
+                <article class="feature-box">
+                    <i class="xmFont fa-kit fa-xm-shield-dollar red"></i>
+                    <h4>Broker Teregulasi</h4>
+                    <p>
+                        XM Group dilisensi oleh ASIC di Australia (Trading Point of Financial Instruments Pty Limited), oleh CySEC di Siprus (Trading Point of Financial Instruments Ltd), oleh FSC di Belize (XM Global Limited) dan oleh DFSA (Trading Point MENA Limited), dengan mematuhi standar peraturan yang ditingkatkan.                    </p>
+                    <hr>
+                </article>
+            </div>
+
+            <!-- Globally Renowned -->
+            <div class="col-sm-6">
+                <article class="feature-box">
+                    <i class="xmFont fa-kit fa-xm-globe red"></i>
+                    <h4>Dikenal Di Seluruh Dunia</h4>
+                    <p>
+                        Kami memiliki klien di lebih dari 190 negara dan staf yang berbicara di lebih dari 30 bahasa. Manajemen kami telah mengunjungi 120 kota di seluruh dunia untuk memahami keinginan klien dan partner.                    </p>
+                    <hr>
+                </article>
+            </div>
+        </div>
+        <div class="row">
+
+            <!-- Focused on the Client -->
+            <div class="col-sm-6">
+                <article class="feature-box">
+                    <i class="xmFont fa-kit fa-xm-user-check red"></i>
+                    <h4>Fokus pada Klien</h4>
+                    <p>Ukuran tidak penting. Di XM klien menjadi yang terpenting diluar kekayaan mereka, tipe akun atau besaran investasi. Semua klien kami memiliki layanan berkualitas yang sama, eksekusi yang sama, dan layanan yang sama. XM didirikan dengan nilai ini, dan tidak akan berubah</p>
+                    <hr>
+                </article>
+            </div>
+
+            <!-- Range of Trading Instruments -->
+            <div class="col-sm-6">
+                <article class="feature-box">
+                    <i class="xmFont fa-kit fa-xm-database-dollar red"></i>
+                    <h4>Beragam Instrumen Trading</h4>
+                    <p>
+                        Klien kami dapat memilih untuk trading forex dan CFD pada mata uang kripto, indeks saham, komoditas, saham, logam dan energi, dari akun trading yang sama. Dengan berbagai instrumen trading yang tersedia dari satu platform multi-aset, XM membuat trading lebih mudah dan lebih efisien.                    </p>
+                    <hr> 
+                </article>
+            </div>
+        </div>
+        <div class="row">
+
+            <!-- Transparent and Fair -->
+            <div class="col-sm-6">
+                <article class="feature-box">
+                    <i class="xmFont fa-kit fa-xm-document-check red"></i>
+                    <h4>Transparan dan Adil</h4>
+                    <p>Di XM apa yang Anda lihat adalah yang Anda dapat, dengan tanpa syarat tersembunyi. Hal ini berlaku dalam penetapan harga, eksekusi, atau promosi. Yang kami promosikan adalah yang kami berikan pada klien kami, tidak melihat dari jumlah investasi mereka.</p>
+                </article>
+            </div>
+
+            <!-- Easy and Convenient -->
+            <div class="col-sm-6">
+                <article class="feature-box">
+                    <i class="xmFont fa-kit fa-xm-creditcard red"></i>
+                    <h4>Mudah dan Nyaman</h4>
+                    <p>Semua sistem kami dibangun dan diperbaharui mengikuti keingininan klien. Mulai dari prosedur buka akun, mengelola akun anda, deposit dan penarikan dana hingga trading itu sendiri. Semua dikemas secara sederhana dan mudah digunakan untuk semua klien kami.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="dis30 hidden-xs hidden-sm"></div>
+<div class="text-btn-content visible-lg">
+    <div class="container">
+        <div class="box-text-btn">
+            <div class="text-wrap">
+                                    <p>
+                        Forex, CFD Kripto, Komoditas dan Saham — 10+ Platform Trading — 1.000+ Instrumen                    </p>
+                            </div>
+            <div class="btn-wrap">
+                <a href="https://www.xmindonesiatrade.com/goto/profile/id" class="btn btn-solid btn-full btn-red scroll">
+                    <div>BUKA AKUN</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+			<footer>
+                <nav class="hidden-xs hidden-sm">
+    <div class="container capitalize_text">
+    <div class="row">
+        <div class="col-sm-2">
+        <ul>
+            <li>
+                <strong>Akun Perdagangan</strong>
+                <div class="dis5"></div>
+            </li>
+                            <li>
+                    <a href="https://www.xmindonesiatrade.com/id/account-types">
+                        Tipe Akun Trading                    </a>
+                </li>
+                                        <li class="menu-ultra-low">
+                    <a href="https://www.xmindonesiatrade.com/id/account-types/ultra-low">
+                        Akun Ultra Low                    </a>
+                </li>
+                                        <li class="menu-islamic">
+                    <a href="https://www.xmindonesiatrade.com/id/islamic">
+                        Akun Islami                    </a>
+                </li>
+                    </ul>
+        </div>
+        <div class="col-sm-2">
+            <ul>
+            <li>
+                <strong>Instrumen Perdagangan</strong>
+                <div class="dis5"></div>
+            </li>
+            <li>
+                <a href="https://www.xmindonesiatrade.com/id/forex-trading">
+                    Trading Forex                </a>
+            </li>
+                            <li>
+                    <a href="https://www.xmindonesiatrade.com/id/cryptocurrencies">
+                            Mata uang Kripto                    </a>
+                </li>
+                                        <li>
+                    <a href="https://www.xmindonesiatrade.com/id/stocks">
+                        CFD Saham                    </a>
+                </li>
+                                        <li class="menu-turbo-stocks">
+                    <a href="https://www.xmindonesiatrade.com/id/turbo-stocks">
+                        Saham Turbo                    </a>
+                </li>
+                                        <li>
+                    <a href="https://www.xmindonesiatrade.com/id/commodities">
+                        Komoditas                    </a>
+                </li>
+                <li>
+                    <a href="https://www.xmindonesiatrade.com/id/equity-indices">
+                        Indeks Ekuitas                    </a>
+                </li>
+                <li>
+                    <a href="https://www.xmindonesiatrade.com/id/precious-metals">
+                        Logam Mulia                    </a>
+                </li>
+                <li>
+                        <a href="https://www.xmindonesiatrade.com/id/energies">
+                            Energi                        </a>
+                </li>
+                    </ul>
+        </div>
+        <div class="col-sm-2">
+            <ul>
+            <li>
+                <strong>Kondisi</strong>
+                <div class="dis5"></div>                
+            </li>
+            <li>
+                <a href="https://www.xmindonesiatrade.com/id/execution-policy">
+                    Kebijakan Eksekusi                </a>
+            </li>
+            <li>
+                <a href="https://www.xmindonesiatrade.com/id/spreads">
+                    Spread                </a>
+            </li>
+                            <li>
+                    <a href="https://www.xmindonesiatrade.com/id/margin-and-leverage">
+                        Margin dan Leverage                    </a>
+                </li>
+                        <li>
+                <a href="https://www.xmindonesiatrade.com/id/overnight-positions">
+                    Posisi menginap                </a>
+            </li>
+            <li>
+                <a href="https://www.xmindonesiatrade.com/id/trading-hours">
+                    Jam Perdagangan                </a>
+            </li>
+        </ul>
+        </div>
+                    <div class="col-sm-2">
+                <ul>
+                    <li>
+                        <strong>Platform MT4</strong>
+                        <div class="dis5"></div>
+                    </li>
+                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/mt4">
+                            MT4 untuk PC                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/metatrader-mac">
+                            MT4 untuk Mac                        </a>
+                    </li>
+
+                                            <li>
+                            <a href="https://www.xmindonesiatrade.com/id/multiterminal">
+                                MT4 Multiterminal                            </a>
+                        </li>
+                    
+                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/mt4-webtrader">
+                            MT4 WebTrader                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/ipad">
+                            MT4 untuk iPad                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/iphone">
+                            MT4 untuk iPhone                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/android">
+                            MT4 untuk Android                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.xmindonesiatrade.com/id/android-tablet">
+                            MT4 untuk Android Tablet                        </a>
+                    </li>
+                </ul>
+            </div>
+                <div class="col-sm-2">
+            <ul>
+            <li>
+                <strong>Platform MT5</strong>
+                <div class="dis5"></div>                
+            </li>
+            <li>
+                <a href="https://www.xmindonesiatrade.com/id/mt5">
+                    MT5 untuk PC                </a>
+            </li>
+            <li>
+                <a href="https://www.xmindonesiatrade.com/id/mt5-mac">
+                    MT5 untuk Mac                </a>
+            </li>
+            <li>
+                <a href="https://www.xmindonesiatrade.com/id/mt5-webtrader">
+                    MT5 WebTrader                </a>
+            </li>
+            <!--<li>
+                <a href="https://www.xmindonesiatrade.com/id/xm-webtrader">
+                    XM WebTrader                </a>
+            </li>-->
+            <li>
+                <a href="https://www.xmindonesiatrade.com/id/mt5-ipad">
+                    MT5 untuk iPad                </a>
+            </li>
+            <li>
+                <a href="https://www.xmindonesiatrade.com/id/mt5-iphone">
+                    MT5 untuk iPhone                </a>
+            </li>
+            <li>
+                <a href="https://www.xmindonesiatrade.com/id/mt5-android">
+                    MT5 untuk Android                </a>
+            </li>
+            <li>
+                <a href="https://www.xmindonesiatrade.com/id/mt5-android-tablet">
+                    MT5 untuk Tablet Android                </a>
+            </li>
+        </ul>
+        </div>                                
+        <div class="col-sm-2">
+        <ul>
+            <li>
+                <strong>Perihal XM</strong>
+                <div class="dis5"></div>                
+            </li>
+
+                            <li>
+                    <a href="https://www.xmindonesiatrade.com/id/xm-awards">
+                        Penghargaan XM                    </a>
+                </li>
+            
+            <li>
+                <a href="https://www.xmindonesiatrade.com/id/support">
+                    Bantuan                </a>
+            </li>
+
+            <li>
+                <a href="https://www.xmindonesiatrade.com/id/help-center/home">
+                    Pusat Bantuan                </a>
+            </li>
+        </ul>
+        </div>
+    </div>
+    <div class="dis30"></div>
+    </div>
+</nav><!-- Footer -->
+    <div class="xm_app_footer hidden-xs hidden-sm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="xm_app_footer__container">
+                        <img class="xm_app_footer__icon img-responsive" src="https://cloud.xm-cdn.com/static/xm/pages/xmapp/footer-mobile-app-comp.webp?v=1ca2ca1317f35907eb866b950c3e7ee3" alt="XM App Footer" width="187">
+                        <div class="xm_app_footer__text-icon">
+                            <div class="xm_app_footer__text">
+                                <h2>Lakukan Trading Anda Dimana Saja</h2>
+                                <p>Dapatkan Akses Instan ke Pasar Global dengan <strong>Aplikasi MT4 & MT5 XM</strong>.</p>
+                            </div>
+                            <div class="iconWrapper--light text-center">
+                                <div class="iconWrapper_container">
+            <img class="appIcons appstore-img img-responsive" content="XMapp-AppStore" content-type="id" placement="bottom-end" placement-rtl="bottom-start"src="https://cloud.xm-cdn.com/static/xm/pages/xmapp/xmapp_appstore_dark.svg" alt="XMApp App Store">
+                    <img class="appIcons android-img img-responsive" content="XMapp-PlayStore" content-type="id" placement="bottom-start" placement-rtl="bottom-end"src="https://cloud.xm-cdn.com/static/xm/pages/xmapp/android-badge-white.svg?v=59c8cf84b682b868c98748f724b883d9" alt="XMApp Android">
+            </div>
+<div hidden>
+    <div>
+        <div class="xm_app_barcode_container" id="XMapp-AppStore">
+            <div>
+                <img width="160" data-logo="https://cloud.xm-cdn.com/static/xm/pages/xmapp/apple-logo-square.svg?v=6c3e01bbe2dd20d21c26ffe17b9b57eb" data-link="https://xm.onelink.me/CYt8/c7bfb246?is_retargeting=true&affId=115458&affIdTs=1709555247&clickId=2740fa42-42a3-4dfd-a651-54f3c68e3cff&clickIdTs=1709555247&gId=2094&gIdTs=1709987470&refererUrl=https://www.xmindonesiatrade.com/id/id/&af_dp=xm://register?type=real" class="qrcode center-block" alt="">
+            </div>
+            <div class="xm_app_barcode_text">
+                <p class="no_margin">Scan untuk Mengunduh <strong>Aplikasi XM</strong> di App Store</p>
+                <a href="https://www.xmindonesiatrade.com/id/xm-app">Baca Lebih Lanjut</a>
+            </div>
+        </div>
+        <div class="xm_app_barcode_container" id="XMapp-PlayStore">
+            <div>
+                <img width="160" data-logo="https://cloud.xm-cdn.com/static/xm/pages/xmapp/android-icon.svg?v=e3eafa19936d7826255d47e94da4fb2a" data-link="https://xm.onelink.me/CYt8/e9e13f57?is_retargeting=true&affId=115458&affIdTs=1709555247&clickId=2740fa42-42a3-4dfd-a651-54f3c68e3cff&clickIdTs=1709555247&gId=2094&gIdTs=1709987470&refererUrl=https://www.xmindonesiatrade.com/id/id/&af_dp=xm://register?type=real" class="qrcode center-block" alt="">
+            </div>
+            <div class="xm_app_barcode_text">
+                <p class="no_margin">Pindai untuk mengunduh aplikasi Android kami</p>
+                <a href="https://www.xmindonesiatrade.com/id/apk-app-download">Baca Lebih Lanjut</a>
+            </div>
+        </div>
+    </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="container footer-partners">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="footer-partners__wrapper hidden-xs hidden-sm">
+                
+    <div class="footer-partners__logos">
+        <div class="footer-partners__logo-item">
+            <img src="https://cloud.xm-cdn.com/static/xm/common/logos/metaquotes.webp" width="136" height="26" alt="metaquotes">
+        </div>
+
+        <div class="footer-partners__logo-item">
+            <img src="https://cloud.xm-cdn.com/static/xm/common/logos/verisign.webp" width="131" height="38" alt="verisign">
+        </div>
+
+        <div class="footer-partners__logo-item">
+            <img src="https://cloud.xm-cdn.com/static/xm/common/logos/unicef-cfc.webp" width="110" height="40" alt="unicef">
+        </div>
+
+        
+                <div class="footer-partners__logo-item">
+            <img src="https://cloud.xm-cdn.com/static/xm/common/logos/iip-platinum.webp" width="225" height="39" alt="investors">
+        </div>
+        
+                <div class="footer-partners__logo-item">
+            <img src="https://cloud.xm-cdn.com/static/xm/pages/careers/gptw-cy-2023.webp" height="39" alt="Great Place to Work">
+            <img src="https://cloud.xm-cdn.com/static/xm/pages/careers/gptw-gr-2023.webp" height="39" alt="Great Place to Work">
+        </div>
+        
+    </div>
+
+
+    <div class="footer-partners__social">
+        <div class="social-icons__svg ID">
+                                                    <span>Follow kami:</span>
+                                        <a class="facebook__svg"  href="https://www.xmindonesiatrade.com/goto/facebook" rel="nofollow noopener noreferrer" target="_blank" >
+                        <img src="https://cloud.xm-cdn.com/static/xm/common/social/facebook-f.svg" alt="Facebook Icon">
+                    </a>
+                                        <a class="twitter__svg" href="https://www.xmindonesiatrade.com/goto/twitter" rel="nofollow noopener noreferrer" target="_blank" >
+                        <img src="https://cloud.xm-cdn.com/static/xm/common/social/x-twitter.svg" alt="Twitter Icon">
+                    </a>
+                                        <a class="youtube__svg" href="https://www.xmindonesiatrade.com/goto/youtube" rel="nofollow noopener noreferrer" target="_blank" >
+                        <img src="https://cloud.xm-cdn.com/static/xm/common/social/youtube.svg" alt="Youtube Icon">
+                    </a>
+
+                    
+                    <a class="instagram__svg" href="https://www.xmindonesiatrade.com/goto/instagram" rel="nofollow noopener noreferrer" target="_blank" >
+                        <img src="https://cloud.xm-cdn.com/static/xm/common/social/instagram.svg" alt="Instagram Icon">
+                    </a>
+
+                    <a class="linkedin__svg" href="https://www.xmindonesiatrade.com/goto/linkedin" rel="nofollow noopener noreferrer" target="_blank" >
+                        <img src="https://cloud.xm-cdn.com/static/xm/common/social/linkedin-in.svg" alt="Linkedin Icon">
+                    </a>
+                                
+                
+                
+                
+                                                    <a class="tiktok__svg" href= "https://www.xmindonesiatrade.com/goto/tiktok" rel="nofollow noopener noreferrer" target="_blank" >
+                        <img src="https://cloud.xm-cdn.com/static/xm/common/social/tiktok.svg" alt="Tiktok Icon">
+                    </a>
+                       
+                                    
+                                                                        <a class="telegram__svg" href="https://www.xmindonesiatrade.com/goto/telegram" rel="nofollow noopener noreferrer" target="_blank" >
+                                <img src="https://cloud.xm-cdn.com/static/xm/common/social/telegram.svg" alt="Telegram Icon">
+                            </a>
+                                                                
+                                                                </div>
+    </div>
+  
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-sm-12 col-md-9">
+                    <div class="dis20"></div>
+                    <p><span class="case-breaker"> </span> <a href="https://www.xmindonesiatrade.com/id/privacy-policy">Kebijakan Privasi</a> | <a href="https://www.xmindonesiatrade.com/id/cookie-policy">Kebijakan Cookie</a> | <a href="https://www.xmindonesiatrade.com/id/vulnerability-disclosure-policy">Kebijakan Kerentanan</a> | <a href="https://cloud.xm-cdn.com/static/pdf/System-PDFs/XMGlobal-Client-Agreement-Terms-and-Conditions-of-Business.pdf?v=22647d4005144658126c7c14d0cc76f3" target="_blank">Syarat dan Ketentuan</a></p>
+                </div>
+                <div class="hidden-xs hidden-sm">
+                    <div class="col-sm-3 col-md-3">
+    <img src="https://cloud.xm-cdn.com/static/xm/common/footer/tp-logo-hp-footer.webp" alt="trading-point" class="pull-right" width="182" height="60">
+</div>                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="hidden-xs hidden-sm">
+
+    
+    <div class="row">
+        <div class="col-md-12 top20 bottom20">
+                                <p><strong>Hukum:</strong> Situs web ini dioperasikan oleh XM Global Limited dengan alamat terdaftar di Suite 101, 63 Eve Street, Kota Belize, Belize.</p>
+                                    <p>XM Global Limited terdaftar di Komisi Jasa Keuangan (FSC) berdasarkan Undang-Undang Industri Sekuritas 2021 (nomor lisensi 000261/397) dan Trading Point of Financial Instruments Limited yang diotorisasi dan diregulasi oleh Komisi Sekuritas dan Bursa Siprus (CySEC) (nomor lisensi 120/10) merupakan anggota dari Trading Point Group.</p>
+                            <p id="risk-warning">
+                <strong>Peringatan Risiko:</strong> Layanan kami melibatkan risiko signifikan dan dapat menyebabkan hilangnya seluruh modal yang Anda investasikan.Silakan baca <a href="https://cloud.xm-cdn.com/static/pdf/System-PDFs/XMGlobal-Risk-Disclosures-for-Financial-Instruments.pdf?v=6294d0191b6f1461fc70859d40df1a71" target="_blank">Pengungkapan Penuh kami</a>.            </p>
+
+            
+            <p><strong>Wilayah Terbatas:</strong> XM Global Limited tidak menyediakan layanan untuk warga negara di beberapa negara tertentu, seperti Amerika Serikat, Kanada, Israel dan Iran.</p>
+             
+                <p>XM tidak mengarahkan situs web dan layanannya kepada individu yang berada di negara dimana penggunaan situs web dan layanannya dilarang oleh hukum atau regulasi setempat. Ketika mengakses situs web ini dari negara dimana penggunaannya mungkin dilarang atau diperbolehkan, pengguna bertanggung jawab untuk memastikan bahwa setiap penggunaan situs web atau layanan mematuhi hukum atau regulasi setempat. XM tidak menegaskan bahwa informasi di situs web sesuai untuk semua yurisdiksi.</p>
+                        
+                    </div>
+    </div>
+</div>
+			</footer>
+        </div>
+    </div>
+    
+    <div class="modal fade cookie-modal" id="cookieModal" tabindex="-1" role="dialog" aria-labelledby="cookieModal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="cookie-modal__defaultBlock">
+                <div class="modal-header">
+                    <div class="dis35"></div>
+                                            <img width="114" src="https://cloud.xm-cdn.com/static/xm/common/logos/XM_logo_black_2021.svg" alt="xm logo">
+                                         <div class="dis20"></div>
+                    <h4>Kami menghargai privasi Anda</h4>
+                    <div class="dis25"></div>
+                </div>
+                <div class="modal-body">
+                    Kami menggunakan cookie untuk memastikan pengalaman penjelajahan terbaik. Beberapa diperlukan untuk fitur penting seperti sesi login, sementara yang lain membantu kami menyediakan konten dan pemasaran yang lebih disesuaikan dengan kebutuhan Anda. Menerima semua cookie memungkinkan kami untuk meningkatkan pengalaman Anda lebih jauh. Mohon diperhatikan bahwa beberapa di antaranya mungkin cookie pihak ketiga. Anda dapat mengubah preferensi cookie Anda dengan mengklik tombol di bawah ini.                    Untuk informasi selanjutnya, silakan lihat <a href="https://www.xmindonesiatrade.com/id/cookie-policy">Kebijakan Cookie</a> kami.                </div>
+                <div class="modal-footer">
+                    <div class="dis30"></div>
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <button id="js-changeModalSettings" class="btn btn-block btn-gray-o btn-solid gtm-openCookieSettings">MODIFIKASI PREFERENSI</button>
+                        </div>
+                        <div class="dis10 visible-xs"></div>
+                        <div class="col-sm-5">
+                            <button class="btn btn-block btn-red btn-solid js-acceptDefaultCookie gtm-acceptDefaultCookieFirstVisit" data-dismiss="modal" aria-label="Close">TERIMA SEMUA</button>
+                        </div>
+                    </div>
+                    <div class="dis40"></div>
+                </div>
+            </div>
+            <div class="cookie-modal__settingBlock" style="display: none;">
+                <div class="modal-header">
+                    <i class="xmFont fa-kit fa-xm-check-shield red xmf-sm"></i>
+                    <h4>Pengaturan cookies Anda</h4>
+                </div>
+                <div class="modal-body">
+                        <div>
+                          <!-- Nav tabs -->
+                            <ul class="cookie-modalTabs" role="tablist">
+                                                                    <li role="presentation" class="active"><a href="#whatAreCookies"
+                                                                              aria-controls="whatAreCookies" role="tab"
+                                                                              data-toggle="tab">Apakah itu Cookie ?</a>
+                                    </li>
+                                    <li role="presentation"><a href="#whyCookies" aria-controls="whyCookies" role="tab"
+                                                               data-toggle="tab">Apa gunanya cookies ?</a>
+                                    </li>
+                                    <li role="presentation"><a href="#changeSettings" class="gtm-showCookieSettingsTab"
+                                                               aria-controls="changeSettings" role="tab"
+                                                               data-toggle="tab">Atur Perubahan</a>
+                                    </li>
+                                                            </ul>
+
+                          <!-- Tab panes -->
+                          <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="whatAreCookies">
+                                <div class="dis25"></div>
+                                <p><strong>Apakah itu Cookie ?</strong></p>
+                                <p>Cookie adalah berkas data kecil. Ketika Anda mengunjungi situs web, situs web ini mengirimkan cookie ke komputer Anda. Komputer Anda menyimpannya dalam berkas yang terletak di dalam browser web Anda.</p>
+
+                                <p>Cookie tidak mentransfer virus atau malware ke komputer Anda. Karena data dalam cookie tidak berubah ketika ia bolak-balik, juga tidak memiliki cara untuk memengaruhi cara komputer Anda berjalan, namun, mereka bertindak seperti log (yaitu merekam aktivitas pengguna dan mengingat informasi lengkap) dan mereka diperbarui setiap kali Anda mengunjungi situs web.</p>
+
+                                <p>Kami akan mendapat informasi tentang Anda dengan mengakses cookies yang dikirimkan oleh situs kami. Beberap tipe cookies menulusuri beragam aktifitas. Sebagai contoh, session cookies digunakan ketika seseorang secara aktif menjelajah suatu situs. Seketika Anda meninggalkan situs, session cookie akan hilang.</p>
+
+                                <div class="dis15"></div>
+                                <div class="row text-center">
+                                    <div class="col-md-6">
+                                        <button class="btn btn-red btn-solid btn-block js-acceptDefaultCookie gtm-acceptDefaultCookiesCloseModal" data-dismiss="modal" aria-label="Close">AKTIFKAN SEMUA COOKIES DAN TUTUP</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="whyCookies">
+                                <div class="dis25"></div>
+                                <p><strong>Apa gunanya cookies ?</strong></p>
+                                <p>Kami menggunakan cookie fungsional untuk menganalisis bagaimana pengunjung menggunakan situs web kami, serta melacak dan meningkatkan kinerja dan fungsi situs web kami. Ini memungkinkan kami untuk memberikan pengalaman pelanggan berkualitas tinggi yang dengan cepat mengidentifikasi dan memperbaiki masalah apa pun yang mungkin timbul. Misalnya, kami mungkin menggunakan cookie untuk melacak halaman situs web mana yang paling populer dan metode penautan mana di antara halaman situs web yang paling efektif. Ini juga membantu kami melacak, apakah Anda dirujuk ke kami oleh situs web lain dan meningkatkan kampanye iklan kami di masa mendatang.</p>
+
+                                <p>Penggunaan lain dari cookie adalah untuk menyimpan sesi login Anda, yang berarti bahwa ketika Anda masuk ke Login Anggota untuk menyetor dana, "cookie sesi" diatur sedemikian, sehingga situs web dapat mengingat bahwa Anda sudah masuk. Jika situs web tidak mengatur cookie ini, Anda akan diminta untuk login dengan kata sandi di setiap halaman baru, saat Anda melakukan proses pendanaan.</p>
+
+                                <p>Selain itu, cookie fungsional, misalnya, digunakan untuk memungkinkan kami mengingat preferensi Anda dan mengidentifikasi Anda sebagai pengguna, memastikan informasi Anda aman untuk beroperasi lebih andal dan efisien. Misalnya, cookie menghemat pengetikan nama pengguna Anda setiap kali Anda mengakses platform trading kami, juga mengingat preferensi Anda, seperti bahasa apa yang ingin Anda lihat ketika Anda masuk.</p>
+
+                                <p><strong>Berikut adalah ikhtisar dari beberapa fungsi yang diberikan cookie kami:</strong></p>
+                                <ul class="checks top15">
+                                    <li>Memverifikasi identitas Anda dan mendeteksi negara Anda saat ini</li>
+                                    <li>Memeriksa tipe browser dan piranti Anda</li>
+                                    <li>Menelusuri dari situs mana pengguna berasal</li>
+                                    <li>Memungkinkan pihak ketiga untuk merubah konten</li>
+                                </ul>
+
+                                <p>Situs web ini menggunakan Google Analytics, layanan analitik web yang disediakan oleh Google, Inc. ("Google"). Google Analytics menggunakan cookie analitis yang ditempatkan di komputer Anda, untuk membantu situs web menganalisis penggunaan situs web oleh pengguna. Informasi yang dihasilkan oleh cookie tentang penggunaan situs web Anda (termasuk alamat IP Anda) dapat dikirimkan dan disimpan oleh Google di server mereka. Google dapat menggunakan informasi ini untuk mengevaluasi penggunaan situs web Anda, untuk menyusun laporan tentang aktivitas situs web dan untuk menyediakan layanan lain yang terkait dengan aktivitas situs web dan penggunaan internet. Google juga dapat mentransfer informasi ini kepada pihak ketiga, jika diharuskan untuk melakukannya oleh hukum, atau di mana pihak ketiga tersebut memproses informasi atas nama Google. Google tidak akan mengaitkan alamat IP Anda dengan data lain yang dimiliki. Dengan menggunakan situs web ini, Anda memberikan persetujuan Anda kepada Google untuk memproses data tentang Anda dengan cara dan untuk tujuan yang ditetapkan di atas.</p>
+
+                                <div class="dis15"></div>
+                                <div class="row text-center">
+                                    <div class="col-md-6">
+                                        <button class="btn btn-red btn-solid btn-block js-acceptDefaultCookie gtm-acceptDefaultCookiesCloseModal" data-dismiss="modal" aria-label="Close">AKTIFKAN SEMUA COOKIES DAN TUTUP</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="changeSettings">
+                                <div class="dis25"></div>
+                                <p><strong>Atur Perubahan</strong></p>
+                                <p>Silahkan pilih tipe cookies yang anda ingin simpan dalam perangkat anda.</p>
+                                <div class="dis5"></div>
+                                <form class="js-cookieCheckList" action="">
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <input id="functionalCookies" name="functionalCookies" data-cookies-parts="functional" type="checkbox" value="1" disabled checked>
+                                            <label for="functionalCookies"> <strong>Cookies Fungsional</strong><br>Cookie ini sangat penting untuk situs web kami. Tanpa cookie, situs web kami tidak akan berfungsi dengan baik. Ia disimpan sementara sebagai informasi login dan akan kedaluwarsa setelah browser ditutup.</label>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <input id="analyticalCookies" name="analyticalCookies" data-cookies-parts="analytical" type="checkbox" value="1">
+                                            <label for="analyticalCookies"> <strong>Cookies Analitis</strong><br>Informasi yang disediakan oleh cookie analitis memungkinkan kami untuk menganalisis pola perilaku pengunjung, dan kami menggunakan informasi tersebut untuk meningkatkan keseluruhan pengalaman atau mengidentifikasi area situs web yang mungkin memerlukan pemeliharaan. Informasinya anonim (yaitu tidak dapat digunakan untuk mengidentifikasi Anda dan tidak mengandung informasi pribadi seperti nama dan alamat email Anda) dan hanya digunakan untuk tujuan statistik. Cookie perilaku mirip dengan cookie analitis, dan ingat bahwa Anda telah mengunjungi situs web dan menggunakan informasi untuk memberi Anda konten yang disesuaikan dengan minat Anda.</label>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <input id="promotionalCookies" name="promotionalCookies" data-cookies-parts="promotional" type="checkbox" value="1">
+                                            <label for="promotionalCookies"> <strong>Cookies Promo</strong><br>Cookie ini digunakan untuk melacak pengunjung di seluruh situs web. Tujuannya adalah untuk menampilkan iklan yang relevan dan menarik bagi pengguna individu, dan karenanya lebih berharga untuk penerbit dan pengiklan pihak ketiga.</label>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="form-group">
+                                        <div class="checkbox">
+                                            <input id="preferencesCookies" name="preferencesCookies" data-cookies-parts="preferences" type="checkbox" value="1">
+                                            <label for="preferencesCookies"> <strong>Cookies Preferensi</strong><br>Cookie preferensi mengaktifkan situs web untuk mengingat informasi yang mengubah cara perilaku atau penampilan situs web, seperti bahasa pilihan Anda atau wilayah tempat Anda berada.</label>
+                                        </div>
+                                    </div>
+                                    <div class="dis15"></div>
+                                    <div class="row text-center">
+                                        <div class="col-md-6">
+                                            <button class="btn btn-red btn-solid btn-block js-acceptDefaultCookie gtm-acceptDefaultCookiesCloseModal" data-dismiss="modal" aria-label="Close">AKTIFKAN SEMUA COOKIES DAN TUTUP</button>
+                                        </div>
+                                        <div class="dis10 visible-xs visible-sm"></div>
+                                        <div class="col-md-6">
+                                            <button class="btn btn-default btn-solid btn-block js-saveCookie gtm-saveCookiesCloseModal" data-dismiss="modal" aria-label="Close">SIMPAN PENGATURAN DAN TUTUP</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                          </div>
+                        </div>
+                    <div class="dis30"></div>
+                </div>
+                                    <div class="modal-footer">
+                        <img class="pull-right" src="https://cloud.xm-cdn.com/assets/img/common/logo/xm-mt4.svg" alt="xm logo">
+                    </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Shows the cookie bar IF not all cookies are enabled -->
+<div class="clearfix"></div>
+<div class=" " id="js-cookieBarHeight"></div>
+<div id="cookies-block" class=" ">
+    <div class="container">
+        <div class="wrap">
+            <div class="text-wrap">
+                <p class="gtm-openCookieSettings">Kami menggunakan cookies untuk memberikan Anda pengalaman terbaik di website kami. Baca lebih lanjut atau ubah <a class="inline-block js-showModalCookieSettings" href="#">pengaturan cookie</a> Anda.</p>
+                <div class="dis10 visible-xs"></div>
+            </div>
+            <div class="btn-wrap">
+                <button id="js-cookieBarCloseButton" class="btn btn-red btn-solid btn-block js-acceptDefaultCookie gtm-acceptDefaultCookieFromFooterBar">TERIMA SEMUA COOKIES</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+<div class="clearfix"></div>
+<div class="hidden-xs hidden-sm" id="js-riskMessageHeight"></div>
+<div id="risk-block" class="" style="">
+    <div class="wrap">
+        <button id="js-riskCloseButton">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </button>
+        <div class="text-wrap">
+                            <p><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                    <strong>Peringatan Resiko:</strong> Modal Anda beresiko. Produk dengan leverage mungkin tidak cocok bagi semua orang. Silahkan pertimbangkan <a href="https://cloud.xm-cdn.com/static/pdf/System-PDFs/XMGlobal-Risk-Disclosures-for-Financial-Instruments.pdf?v=6294d0191b6f1461fc70859d40df1a71" class="link" target="_blank">Pengungkapan Resiko</a> kami.                </p>
+                    </div>
+    </div>
+
+</div>
+
+    <style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='responsive-lightbox-tosrus-css' href='https://www.xmindonesiatrade.com/id/wp-content/plugins/responsive-lightbox/assets/tosrus/jquery.tosrus.min.css?ver=2.3.2' type='text/css' media='all' />
+
+<noscript id="deferred-styles">
+    
+<link rel="stylesheet" href="https://cloud.xm-cdn.com/assets/css/new_structure/libraries/popper_tippy.min.css?ver=cee0883c3737303f4995fcad52e4637a">
+<link rel="stylesheet" href="https://cloud.xm-cdn.com/assets/css/minified/sources/textblocks.css?ver=cd5e83774524eba14fd94e7b1d17bb38">
+<link rel="stylesheet" href="https://cloud.xm-cdn.com/assets/css/minified/sources/tabs.css?ver=e1d5c71e4b27d59b5dc7ea8c612d4089">
+<link rel="stylesheet" href="https://cloud.xm-cdn.com/assets/css/minified/sources/video.css?ver=0b3a1c6dccb3e462d53d43c2bfa9c5a5">
+<link rel="stylesheet" href="https://cloud.xm-cdn.com/assets/css/minified/sources/footer.css?ver=6542f76b0129a2479c8876d5aee8b035">
+<link rel="stylesheet" href="https://cloud.xm-cdn.com/assets/css/minified/sources/forms.css?ver=a45c33fb51b5fecd6f26fa61f04f4a6c">
+<link rel="stylesheet" href="https://cloud.xm-cdn.com/assets/css/minified/sources/alerts.css?ver=8832ff47e762b5d539dcc0f1e262a7b3">
+<link rel="stylesheet" href="https://cloud.xm-cdn.com/assets/css/minified/sources/modals.css?ver=dac22b0034f1a978f61d0b5e028e5a0f">
+<link rel="stylesheet" href="https://cloud.xm-cdn.com/assets/css/minified/sources/bubble_widget.css?ver=b0719441249b2b617b448175d895561c"></noscript>
+
+<script>
+    var loadDeferredStyles = function() {
+        var b = document.getElementById("deferred-styles");
+        var a = document.createElement("div");
+        a.innerHTML = b.textContent;
+        document.body.appendChild(a);
+        b.parentElement.removeChild(b)
+    };
+    var raf = window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || function(a) {
+            window.setTimeout(a, 1000 / 60)
+        };
+    if (raf) {
+        raf(function() {
+            window.setTimeout(loadDeferredStyles, 0)
+        })
+    } else {
+        window.addEventListener("load", loadDeferredStyles)
+    }
+</script>
+
+<!--[if lte IE 10]>
+
+<script defer="defer" src="https://cloud.xm-cdn.com/assets/js/minified/match_media.js?ver=71472cf8d7a1c736aa45542aff31af50"></script><![endif]-->
+<!--[if lt IE 9]>
+
+<script defer="defer" src="https://cloud.xm-cdn.com/assets/js/minified/shiv_respond.js?ver=502dbe8cd6c1c20b194864044db52711"></script><![endif]-->
+
+                <script>
+                    /*! jQuery v1.11.1 | (c) 2005, 2014 jQuery Foundation, Inc. | jquery.org/license */
+!function(a,b){"object"==typeof module&&"object"==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error("jQuery requires a window with a document");return b(a)}:b(a)}("undefined"!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l="1.11.1",m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:"",length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0>a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0>a?b:0);return this.pushStack(c>=0&&b>c?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for("boolean"==typeof g&&(j=g,g=arguments[h]||{},h++),"object"==typeof g||m.isFunction(g)||(g={}),h===i&&(g=this,h--);i>h;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&&(j&&c&&(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&&m.isArray(a)?a:[]):f=a&&m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&&(g[d]=c));return g},m.extend({expando:"jQuery"+(l+Math.random()).replace(/\D/g,""),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return"function"===m.type(a)},isArray:Array.isArray||function(a){return"array"===m.type(a)},isWindow:function(a){return null!=a&&a==a.window},isNumeric:function(a){return!m.isArray(a)&&a-parseFloat(a)>=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||"object"!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&&!j.call(a,"constructor")&&!j.call(a.constructor.prototype,"isPrototypeOf"))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.call(a,b);for(b in a);return void 0===b||j.call(a,b)},type:function(a){return null==a?a+"":"object"==typeof a||"function"==typeof a?h[i.call(a)]||"object":typeof a},globalEval:function(b){b&&m.trim(b)&&(a.execScript||function(b){a.eval.call(a,b)})(b)},camelCase:function(a){return a.replace(o,"ms-").replace(p,q)},nodeName:function(a,b){return a.nodeName&&a.nodeName.toLowerCase()===b.toLowerCase()},each:function(a,b,c){var d,e=0,f=a.length,g=r(a);if(c){if(g){for(;f>e;e++)if(d=b.apply(a[e],c),d===!1)break}else for(e in a)if(d=b.apply(a[e],c),d===!1)break}else if(g){for(;f>e;e++)if(d=b.call(a[e],e,a[e]),d===!1)break}else for(e in a)if(d=b.call(a[e],e,a[e]),d===!1)break;return a},trim:function(a){return null==a?"":(a+"").replace(n,"")},makeArray:function(a,b){var c=b||[];return null!=a&&(r(Object(a))?m.merge(c,"string"==typeof a?[a]:a):f.call(c,a)),c},inArray:function(a,b,c){var d;if(b){if(g)return g.call(b,a,c);for(d=b.length,c=c?0>c?Math.max(0,d+c):c:0;d>c;c++)if(c in b&&b[c]===a)return c}return-1},merge:function(a,b){var c=+b.length,d=0,e=a.length;while(c>d)a[e++]=b[d++];if(c!==c)while(void 0!==b[d])a[e++]=b[d++];return a.length=e,a},grep:function(a,b,c){for(var d,e=[],f=0,g=a.length,h=!c;g>f;f++)d=!b(a[f],f),d!==h&&e.push(a[f]);return e},map:function(a,b,c){var d,f=0,g=a.length,h=r(a),i=[];if(h)for(;g>f;f++)d=b(a[f],f,c),null!=d&&i.push(d);else for(f in a)d=b(a[f],f,c),null!=d&&i.push(d);return e.apply([],i)},guid:1,proxy:function(a,b){var c,e,f;return"string"==typeof b&&(f=a[b],b=a,a=f),m.isFunction(a)?(c=d.call(arguments,2),e=function(){return a.apply(b||this,c.concat(d.call(arguments)))},e.guid=a.guid=a.guid||m.guid++,e):void 0},now:function(){return+new Date},support:k}),m.each("Boolean Number String Function Array Date RegExp Object Error".split(" "),function(a,b){h["[object "+b+"]"]=b.toLowerCase()});function r(a){var b=a.length,c=m.type(a);return"function"===c||m.isWindow(a)?!1:1===a.nodeType&&b?!0:"array"===c||0===b||"number"==typeof b&&b>0&&b-1 in a}var s=function(a){var b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u="sizzle"+-new Date,v=a.document,w=0,x=0,y=gb(),z=gb(),A=gb(),B=function(a,b){return a===b&&(l=!0),0},C="undefined",D=1<<31,E={}.hasOwnProperty,F=[],G=F.pop,H=F.push,I=F.push,J=F.slice,K=F.indexOf||function(a){for(var b=0,c=this.length;c>b;b++)if(this[b]===a)return b;return-1},L="checked|selected|async|autofocus|autoplay|controls|defer|disabled|hidden|ismap|loop|multiple|open|readonly|required|scoped",M="[\\x20\\t\\r\\n\\f]",N="(?:\\\\.|[\\w-]|[^\\x00-\\xa0])+",O=N.replace("w","w#"),P="\\["+M+"*("+N+")(?:"+M+"*([*^$|!~]?=)"+M+"*(?:'((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\"|("+O+"))|)"+M+"*\\]",Q=":("+N+")(?:\\((('((?:\\\\.|[^\\\\'])*)'|\"((?:\\\\.|[^\\\\\"])*)\")|((?:\\\\.|[^\\\\()[\\]]|"+P+")*)|.*)\\)|)",R=new RegExp("^"+M+"+|((?:^|[^\\\\])(?:\\\\.)*)"+M+"+$","g"),S=new RegExp("^"+M+"*,"+M+"*"),T=new RegExp("^"+M+"*([>+~]|"+M+")"+M+"*"),U=new RegExp("="+M+"*([^\\]'\"]*?)"+M+"*\\]","g"),V=new RegExp(Q),W=new RegExp("^"+O+"$"),X={ID:new RegExp("^#("+N+")"),CLASS:new RegExp("^\\.("+N+")"),TAG:new RegExp("^("+N.replace("w","w*")+")"),ATTR:new RegExp("^"+P),PSEUDO:new RegExp("^"+Q),CHILD:new RegExp("^:(only|first|last|nth|nth-last)-(child|of-type)(?:\\("+M+"*(even|odd|(([+-]|)(\\d*)n|)"+M+"*(?:([+-]|)"+M+"*(\\d+)|))"+M+"*\\)|)","i"),bool:new RegExp("^(?:"+L+")$","i"),needsContext:new RegExp("^"+M+"*[>+~]|:(even|odd|eq|gt|lt|nth|first|last)(?:\\("+M+"*((?:-\\d)?\\d*)"+M+"*\\)|)(?=[^-]|$)","i")},Y=/^(?:input|select|textarea|button)$/i,Z=/^h\d$/i,$=/^[^{]+\{\s*\[native \w/,_=/^(?:#([\w-]+)|(\w+)|\.([\w-]+))$/,ab=/[+~]/,bb=/'|\\/g,cb=new RegExp("\\\\([\\da-f]{1,6}"+M+"?|("+M+")|.)","ig"),db=function(a,b,c){var d="0x"+b-65536;return d!==d||c?b:0>d?String.fromCharCode(d+65536):String.fromCharCode(d>>10|55296,1023&d|56320)};try{I.apply(F=J.call(v.childNodes),v.childNodes),F[v.childNodes.length].nodeType}catch(eb){I={apply:F.length?function(a,b){H.apply(a,J.call(b))}:function(a,b){var c=a.length,d=0;while(a[c++]=b[d++]);a.length=c-1}}}function fb(a,b,d,e){var f,h,j,k,l,o,r,s,w,x;if((b?b.ownerDocument||b:v)!==n&&m(b),b=b||n,d=d||[],!a||"string"!=typeof a)return d;if(1!==(k=b.nodeType)&&9!==k)return[];if(p&&!e){if(f=_.exec(a))if(j=f[1]){if(9===k){if(h=b.getElementById(j),!h||!h.parentNode)return d;if(h.id===j)return d.push(h),d}else if(b.ownerDocument&&(h=b.ownerDocument.getElementById(j))&&t(b,h)&&h.id===j)return d.push(h),d}else{if(f[2])return I.apply(d,b.getElementsByTagName(a)),d;if((j=f[3])&&c.getElementsByClassName&&b.getElementsByClassName)return I.apply(d,b.getElementsByClassName(j)),d}if(c.qsa&&(!q||!q.test(a))){if(s=r=u,w=b,x=9===k&&a,1===k&&"object"!==b.nodeName.toLowerCase()){o=g(a),(r=b.getAttribute("id"))?s=r.replace(bb,"\\$&"):b.setAttribute("id",s),s="[id='"+s+"'] ",l=o.length;while(l--)o[l]=s+qb(o[l]);w=ab.test(a)&&ob(b.parentNode)||b,x=o.join(",")}if(x)try{return I.apply(d,w.querySelectorAll(x)),d}catch(y){}finally{r||b.removeAttribute("id")}}}return i(a.replace(R,"$1"),b,d,e)}function gb(){var a=[];function b(c,e){return a.push(c+" ")>d.cacheLength&&delete b[a.shift()],b[c+" "]=e}return b}function hb(a){return a[u]=!0,a}function ib(a){var b=n.createElement("div");try{return!!a(b)}catch(c){return!1}finally{b.parentNode&&b.parentNode.removeChild(b),b=null}}function jb(a,b){var c=a.split("|"),e=a.length;while(e--)d.attrHandle[c[e]]=b}function kb(a,b){var c=b&&a,d=c&&1===a.nodeType&&1===b.nodeType&&(~b.sourceIndex||D)-(~a.sourceIndex||D);if(d)return d;if(c)while(c=c.nextSibling)if(c===b)return-1;return a?1:-1}function lb(a){return function(b){var c=b.nodeName.toLowerCase();return"input"===c&&b.type===a}}function mb(a){return function(b){var c=b.nodeName.toLowerCase();return("input"===c||"button"===c)&&b.type===a}}function nb(a){return hb(function(b){return b=+b,hb(function(c,d){var e,f=a([],c.length,b),g=f.length;while(g--)c[e=f[g]]&&(c[e]=!(d[e]=c[e]))})})}function ob(a){return a&&typeof a.getElementsByTagName!==C&&a}c=fb.support={},f=fb.isXML=function(a){var b=a&&(a.ownerDocument||a).documentElement;return b?"HTML"!==b.nodeName:!1},m=fb.setDocument=function(a){var b,e=a?a.ownerDocument||a:v,g=e.defaultView;return e!==n&&9===e.nodeType&&e.documentElement?(n=e,o=e.documentElement,p=!f(e),g&&g!==g.top&&(g.addEventListener?g.addEventListener("unload",function(){m()},!1):g.attachEvent&&g.attachEvent("onunload",function(){m()})),c.attributes=ib(function(a){return a.className="i",!a.getAttribute("className")}),c.getElementsByTagName=ib(function(a){return a.appendChild(e.createComment("")),!a.getElementsByTagName("*").length}),c.getElementsByClassName=$.test(e.getElementsByClassName)&&ib(function(a){return a.innerHTML="<div class='a'></div><div class='a i'></div>",a.firstChild.className="i",2===a.getElementsByClassName("i").length}),c.getById=ib(function(a){return o.appendChild(a).id=u,!e.getElementsByName||!e.getElementsByName(u).length}),c.getById?(d.find.ID=function(a,b){if(typeof b.getElementById!==C&&p){var c=b.getElementById(a);return c&&c.parentNode?[c]:[]}},d.filter.ID=function(a){var b=a.replace(cb,db);return function(a){return a.getAttribute("id")===b}}):(delete d.find.ID,d.filter.ID=function(a){var b=a.replace(cb,db);return function(a){var c=typeof a.getAttributeNode!==C&&a.getAttributeNode("id");return c&&c.value===b}}),d.find.TAG=c.getElementsByTagName?function(a,b){return typeof b.getElementsByTagName!==C?b.getElementsByTagName(a):void 0}:function(a,b){var c,d=[],e=0,f=b.getElementsByTagName(a);if("*"===a){while(c=f[e++])1===c.nodeType&&d.push(c);return d}return f},d.find.CLASS=c.getElementsByClassName&&function(a,b){return typeof b.getElementsByClassName!==C&&p?b.getElementsByClassName(a):void 0},r=[],q=[],(c.qsa=$.test(e.querySelectorAll))&&(ib(function(a){a.innerHTML="<select msallowclip=''><option selected=''></option></select>",a.querySelectorAll("[msallowclip^='']").length&&q.push("[*^$]="+M+"*(?:''|\"\")"),a.querySelectorAll("[selected]").length||q.push("\\["+M+"*(?:value|"+L+")"),a.querySelectorAll(":checked").length||q.push(":checked")}),ib(function(a){var b=e.createElement("input");b.setAttribute("type","hidden"),a.appendChild(b).setAttribute("name","D"),a.querySelectorAll("[name=d]").length&&q.push("name"+M+"*[*^$|!~]?="),a.querySelectorAll(":enabled").length||q.push(":enabled",":disabled"),a.querySelectorAll("*,:x"),q.push(",.*:")})),(c.matchesSelector=$.test(s=o.matches||o.webkitMatchesSelector||o.mozMatchesSelector||o.oMatchesSelector||o.msMatchesSelector))&&ib(function(a){c.disconnectedMatch=s.call(a,"div"),s.call(a,"[s!='']:x"),r.push("!=",Q)}),q=q.length&&new RegExp(q.join("|")),r=r.length&&new RegExp(r.join("|")),b=$.test(o.compareDocumentPosition),t=b||$.test(o.contains)?function(a,b){var c=9===a.nodeType?a.documentElement:a,d=b&&b.parentNode;return a===d||!(!d||1!==d.nodeType||!(c.contains?c.contains(d):a.compareDocumentPosition&&16&a.compareDocumentPosition(d)))}:function(a,b){if(b)while(b=b.parentNode)if(b===a)return!0;return!1},B=b?function(a,b){if(a===b)return l=!0,0;var d=!a.compareDocumentPosition-!b.compareDocumentPosition;return d?d:(d=(a.ownerDocument||a)===(b.ownerDocument||b)?a.compareDocumentPosition(b):1,1&d||!c.sortDetached&&b.compareDocumentPosition(a)===d?a===e||a.ownerDocument===v&&t(v,a)?-1:b===e||b.ownerDocument===v&&t(v,b)?1:k?K.call(k,a)-K.call(k,b):0:4&d?-1:1)}:function(a,b){if(a===b)return l=!0,0;var c,d=0,f=a.parentNode,g=b.parentNode,h=[a],i=[b];if(!f||!g)return a===e?-1:b===e?1:f?-1:g?1:k?K.call(k,a)-K.call(k,b):0;if(f===g)return kb(a,b);c=a;while(c=c.parentNode)h.unshift(c);c=b;while(c=c.parentNode)i.unshift(c);while(h[d]===i[d])d++;return d?kb(h[d],i[d]):h[d]===v?-1:i[d]===v?1:0},e):n},fb.matches=function(a,b){return fb(a,null,null,b)},fb.matchesSelector=function(a,b){if((a.ownerDocument||a)!==n&&m(a),b=b.replace(U,"='$1']"),!(!c.matchesSelector||!p||r&&r.test(b)||q&&q.test(b)))try{var d=s.call(a,b);if(d||c.disconnectedMatch||a.document&&11!==a.document.nodeType)return d}catch(e){}return fb(b,n,null,[a]).length>0},fb.contains=function(a,b){return(a.ownerDocument||a)!==n&&m(a),t(a,b)},fb.attr=function(a,b){(a.ownerDocument||a)!==n&&m(a);var e=d.attrHandle[b.toLowerCase()],f=e&&E.call(d.attrHandle,b.toLowerCase())?e(a,b,!p):void 0;return void 0!==f?f:c.attributes||!p?a.getAttribute(b):(f=a.getAttributeNode(b))&&f.specified?f.value:null},fb.error=function(a){throw new Error("Syntax error, unrecognized expression: "+a)},fb.uniqueSort=function(a){var b,d=[],e=0,f=0;if(l=!c.detectDuplicates,k=!c.sortStable&&a.slice(0),a.sort(B),l){while(b=a[f++])b===a[f]&&(e=d.push(f));while(e--)a.splice(d[e],1)}return k=null,a},e=fb.getText=function(a){var b,c="",d=0,f=a.nodeType;if(f){if(1===f||9===f||11===f){if("string"==typeof a.textContent)return a.textContent;for(a=a.firstChild;a;a=a.nextSibling)c+=e(a)}else if(3===f||4===f)return a.nodeValue}else while(b=a[d++])c+=e(b);return c},d=fb.selectors={cacheLength:50,createPseudo:hb,match:X,attrHandle:{},find:{},relative:{">":{dir:"parentNode",first:!0}," ":{dir:"parentNode"},"+":{dir:"previousSibling",first:!0},"~":{dir:"previousSibling"}},preFilter:{ATTR:function(a){return a[1]=a[1].replace(cb,db),a[3]=(a[3]||a[4]||a[5]||"").replace(cb,db),"~="===a[2]&&(a[3]=" "+a[3]+" "),a.slice(0,4)},CHILD:function(a){return a[1]=a[1].toLowerCase(),"nth"===a[1].slice(0,3)?(a[3]||fb.error(a[0]),a[4]=+(a[4]?a[5]+(a[6]||1):2*("even"===a[3]||"odd"===a[3])),a[5]=+(a[7]+a[8]||"odd"===a[3])):a[3]&&fb.error(a[0]),a},PSEUDO:function(a){var b,c=!a[6]&&a[2];return X.CHILD.test(a[0])?null:(a[3]?a[2]=a[4]||a[5]||"":c&&V.test(c)&&(b=g(c,!0))&&(b=c.indexOf(")",c.length-b)-c.length)&&(a[0]=a[0].slice(0,b),a[2]=c.slice(0,b)),a.slice(0,3))}},filter:{TAG:function(a){var b=a.replace(cb,db).toLowerCase();return"*"===a?function(){return!0}:function(a){return a.nodeName&&a.nodeName.toLowerCase()===b}},CLASS:function(a){var b=y[a+" "];return b||(b=new RegExp("(^|"+M+")"+a+"("+M+"|$)"))&&y(a,function(a){return b.test("string"==typeof a.className&&a.className||typeof a.getAttribute!==C&&a.getAttribute("class")||"")})},ATTR:function(a,b,c){return function(d){var e=fb.attr(d,a);return null==e?"!="===b:b?(e+="","="===b?e===c:"!="===b?e!==c:"^="===b?c&&0===e.indexOf(c):"*="===b?c&&e.indexOf(c)>-1:"$="===b?c&&e.slice(-c.length)===c:"~="===b?(" "+e+" ").indexOf(c)>-1:"|="===b?e===c||e.slice(0,c.length+1)===c+"-":!1):!0}},CHILD:function(a,b,c,d,e){var f="nth"!==a.slice(0,3),g="last"!==a.slice(-4),h="of-type"===b;return 1===d&&0===e?function(a){return!!a.parentNode}:function(b,c,i){var j,k,l,m,n,o,p=f!==g?"nextSibling":"previousSibling",q=b.parentNode,r=h&&b.nodeName.toLowerCase(),s=!i&&!h;if(q){if(f){while(p){l=b;while(l=l[p])if(h?l.nodeName.toLowerCase()===r:1===l.nodeType)return!1;o=p="only"===a&&!o&&"nextSibling"}return!0}if(o=[g?q.firstChild:q.lastChild],g&&s){k=q[u]||(q[u]={}),j=k[a]||[],n=j[0]===w&&j[1],m=j[0]===w&&j[2],l=n&&q.childNodes[n];while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if(1===l.nodeType&&++m&&l===b){k[a]=[w,n,m];break}}else if(s&&(j=(b[u]||(b[u]={}))[a])&&j[0]===w)m=j[1];else while(l=++n&&l&&l[p]||(m=n=0)||o.pop())if((h?l.nodeName.toLowerCase()===r:1===l.nodeType)&&++m&&(s&&((l[u]||(l[u]={}))[a]=[w,m]),l===b))break;return m-=e,m===d||m%d===0&&m/d>=0}}},PSEUDO:function(a,b){var c,e=d.pseudos[a]||d.setFilters[a.toLowerCase()]||fb.error("unsupported pseudo: "+a);return e[u]?e(b):e.length>1?(c=[a,a,"",b],d.setFilters.hasOwnProperty(a.toLowerCase())?hb(function(a,c){var d,f=e(a,b),g=f.length;while(g--)d=K.call(a,f[g]),a[d]=!(c[d]=f[g])}):function(a){return e(a,0,c)}):e}},pseudos:{not:hb(function(a){var b=[],c=[],d=h(a.replace(R,"$1"));return d[u]?hb(function(a,b,c,e){var f,g=d(a,null,e,[]),h=a.length;while(h--)(f=g[h])&&(a[h]=!(b[h]=f))}):function(a,e,f){return b[0]=a,d(b,null,f,c),!c.pop()}}),has:hb(function(a){return function(b){return fb(a,b).length>0}}),contains:hb(function(a){return function(b){return(b.textContent||b.innerText||e(b)).indexOf(a)>-1}}),lang:hb(function(a){return W.test(a||"")||fb.error("unsupported lang: "+a),a=a.replace(cb,db).toLowerCase(),function(b){var c;do if(c=p?b.lang:b.getAttribute("xml:lang")||b.getAttribute("lang"))return c=c.toLowerCase(),c===a||0===c.indexOf(a+"-");while((b=b.parentNode)&&1===b.nodeType);return!1}}),target:function(b){var c=a.location&&a.location.hash;return c&&c.slice(1)===b.id},root:function(a){return a===o},focus:function(a){return a===n.activeElement&&(!n.hasFocus||n.hasFocus())&&!!(a.type||a.href||~a.tabIndex)},enabled:function(a){return a.disabled===!1},disabled:function(a){return a.disabled===!0},checked:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&!!a.checked||"option"===b&&!!a.selected},selected:function(a){return a.parentNode&&a.parentNode.selectedIndex,a.selected===!0},empty:function(a){for(a=a.firstChild;a;a=a.nextSibling)if(a.nodeType<6)return!1;return!0},parent:function(a){return!d.pseudos.empty(a)},header:function(a){return Z.test(a.nodeName)},input:function(a){return Y.test(a.nodeName)},button:function(a){var b=a.nodeName.toLowerCase();return"input"===b&&"button"===a.type||"button"===b},text:function(a){var b;return"input"===a.nodeName.toLowerCase()&&"text"===a.type&&(null==(b=a.getAttribute("type"))||"text"===b.toLowerCase())},first:nb(function(){return[0]}),last:nb(function(a,b){return[b-1]}),eq:nb(function(a,b,c){return[0>c?c+b:c]}),even:nb(function(a,b){for(var c=0;b>c;c+=2)a.push(c);return a}),odd:nb(function(a,b){for(var c=1;b>c;c+=2)a.push(c);return a}),lt:nb(function(a,b,c){for(var d=0>c?c+b:c;--d>=0;)a.push(d);return a}),gt:nb(function(a,b,c){for(var d=0>c?c+b:c;++d<b;)a.push(d);return a})}},d.pseudos.nth=d.pseudos.eq;for(b in{radio:!0,checkbox:!0,file:!0,password:!0,image:!0})d.pseudos[b]=lb(b);for(b in{submit:!0,reset:!0})d.pseudos[b]=mb(b);function pb(){}pb.prototype=d.filters=d.pseudos,d.setFilters=new pb,g=fb.tokenize=function(a,b){var c,e,f,g,h,i,j,k=z[a+" "];if(k)return b?0:k.slice(0);h=a,i=[],j=d.preFilter;while(h){(!c||(e=S.exec(h)))&&(e&&(h=h.slice(e[0].length)||h),i.push(f=[])),c=!1,(e=T.exec(h))&&(c=e.shift(),f.push({value:c,type:e[0].replace(R," ")}),h=h.slice(c.length));for(g in d.filter)!(e=X[g].exec(h))||j[g]&&!(e=j[g](e))||(c=e.shift(),f.push({value:c,type:g,matches:e}),h=h.slice(c.length));if(!c)break}return b?h.length:h?fb.error(a):z(a,i).slice(0)};function qb(a){for(var b=0,c=a.length,d="";c>b;b++)d+=a[b].value;return d}function rb(a,b,c){var d=b.dir,e=c&&"parentNode"===d,f=x++;return b.first?function(b,c,f){while(b=b[d])if(1===b.nodeType||e)return a(b,c,f)}:function(b,c,g){var h,i,j=[w,f];if(g){while(b=b[d])if((1===b.nodeType||e)&&a(b,c,g))return!0}else while(b=b[d])if(1===b.nodeType||e){if(i=b[u]||(b[u]={}),(h=i[d])&&h[0]===w&&h[1]===f)return j[2]=h[2];if(i[d]=j,j[2]=a(b,c,g))return!0}}}function sb(a){return a.length>1?function(b,c,d){var e=a.length;while(e--)if(!a[e](b,c,d))return!1;return!0}:a[0]}function tb(a,b,c){for(var d=0,e=b.length;e>d;d++)fb(a,b[d],c);return c}function ub(a,b,c,d,e){for(var f,g=[],h=0,i=a.length,j=null!=b;i>h;h++)(f=a[h])&&(!c||c(f,d,e))&&(g.push(f),j&&b.push(h));return g}function vb(a,b,c,d,e,f){return d&&!d[u]&&(d=vb(d)),e&&!e[u]&&(e=vb(e,f)),hb(function(f,g,h,i){var j,k,l,m=[],n=[],o=g.length,p=f||tb(b||"*",h.nodeType?[h]:h,[]),q=!a||!f&&b?p:ub(p,m,a,h,i),r=c?e||(f?a:o||d)?[]:g:q;if(c&&c(q,r,h,i),d){j=ub(r,n),d(j,[],h,i),k=j.length;while(k--)(l=j[k])&&(r[n[k]]=!(q[n[k]]=l))}if(f){if(e||a){if(e){j=[],k=r.length;while(k--)(l=r[k])&&j.push(q[k]=l);e(null,r=[],j,i)}k=r.length;while(k--)(l=r[k])&&(j=e?K.call(f,l):m[k])>-1&&(f[j]=!(g[j]=l))}}else r=ub(r===g?r.splice(o,r.length):r),e?e(null,g,r,i):I.apply(g,r)})}function wb(a){for(var b,c,e,f=a.length,g=d.relative[a[0].type],h=g||d.relative[" "],i=g?1:0,k=rb(function(a){return a===b},h,!0),l=rb(function(a){return K.call(b,a)>-1},h,!0),m=[function(a,c,d){return!g&&(d||c!==j)||((b=c).nodeType?k(a,c,d):l(a,c,d))}];f>i;i++)if(c=d.relative[a[i].type])m=[rb(sb(m),c)];else{if(c=d.filter[a[i].type].apply(null,a[i].matches),c[u]){for(e=++i;f>e;e++)if(d.relative[a[e].type])break;return vb(i>1&&sb(m),i>1&&qb(a.slice(0,i-1).concat({value:" "===a[i-2].type?"*":""})).replace(R,"$1"),c,e>i&&wb(a.slice(i,e)),f>e&&wb(a=a.slice(e)),f>e&&qb(a))}m.push(c)}return sb(m)}function xb(a,b){var c=b.length>0,e=a.length>0,f=function(f,g,h,i,k){var l,m,o,p=0,q="0",r=f&&[],s=[],t=j,u=f||e&&d.find.TAG("*",k),v=w+=null==t?1:Math.random()||.1,x=u.length;for(k&&(j=g!==n&&g);q!==x&&null!=(l=u[q]);q++){if(e&&l){m=0;while(o=a[m++])if(o(l,g,h)){i.push(l);break}k&&(w=v)}c&&((l=!o&&l)&&p--,f&&r.push(l))}if(p+=q,c&&q!==p){m=0;while(o=b[m++])o(r,s,g,h);if(f){if(p>0)while(q--)r[q]||s[q]||(s[q]=G.call(i));s=ub(s)}I.apply(i,s),k&&!f&&s.length>0&&p+b.length>1&&fb.uniqueSort(i)}return k&&(w=v,j=t),r};return c?hb(f):f}return h=fb.compile=function(a,b){var c,d=[],e=[],f=A[a+" "];if(!f){b||(b=g(a)),c=b.length;while(c--)f=wb(b[c]),f[u]?d.push(f):e.push(f);f=A(a,xb(e,d)),f.selector=a}return f},i=fb.select=function(a,b,e,f){var i,j,k,l,m,n="function"==typeof a&&a,o=!f&&g(a=n.selector||a);if(e=e||[],1===o.length){if(j=o[0]=o[0].slice(0),j.length>2&&"ID"===(k=j[0]).type&&c.getById&&9===b.nodeType&&p&&d.relative[j[1].type]){if(b=(d.find.ID(k.matches[0].replace(cb,db),b)||[])[0],!b)return e;n&&(b=b.parentNode),a=a.slice(j.shift().value.length)}i=X.needsContext.test(a)?0:j.length;while(i--){if(k=j[i],d.relative[l=k.type])break;if((m=d.find[l])&&(f=m(k.matches[0].replace(cb,db),ab.test(j[0].type)&&ob(b.parentNode)||b))){if(j.splice(i,1),a=f.length&&qb(j),!a)return I.apply(e,f),e;break}}}return(n||h(a,o))(f,b,!p,e,ab.test(a)&&ob(b.parentNode)||b),e},c.sortStable=u.split("").sort(B).join("")===u,c.detectDuplicates=!!l,m(),c.sortDetached=ib(function(a){return 1&a.compareDocumentPosition(n.createElement("div"))}),ib(function(a){return a.innerHTML="<a href='#'></a>","#"===a.firstChild.getAttribute("href")})||jb("type|href|height|width",function(a,b,c){return c?void 0:a.getAttribute(b,"type"===b.toLowerCase()?1:2)}),c.attributes&&ib(function(a){return a.innerHTML="<input/>",a.firstChild.setAttribute("value",""),""===a.firstChild.getAttribute("value")})||jb("value",function(a,b,c){return c||"input"!==a.nodeName.toLowerCase()?void 0:a.defaultValue}),ib(function(a){return null==a.getAttribute("disabled")})||jb(L,function(a,b,c){var d;return c?void 0:a[b]===!0?b.toLowerCase():(d=a.getAttributeNode(b))&&d.specified?d.value:null}),fb}(a);m.find=s,m.expr=s.selectors,m.expr[":"]=m.expr.pseudos,m.unique=s.uniqueSort,m.text=s.getText,m.isXMLDoc=s.isXML,m.contains=s.contains;var t=m.expr.match.needsContext,u=/^<(\w+)\s*\/?>(?:<\/\1>|)$/,v=/^.[^:#\[\.,]*$/;function w(a,b,c){if(m.isFunction(b))return m.grep(a,function(a,d){return!!b.call(a,d,a)!==c});if(b.nodeType)return m.grep(a,function(a){return a===b!==c});if("string"==typeof b){if(v.test(b))return m.filter(b,a,c);b=m.filter(b,a)}return m.grep(a,function(a){return m.inArray(a,b)>=0!==c})}m.filter=function(a,b,c){var d=b[0];return c&&(a=":not("+a+")"),1===b.length&&1===d.nodeType?m.find.matchesSelector(d,a)?[d]:[]:m.find.matches(a,m.grep(b,function(a){return 1===a.nodeType}))},m.fn.extend({find:function(a){var b,c=[],d=this,e=d.length;if("string"!=typeof a)return this.pushStack(m(a).filter(function(){for(b=0;e>b;b++)if(m.contains(d[b],this))return!0}));for(b=0;e>b;b++)m.find(a,d[b],c);return c=this.pushStack(e>1?m.unique(c):c),c.selector=this.selector?this.selector+" "+a:a,c},filter:function(a){return this.pushStack(w(this,a||[],!1))},not:function(a){return this.pushStack(w(this,a||[],!0))},is:function(a){return!!w(this,"string"==typeof a&&t.test(a)?m(a):a||[],!1).length}});var x,y=a.document,z=/^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/,A=m.fn.init=function(a,b){var c,d;if(!a)return this;if("string"==typeof a){if(c="<"===a.charAt(0)&&">"===a.charAt(a.length-1)&&a.length>=3?[null,a,null]:z.exec(a),!c||!c[1]&&b)return!b||b.jquery?(b||x).find(a):this.constructor(b).find(a);if(c[1]){if(b=b instanceof m?b[0]:b,m.merge(this,m.parseHTML(c[1],b&&b.nodeType?b.ownerDocument||b:y,!0)),u.test(c[1])&&m.isPlainObject(b))for(c in b)m.isFunction(this[c])?this[c](b[c]):this.attr(c,b[c]);return this}if(d=y.getElementById(c[2]),d&&d.parentNode){if(d.id!==c[2])return x.find(a);this.length=1,this[0]=d}return this.context=y,this.selector=a,this}return a.nodeType?(this.context=this[0]=a,this.length=1,this):m.isFunction(a)?"undefined"!=typeof x.ready?x.ready(a):a(m):(void 0!==a.selector&&(this.selector=a.selector,this.context=a.context),m.makeArray(a,this))};A.prototype=m.fn,x=m(y);var B=/^(?:parents|prev(?:Until|All))/,C={children:!0,contents:!0,next:!0,prev:!0};m.extend({dir:function(a,b,c){var d=[],e=a[b];while(e&&9!==e.nodeType&&(void 0===c||1!==e.nodeType||!m(e).is(c)))1===e.nodeType&&d.push(e),e=e[b];return d},sibling:function(a,b){for(var c=[];a;a=a.nextSibling)1===a.nodeType&&a!==b&&c.push(a);return c}}),m.fn.extend({has:function(a){var b,c=m(a,this),d=c.length;return this.filter(function(){for(b=0;d>b;b++)if(m.contains(this,c[b]))return!0})},closest:function(a,b){for(var c,d=0,e=this.length,f=[],g=t.test(a)||"string"!=typeof a?m(a,b||this.context):0;e>d;d++)for(c=this[d];c&&c!==b;c=c.parentNode)if(c.nodeType<11&&(g?g.index(c)>-1:1===c.nodeType&&m.find.matchesSelector(c,a))){f.push(c);break}return this.pushStack(f.length>1?m.unique(f):f)},index:function(a){return a?"string"==typeof a?m.inArray(this[0],m(a)):m.inArray(a.jquery?a[0]:a,this):this[0]&&this[0].parentNode?this.first().prevAll().length:-1},add:function(a,b){return this.pushStack(m.unique(m.merge(this.get(),m(a,b))))},addBack:function(a){return this.add(null==a?this.prevObject:this.prevObject.filter(a))}});function D(a,b){do a=a[b];while(a&&1!==a.nodeType);return a}m.each({parent:function(a){var b=a.parentNode;return b&&11!==b.nodeType?b:null},parents:function(a){return m.dir(a,"parentNode")},parentsUntil:function(a,b,c){return m.dir(a,"parentNode",c)},next:function(a){return D(a,"nextSibling")},prev:function(a){return D(a,"previousSibling")},nextAll:function(a){return m.dir(a,"nextSibling")},prevAll:function(a){return m.dir(a,"previousSibling")},nextUntil:function(a,b,c){return m.dir(a,"nextSibling",c)},prevUntil:function(a,b,c){return m.dir(a,"previousSibling",c)},siblings:function(a){return m.sibling((a.parentNode||{}).firstChild,a)},children:function(a){return m.sibling(a.firstChild)},contents:function(a){return m.nodeName(a,"iframe")?a.contentDocument||a.contentWindow.document:m.merge([],a.childNodes)}},function(a,b){m.fn[a]=function(c,d){var e=m.map(this,b,c);return"Until"!==a.slice(-5)&&(d=c),d&&"string"==typeof d&&(e=m.filter(d,e)),this.length>1&&(C[a]||(e=m.unique(e)),B.test(a)&&(e=e.reverse())),this.pushStack(e)}});var E=/\S+/g,F={};function G(a){var b=F[a]={};return m.each(a.match(E)||[],function(a,c){b[c]=!0}),b}m.Callbacks=function(a){a="string"==typeof a?F[a]||G(a):m.extend({},a);var b,c,d,e,f,g,h=[],i=!a.once&&[],j=function(l){for(c=a.memory&&l,d=!0,f=g||0,g=0,e=h.length,b=!0;h&&e>f;f++)if(h[f].apply(l[0],l[1])===!1&&a.stopOnFalse){c=!1;break}b=!1,h&&(i?i.length&&j(i.shift()):c?h=[]:k.disable())},k={add:function(){if(h){var d=h.length;!function f(b){m.each(b,function(b,c){var d=m.type(c);"function"===d?a.unique&&k.has(c)||h.push(c):c&&c.length&&"string"!==d&&f(c)})}(arguments),b?e=h.length:c&&(g=d,j(c))}return this},remove:function(){return h&&m.each(arguments,function(a,c){var d;while((d=m.inArray(c,h,d))>-1)h.splice(d,1),b&&(e>=d&&e--,f>=d&&f--)}),this},has:function(a){return a?m.inArray(a,h)>-1:!(!h||!h.length)},empty:function(){return h=[],e=0,this},disable:function(){return h=i=c=void 0,this},disabled:function(){return!h},lock:function(){return i=void 0,c||k.disable(),this},locked:function(){return!i},fireWith:function(a,c){return!h||d&&!i||(c=c||[],c=[a,c.slice?c.slice():c],b?i.push(c):j(c)),this},fire:function(){return k.fireWith(this,arguments),this},fired:function(){return!!d}};return k},m.extend({Deferred:function(a){var b=[["resolve","done",m.Callbacks("once memory"),"resolved"],["reject","fail",m.Callbacks("once memory"),"rejected"],["notify","progress",m.Callbacks("memory")]],c="pending",d={state:function(){return c},always:function(){return e.done(arguments).fail(arguments),this},then:function(){var a=arguments;return m.Deferred(function(c){m.each(b,function(b,f){var g=m.isFunction(a[b])&&a[b];e[f[1]](function(){var a=g&&g.apply(this,arguments);a&&m.isFunction(a.promise)?a.promise().done(c.resolve).fail(c.reject).progress(c.notify):c[f[0]+"With"](this===d?c.promise():this,g?[a]:arguments)})}),a=null}).promise()},promise:function(a){return null!=a?m.extend(a,d):d}},e={};return d.pipe=d.then,m.each(b,function(a,f){var g=f[2],h=f[3];d[f[1]]=g.add,h&&g.add(function(){c=h},b[1^a][2].disable,b[2][2].lock),e[f[0]]=function(){return e[f[0]+"With"](this===e?d:this,arguments),this},e[f[0]+"With"]=g.fireWith}),d.promise(e),a&&a.call(e,e),e},when:function(a){var b=0,c=d.call(arguments),e=c.length,f=1!==e||a&&m.isFunction(a.promise)?e:0,g=1===f?a:m.Deferred(),h=function(a,b,c){return function(e){b[a]=this,c[a]=arguments.length>1?d.call(arguments):e,c===i?g.notifyWith(b,c):--f||g.resolveWith(b,c)}},i,j,k;if(e>1)for(i=new Array(e),j=new Array(e),k=new Array(e);e>b;b++)c[b]&&m.isFunction(c[b].promise)?c[b].promise().done(h(b,k,c)).fail(g.reject).progress(h(b,j,i)):--f;return f||g.resolveWith(k,c),g.promise()}});var H;m.fn.ready=function(a){return m.ready.promise().done(a),this},m.extend({isReady:!1,readyWait:1,holdReady:function(a){a?m.readyWait++:m.ready(!0)},ready:function(a){if(a===!0?!--m.readyWait:!m.isReady){if(!y.body)return setTimeout(m.ready);m.isReady=!0,a!==!0&&--m.readyWait>0||(H.resolveWith(y,[m]),m.fn.triggerHandler&&(m(y).triggerHandler("ready"),m(y).off("ready")))}}});function I(){y.addEventListener?(y.removeEventListener("DOMContentLoaded",J,!1),a.removeEventListener("load",J,!1)):(y.detachEvent("onreadystatechange",J),a.detachEvent("onload",J))}function J(){(y.addEventListener||"load"===event.type||"complete"===y.readyState)&&(I(),m.ready())}m.ready.promise=function(b){if(!H)if(H=m.Deferred(),"complete"===y.readyState)setTimeout(m.ready);else if(y.addEventListener)y.addEventListener("DOMContentLoaded",J,!1),a.addEventListener("load",J,!1);else{y.attachEvent("onreadystatechange",J),a.attachEvent("onload",J);var c=!1;try{c=null==a.frameElement&&y.documentElement}catch(d){}c&&c.doScroll&&!function e(){if(!m.isReady){try{c.doScroll("left")}catch(a){return setTimeout(e,50)}I(),m.ready()}}()}return H.promise(b)};var K="undefined",L;for(L in m(k))break;k.ownLast="0"!==L,k.inlineBlockNeedsLayout=!1,m(function(){var a,b,c,d;c=y.getElementsByTagName("body")[0],c&&c.style&&(b=y.createElement("div"),d=y.createElement("div"),d.style.cssText="position:absolute;border:0;width:0;height:0;top:0;left:-9999px",c.appendChild(d).appendChild(b),typeof b.style.zoom!==K&&(b.style.cssText="display:inline;margin:0;border:0;padding:1px;width:1px;zoom:1",k.inlineBlockNeedsLayout=a=3===b.offsetWidth,a&&(c.style.zoom=1)),c.removeChild(d))}),function(){var a=y.createElement("div");if(null==k.deleteExpando){k.deleteExpando=!0;try{delete a.test}catch(b){k.deleteExpando=!1}}a=null}(),m.acceptData=function(a){var b=m.noData[(a.nodeName+" ").toLowerCase()],c=+a.nodeType||1;return 1!==c&&9!==c?!1:!b||b!==!0&&a.getAttribute("classid")===b};var M=/^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,N=/([A-Z])/g;function O(a,b,c){if(void 0===c&&1===a.nodeType){var d="data-"+b.replace(N,"-$1").toLowerCase();if(c=a.getAttribute(d),"string"==typeof c){try{c="true"===c?!0:"false"===c?!1:"null"===c?null:+c+""===c?+c:M.test(c)?m.parseJSON(c):c}catch(e){}m.data(a,b,c)}else c=void 0}return c}function P(a){var b;for(b in a)if(("data"!==b||!m.isEmptyObject(a[b]))&&"toJSON"!==b)return!1;return!0}function Q(a,b,d,e){if(m.acceptData(a)){var f,g,h=m.expando,i=a.nodeType,j=i?m.cache:a,k=i?a[h]:a[h]&&h;
+if(k&&j[k]&&(e||j[k].data)||void 0!==d||"string"!=typeof b)return k||(k=i?a[h]=c.pop()||m.guid++:h),j[k]||(j[k]=i?{}:{toJSON:m.noop}),("object"==typeof b||"function"==typeof b)&&(e?j[k]=m.extend(j[k],b):j[k].data=m.extend(j[k].data,b)),g=j[k],e||(g.data||(g.data={}),g=g.data),void 0!==d&&(g[m.camelCase(b)]=d),"string"==typeof b?(f=g[b],null==f&&(f=g[m.camelCase(b)])):f=g,f}}function R(a,b,c){if(m.acceptData(a)){var d,e,f=a.nodeType,g=f?m.cache:a,h=f?a[m.expando]:m.expando;if(g[h]){if(b&&(d=c?g[h]:g[h].data)){m.isArray(b)?b=b.concat(m.map(b,m.camelCase)):b in d?b=[b]:(b=m.camelCase(b),b=b in d?[b]:b.split(" ")),e=b.length;while(e--)delete d[b[e]];if(c?!P(d):!m.isEmptyObject(d))return}(c||(delete g[h].data,P(g[h])))&&(f?m.cleanData([a],!0):k.deleteExpando||g!=g.window?delete g[h]:g[h]=null)}}}m.extend({cache:{},noData:{"applet ":!0,"embed ":!0,"object ":"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"},hasData:function(a){return a=a.nodeType?m.cache[a[m.expando]]:a[m.expando],!!a&&!P(a)},data:function(a,b,c){return Q(a,b,c)},removeData:function(a,b){return R(a,b)},_data:function(a,b,c){return Q(a,b,c,!0)},_removeData:function(a,b){return R(a,b,!0)}}),m.fn.extend({data:function(a,b){var c,d,e,f=this[0],g=f&&f.attributes;if(void 0===a){if(this.length&&(e=m.data(f),1===f.nodeType&&!m._data(f,"parsedAttrs"))){c=g.length;while(c--)g[c]&&(d=g[c].name,0===d.indexOf("data-")&&(d=m.camelCase(d.slice(5)),O(f,d,e[d])));m._data(f,"parsedAttrs",!0)}return e}return"object"==typeof a?this.each(function(){m.data(this,a)}):arguments.length>1?this.each(function(){m.data(this,a,b)}):f?O(f,a,m.data(f,a)):void 0},removeData:function(a){return this.each(function(){m.removeData(this,a)})}}),m.extend({queue:function(a,b,c){var d;return a?(b=(b||"fx")+"queue",d=m._data(a,b),c&&(!d||m.isArray(c)?d=m._data(a,b,m.makeArray(c)):d.push(c)),d||[]):void 0},dequeue:function(a,b){b=b||"fx";var c=m.queue(a,b),d=c.length,e=c.shift(),f=m._queueHooks(a,b),g=function(){m.dequeue(a,b)};"inprogress"===e&&(e=c.shift(),d--),e&&("fx"===b&&c.unshift("inprogress"),delete f.stop,e.call(a,g,f)),!d&&f&&f.empty.fire()},_queueHooks:function(a,b){var c=b+"queueHooks";return m._data(a,c)||m._data(a,c,{empty:m.Callbacks("once memory").add(function(){m._removeData(a,b+"queue"),m._removeData(a,c)})})}}),m.fn.extend({queue:function(a,b){var c=2;return"string"!=typeof a&&(b=a,a="fx",c--),arguments.length<c?m.queue(this[0],a):void 0===b?this:this.each(function(){var c=m.queue(this,a,b);m._queueHooks(this,a),"fx"===a&&"inprogress"!==c[0]&&m.dequeue(this,a)})},dequeue:function(a){return this.each(function(){m.dequeue(this,a)})},clearQueue:function(a){return this.queue(a||"fx",[])},promise:function(a,b){var c,d=1,e=m.Deferred(),f=this,g=this.length,h=function(){--d||e.resolveWith(f,[f])};"string"!=typeof a&&(b=a,a=void 0),a=a||"fx";while(g--)c=m._data(f[g],a+"queueHooks"),c&&c.empty&&(d++,c.empty.add(h));return h(),e.promise(b)}});var S=/[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/.source,T=["Top","Right","Bottom","Left"],U=function(a,b){return a=b||a,"none"===m.css(a,"display")||!m.contains(a.ownerDocument,a)},V=m.access=function(a,b,c,d,e,f,g){var h=0,i=a.length,j=null==c;if("object"===m.type(c)){e=!0;for(h in c)m.access(a,b,h,c[h],!0,f,g)}else if(void 0!==d&&(e=!0,m.isFunction(d)||(g=!0),j&&(g?(b.call(a,d),b=null):(j=b,b=function(a,b,c){return j.call(m(a),c)})),b))for(;i>h;h++)b(a[h],c,g?d:d.call(a[h],h,b(a[h],c)));return e?a:j?b.call(a):i?b(a[0],c):f},W=/^(?:checkbox|radio)$/i;!function(){var a=y.createElement("input"),b=y.createElement("div"),c=y.createDocumentFragment();if(b.innerHTML="  <link/><table></table><a href='/a'>a</a><input type='checkbox'/>",k.leadingWhitespace=3===b.firstChild.nodeType,k.tbody=!b.getElementsByTagName("tbody").length,k.htmlSerialize=!!b.getElementsByTagName("link").length,k.html5Clone="<:nav></:nav>"!==y.createElement("nav").cloneNode(!0).outerHTML,a.type="checkbox",a.checked=!0,c.appendChild(a),k.appendChecked=a.checked,b.innerHTML="<textarea>x</textarea>",k.noCloneChecked=!!b.cloneNode(!0).lastChild.defaultValue,c.appendChild(b),b.innerHTML="<input type='radio' checked='checked' name='t'/>",k.checkClone=b.cloneNode(!0).cloneNode(!0).lastChild.checked,k.noCloneEvent=!0,b.attachEvent&&(b.attachEvent("onclick",function(){k.noCloneEvent=!1}),b.cloneNode(!0).click()),null==k.deleteExpando){k.deleteExpando=!0;try{delete b.test}catch(d){k.deleteExpando=!1}}}(),function(){var b,c,d=y.createElement("div");for(b in{submit:!0,change:!0,focusin:!0})c="on"+b,(k[b+"Bubbles"]=c in a)||(d.setAttribute(c,"t"),k[b+"Bubbles"]=d.attributes[c].expando===!1);d=null}();var X=/^(?:input|select|textarea)$/i,Y=/^key/,Z=/^(?:mouse|pointer|contextmenu)|click/,$=/^(?:focusinfocus|focusoutblur)$/,_=/^([^.]*)(?:\.(.+)|)$/;function ab(){return!0}function bb(){return!1}function cb(){try{return y.activeElement}catch(a){}}m.event={global:{},add:function(a,b,c,d,e){var f,g,h,i,j,k,l,n,o,p,q,r=m._data(a);if(r){c.handler&&(i=c,c=i.handler,e=i.selector),c.guid||(c.guid=m.guid++),(g=r.events)||(g=r.events={}),(k=r.handle)||(k=r.handle=function(a){return typeof m===K||a&&m.event.triggered===a.type?void 0:m.event.dispatch.apply(k.elem,arguments)},k.elem=a),b=(b||"").match(E)||[""],h=b.length;while(h--)f=_.exec(b[h])||[],o=q=f[1],p=(f[2]||"").split(".").sort(),o&&(j=m.event.special[o]||{},o=(e?j.delegateType:j.bindType)||o,j=m.event.special[o]||{},l=m.extend({type:o,origType:q,data:d,handler:c,guid:c.guid,selector:e,needsContext:e&&m.expr.match.needsContext.test(e),namespace:p.join(".")},i),(n=g[o])||(n=g[o]=[],n.delegateCount=0,j.setup&&j.setup.call(a,d,p,k)!==!1||(a.addEventListener?a.addEventListener(o,k,!1):a.attachEvent&&a.attachEvent("on"+o,k))),j.add&&(j.add.call(a,l),l.handler.guid||(l.handler.guid=c.guid)),e?n.splice(n.delegateCount++,0,l):n.push(l),m.event.global[o]=!0);a=null}},remove:function(a,b,c,d,e){var f,g,h,i,j,k,l,n,o,p,q,r=m.hasData(a)&&m._data(a);if(r&&(k=r.events)){b=(b||"").match(E)||[""],j=b.length;while(j--)if(h=_.exec(b[j])||[],o=q=h[1],p=(h[2]||"").split(".").sort(),o){l=m.event.special[o]||{},o=(d?l.delegateType:l.bindType)||o,n=k[o]||[],h=h[2]&&new RegExp("(^|\\.)"+p.join("\\.(?:.*\\.|)")+"(\\.|$)"),i=f=n.length;while(f--)g=n[f],!e&&q!==g.origType||c&&c.guid!==g.guid||h&&!h.test(g.namespace)||d&&d!==g.selector&&("**"!==d||!g.selector)||(n.splice(f,1),g.selector&&n.delegateCount--,l.remove&&l.remove.call(a,g));i&&!n.length&&(l.teardown&&l.teardown.call(a,p,r.handle)!==!1||m.removeEvent(a,o,r.handle),delete k[o])}else for(o in k)m.event.remove(a,o+b[j],c,d,!0);m.isEmptyObject(k)&&(delete r.handle,m._removeData(a,"events"))}},trigger:function(b,c,d,e){var f,g,h,i,k,l,n,o=[d||y],p=j.call(b,"type")?b.type:b,q=j.call(b,"namespace")?b.namespace.split("."):[];if(h=l=d=d||y,3!==d.nodeType&&8!==d.nodeType&&!$.test(p+m.event.triggered)&&(p.indexOf(".")>=0&&(q=p.split("."),p=q.shift(),q.sort()),g=p.indexOf(":")<0&&"on"+p,b=b[m.expando]?b:new m.Event(p,"object"==typeof b&&b),b.isTrigger=e?2:3,b.namespace=q.join("."),b.namespace_re=b.namespace?new RegExp("(^|\\.)"+q.join("\\.(?:.*\\.|)")+"(\\.|$)"):null,b.result=void 0,b.target||(b.target=d),c=null==c?[b]:m.makeArray(c,[b]),k=m.event.special[p]||{},e||!k.trigger||k.trigger.apply(d,c)!==!1)){if(!e&&!k.noBubble&&!m.isWindow(d)){for(i=k.delegateType||p,$.test(i+p)||(h=h.parentNode);h;h=h.parentNode)o.push(h),l=h;l===(d.ownerDocument||y)&&o.push(l.defaultView||l.parentWindow||a)}n=0;while((h=o[n++])&&!b.isPropagationStopped())b.type=n>1?i:k.bindType||p,f=(m._data(h,"events")||{})[b.type]&&m._data(h,"handle"),f&&f.apply(h,c),f=g&&h[g],f&&f.apply&&m.acceptData(h)&&(b.result=f.apply(h,c),b.result===!1&&b.preventDefault());if(b.type=p,!e&&!b.isDefaultPrevented()&&(!k._default||k._default.apply(o.pop(),c)===!1)&&m.acceptData(d)&&g&&d[p]&&!m.isWindow(d)){l=d[g],l&&(d[g]=null),m.event.triggered=p;try{d[p]()}catch(r){}m.event.triggered=void 0,l&&(d[g]=l)}return b.result}},dispatch:function(a){a=m.event.fix(a);var b,c,e,f,g,h=[],i=d.call(arguments),j=(m._data(this,"events")||{})[a.type]||[],k=m.event.special[a.type]||{};if(i[0]=a,a.delegateTarget=this,!k.preDispatch||k.preDispatch.call(this,a)!==!1){h=m.event.handlers.call(this,a,j),b=0;while((f=h[b++])&&!a.isPropagationStopped()){a.currentTarget=f.elem,g=0;while((e=f.handlers[g++])&&!a.isImmediatePropagationStopped())(!a.namespace_re||a.namespace_re.test(e.namespace))&&(a.handleObj=e,a.data=e.data,c=((m.event.special[e.origType]||{}).handle||e.handler).apply(f.elem,i),void 0!==c&&(a.result=c)===!1&&(a.preventDefault(),a.stopPropagation()))}return k.postDispatch&&k.postDispatch.call(this,a),a.result}},handlers:function(a,b){var c,d,e,f,g=[],h=b.delegateCount,i=a.target;if(h&&i.nodeType&&(!a.button||"click"!==a.type))for(;i!=this;i=i.parentNode||this)if(1===i.nodeType&&(i.disabled!==!0||"click"!==a.type)){for(e=[],f=0;h>f;f++)d=b[f],c=d.selector+" ",void 0===e[c]&&(e[c]=d.needsContext?m(c,this).index(i)>=0:m.find(c,this,null,[i]).length),e[c]&&e.push(d);e.length&&g.push({elem:i,handlers:e})}return h<b.length&&g.push({elem:this,handlers:b.slice(h)}),g},fix:function(a){if(a[m.expando])return a;var b,c,d,e=a.type,f=a,g=this.fixHooks[e];g||(this.fixHooks[e]=g=Z.test(e)?this.mouseHooks:Y.test(e)?this.keyHooks:{}),d=g.props?this.props.concat(g.props):this.props,a=new m.Event(f),b=d.length;while(b--)c=d[b],a[c]=f[c];return a.target||(a.target=f.srcElement||y),3===a.target.nodeType&&(a.target=a.target.parentNode),a.metaKey=!!a.metaKey,g.filter?g.filter(a,f):a},props:"altKey bubbles cancelable ctrlKey currentTarget eventPhase metaKey relatedTarget shiftKey target timeStamp view which".split(" "),fixHooks:{},keyHooks:{props:"char charCode key keyCode".split(" "),filter:function(a,b){return null==a.which&&(a.which=null!=b.charCode?b.charCode:b.keyCode),a}},mouseHooks:{props:"button buttons clientX clientY fromElement offsetX offsetY pageX pageY screenX screenY toElement".split(" "),filter:function(a,b){var c,d,e,f=b.button,g=b.fromElement;return null==a.pageX&&null!=b.clientX&&(d=a.target.ownerDocument||y,e=d.documentElement,c=d.body,a.pageX=b.clientX+(e&&e.scrollLeft||c&&c.scrollLeft||0)-(e&&e.clientLeft||c&&c.clientLeft||0),a.pageY=b.clientY+(e&&e.scrollTop||c&&c.scrollTop||0)-(e&&e.clientTop||c&&c.clientTop||0)),!a.relatedTarget&&g&&(a.relatedTarget=g===a.target?b.toElement:g),a.which||void 0===f||(a.which=1&f?1:2&f?3:4&f?2:0),a}},special:{load:{noBubble:!0},focus:{trigger:function(){if(this!==cb()&&this.focus)try{return this.focus(),!1}catch(a){}},delegateType:"focusin"},blur:{trigger:function(){return this===cb()&&this.blur?(this.blur(),!1):void 0},delegateType:"focusout"},click:{trigger:function(){return m.nodeName(this,"input")&&"checkbox"===this.type&&this.click?(this.click(),!1):void 0},_default:function(a){return m.nodeName(a.target,"a")}},beforeunload:{postDispatch:function(a){void 0!==a.result&&a.originalEvent&&(a.originalEvent.returnValue=a.result)}}},simulate:function(a,b,c,d){var e=m.extend(new m.Event,c,{type:a,isSimulated:!0,originalEvent:{}});d?m.event.trigger(e,null,b):m.event.dispatch.call(b,e),e.isDefaultPrevented()&&c.preventDefault()}},m.removeEvent=y.removeEventListener?function(a,b,c){a.removeEventListener&&a.removeEventListener(b,c,!1)}:function(a,b,c){var d="on"+b;a.detachEvent&&(typeof a[d]===K&&(a[d]=null),a.detachEvent(d,c))},m.Event=function(a,b){return this instanceof m.Event?(a&&a.type?(this.originalEvent=a,this.type=a.type,this.isDefaultPrevented=a.defaultPrevented||void 0===a.defaultPrevented&&a.returnValue===!1?ab:bb):this.type=a,b&&m.extend(this,b),this.timeStamp=a&&a.timeStamp||m.now(),void(this[m.expando]=!0)):new m.Event(a,b)},m.Event.prototype={isDefaultPrevented:bb,isPropagationStopped:bb,isImmediatePropagationStopped:bb,preventDefault:function(){var a=this.originalEvent;this.isDefaultPrevented=ab,a&&(a.preventDefault?a.preventDefault():a.returnValue=!1)},stopPropagation:function(){var a=this.originalEvent;this.isPropagationStopped=ab,a&&(a.stopPropagation&&a.stopPropagation(),a.cancelBubble=!0)},stopImmediatePropagation:function(){var a=this.originalEvent;this.isImmediatePropagationStopped=ab,a&&a.stopImmediatePropagation&&a.stopImmediatePropagation(),this.stopPropagation()}},m.each({mouseenter:"mouseover",mouseleave:"mouseout",pointerenter:"pointerover",pointerleave:"pointerout"},function(a,b){m.event.special[a]={delegateType:b,bindType:b,handle:function(a){var c,d=this,e=a.relatedTarget,f=a.handleObj;return(!e||e!==d&&!m.contains(d,e))&&(a.type=f.origType,c=f.handler.apply(this,arguments),a.type=b),c}}}),k.submitBubbles||(m.event.special.submit={setup:function(){return m.nodeName(this,"form")?!1:void m.event.add(this,"click._submit keypress._submit",function(a){var b=a.target,c=m.nodeName(b,"input")||m.nodeName(b,"button")?b.form:void 0;c&&!m._data(c,"submitBubbles")&&(m.event.add(c,"submit._submit",function(a){a._submit_bubble=!0}),m._data(c,"submitBubbles",!0))})},postDispatch:function(a){a._submit_bubble&&(delete a._submit_bubble,this.parentNode&&!a.isTrigger&&m.event.simulate("submit",this.parentNode,a,!0))},teardown:function(){return m.nodeName(this,"form")?!1:void m.event.remove(this,"._submit")}}),k.changeBubbles||(m.event.special.change={setup:function(){return X.test(this.nodeName)?(("checkbox"===this.type||"radio"===this.type)&&(m.event.add(this,"propertychange._change",function(a){"checked"===a.originalEvent.propertyName&&(this._just_changed=!0)}),m.event.add(this,"click._change",function(a){this._just_changed&&!a.isTrigger&&(this._just_changed=!1),m.event.simulate("change",this,a,!0)})),!1):void m.event.add(this,"beforeactivate._change",function(a){var b=a.target;X.test(b.nodeName)&&!m._data(b,"changeBubbles")&&(m.event.add(b,"change._change",function(a){!this.parentNode||a.isSimulated||a.isTrigger||m.event.simulate("change",this.parentNode,a,!0)}),m._data(b,"changeBubbles",!0))})},handle:function(a){var b=a.target;return this!==b||a.isSimulated||a.isTrigger||"radio"!==b.type&&"checkbox"!==b.type?a.handleObj.handler.apply(this,arguments):void 0},teardown:function(){return m.event.remove(this,"._change"),!X.test(this.nodeName)}}),k.focusinBubbles||m.each({focus:"focusin",blur:"focusout"},function(a,b){var c=function(a){m.event.simulate(b,a.target,m.event.fix(a),!0)};m.event.special[b]={setup:function(){var d=this.ownerDocument||this,e=m._data(d,b);e||d.addEventListener(a,c,!0),m._data(d,b,(e||0)+1)},teardown:function(){var d=this.ownerDocument||this,e=m._data(d,b)-1;e?m._data(d,b,e):(d.removeEventListener(a,c,!0),m._removeData(d,b))}}}),m.fn.extend({on:function(a,b,c,d,e){var f,g;if("object"==typeof a){"string"!=typeof b&&(c=c||b,b=void 0);for(f in a)this.on(f,b,c,a[f],e);return this}if(null==c&&null==d?(d=b,c=b=void 0):null==d&&("string"==typeof b?(d=c,c=void 0):(d=c,c=b,b=void 0)),d===!1)d=bb;else if(!d)return this;return 1===e&&(g=d,d=function(a){return m().off(a),g.apply(this,arguments)},d.guid=g.guid||(g.guid=m.guid++)),this.each(function(){m.event.add(this,a,d,c,b)})},one:function(a,b,c,d){return this.on(a,b,c,d,1)},off:function(a,b,c){var d,e;if(a&&a.preventDefault&&a.handleObj)return d=a.handleObj,m(a.delegateTarget).off(d.namespace?d.origType+"."+d.namespace:d.origType,d.selector,d.handler),this;if("object"==typeof a){for(e in a)this.off(e,b,a[e]);return this}return(b===!1||"function"==typeof b)&&(c=b,b=void 0),c===!1&&(c=bb),this.each(function(){m.event.remove(this,a,c,b)})},trigger:function(a,b){return this.each(function(){m.event.trigger(a,b,this)})},triggerHandler:function(a,b){var c=this[0];return c?m.event.trigger(a,b,c,!0):void 0}});function db(a){var b=eb.split("|"),c=a.createDocumentFragment();if(c.createElement)while(b.length)c.createElement(b.pop());return c}var eb="abbr|article|aside|audio|bdi|canvas|data|datalist|details|figcaption|figure|footer|header|hgroup|mark|meter|nav|output|progress|section|summary|time|video",fb=/ jQuery\d+="(?:null|\d+)"/g,gb=new RegExp("<(?:"+eb+")[\\s/>]","i"),hb=/^\s+/,ib=/<(?!area|br|col|embed|hr|img|input|link|meta|param)(([\w:]+)[^>]*)\/>/gi,jb=/<([\w:]+)/,kb=/<tbody/i,lb=/<|&#?\w+;/,mb=/<(?:script|style|link)/i,nb=/checked\s*(?:[^=]|=\s*.checked.)/i,ob=/^$|\/(?:java|ecma)script/i,pb=/^true\/(.*)/,qb=/^\s*<!(?:\[CDATA\[|--)|(?:\]\]|--)>\s*$/g,rb={option:[1,"<select multiple='multiple'>","</select>"],legend:[1,"<fieldset>","</fieldset>"],area:[1,"<map>","</map>"],param:[1,"<object>","</object>"],thead:[1,"<table>","</table>"],tr:[2,"<table><tbody>","</tbody></table>"],col:[2,"<table><tbody></tbody><colgroup>","</colgroup></table>"],td:[3,"<table><tbody><tr>","</tr></tbody></table>"],_default:k.htmlSerialize?[0,"",""]:[1,"X<div>","</div>"]},sb=db(y),tb=sb.appendChild(y.createElement("div"));rb.optgroup=rb.option,rb.tbody=rb.tfoot=rb.colgroup=rb.caption=rb.thead,rb.th=rb.td;function ub(a,b){var c,d,e=0,f=typeof a.getElementsByTagName!==K?a.getElementsByTagName(b||"*"):typeof a.querySelectorAll!==K?a.querySelectorAll(b||"*"):void 0;if(!f)for(f=[],c=a.childNodes||a;null!=(d=c[e]);e++)!b||m.nodeName(d,b)?f.push(d):m.merge(f,ub(d,b));return void 0===b||b&&m.nodeName(a,b)?m.merge([a],f):f}function vb(a){W.test(a.type)&&(a.defaultChecked=a.checked)}function wb(a,b){return m.nodeName(a,"table")&&m.nodeName(11!==b.nodeType?b:b.firstChild,"tr")?a.getElementsByTagName("tbody")[0]||a.appendChild(a.ownerDocument.createElement("tbody")):a}function xb(a){return a.type=(null!==m.find.attr(a,"type"))+"/"+a.type,a}function yb(a){var b=pb.exec(a.type);return b?a.type=b[1]:a.removeAttribute("type"),a}function zb(a,b){for(var c,d=0;null!=(c=a[d]);d++)m._data(c,"globalEval",!b||m._data(b[d],"globalEval"))}function Ab(a,b){if(1===b.nodeType&&m.hasData(a)){var c,d,e,f=m._data(a),g=m._data(b,f),h=f.events;if(h){delete g.handle,g.events={};for(c in h)for(d=0,e=h[c].length;e>d;d++)m.event.add(b,c,h[c][d])}g.data&&(g.data=m.extend({},g.data))}}function Bb(a,b){var c,d,e;if(1===b.nodeType){if(c=b.nodeName.toLowerCase(),!k.noCloneEvent&&b[m.expando]){e=m._data(b);for(d in e.events)m.removeEvent(b,d,e.handle);b.removeAttribute(m.expando)}"script"===c&&b.text!==a.text?(xb(b).text=a.text,yb(b)):"object"===c?(b.parentNode&&(b.outerHTML=a.outerHTML),k.html5Clone&&a.innerHTML&&!m.trim(b.innerHTML)&&(b.innerHTML=a.innerHTML)):"input"===c&&W.test(a.type)?(b.defaultChecked=b.checked=a.checked,b.value!==a.value&&(b.value=a.value)):"option"===c?b.defaultSelected=b.selected=a.defaultSelected:("input"===c||"textarea"===c)&&(b.defaultValue=a.defaultValue)}}m.extend({clone:function(a,b,c){var d,e,f,g,h,i=m.contains(a.ownerDocument,a);if(k.html5Clone||m.isXMLDoc(a)||!gb.test("<"+a.nodeName+">")?f=a.cloneNode(!0):(tb.innerHTML=a.outerHTML,tb.removeChild(f=tb.firstChild)),!(k.noCloneEvent&&k.noCloneChecked||1!==a.nodeType&&11!==a.nodeType||m.isXMLDoc(a)))for(d=ub(f),h=ub(a),g=0;null!=(e=h[g]);++g)d[g]&&Bb(e,d[g]);if(b)if(c)for(h=h||ub(a),d=d||ub(f),g=0;null!=(e=h[g]);g++)Ab(e,d[g]);else Ab(a,f);return d=ub(f,"script"),d.length>0&&zb(d,!i&&ub(a,"script")),d=h=e=null,f},buildFragment:function(a,b,c,d){for(var e,f,g,h,i,j,l,n=a.length,o=db(b),p=[],q=0;n>q;q++)if(f=a[q],f||0===f)if("object"===m.type(f))m.merge(p,f.nodeType?[f]:f);else if(lb.test(f)){h=h||o.appendChild(b.createElement("div")),i=(jb.exec(f)||["",""])[1].toLowerCase(),l=rb[i]||rb._default,h.innerHTML=l[1]+f.replace(ib,"<$1></$2>")+l[2],e=l[0];while(e--)h=h.lastChild;if(!k.leadingWhitespace&&hb.test(f)&&p.push(b.createTextNode(hb.exec(f)[0])),!k.tbody){f="table"!==i||kb.test(f)?"<table>"!==l[1]||kb.test(f)?0:h:h.firstChild,e=f&&f.childNodes.length;while(e--)m.nodeName(j=f.childNodes[e],"tbody")&&!j.childNodes.length&&f.removeChild(j)}m.merge(p,h.childNodes),h.textContent="";while(h.firstChild)h.removeChild(h.firstChild);h=o.lastChild}else p.push(b.createTextNode(f));h&&o.removeChild(h),k.appendChecked||m.grep(ub(p,"input"),vb),q=0;while(f=p[q++])if((!d||-1===m.inArray(f,d))&&(g=m.contains(f.ownerDocument,f),h=ub(o.appendChild(f),"script"),g&&zb(h),c)){e=0;while(f=h[e++])ob.test(f.type||"")&&c.push(f)}return h=null,o},cleanData:function(a,b){for(var d,e,f,g,h=0,i=m.expando,j=m.cache,l=k.deleteExpando,n=m.event.special;null!=(d=a[h]);h++)if((b||m.acceptData(d))&&(f=d[i],g=f&&j[f])){if(g.events)for(e in g.events)n[e]?m.event.remove(d,e):m.removeEvent(d,e,g.handle);j[f]&&(delete j[f],l?delete d[i]:typeof d.removeAttribute!==K?d.removeAttribute(i):d[i]=null,c.push(f))}}}),m.fn.extend({text:function(a){return V(this,function(a){return void 0===a?m.text(this):this.empty().append((this[0]&&this[0].ownerDocument||y).createTextNode(a))},null,a,arguments.length)},append:function(){return this.domManip(arguments,function(a){if(1===this.nodeType||11===this.nodeType||9===this.nodeType){var b=wb(this,a);b.appendChild(a)}})},prepend:function(){return this.domManip(arguments,function(a){if(1===this.nodeType||11===this.nodeType||9===this.nodeType){var b=wb(this,a);b.insertBefore(a,b.firstChild)}})},before:function(){return this.domManip(arguments,function(a){this.parentNode&&this.parentNode.insertBefore(a,this)})},after:function(){return this.domManip(arguments,function(a){this.parentNode&&this.parentNode.insertBefore(a,this.nextSibling)})},remove:function(a,b){for(var c,d=a?m.filter(a,this):this,e=0;null!=(c=d[e]);e++)b||1!==c.nodeType||m.cleanData(ub(c)),c.parentNode&&(b&&m.contains(c.ownerDocument,c)&&zb(ub(c,"script")),c.parentNode.removeChild(c));return this},empty:function(){for(var a,b=0;null!=(a=this[b]);b++){1===a.nodeType&&m.cleanData(ub(a,!1));while(a.firstChild)a.removeChild(a.firstChild);a.options&&m.nodeName(a,"select")&&(a.options.length=0)}return this},clone:function(a,b){return a=null==a?!1:a,b=null==b?a:b,this.map(function(){return m.clone(this,a,b)})},html:function(a){return V(this,function(a){var b=this[0]||{},c=0,d=this.length;if(void 0===a)return 1===b.nodeType?b.innerHTML.replace(fb,""):void 0;if(!("string"!=typeof a||mb.test(a)||!k.htmlSerialize&&gb.test(a)||!k.leadingWhitespace&&hb.test(a)||rb[(jb.exec(a)||["",""])[1].toLowerCase()])){a=a.replace(ib,"<$1></$2>");try{for(;d>c;c++)b=this[c]||{},1===b.nodeType&&(m.cleanData(ub(b,!1)),b.innerHTML=a);b=0}catch(e){}}b&&this.empty().append(a)},null,a,arguments.length)},replaceWith:function(){var a=arguments[0];return this.domManip(arguments,function(b){a=this.parentNode,m.cleanData(ub(this)),a&&a.replaceChild(b,this)}),a&&(a.length||a.nodeType)?this:this.remove()},detach:function(a){return this.remove(a,!0)},domManip:function(a,b){a=e.apply([],a);var c,d,f,g,h,i,j=0,l=this.length,n=this,o=l-1,p=a[0],q=m.isFunction(p);if(q||l>1&&"string"==typeof p&&!k.checkClone&&nb.test(p))return this.each(function(c){var d=n.eq(c);q&&(a[0]=p.call(this,c,d.html())),d.domManip(a,b)});if(l&&(i=m.buildFragment(a,this[0].ownerDocument,!1,this),c=i.firstChild,1===i.childNodes.length&&(i=c),c)){for(g=m.map(ub(i,"script"),xb),f=g.length;l>j;j++)d=i,j!==o&&(d=m.clone(d,!0,!0),f&&m.merge(g,ub(d,"script"))),b.call(this[j],d,j);if(f)for(h=g[g.length-1].ownerDocument,m.map(g,yb),j=0;f>j;j++)d=g[j],ob.test(d.type||"")&&!m._data(d,"globalEval")&&m.contains(h,d)&&(d.src?m._evalUrl&&m._evalUrl(d.src):m.globalEval((d.text||d.textContent||d.innerHTML||"").replace(qb,"")));i=c=null}return this}}),m.each({appendTo:"append",prependTo:"prepend",insertBefore:"before",insertAfter:"after",replaceAll:"replaceWith"},function(a,b){m.fn[a]=function(a){for(var c,d=0,e=[],g=m(a),h=g.length-1;h>=d;d++)c=d===h?this:this.clone(!0),m(g[d])[b](c),f.apply(e,c.get());return this.pushStack(e)}});var Cb,Db={};function Eb(b,c){var d,e=m(c.createElement(b)).appendTo(c.body),f=a.getDefaultComputedStyle&&(d=a.getDefaultComputedStyle(e[0]))?d.display:m.css(e[0],"display");return e.detach(),f}function Fb(a){var b=y,c=Db[a];return c||(c=Eb(a,b),"none"!==c&&c||(Cb=(Cb||m("<iframe frameborder='0' width='0' height='0'/>")).appendTo(b.documentElement),b=(Cb[0].contentWindow||Cb[0].contentDocument).document,b.write(),b.close(),c=Eb(a,b),Cb.detach()),Db[a]=c),c}!function(){var a;k.shrinkWrapBlocks=function(){if(null!=a)return a;a=!1;var b,c,d;return c=y.getElementsByTagName("body")[0],c&&c.style?(b=y.createElement("div"),d=y.createElement("div"),d.style.cssText="position:absolute;border:0;width:0;height:0;top:0;left:-9999px",c.appendChild(d).appendChild(b),typeof b.style.zoom!==K&&(b.style.cssText="-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;display:block;margin:0;border:0;padding:1px;width:1px;zoom:1",b.appendChild(y.createElement("div")).style.width="5px",a=3!==b.offsetWidth),c.removeChild(d),a):void 0}}();var Gb=/^margin/,Hb=new RegExp("^("+S+")(?!px)[a-z%]+$","i"),Ib,Jb,Kb=/^(top|right|bottom|left)$/;a.getComputedStyle?(Ib=function(a){return a.ownerDocument.defaultView.getComputedStyle(a,null)},Jb=function(a,b,c){var d,e,f,g,h=a.style;return c=c||Ib(a),g=c?c.getPropertyValue(b)||c[b]:void 0,c&&(""!==g||m.contains(a.ownerDocument,a)||(g=m.style(a,b)),Hb.test(g)&&Gb.test(b)&&(d=h.width,e=h.minWidth,f=h.maxWidth,h.minWidth=h.maxWidth=h.width=g,g=c.width,h.width=d,h.minWidth=e,h.maxWidth=f)),void 0===g?g:g+""}):y.documentElement.currentStyle&&(Ib=function(a){return a.currentStyle},Jb=function(a,b,c){var d,e,f,g,h=a.style;return c=c||Ib(a),g=c?c[b]:void 0,null==g&&h&&h[b]&&(g=h[b]),Hb.test(g)&&!Kb.test(b)&&(d=h.left,e=a.runtimeStyle,f=e&&e.left,f&&(e.left=a.currentStyle.left),h.left="fontSize"===b?"1em":g,g=h.pixelLeft+"px",h.left=d,f&&(e.left=f)),void 0===g?g:g+""||"auto"});function Lb(a,b){return{get:function(){var c=a();if(null!=c)return c?void delete this.get:(this.get=b).apply(this,arguments)}}}!function(){var b,c,d,e,f,g,h;if(b=y.createElement("div"),b.innerHTML="  <link/><table></table><a href='/a'>a</a><input type='checkbox'/>",d=b.getElementsByTagName("a")[0],c=d&&d.style){c.cssText="float:left;opacity:.5",k.opacity="0.5"===c.opacity,k.cssFloat=!!c.cssFloat,b.style.backgroundClip="content-box",b.cloneNode(!0).style.backgroundClip="",k.clearCloneStyle="content-box"===b.style.backgroundClip,k.boxSizing=""===c.boxSizing||""===c.MozBoxSizing||""===c.WebkitBoxSizing,m.extend(k,{reliableHiddenOffsets:function(){return null==g&&i(),g},boxSizingReliable:function(){return null==f&&i(),f},pixelPosition:function(){return null==e&&i(),e},reliableMarginRight:function(){return null==h&&i(),h}});function i(){var b,c,d,i;c=y.getElementsByTagName("body")[0],c&&c.style&&(b=y.createElement("div"),d=y.createElement("div"),d.style.cssText="position:absolute;border:0;width:0;height:0;top:0;left:-9999px",c.appendChild(d).appendChild(b),b.style.cssText="-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;display:block;margin-top:1%;top:1%;border:1px;padding:1px;width:4px;position:absolute",e=f=!1,h=!0,a.getComputedStyle&&(e="1%"!==(a.getComputedStyle(b,null)||{}).top,f="4px"===(a.getComputedStyle(b,null)||{width:"4px"}).width,i=b.appendChild(y.createElement("div")),i.style.cssText=b.style.cssText="-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;display:block;margin:0;border:0;padding:0",i.style.marginRight=i.style.width="0",b.style.width="1px",h=!parseFloat((a.getComputedStyle(i,null)||{}).marginRight)),b.innerHTML="<table><tr><td></td><td>t</td></tr></table>",i=b.getElementsByTagName("td"),i[0].style.cssText="margin:0;border:0;padding:0;display:none",g=0===i[0].offsetHeight,g&&(i[0].style.display="",i[1].style.display="none",g=0===i[0].offsetHeight),c.removeChild(d))}}}(),m.swap=function(a,b,c,d){var e,f,g={};for(f in b)g[f]=a.style[f],a.style[f]=b[f];e=c.apply(a,d||[]);for(f in b)a.style[f]=g[f];return e};var Mb=/alpha\([^)]*\)/i,Nb=/opacity\s*=\s*([^)]*)/,Ob=/^(none|table(?!-c[ea]).+)/,Pb=new RegExp("^("+S+")(.*)$","i"),Qb=new RegExp("^([+-])=("+S+")","i"),Rb={position:"absolute",visibility:"hidden",display:"block"},Sb={letterSpacing:"0",fontWeight:"400"},Tb=["Webkit","O","Moz","ms"];function Ub(a,b){if(b in a)return b;var c=b.charAt(0).toUpperCase()+b.slice(1),d=b,e=Tb.length;while(e--)if(b=Tb[e]+c,b in a)return b;return d}function Vb(a,b){for(var c,d,e,f=[],g=0,h=a.length;h>g;g++)d=a[g],d.style&&(f[g]=m._data(d,"olddisplay"),c=d.style.display,b?(f[g]||"none"!==c||(d.style.display=""),""===d.style.display&&U(d)&&(f[g]=m._data(d,"olddisplay",Fb(d.nodeName)))):(e=U(d),(c&&"none"!==c||!e)&&m._data(d,"olddisplay",e?c:m.css(d,"display"))));for(g=0;h>g;g++)d=a[g],d.style&&(b&&"none"!==d.style.display&&""!==d.style.display||(d.style.display=b?f[g]||"":"none"));return a}function Wb(a,b,c){var d=Pb.exec(b);return d?Math.max(0,d[1]-(c||0))+(d[2]||"px"):b}function Xb(a,b,c,d,e){for(var f=c===(d?"border":"content")?4:"width"===b?1:0,g=0;4>f;f+=2)"margin"===c&&(g+=m.css(a,c+T[f],!0,e)),d?("content"===c&&(g-=m.css(a,"padding"+T[f],!0,e)),"margin"!==c&&(g-=m.css(a,"border"+T[f]+"Width",!0,e))):(g+=m.css(a,"padding"+T[f],!0,e),"padding"!==c&&(g+=m.css(a,"border"+T[f]+"Width",!0,e)));return g}function Yb(a,b,c){var d=!0,e="width"===b?a.offsetWidth:a.offsetHeight,f=Ib(a),g=k.boxSizing&&"border-box"===m.css(a,"boxSizing",!1,f);if(0>=e||null==e){if(e=Jb(a,b,f),(0>e||null==e)&&(e=a.style[b]),Hb.test(e))return e;d=g&&(k.boxSizingReliable()||e===a.style[b]),e=parseFloat(e)||0}return e+Xb(a,b,c||(g?"border":"content"),d,f)+"px"}m.extend({cssHooks:{opacity:{get:function(a,b){if(b){var c=Jb(a,"opacity");return""===c?"1":c}}}},cssNumber:{columnCount:!0,fillOpacity:!0,flexGrow:!0,flexShrink:!0,fontWeight:!0,lineHeight:!0,opacity:!0,order:!0,orphans:!0,widows:!0,zIndex:!0,zoom:!0},cssProps:{"float":k.cssFloat?"cssFloat":"styleFloat"},style:function(a,b,c,d){if(a&&3!==a.nodeType&&8!==a.nodeType&&a.style){var e,f,g,h=m.camelCase(b),i=a.style;if(b=m.cssProps[h]||(m.cssProps[h]=Ub(i,h)),g=m.cssHooks[b]||m.cssHooks[h],void 0===c)return g&&"get"in g&&void 0!==(e=g.get(a,!1,d))?e:i[b];if(f=typeof c,"string"===f&&(e=Qb.exec(c))&&(c=(e[1]+1)*e[2]+parseFloat(m.css(a,b)),f="number"),null!=c&&c===c&&("number"!==f||m.cssNumber[h]||(c+="px"),k.clearCloneStyle||""!==c||0!==b.indexOf("background")||(i[b]="inherit"),!(g&&"set"in g&&void 0===(c=g.set(a,c,d)))))try{i[b]=c}catch(j){}}},css:function(a,b,c,d){var e,f,g,h=m.camelCase(b);return b=m.cssProps[h]||(m.cssProps[h]=Ub(a.style,h)),g=m.cssHooks[b]||m.cssHooks[h],g&&"get"in g&&(f=g.get(a,!0,c)),void 0===f&&(f=Jb(a,b,d)),"normal"===f&&b in Sb&&(f=Sb[b]),""===c||c?(e=parseFloat(f),c===!0||m.isNumeric(e)?e||0:f):f}}),m.each(["height","width"],function(a,b){m.cssHooks[b]={get:function(a,c,d){return c?Ob.test(m.css(a,"display"))&&0===a.offsetWidth?m.swap(a,Rb,function(){return Yb(a,b,d)}):Yb(a,b,d):void 0},set:function(a,c,d){var e=d&&Ib(a);return Wb(a,c,d?Xb(a,b,d,k.boxSizing&&"border-box"===m.css(a,"boxSizing",!1,e),e):0)}}}),k.opacity||(m.cssHooks.opacity={get:function(a,b){return Nb.test((b&&a.currentStyle?a.currentStyle.filter:a.style.filter)||"")?.01*parseFloat(RegExp.$1)+"":b?"1":""},set:function(a,b){var c=a.style,d=a.currentStyle,e=m.isNumeric(b)?"alpha(opacity="+100*b+")":"",f=d&&d.filter||c.filter||"";c.zoom=1,(b>=1||""===b)&&""===m.trim(f.replace(Mb,""))&&c.removeAttribute&&(c.removeAttribute("filter"),""===b||d&&!d.filter)||(c.filter=Mb.test(f)?f.replace(Mb,e):f+" "+e)}}),m.cssHooks.marginRight=Lb(k.reliableMarginRight,function(a,b){return b?m.swap(a,{display:"inline-block"},Jb,[a,"marginRight"]):void 0}),m.each({margin:"",padding:"",border:"Width"},function(a,b){m.cssHooks[a+b]={expand:function(c){for(var d=0,e={},f="string"==typeof c?c.split(" "):[c];4>d;d++)e[a+T[d]+b]=f[d]||f[d-2]||f[0];return e}},Gb.test(a)||(m.cssHooks[a+b].set=Wb)}),m.fn.extend({css:function(a,b){return V(this,function(a,b,c){var d,e,f={},g=0;if(m.isArray(b)){for(d=Ib(a),e=b.length;e>g;g++)f[b[g]]=m.css(a,b[g],!1,d);return f}return void 0!==c?m.style(a,b,c):m.css(a,b)},a,b,arguments.length>1)},show:function(){return Vb(this,!0)},hide:function(){return Vb(this)},toggle:function(a){return"boolean"==typeof a?a?this.show():this.hide():this.each(function(){U(this)?m(this).show():m(this).hide()})}});function Zb(a,b,c,d,e){return new Zb.prototype.init(a,b,c,d,e)}m.Tween=Zb,Zb.prototype={constructor:Zb,init:function(a,b,c,d,e,f){this.elem=a,this.prop=c,this.easing=e||"swing",this.options=b,this.start=this.now=this.cur(),this.end=d,this.unit=f||(m.cssNumber[c]?"":"px")
+},cur:function(){var a=Zb.propHooks[this.prop];return a&&a.get?a.get(this):Zb.propHooks._default.get(this)},run:function(a){var b,c=Zb.propHooks[this.prop];return this.pos=b=this.options.duration?m.easing[this.easing](a,this.options.duration*a,0,1,this.options.duration):a,this.now=(this.end-this.start)*b+this.start,this.options.step&&this.options.step.call(this.elem,this.now,this),c&&c.set?c.set(this):Zb.propHooks._default.set(this),this}},Zb.prototype.init.prototype=Zb.prototype,Zb.propHooks={_default:{get:function(a){var b;return null==a.elem[a.prop]||a.elem.style&&null!=a.elem.style[a.prop]?(b=m.css(a.elem,a.prop,""),b&&"auto"!==b?b:0):a.elem[a.prop]},set:function(a){m.fx.step[a.prop]?m.fx.step[a.prop](a):a.elem.style&&(null!=a.elem.style[m.cssProps[a.prop]]||m.cssHooks[a.prop])?m.style(a.elem,a.prop,a.now+a.unit):a.elem[a.prop]=a.now}}},Zb.propHooks.scrollTop=Zb.propHooks.scrollLeft={set:function(a){a.elem.nodeType&&a.elem.parentNode&&(a.elem[a.prop]=a.now)}},m.easing={linear:function(a){return a},swing:function(a){return.5-Math.cos(a*Math.PI)/2}},m.fx=Zb.prototype.init,m.fx.step={};var $b,_b,ac=/^(?:toggle|show|hide)$/,bc=new RegExp("^(?:([+-])=|)("+S+")([a-z%]*)$","i"),cc=/queueHooks$/,dc=[ic],ec={"*":[function(a,b){var c=this.createTween(a,b),d=c.cur(),e=bc.exec(b),f=e&&e[3]||(m.cssNumber[a]?"":"px"),g=(m.cssNumber[a]||"px"!==f&&+d)&&bc.exec(m.css(c.elem,a)),h=1,i=20;if(g&&g[3]!==f){f=f||g[3],e=e||[],g=+d||1;do h=h||".5",g/=h,m.style(c.elem,a,g+f);while(h!==(h=c.cur()/d)&&1!==h&&--i)}return e&&(g=c.start=+g||+d||0,c.unit=f,c.end=e[1]?g+(e[1]+1)*e[2]:+e[2]),c}]};function fc(){return setTimeout(function(){$b=void 0}),$b=m.now()}function gc(a,b){var c,d={height:a},e=0;for(b=b?1:0;4>e;e+=2-b)c=T[e],d["margin"+c]=d["padding"+c]=a;return b&&(d.opacity=d.width=a),d}function hc(a,b,c){for(var d,e=(ec[b]||[]).concat(ec["*"]),f=0,g=e.length;g>f;f++)if(d=e[f].call(c,b,a))return d}function ic(a,b,c){var d,e,f,g,h,i,j,l,n=this,o={},p=a.style,q=a.nodeType&&U(a),r=m._data(a,"fxshow");c.queue||(h=m._queueHooks(a,"fx"),null==h.unqueued&&(h.unqueued=0,i=h.empty.fire,h.empty.fire=function(){h.unqueued||i()}),h.unqueued++,n.always(function(){n.always(function(){h.unqueued--,m.queue(a,"fx").length||h.empty.fire()})})),1===a.nodeType&&("height"in b||"width"in b)&&(c.overflow=[p.overflow,p.overflowX,p.overflowY],j=m.css(a,"display"),l="none"===j?m._data(a,"olddisplay")||Fb(a.nodeName):j,"inline"===l&&"none"===m.css(a,"float")&&(k.inlineBlockNeedsLayout&&"inline"!==Fb(a.nodeName)?p.zoom=1:p.display="inline-block")),c.overflow&&(p.overflow="hidden",k.shrinkWrapBlocks()||n.always(function(){p.overflow=c.overflow[0],p.overflowX=c.overflow[1],p.overflowY=c.overflow[2]}));for(d in b)if(e=b[d],ac.exec(e)){if(delete b[d],f=f||"toggle"===e,e===(q?"hide":"show")){if("show"!==e||!r||void 0===r[d])continue;q=!0}o[d]=r&&r[d]||m.style(a,d)}else j=void 0;if(m.isEmptyObject(o))"inline"===("none"===j?Fb(a.nodeName):j)&&(p.display=j);else{r?"hidden"in r&&(q=r.hidden):r=m._data(a,"fxshow",{}),f&&(r.hidden=!q),q?m(a).show():n.done(function(){m(a).hide()}),n.done(function(){var b;m._removeData(a,"fxshow");for(b in o)m.style(a,b,o[b])});for(d in o)g=hc(q?r[d]:0,d,n),d in r||(r[d]=g.start,q&&(g.end=g.start,g.start="width"===d||"height"===d?1:0))}}function jc(a,b){var c,d,e,f,g;for(c in a)if(d=m.camelCase(c),e=b[d],f=a[c],m.isArray(f)&&(e=f[1],f=a[c]=f[0]),c!==d&&(a[d]=f,delete a[c]),g=m.cssHooks[d],g&&"expand"in g){f=g.expand(f),delete a[d];for(c in f)c in a||(a[c]=f[c],b[c]=e)}else b[d]=e}function kc(a,b,c){var d,e,f=0,g=dc.length,h=m.Deferred().always(function(){delete i.elem}),i=function(){if(e)return!1;for(var b=$b||fc(),c=Math.max(0,j.startTime+j.duration-b),d=c/j.duration||0,f=1-d,g=0,i=j.tweens.length;i>g;g++)j.tweens[g].run(f);return h.notifyWith(a,[j,f,c]),1>f&&i?c:(h.resolveWith(a,[j]),!1)},j=h.promise({elem:a,props:m.extend({},b),opts:m.extend(!0,{specialEasing:{}},c),originalProperties:b,originalOptions:c,startTime:$b||fc(),duration:c.duration,tweens:[],createTween:function(b,c){var d=m.Tween(a,j.opts,b,c,j.opts.specialEasing[b]||j.opts.easing);return j.tweens.push(d),d},stop:function(b){var c=0,d=b?j.tweens.length:0;if(e)return this;for(e=!0;d>c;c++)j.tweens[c].run(1);return b?h.resolveWith(a,[j,b]):h.rejectWith(a,[j,b]),this}}),k=j.props;for(jc(k,j.opts.specialEasing);g>f;f++)if(d=dc[f].call(j,a,k,j.opts))return d;return m.map(k,hc,j),m.isFunction(j.opts.start)&&j.opts.start.call(a,j),m.fx.timer(m.extend(i,{elem:a,anim:j,queue:j.opts.queue})),j.progress(j.opts.progress).done(j.opts.done,j.opts.complete).fail(j.opts.fail).always(j.opts.always)}m.Animation=m.extend(kc,{tweener:function(a,b){m.isFunction(a)?(b=a,a=["*"]):a=a.split(" ");for(var c,d=0,e=a.length;e>d;d++)c=a[d],ec[c]=ec[c]||[],ec[c].unshift(b)},prefilter:function(a,b){b?dc.unshift(a):dc.push(a)}}),m.speed=function(a,b,c){var d=a&&"object"==typeof a?m.extend({},a):{complete:c||!c&&b||m.isFunction(a)&&a,duration:a,easing:c&&b||b&&!m.isFunction(b)&&b};return d.duration=m.fx.off?0:"number"==typeof d.duration?d.duration:d.duration in m.fx.speeds?m.fx.speeds[d.duration]:m.fx.speeds._default,(null==d.queue||d.queue===!0)&&(d.queue="fx"),d.old=d.complete,d.complete=function(){m.isFunction(d.old)&&d.old.call(this),d.queue&&m.dequeue(this,d.queue)},d},m.fn.extend({fadeTo:function(a,b,c,d){return this.filter(U).css("opacity",0).show().end().animate({opacity:b},a,c,d)},animate:function(a,b,c,d){var e=m.isEmptyObject(a),f=m.speed(b,c,d),g=function(){var b=kc(this,m.extend({},a),f);(e||m._data(this,"finish"))&&b.stop(!0)};return g.finish=g,e||f.queue===!1?this.each(g):this.queue(f.queue,g)},stop:function(a,b,c){var d=function(a){var b=a.stop;delete a.stop,b(c)};return"string"!=typeof a&&(c=b,b=a,a=void 0),b&&a!==!1&&this.queue(a||"fx",[]),this.each(function(){var b=!0,e=null!=a&&a+"queueHooks",f=m.timers,g=m._data(this);if(e)g[e]&&g[e].stop&&d(g[e]);else for(e in g)g[e]&&g[e].stop&&cc.test(e)&&d(g[e]);for(e=f.length;e--;)f[e].elem!==this||null!=a&&f[e].queue!==a||(f[e].anim.stop(c),b=!1,f.splice(e,1));(b||!c)&&m.dequeue(this,a)})},finish:function(a){return a!==!1&&(a=a||"fx"),this.each(function(){var b,c=m._data(this),d=c[a+"queue"],e=c[a+"queueHooks"],f=m.timers,g=d?d.length:0;for(c.finish=!0,m.queue(this,a,[]),e&&e.stop&&e.stop.call(this,!0),b=f.length;b--;)f[b].elem===this&&f[b].queue===a&&(f[b].anim.stop(!0),f.splice(b,1));for(b=0;g>b;b++)d[b]&&d[b].finish&&d[b].finish.call(this);delete c.finish})}}),m.each(["toggle","show","hide"],function(a,b){var c=m.fn[b];m.fn[b]=function(a,d,e){return null==a||"boolean"==typeof a?c.apply(this,arguments):this.animate(gc(b,!0),a,d,e)}}),m.each({slideDown:gc("show"),slideUp:gc("hide"),slideToggle:gc("toggle"),fadeIn:{opacity:"show"},fadeOut:{opacity:"hide"},fadeToggle:{opacity:"toggle"}},function(a,b){m.fn[a]=function(a,c,d){return this.animate(b,a,c,d)}}),m.timers=[],m.fx.tick=function(){var a,b=m.timers,c=0;for($b=m.now();c<b.length;c++)a=b[c],a()||b[c]!==a||b.splice(c--,1);b.length||m.fx.stop(),$b=void 0},m.fx.timer=function(a){m.timers.push(a),a()?m.fx.start():m.timers.pop()},m.fx.interval=13,m.fx.start=function(){_b||(_b=setInterval(m.fx.tick,m.fx.interval))},m.fx.stop=function(){clearInterval(_b),_b=null},m.fx.speeds={slow:600,fast:200,_default:400},m.fn.delay=function(a,b){return a=m.fx?m.fx.speeds[a]||a:a,b=b||"fx",this.queue(b,function(b,c){var d=setTimeout(b,a);c.stop=function(){clearTimeout(d)}})},function(){var a,b,c,d,e;b=y.createElement("div"),b.setAttribute("className","t"),b.innerHTML="  <link/><table></table><a href='/a'>a</a><input type='checkbox'/>",d=b.getElementsByTagName("a")[0],c=y.createElement("select"),e=c.appendChild(y.createElement("option")),a=b.getElementsByTagName("input")[0],d.style.cssText="top:1px",k.getSetAttribute="t"!==b.className,k.style=/top/.test(d.getAttribute("style")),k.hrefNormalized="/a"===d.getAttribute("href"),k.checkOn=!!a.value,k.optSelected=e.selected,k.enctype=!!y.createElement("form").enctype,c.disabled=!0,k.optDisabled=!e.disabled,a=y.createElement("input"),a.setAttribute("value",""),k.input=""===a.getAttribute("value"),a.value="t",a.setAttribute("type","radio"),k.radioValue="t"===a.value}();var lc=/\r/g;m.fn.extend({val:function(a){var b,c,d,e=this[0];{if(arguments.length)return d=m.isFunction(a),this.each(function(c){var e;1===this.nodeType&&(e=d?a.call(this,c,m(this).val()):a,null==e?e="":"number"==typeof e?e+="":m.isArray(e)&&(e=m.map(e,function(a){return null==a?"":a+""})),b=m.valHooks[this.type]||m.valHooks[this.nodeName.toLowerCase()],b&&"set"in b&&void 0!==b.set(this,e,"value")||(this.value=e))});if(e)return b=m.valHooks[e.type]||m.valHooks[e.nodeName.toLowerCase()],b&&"get"in b&&void 0!==(c=b.get(e,"value"))?c:(c=e.value,"string"==typeof c?c.replace(lc,""):null==c?"":c)}}}),m.extend({valHooks:{option:{get:function(a){var b=m.find.attr(a,"value");return null!=b?b:m.trim(m.text(a))}},select:{get:function(a){for(var b,c,d=a.options,e=a.selectedIndex,f="select-one"===a.type||0>e,g=f?null:[],h=f?e+1:d.length,i=0>e?h:f?e:0;h>i;i++)if(c=d[i],!(!c.selected&&i!==e||(k.optDisabled?c.disabled:null!==c.getAttribute("disabled"))||c.parentNode.disabled&&m.nodeName(c.parentNode,"optgroup"))){if(b=m(c).val(),f)return b;g.push(b)}return g},set:function(a,b){var c,d,e=a.options,f=m.makeArray(b),g=e.length;while(g--)if(d=e[g],m.inArray(m.valHooks.option.get(d),f)>=0)try{d.selected=c=!0}catch(h){d.scrollHeight}else d.selected=!1;return c||(a.selectedIndex=-1),e}}}}),m.each(["radio","checkbox"],function(){m.valHooks[this]={set:function(a,b){return m.isArray(b)?a.checked=m.inArray(m(a).val(),b)>=0:void 0}},k.checkOn||(m.valHooks[this].get=function(a){return null===a.getAttribute("value")?"on":a.value})});var mc,nc,oc=m.expr.attrHandle,pc=/^(?:checked|selected)$/i,qc=k.getSetAttribute,rc=k.input;m.fn.extend({attr:function(a,b){return V(this,m.attr,a,b,arguments.length>1)},removeAttr:function(a){return this.each(function(){m.removeAttr(this,a)})}}),m.extend({attr:function(a,b,c){var d,e,f=a.nodeType;if(a&&3!==f&&8!==f&&2!==f)return typeof a.getAttribute===K?m.prop(a,b,c):(1===f&&m.isXMLDoc(a)||(b=b.toLowerCase(),d=m.attrHooks[b]||(m.expr.match.bool.test(b)?nc:mc)),void 0===c?d&&"get"in d&&null!==(e=d.get(a,b))?e:(e=m.find.attr(a,b),null==e?void 0:e):null!==c?d&&"set"in d&&void 0!==(e=d.set(a,c,b))?e:(a.setAttribute(b,c+""),c):void m.removeAttr(a,b))},removeAttr:function(a,b){var c,d,e=0,f=b&&b.match(E);if(f&&1===a.nodeType)while(c=f[e++])d=m.propFix[c]||c,m.expr.match.bool.test(c)?rc&&qc||!pc.test(c)?a[d]=!1:a[m.camelCase("default-"+c)]=a[d]=!1:m.attr(a,c,""),a.removeAttribute(qc?c:d)},attrHooks:{type:{set:function(a,b){if(!k.radioValue&&"radio"===b&&m.nodeName(a,"input")){var c=a.value;return a.setAttribute("type",b),c&&(a.value=c),b}}}}}),nc={set:function(a,b,c){return b===!1?m.removeAttr(a,c):rc&&qc||!pc.test(c)?a.setAttribute(!qc&&m.propFix[c]||c,c):a[m.camelCase("default-"+c)]=a[c]=!0,c}},m.each(m.expr.match.bool.source.match(/\w+/g),function(a,b){var c=oc[b]||m.find.attr;oc[b]=rc&&qc||!pc.test(b)?function(a,b,d){var e,f;return d||(f=oc[b],oc[b]=e,e=null!=c(a,b,d)?b.toLowerCase():null,oc[b]=f),e}:function(a,b,c){return c?void 0:a[m.camelCase("default-"+b)]?b.toLowerCase():null}}),rc&&qc||(m.attrHooks.value={set:function(a,b,c){return m.nodeName(a,"input")?void(a.defaultValue=b):mc&&mc.set(a,b,c)}}),qc||(mc={set:function(a,b,c){var d=a.getAttributeNode(c);return d||a.setAttributeNode(d=a.ownerDocument.createAttribute(c)),d.value=b+="","value"===c||b===a.getAttribute(c)?b:void 0}},oc.id=oc.name=oc.coords=function(a,b,c){var d;return c?void 0:(d=a.getAttributeNode(b))&&""!==d.value?d.value:null},m.valHooks.button={get:function(a,b){var c=a.getAttributeNode(b);return c&&c.specified?c.value:void 0},set:mc.set},m.attrHooks.contenteditable={set:function(a,b,c){mc.set(a,""===b?!1:b,c)}},m.each(["width","height"],function(a,b){m.attrHooks[b]={set:function(a,c){return""===c?(a.setAttribute(b,"auto"),c):void 0}}})),k.style||(m.attrHooks.style={get:function(a){return a.style.cssText||void 0},set:function(a,b){return a.style.cssText=b+""}});var sc=/^(?:input|select|textarea|button|object)$/i,tc=/^(?:a|area)$/i;m.fn.extend({prop:function(a,b){return V(this,m.prop,a,b,arguments.length>1)},removeProp:function(a){return a=m.propFix[a]||a,this.each(function(){try{this[a]=void 0,delete this[a]}catch(b){}})}}),m.extend({propFix:{"for":"htmlFor","class":"className"},prop:function(a,b,c){var d,e,f,g=a.nodeType;if(a&&3!==g&&8!==g&&2!==g)return f=1!==g||!m.isXMLDoc(a),f&&(b=m.propFix[b]||b,e=m.propHooks[b]),void 0!==c?e&&"set"in e&&void 0!==(d=e.set(a,c,b))?d:a[b]=c:e&&"get"in e&&null!==(d=e.get(a,b))?d:a[b]},propHooks:{tabIndex:{get:function(a){var b=m.find.attr(a,"tabindex");return b?parseInt(b,10):sc.test(a.nodeName)||tc.test(a.nodeName)&&a.href?0:-1}}}}),k.hrefNormalized||m.each(["href","src"],function(a,b){m.propHooks[b]={get:function(a){return a.getAttribute(b,4)}}}),k.optSelected||(m.propHooks.selected={get:function(a){var b=a.parentNode;return b&&(b.selectedIndex,b.parentNode&&b.parentNode.selectedIndex),null}}),m.each(["tabIndex","readOnly","maxLength","cellSpacing","cellPadding","rowSpan","colSpan","useMap","frameBorder","contentEditable"],function(){m.propFix[this.toLowerCase()]=this}),k.enctype||(m.propFix.enctype="encoding");var uc=/[\t\r\n\f]/g;m.fn.extend({addClass:function(a){var b,c,d,e,f,g,h=0,i=this.length,j="string"==typeof a&&a;if(m.isFunction(a))return this.each(function(b){m(this).addClass(a.call(this,b,this.className))});if(j)for(b=(a||"").match(E)||[];i>h;h++)if(c=this[h],d=1===c.nodeType&&(c.className?(" "+c.className+" ").replace(uc," "):" ")){f=0;while(e=b[f++])d.indexOf(" "+e+" ")<0&&(d+=e+" ");g=m.trim(d),c.className!==g&&(c.className=g)}return this},removeClass:function(a){var b,c,d,e,f,g,h=0,i=this.length,j=0===arguments.length||"string"==typeof a&&a;if(m.isFunction(a))return this.each(function(b){m(this).removeClass(a.call(this,b,this.className))});if(j)for(b=(a||"").match(E)||[];i>h;h++)if(c=this[h],d=1===c.nodeType&&(c.className?(" "+c.className+" ").replace(uc," "):"")){f=0;while(e=b[f++])while(d.indexOf(" "+e+" ")>=0)d=d.replace(" "+e+" "," ");g=a?m.trim(d):"",c.className!==g&&(c.className=g)}return this},toggleClass:function(a,b){var c=typeof a;return"boolean"==typeof b&&"string"===c?b?this.addClass(a):this.removeClass(a):this.each(m.isFunction(a)?function(c){m(this).toggleClass(a.call(this,c,this.className,b),b)}:function(){if("string"===c){var b,d=0,e=m(this),f=a.match(E)||[];while(b=f[d++])e.hasClass(b)?e.removeClass(b):e.addClass(b)}else(c===K||"boolean"===c)&&(this.className&&m._data(this,"__className__",this.className),this.className=this.className||a===!1?"":m._data(this,"__className__")||"")})},hasClass:function(a){for(var b=" "+a+" ",c=0,d=this.length;d>c;c++)if(1===this[c].nodeType&&(" "+this[c].className+" ").replace(uc," ").indexOf(b)>=0)return!0;return!1}}),m.each("blur focus focusin focusout load resize scroll unload click dblclick mousedown mouseup mousemove mouseover mouseout mouseenter mouseleave change select submit keydown keypress keyup error contextmenu".split(" "),function(a,b){m.fn[b]=function(a,c){return arguments.length>0?this.on(b,null,a,c):this.trigger(b)}}),m.fn.extend({hover:function(a,b){return this.mouseenter(a).mouseleave(b||a)},bind:function(a,b,c){return this.on(a,null,b,c)},unbind:function(a,b){return this.off(a,null,b)},delegate:function(a,b,c,d){return this.on(b,a,c,d)},undelegate:function(a,b,c){return 1===arguments.length?this.off(a,"**"):this.off(b,a||"**",c)}});var vc=m.now(),wc=/\?/,xc=/(,)|(\[|{)|(}|])|"(?:[^"\\\r\n]|\\["\\\/bfnrt]|\\u[\da-fA-F]{4})*"\s*:?|true|false|null|-?(?!0\d)\d+(?:\.\d+|)(?:[eE][+-]?\d+|)/g;m.parseJSON=function(b){if(a.JSON&&a.JSON.parse)return a.JSON.parse(b+"");var c,d=null,e=m.trim(b+"");return e&&!m.trim(e.replace(xc,function(a,b,e,f){return c&&b&&(d=0),0===d?a:(c=e||b,d+=!f-!e,"")}))?Function("return "+e)():m.error("Invalid JSON: "+b)},m.parseXML=function(b){var c,d;if(!b||"string"!=typeof b)return null;try{a.DOMParser?(d=new DOMParser,c=d.parseFromString(b,"text/xml")):(c=new ActiveXObject("Microsoft.XMLDOM"),c.async="false",c.loadXML(b))}catch(e){c=void 0}return c&&c.documentElement&&!c.getElementsByTagName("parsererror").length||m.error("Invalid XML: "+b),c};var yc,zc,Ac=/#.*$/,Bc=/([?&])_=[^&]*/,Cc=/^(.*?):[ \t]*([^\r\n]*)\r?$/gm,Dc=/^(?:about|app|app-storage|.+-extension|file|res|widget):$/,Ec=/^(?:GET|HEAD)$/,Fc=/^\/\//,Gc=/^([\w.+-]+:)(?:\/\/(?:[^\/?#]*@|)([^\/?#:]*)(?::(\d+)|)|)/,Hc={},Ic={},Jc="*/".concat("*");try{zc=location.href}catch(Kc){zc=y.createElement("a"),zc.href="",zc=zc.href}yc=Gc.exec(zc.toLowerCase())||[];function Lc(a){return function(b,c){"string"!=typeof b&&(c=b,b="*");var d,e=0,f=b.toLowerCase().match(E)||[];if(m.isFunction(c))while(d=f[e++])"+"===d.charAt(0)?(d=d.slice(1)||"*",(a[d]=a[d]||[]).unshift(c)):(a[d]=a[d]||[]).push(c)}}function Mc(a,b,c,d){var e={},f=a===Ic;function g(h){var i;return e[h]=!0,m.each(a[h]||[],function(a,h){var j=h(b,c,d);return"string"!=typeof j||f||e[j]?f?!(i=j):void 0:(b.dataTypes.unshift(j),g(j),!1)}),i}return g(b.dataTypes[0])||!e["*"]&&g("*")}function Nc(a,b){var c,d,e=m.ajaxSettings.flatOptions||{};for(d in b)void 0!==b[d]&&((e[d]?a:c||(c={}))[d]=b[d]);return c&&m.extend(!0,a,c),a}function Oc(a,b,c){var d,e,f,g,h=a.contents,i=a.dataTypes;while("*"===i[0])i.shift(),void 0===e&&(e=a.mimeType||b.getResponseHeader("Content-Type"));if(e)for(g in h)if(h[g]&&h[g].test(e)){i.unshift(g);break}if(i[0]in c)f=i[0];else{for(g in c){if(!i[0]||a.converters[g+" "+i[0]]){f=g;break}d||(d=g)}f=f||d}return f?(f!==i[0]&&i.unshift(f),c[f]):void 0}function Pc(a,b,c,d){var e,f,g,h,i,j={},k=a.dataTypes.slice();if(k[1])for(g in a.converters)j[g.toLowerCase()]=a.converters[g];f=k.shift();while(f)if(a.responseFields[f]&&(c[a.responseFields[f]]=b),!i&&d&&a.dataFilter&&(b=a.dataFilter(b,a.dataType)),i=f,f=k.shift())if("*"===f)f=i;else if("*"!==i&&i!==f){if(g=j[i+" "+f]||j["* "+f],!g)for(e in j)if(h=e.split(" "),h[1]===f&&(g=j[i+" "+h[0]]||j["* "+h[0]])){g===!0?g=j[e]:j[e]!==!0&&(f=h[0],k.unshift(h[1]));break}if(g!==!0)if(g&&a["throws"])b=g(b);else try{b=g(b)}catch(l){return{state:"parsererror",error:g?l:"No conversion from "+i+" to "+f}}}return{state:"success",data:b}}m.extend({active:0,lastModified:{},etag:{},ajaxSettings:{url:zc,type:"GET",isLocal:Dc.test(yc[1]),global:!0,processData:!0,async:!0,contentType:"application/x-www-form-urlencoded; charset=UTF-8",accepts:{"*":Jc,text:"text/plain",html:"text/html",xml:"application/xml, text/xml",json:"application/json, text/javascript"},contents:{xml:/xml/,html:/html/,json:/json/},responseFields:{xml:"responseXML",text:"responseText",json:"responseJSON"},converters:{"* text":String,"text html":!0,"text json":m.parseJSON,"text xml":m.parseXML},flatOptions:{url:!0,context:!0}},ajaxSetup:function(a,b){return b?Nc(Nc(a,m.ajaxSettings),b):Nc(m.ajaxSettings,a)},ajaxPrefilter:Lc(Hc),ajaxTransport:Lc(Ic),ajax:function(a,b){"object"==typeof a&&(b=a,a=void 0),b=b||{};var c,d,e,f,g,h,i,j,k=m.ajaxSetup({},b),l=k.context||k,n=k.context&&(l.nodeType||l.jquery)?m(l):m.event,o=m.Deferred(),p=m.Callbacks("once memory"),q=k.statusCode||{},r={},s={},t=0,u="canceled",v={readyState:0,getResponseHeader:function(a){var b;if(2===t){if(!j){j={};while(b=Cc.exec(f))j[b[1].toLowerCase()]=b[2]}b=j[a.toLowerCase()]}return null==b?null:b},getAllResponseHeaders:function(){return 2===t?f:null},setRequestHeader:function(a,b){var c=a.toLowerCase();return t||(a=s[c]=s[c]||a,r[a]=b),this},overrideMimeType:function(a){return t||(k.mimeType=a),this},statusCode:function(a){var b;if(a)if(2>t)for(b in a)q[b]=[q[b],a[b]];else v.always(a[v.status]);return this},abort:function(a){var b=a||u;return i&&i.abort(b),x(0,b),this}};if(o.promise(v).complete=p.add,v.success=v.done,v.error=v.fail,k.url=((a||k.url||zc)+"").replace(Ac,"").replace(Fc,yc[1]+"//"),k.type=b.method||b.type||k.method||k.type,k.dataTypes=m.trim(k.dataType||"*").toLowerCase().match(E)||[""],null==k.crossDomain&&(c=Gc.exec(k.url.toLowerCase()),k.crossDomain=!(!c||c[1]===yc[1]&&c[2]===yc[2]&&(c[3]||("http:"===c[1]?"80":"443"))===(yc[3]||("http:"===yc[1]?"80":"443")))),k.data&&k.processData&&"string"!=typeof k.data&&(k.data=m.param(k.data,k.traditional)),Mc(Hc,k,b,v),2===t)return v;h=k.global,h&&0===m.active++&&m.event.trigger("ajaxStart"),k.type=k.type.toUpperCase(),k.hasContent=!Ec.test(k.type),e=k.url,k.hasContent||(k.data&&(e=k.url+=(wc.test(e)?"&":"?")+k.data,delete k.data),k.cache===!1&&(k.url=Bc.test(e)?e.replace(Bc,"$1_="+vc++):e+(wc.test(e)?"&":"?")+"_="+vc++)),k.ifModified&&(m.lastModified[e]&&v.setRequestHeader("If-Modified-Since",m.lastModified[e]),m.etag[e]&&v.setRequestHeader("If-None-Match",m.etag[e])),(k.data&&k.hasContent&&k.contentType!==!1||b.contentType)&&v.setRequestHeader("Content-Type",k.contentType),v.setRequestHeader("Accept",k.dataTypes[0]&&k.accepts[k.dataTypes[0]]?k.accepts[k.dataTypes[0]]+("*"!==k.dataTypes[0]?", "+Jc+"; q=0.01":""):k.accepts["*"]);for(d in k.headers)v.setRequestHeader(d,k.headers[d]);if(k.beforeSend&&(k.beforeSend.call(l,v,k)===!1||2===t))return v.abort();u="abort";for(d in{success:1,error:1,complete:1})v[d](k[d]);if(i=Mc(Ic,k,b,v)){v.readyState=1,h&&n.trigger("ajaxSend",[v,k]),k.async&&k.timeout>0&&(g=setTimeout(function(){v.abort("timeout")},k.timeout));try{t=1,i.send(r,x)}catch(w){if(!(2>t))throw w;x(-1,w)}}else x(-1,"No Transport");function x(a,b,c,d){var j,r,s,u,w,x=b;2!==t&&(t=2,g&&clearTimeout(g),i=void 0,f=d||"",v.readyState=a>0?4:0,j=a>=200&&300>a||304===a,c&&(u=Oc(k,v,c)),u=Pc(k,u,v,j),j?(k.ifModified&&(w=v.getResponseHeader("Last-Modified"),w&&(m.lastModified[e]=w),w=v.getResponseHeader("etag"),w&&(m.etag[e]=w)),204===a||"HEAD"===k.type?x="nocontent":304===a?x="notmodified":(x=u.state,r=u.data,s=u.error,j=!s)):(s=x,(a||!x)&&(x="error",0>a&&(a=0))),v.status=a,v.statusText=(b||x)+"",j?o.resolveWith(l,[r,x,v]):o.rejectWith(l,[v,x,s]),v.statusCode(q),q=void 0,h&&n.trigger(j?"ajaxSuccess":"ajaxError",[v,k,j?r:s]),p.fireWith(l,[v,x]),h&&(n.trigger("ajaxComplete",[v,k]),--m.active||m.event.trigger("ajaxStop")))}return v},getJSON:function(a,b,c){return m.get(a,b,c,"json")},getScript:function(a,b){return m.get(a,void 0,b,"script")}}),m.each(["get","post"],function(a,b){m[b]=function(a,c,d,e){return m.isFunction(c)&&(e=e||d,d=c,c=void 0),m.ajax({url:a,type:b,dataType:e,data:c,success:d})}}),m.each(["ajaxStart","ajaxStop","ajaxComplete","ajaxError","ajaxSuccess","ajaxSend"],function(a,b){m.fn[b]=function(a){return this.on(b,a)}}),m._evalUrl=function(a){return m.ajax({url:a,type:"GET",dataType:"script",async:!1,global:!1,"throws":!0})},m.fn.extend({wrapAll:function(a){if(m.isFunction(a))return this.each(function(b){m(this).wrapAll(a.call(this,b))});if(this[0]){var b=m(a,this[0].ownerDocument).eq(0).clone(!0);this[0].parentNode&&b.insertBefore(this[0]),b.map(function(){var a=this;while(a.firstChild&&1===a.firstChild.nodeType)a=a.firstChild;return a}).append(this)}return this},wrapInner:function(a){return this.each(m.isFunction(a)?function(b){m(this).wrapInner(a.call(this,b))}:function(){var b=m(this),c=b.contents();c.length?c.wrapAll(a):b.append(a)})},wrap:function(a){var b=m.isFunction(a);return this.each(function(c){m(this).wrapAll(b?a.call(this,c):a)})},unwrap:function(){return this.parent().each(function(){m.nodeName(this,"body")||m(this).replaceWith(this.childNodes)}).end()}}),m.expr.filters.hidden=function(a){return a.offsetWidth<=0&&a.offsetHeight<=0||!k.reliableHiddenOffsets()&&"none"===(a.style&&a.style.display||m.css(a,"display"))},m.expr.filters.visible=function(a){return!m.expr.filters.hidden(a)};var Qc=/%20/g,Rc=/\[\]$/,Sc=/\r?\n/g,Tc=/^(?:submit|button|image|reset|file)$/i,Uc=/^(?:input|select|textarea|keygen)/i;function Vc(a,b,c,d){var e;if(m.isArray(b))m.each(b,function(b,e){c||Rc.test(a)?d(a,e):Vc(a+"["+("object"==typeof e?b:"")+"]",e,c,d)});else if(c||"object"!==m.type(b))d(a,b);else for(e in b)Vc(a+"["+e+"]",b[e],c,d)}m.param=function(a,b){var c,d=[],e=function(a,b){b=m.isFunction(b)?b():null==b?"":b,d[d.length]=encodeURIComponent(a)+"="+encodeURIComponent(b)};if(void 0===b&&(b=m.ajaxSettings&&m.ajaxSettings.traditional),m.isArray(a)||a.jquery&&!m.isPlainObject(a))m.each(a,function(){e(this.name,this.value)});else for(c in a)Vc(c,a[c],b,e);return d.join("&").replace(Qc,"+")},m.fn.extend({serialize:function(){return m.param(this.serializeArray())},serializeArray:function(){return this.map(function(){var a=m.prop(this,"elements");return a?m.makeArray(a):this}).filter(function(){var a=this.type;return this.name&&!m(this).is(":disabled")&&Uc.test(this.nodeName)&&!Tc.test(a)&&(this.checked||!W.test(a))}).map(function(a,b){var c=m(this).val();return null==c?null:m.isArray(c)?m.map(c,function(a){return{name:b.name,value:a.replace(Sc,"\r\n")}}):{name:b.name,value:c.replace(Sc,"\r\n")}}).get()}}),m.ajaxSettings.xhr=void 0!==a.ActiveXObject?function(){return!this.isLocal&&/^(get|post|head|put|delete|options)$/i.test(this.type)&&Zc()||$c()}:Zc;var Wc=0,Xc={},Yc=m.ajaxSettings.xhr();a.ActiveXObject&&m(a).on("unload",function(){for(var a in Xc)Xc[a](void 0,!0)}),k.cors=!!Yc&&"withCredentials"in Yc,Yc=k.ajax=!!Yc,Yc&&m.ajaxTransport(function(a){if(!a.crossDomain||k.cors){var b;return{send:function(c,d){var e,f=a.xhr(),g=++Wc;if(f.open(a.type,a.url,a.async,a.username,a.password),a.xhrFields)for(e in a.xhrFields)f[e]=a.xhrFields[e];a.mimeType&&f.overrideMimeType&&f.overrideMimeType(a.mimeType),a.crossDomain||c["X-Requested-With"]||(c["X-Requested-With"]="XMLHttpRequest");for(e in c)void 0!==c[e]&&f.setRequestHeader(e,c[e]+"");f.send(a.hasContent&&a.data||null),b=function(c,e){var h,i,j;if(b&&(e||4===f.readyState))if(delete Xc[g],b=void 0,f.onreadystatechange=m.noop,e)4!==f.readyState&&f.abort();else{j={},h=f.status,"string"==typeof f.responseText&&(j.text=f.responseText);try{i=f.statusText}catch(k){i=""}h||!a.isLocal||a.crossDomain?1223===h&&(h=204):h=j.text?200:404}j&&d(h,i,j,f.getAllResponseHeaders())},a.async?4===f.readyState?setTimeout(b):f.onreadystatechange=Xc[g]=b:b()},abort:function(){b&&b(void 0,!0)}}}});function Zc(){try{return new a.XMLHttpRequest}catch(b){}}function $c(){try{return new a.ActiveXObject("Microsoft.XMLHTTP")}catch(b){}}m.ajaxSetup({accepts:{script:"text/javascript, application/javascript, application/ecmascript, application/x-ecmascript"},contents:{script:/(?:java|ecma)script/},converters:{"text script":function(a){return m.globalEval(a),a}}}),m.ajaxPrefilter("script",function(a){void 0===a.cache&&(a.cache=!1),a.crossDomain&&(a.type="GET",a.global=!1)}),m.ajaxTransport("script",function(a){if(a.crossDomain){var b,c=y.head||m("head")[0]||y.documentElement;return{send:function(d,e){b=y.createElement("script"),b.async=!0,a.scriptCharset&&(b.charset=a.scriptCharset),b.src=a.url,b.onload=b.onreadystatechange=function(a,c){(c||!b.readyState||/loaded|complete/.test(b.readyState))&&(b.onload=b.onreadystatechange=null,b.parentNode&&b.parentNode.removeChild(b),b=null,c||e(200,"success"))},c.insertBefore(b,c.firstChild)},abort:function(){b&&b.onload(void 0,!0)}}}});var _c=[],ad=/(=)\?(?=&|$)|\?\?/;m.ajaxSetup({jsonp:"callback",jsonpCallback:function(){var a=_c.pop()||m.expando+"_"+vc++;return this[a]=!0,a}}),m.ajaxPrefilter("json jsonp",function(b,c,d){var e,f,g,h=b.jsonp!==!1&&(ad.test(b.url)?"url":"string"==typeof b.data&&!(b.contentType||"").indexOf("application/x-www-form-urlencoded")&&ad.test(b.data)&&"data");return h||"jsonp"===b.dataTypes[0]?(e=b.jsonpCallback=m.isFunction(b.jsonpCallback)?b.jsonpCallback():b.jsonpCallback,h?b[h]=b[h].replace(ad,"$1"+e):b.jsonp!==!1&&(b.url+=(wc.test(b.url)?"&":"?")+b.jsonp+"="+e),b.converters["script json"]=function(){return g||m.error(e+" was not called"),g[0]},b.dataTypes[0]="json",f=a[e],a[e]=function(){g=arguments},d.always(function(){a[e]=f,b[e]&&(b.jsonpCallback=c.jsonpCallback,_c.push(e)),g&&m.isFunction(f)&&f(g[0]),g=f=void 0}),"script"):void 0}),m.parseHTML=function(a,b,c){if(!a||"string"!=typeof a)return null;"boolean"==typeof b&&(c=b,b=!1),b=b||y;var d=u.exec(a),e=!c&&[];return d?[b.createElement(d[1])]:(d=m.buildFragment([a],b,e),e&&e.length&&m(e).remove(),m.merge([],d.childNodes))};var bd=m.fn.load;m.fn.load=function(a,b,c){if("string"!=typeof a&&bd)return bd.apply(this,arguments);var d,e,f,g=this,h=a.indexOf(" ");return h>=0&&(d=m.trim(a.slice(h,a.length)),a=a.slice(0,h)),m.isFunction(b)?(c=b,b=void 0):b&&"object"==typeof b&&(f="POST"),g.length>0&&m.ajax({url:a,type:f,dataType:"html",data:b}).done(function(a){e=arguments,g.html(d?m("<div>").append(m.parseHTML(a)).find(d):a)}).complete(c&&function(a,b){g.each(c,e||[a.responseText,b,a])}),this},m.expr.filters.animated=function(a){return m.grep(m.timers,function(b){return a===b.elem}).length};var cd=a.document.documentElement;function dd(a){return m.isWindow(a)?a:9===a.nodeType?a.defaultView||a.parentWindow:!1}m.offset={setOffset:function(a,b,c){var d,e,f,g,h,i,j,k=m.css(a,"position"),l=m(a),n={};"static"===k&&(a.style.position="relative"),h=l.offset(),f=m.css(a,"top"),i=m.css(a,"left"),j=("absolute"===k||"fixed"===k)&&m.inArray("auto",[f,i])>-1,j?(d=l.position(),g=d.top,e=d.left):(g=parseFloat(f)||0,e=parseFloat(i)||0),m.isFunction(b)&&(b=b.call(a,c,h)),null!=b.top&&(n.top=b.top-h.top+g),null!=b.left&&(n.left=b.left-h.left+e),"using"in b?b.using.call(a,n):l.css(n)}},m.fn.extend({offset:function(a){if(arguments.length)return void 0===a?this:this.each(function(b){m.offset.setOffset(this,a,b)});var b,c,d={top:0,left:0},e=this[0],f=e&&e.ownerDocument;if(f)return b=f.documentElement,m.contains(b,e)?(typeof e.getBoundingClientRect!==K&&(d=e.getBoundingClientRect()),c=dd(f),{top:d.top+(c.pageYOffset||b.scrollTop)-(b.clientTop||0),left:d.left+(c.pageXOffset||b.scrollLeft)-(b.clientLeft||0)}):d},position:function(){if(this[0]){var a,b,c={top:0,left:0},d=this[0];return"fixed"===m.css(d,"position")?b=d.getBoundingClientRect():(a=this.offsetParent(),b=this.offset(),m.nodeName(a[0],"html")||(c=a.offset()),c.top+=m.css(a[0],"borderTopWidth",!0),c.left+=m.css(a[0],"borderLeftWidth",!0)),{top:b.top-c.top-m.css(d,"marginTop",!0),left:b.left-c.left-m.css(d,"marginLeft",!0)}}},offsetParent:function(){return this.map(function(){var a=this.offsetParent||cd;while(a&&!m.nodeName(a,"html")&&"static"===m.css(a,"position"))a=a.offsetParent;return a||cd})}}),m.each({scrollLeft:"pageXOffset",scrollTop:"pageYOffset"},function(a,b){var c=/Y/.test(b);m.fn[a]=function(d){return V(this,function(a,d,e){var f=dd(a);return void 0===e?f?b in f?f[b]:f.document.documentElement[d]:a[d]:void(f?f.scrollTo(c?m(f).scrollLeft():e,c?e:m(f).scrollTop()):a[d]=e)},a,d,arguments.length,null)}}),m.each(["top","left"],function(a,b){m.cssHooks[b]=Lb(k.pixelPosition,function(a,c){return c?(c=Jb(a,b),Hb.test(c)?m(a).position()[b]+"px":c):void 0})}),m.each({Height:"height",Width:"width"},function(a,b){m.each({padding:"inner"+a,content:b,"":"outer"+a},function(c,d){m.fn[d]=function(d,e){var f=arguments.length&&(c||"boolean"!=typeof d),g=c||(d===!0||e===!0?"margin":"border");return V(this,function(b,c,d){var e;return m.isWindow(b)?b.document.documentElement["client"+a]:9===b.nodeType?(e=b.documentElement,Math.max(b.body["scroll"+a],e["scroll"+a],b.body["offset"+a],e["offset"+a],e["client"+a])):void 0===d?m.css(b,c,g):m.style(b,c,d,g)},b,f?d:void 0,f,null)}})}),m.fn.size=function(){return this.length},m.fn.andSelf=m.fn.addBack,"function"==typeof define&&define.amd&&define("jquery",[],function(){return m});var ed=a.jQuery,fd=a.$;return m.noConflict=function(b){return a.$===m&&(a.$=fd),b&&a.jQuery===m&&(a.jQuery=ed),m},typeof b===K&&(a.jQuery=a.$=m),m});
+                </script>
+            
+<script src="https://cloud.xm-cdn.com/assets/js/libraries/popper_tippy.min.js?ver=df510a0f987a765d7b496cca56dbfa79"></script>
+<script async="async" src="https://cloud.xm-cdn.com/assets/js/minified/main_homepage.js?ver=272856b8aa91b67def5cab5345cf43f2"></script>
+<script async="async" src="https://cloud.xm-cdn.com/assets/js/minified/jquery_cookie.js?ver=0d34c1f7feb9ea77ce3988585bc1f11b"></script><script>
+// General variables
+var host = window.location.host,
+    protocol = window.location.protocol,
+    currentUrl = window.location.href,
+    htmlLang = document.getElementsByTagName("html")[0].getAttribute("lang");
+    domainsNoPrefix = ['en', 'id', 'ar'];
+
+    domainName = ".xmindonesiatrade.com";
+    hostName = "https://www.xmindonesiatrade.com";
+
+switch(htmlLang) {
+    case 'ja':      htmlLang = 'jp'; break;
+    case 'ms':      htmlLang = 'my'; break;
+    case 'zh_CN':   htmlLang = 'cn'; break;
+    case 'sv':      htmlLang = 'se'; break;
+    case 'ko':      htmlLang = 'kr'; break;
+    case 'hi':      htmlLang = 'in'; break;
+    case 'cs':      htmlLang = 'cz'; break;
+}
+
+allActiveLangs = [
+    'en',
+    'jp',
+    'my',
+    'cn',
+    'el',
+    'hu',
+    'ru',
+    'id',
+    'fr',
+    'it',
+    'se',
+    'de',
+    'pl',
+    'ar',
+    'es',
+    'kr',
+    'pt',
+    'tr',
+    'vn',
+    'th',
+    'ph',
+    'nl',
+    'cz',
+    'fa',
+    'bn',
+    'tw',
+    'ur',
+    'si',
+    'hi',
+    'uz'
+];
+
+removeLangsFromContactMap = [
+    'se',
+    'nl'
+];
+
+</script><!-- VIDEOS VARS -->
+<script>
+
+var homeLink = 'https://www.xmindonesiatrade.com/id';
+var homePrefix = 'id';
+var catDailyForexNewsName = 'Berita Forex Harian';   
+var catWeeklyForexReviewName = 'Weekly Forex Review';
+var catDailyTechnicalName = 'Analisa Teknikal Harian';
+var catWeeklyTechnicalName =  'Weekly Technical Analysis';
+var catMarketAnalysisName = 'Analisis Pasar';
+</script> <script type="text/javascript">
+    var data = {"videos":[],"lists":["PL7_Y2OxpmtRv8zd2tWNi7wlDMAJs9t-Jq"],"skip":[],"trim":["MT4 Tutorials - ","Mobile Trader - ","XM.COM - ","Peter McGuire - ","Marios Hadjikyriacos - "],"info":{"type":"default","kind":"youtube","youtube":{"key":"AIzaSyCG-h4QAgN1me6dWpYY-AsKFSJn1Qfdv5c","part":"snippet","uri":"https:\/\/www.googleapis.com\/youtube\/v3\/playlistItems"},"country":"id","page":"home","langprefix":"id","brand_id":"xmbz","request":"playlistPL7_Y2OxpmtRv8zd2tWNi7wlDMAJs9t-Jq"}};
+</script>
+                <script>
+                    var imgAsync = document.getElementById('imgAsync');
+var img = new Image();
+
+if(imgAsync){
+    img.onload = function () {
+        imgAsync.style.background = "#000 url('"+ imgAsync.dataset.large + "')repeat-x center top";
+        imgAsync.classList.add('loaded');
+    };
+    img.src = imgAsync.dataset.large;
+}
+                </script>
+            
+<script src="https://cloud.xm-cdn.com/assets/js/minified/cookie_popup.js?ver=b33c69bdfd91617543479cfc616e0c07"></script>
+<script src="https://cloud.xm-cdn.com/assets/js/minified/url_parameters_affid_gid.js?ver=111d6ef892a74713fb24e332d9653da9"></script>
+<script src="https://cloud.xm-cdn.com/assets/js/libraries/qrcode-with-logos_1_0_3.min.js?ver=1709985600"></script>
+<div id="custom-livechat" hidden>
+    <div class="custom-livechat__header">
+        <button id="widget-back-button"><i class="back-button fa fa-chevron-left"></i></button>
+        <h3 class="inline-block">Live Chat XM</h3>
+        <button id="close-prechat-form" class="text-gray pull-right"><i class="fa fa-times"></i></button>
+    </div>
+    <div class="custom-livechat__body">
+        <div class="j-second-step" hidden>
+            <p class="j-hide-if-logged-in">
+                Mohon masukkan informasi kontak Anda. Jika Anda telah memiliki akun XM, silakan sebutkan ID akun Anda agar tim layanan bantuan kami dapat memberikan Anda layanan terbaik.            </p>
+            <ul class="nav nav-tabs j-hide-if-logged-in">
+                <li class="active"><a href="#existing-member" role="tab" data-toggle="tab">Klien Lama</a></li>
+                <li class=""><a href="#visitor-user" role="tab" data-toggle="tab">Klien Baru</a></li>
+            </ul>
+            <div class="tab-content">
+                <div id="existing-member" class="tab-pane active" role="tabpanel">
+                    <form id="pre-chat-form-member" action="" method="post" novalidate="novalidate">
+                        <div class="form-group" style="display: none;">
+                            <input type="hidden" name="pre-chat-form-value" value="1">
+                        </div>
+                            <div class="form-group" style="display: none;">
+                                <input type="hidden" class="j-user-id ignore-validation" id="user_id" name="user_id" value="0">
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label for="lc_first_name"><span class="red">*</span> Nama depan</label>
+                                <input class="form-control j-first-name" id="lc_first_name" name="first_name" value="" data-cip-id="first_name" type="text">
+                            </div>
+                            <div class="form-group has-feedback">
+                                <label for="lc_last_name"><span class="red">*</span> Nama belakang</label>
+                                <input class="form-control j-last-name" id="lc_last_name" name="last_name" value="" data-cip-id="last_name" type="text">
+                            </div>
+                        <div class="form-group has-feedback j-div-email">
+                            <label for="lc_email_member"><span class="red">*</span> E-mail</label>
+                            <input class="form-control j-email" id="lc_email_member" name="email" value="" type="text">
+
+                        </div>
+                        <div class="form-group has-feedback j-div-language">
+                            <label for="lc_preferred_language">
+                                <span class="red">*</span> Bahasa                                <i class="fa fa-spinner fa-spin"></i>
+                            </label>
+                            <select id="lc_preferred_language" name="preferred_language" class="form-control j-preferred-language"></select>
+                        </div>
+                        <div class="dis10"></div>
+                        <div class="text-center">
+                            <button id="start-chat-member" class="btn btn-solid btn-red btn-block" data-type="ajax" data-text="Mulai Chat">
+                                Mulai Chat                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div id="visitor-user" class="tab-pane" role="tabpanel">
+                    <form id="pre-chat-form">
+                        <div class="form-group has-feedback j-hide-if-logged-in j-show-first-name">
+                            <label for="lc_first_name"><span class="red">*</span> Nama depan</label>
+                            <input class="form-control j-first-name" id="lc_first_name" name="first_name" value="" data-cip-id="first_name" type="text">
+                        </div>
+                        <div class="form-group has-feedback j-hide-if-logged-in j-show-last-name">
+                            <label for="lc_last_name"><span class="red">*</span> Nama belakang</label>
+                            <input class="form-control j-last-name" id="lc_last_name" name="last_name" value="" data-cip-id="last_name" type="text">
+                        </div>
+                        <div class="form-group has-feedback j-hide-if-logged-in">
+                            <label for="email_visitor"><span class="red">*</span> E-mail </label>
+                            <input class="form-control j-email" id="email_visitor" name="email" value="" type="text">
+                        </div>
+                        <div class="form-group has-feedback">
+                            <label for="lc_preferred_language_visitor">
+                                <span class="red">*</span> Bahasa                                <i class="fa fa-spinner fa-spin"></i>
+                            </label>
+                            <select id="lc_preferred_language_visitor" name="preferred_language" class="form-control j-preferred-language"></select>
+                        </div>
+                        <div class="dis10"></div>
+                        <div class="text-center">
+                            <button id="start-chat" class="btn btn-solid btn-red btn-block" data-type="ajax" data-text="Mulai Chat">
+                                Mulai Chat                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    (function ($) {
+        var userIdSelector = $('.j-user-id'),
+            emailSelector  = $('.j-email'),
+            initialParameters = {
+            apiUrl: 'https://www.xmindonesiatrade.com/files/scripts/validations/livechat/livechat.api.php',
+            loggedIn: "",
+            tradingAccount: "",
+            brandId: 'XMBZ',
+            authenticatedCountry: 'ID',
+            languageCode: 'id',
+            userDetails: {
+                userFirstName: null,
+                userLastName: null,
+                userEmail: null
+            },
+            clientNameMissing: false,
+            keyVisitorEngaged: 'xm-liveChat-visitorEngaged',
+            keyCacheData: 'xm-liveChat-cacheData',
+            visitorsPromotionGroup: '6',
+            languagePrefix: languagePref,
+            websiteHomeLink: homeLink,
+        };
+
+        /**
+         * @param {string} action
+         * @param {object} data
+         * @return {jqXHR}
+         * @private
+         */
+        function callApi(action, data) {
+            return $.ajax({
+                url: initialParameters.apiUrl,
+                method: "POST",
+                data: JSON.stringify({action: action, data: data}),
+                dataType: 'json',
+                contentType: "application/json; charset=utf-8",
+                xhrFields: {
+                    withCredentials: true
+                },
+                crossDomain: true
+            });
+        }
+
+        /**
+         * @param {number} chatGroup
+         * @param {Array<{name: string, value: string}>} livechatCustomVariables
+         * @param {Object<{ name: string, email: string }>} visitorInfo
+         */
+        function LivechatModelClass(chatGroup, livechatCustomVariables, visitorInfo) {
+            // Protect from duplicated load the livechat library
+            if (LivechatModelClass.prototype.hasInstance) {
+                console.info('[LIVECHAT_FE]: Already has an instance');
+                throw "Can not create LivechatAPI again";
+            }
+            LivechatModelClass.prototype.hasInstance = true;
+
+            _init(chatGroup, livechatCustomVariables, visitorInfo);
+
+            // PUBLIC METHODS
+            this.chatWindowToggle = function () {
+                try {
+                    // Here we may have an exception: `[LiveChatWidget] You can't use getters before load`
+                    var data = window.LiveChatWidget.get('state');
+                    if (data.visibility === 'maximized') {
+                        window.LiveChatWidget.call('minimize')
+                    } else {
+                        window.LiveChatWidget.call('maximize');
+                    }
+                } catch (e) {
+                    // This request will be queued and automatically executed after LiveChat is loaded.
+                    window.LiveChatWidget.call('maximize');
+                }
+            };
+
+            // PRIVATE METHODS
+            function _init(chatGroup, livechatCustomVariables, visitorInfo) {
+                window.__lc = window.__lc || {};
+                window.__lc.license = 5419421;
+                window.__lc.group = chatGroup;
+                window.__lc.params = livechatCustomVariables;
+                window.__lc.visitor = visitorInfo;
+                window.__lc.chat_between_groups = false;
+
+                // load the livechat library
+                console.info('[LIVECHAT_FE]: Start to load livechat script');
+                initLivechatNative();
+
+                window.LiveChatWidget.on('ready', function (e) {
+                    console.info('[LIVECHAT_FE]: script loaded. Event called - ready. Will call maximize event');
+                    $('#livechatWidget').show();
+                    window.LiveChatWidget.call('maximize');
+                });
+
+                // Show chat when message received
+                window.LiveChatWidget.on('new_event', function (e) {
+                    if(e.type == 'message' && e.author.type === 'agent') {
+                        $('#livechatWidget').addClass('notification')
+                    }
+                });
+
+                // Hide livechat on minimize
+                window.LiveChatWidget.on('visibility_changed', function (e) {
+                    if(e.visibility == 'minimized') {
+                        window.LiveChatWidget.call("hide");
+                        $('#livechatWidget').removeClass('notification')
+                    }
+                });
+
+                window.LiveChatWidget.on('customer_status_changed', function (data) {
+                    switch (data.status) {
+                        case 'queued': // customer is in queue
+                        case 'chatting': // customer is currently chatting
+                        case 'invited': // customer received an invitation but didn't start the chat
+                            console.info('[LIVECHAT_FE]: customer is in queue or currently chatting received an invitation but did not start the chat', {status: data.status});
+                            LivechatModelClass.prototype.setVisitorEngaged(true);
+                            break;
+                        case 'browsing': // customer is in idle state, not queued, not chatting, and didn't receive an invitation
+                            console.info('[LIVECHAT_FE]: customer is in idle state, not queued, not chatting, and did not receive an invitation', {status: data.status});
+                            LivechatModelClass.prototype.setVisitorEngaged(false);
+                            break;
+                    }
+                });
+            }
+        }
+
+        LivechatModelClass.prototype.hasInstance = false;
+
+        /**
+         * @param {boolean} engaged
+         */
+        LivechatModelClass.prototype.setVisitorEngaged = function (engaged) {
+            sessionStorage.setItem(initialParameters.keyVisitorEngaged, JSON.stringify(engaged));
+        };
+
+        /**
+         * @return {boolean}
+         */
+        LivechatModelClass.prototype.getVisitorEngaged = function () {
+            return !!JSON.parse(sessionStorage.getItem(initialParameters.keyVisitorEngaged));
+        };
+
+        function LivechatControllerClass() {
+            // PRIVATE PROPERTIES
+            var _livechatModel = null;
+            var _$customLivechat = $("#custom-livechat");
+            var _isLanguagesBusy = false;
+
+            if (LivechatModelClass.prototype.getVisitorEngaged()) {
+                var cacheData = _getCacheData();
+                _livechatModel = new LivechatModelClass(cacheData.preferredLanguage, cacheData.customParameters, cacheData.visitorInfo);
+            }
+
+            // PUBLIC METHODS
+            this.openChat = function () {
+                if (_livechatModel) {
+                    _livechatModel.chatWindowToggle();
+                } else {
+                    _loadGroupLanguagesSettings();
+                    _$customLivechat.show();
+                }
+            };
+
+            this.closeCustomForm = function () {
+                _$customLivechat.hide();
+            };
+
+            this.startNewChat = function (formData) {
+                if (initialParameters.clientNameMissing === false
+                    && (formData.user_id || initialParameters.loggedIn)
+                ) {
+                    formData.clientType = 'Existing Client';
+                    _startNewChat(formData, initialParameters.userDetails);
+                } else {
+                    formData.clientType = 'New Client';
+                    _startNewChat(formData, initialParameters.userDetails);
+                }
+            };
+
+            // PRIVATE METHODS
+
+            /**
+             * @param {object} formData
+             * @param {object} [userDetails]
+             * @private
+             */
+            function _startNewChat(formData, userDetails) {
+                console.info('[LIVECHAT_FE]: Starting new chat');
+                var userFirstName = formData.first_name || (userDetails && userDetails.userFirstName) || '';
+                var userLastName = formData.last_name || (userDetails && userDetails.userLastName) || '';
+                var userEmail = formData.email || (userDetails && userDetails.userEmail) || '';
+                var userRegisteredBrands = (userDetails && userDetails.registeredBrands) || '';
+
+                userFirstName = userFirstName.substring(0,70);
+                userLastName = userLastName.substring(0,90);
+
+                var customParameters = [
+                    {name: 'userRegisteredBrands', value: userRegisteredBrands},
+                    {
+                        name: 'Brand_id',
+                        value: (userDetails && userDetails.brandName) || initialParameters.brandId || ''
+                    },
+                    {
+                        name: 'Country',
+                        value: (userDetails && userDetails.authenticatedAccountCountry) || initialParameters.authenticatedCountry || ''
+                    },
+                    {name: 'First Name', value: userFirstName},
+                    {name: 'Last Name', value: userLastName},
+                    {name: 'Email', value: userEmail},
+                    {name: 'Language', value: formData.preferred_language || ''},
+                    {
+                        name: 'TradingAccount',
+                        value: (userDetails && userDetails.userAccount) || initialParameters.tradingAccount || formData.user_id || ''
+                    },
+                    {name: 'browserInfo', value: navigator && navigator.userAgent || 'unknown'},
+                    {name: 'visitorsPromotionGroup', value: initialParameters.visitorsPromotionGroup},
+                    {name: 'languagePrefix', value: initialParameters.languagePrefix},
+                    {name: 'websiteHomeLink', value: initialParameters.websiteHomeLink},
+                    {name: 'Client Type', value: formData.clientType || 'unknown'},
+                    {name: 'Opened Chat From', value: 'WWW'},
+                    {name: 'Browser page', value: window.location.href},
+                ];
+
+                customParameters.forEach((element) => {
+                    if (element.name === 'TradingAccount' && element.value === '0') {
+                        element.value = '';
+                    }
+                });
+
+                var visitorInfo = {name: userFirstName, email: userEmail};
+                _setCacheData({
+                    customParameters: customParameters,
+                    visitorInfo: visitorInfo,
+                    preferredLanguage: formData.preferred_language
+                });
+                _livechatModel = new LivechatModelClass(formData.preferred_language, customParameters, visitorInfo);
+                _$customLivechat.hide();
+            }
+
+            function _setCacheData(data) {
+                console.info('[LIVECHAT_FE]: Set items to cache');
+                sessionStorage.setItem(initialParameters.keyCacheData, JSON.stringify(data));
+            }
+
+            function _getCacheData() {
+                console.info('[LIVECHAT_FE]: Get items to cache');
+                return JSON.parse(sessionStorage.getItem(initialParameters.keyCacheData));
+            }
+
+            function _loadGroupLanguagesSettings() {
+                if (_isLanguagesBusy) {
+                    return;
+                }
+                $('#custom-livechat .fa-spinner').show();
+                _isLanguagesBusy = true;
+                var data = {
+                    languageCode: initialParameters.languageCode,
+                    countryCode: initialParameters.authenticatedCountry,
+                    brandId: initialParameters.brandId,
+                };
+                callApi('getLanguageGroupStatus', data)
+                    .done(function (response) {
+                        console.info('[LIVECHAT_FE]: method getLanguageGroupStatus completed');
+                        var sessionData = response.result.sessionData;
+                        if (sessionData.loggedIn) {
+                            initialParameters.loggedIn = sessionData.loggedIn;
+                            initialParameters.tradingAccount = sessionData.tradingAccount ? sessionData.tradingAccount : 0;
+                            initialParameters.userDetails.userEmail = sessionData.userDetails.userEmail;
+                            initialParameters.brandId = sessionData.userDetails.brandId || initialParameters.brandId;
+                            saveSessionData(sessionData);
+                        }
+
+                        _renderLanguagesSelectBox(response.result.mGroupsDetails);
+                    })
+                    .fail(function (jqXHR, textStatus, errorThrown) {
+                        console.error('[LIVECHAT_FE]: method getLanguageGroupStatus failed', {
+                            responseText: jqXHR.responseText,
+                            responseStatus: jqXHR.status,
+                            responseStatusText: jqXHR.statusText,
+                            textStatus,
+                            errorThrown
+                        });
+                    })
+                    .always(function () {
+                        console.info('[LIVECHAT_FE]: method getLanguageGroupStatus always action');
+                        _isLanguagesBusy = false;
+                        $('#custom-livechat .fa-spinner').hide();
+                    });
+            }
+
+            /**
+             * @param {Array<Object>} languages
+             * @private
+             */
+            function _renderLanguagesSelectBox(languages) {
+                console.info('[LIVECHAT_FE]: Rendering groups');
+                if (!Array.isArray(languages)) {
+                    console.warn('Languages has to be an array');
+                    return;
+                }
+                var $options = $();
+                languages.forEach(function (langObj) {
+                    $options = $options.add(
+                        '<option value="' + langObj['mGroupId'] + '">' +
+                        langObj['mDisplayLanguage'] + ' (' + langObj['mStatus'] + ')' +
+                        '</option>'
+                    );
+                });
+                $('.j-preferred-language').html($options);
+            }
+        }
+
+        function initLivechatNative() {
+            (function (n, t, c) {
+                function i(n) {
+                    return e._h ? e._h.apply(null, n) : e._q.push(n)
+                }
+
+                var e = {
+                    _q: [], _h: null, _v: "3.0", on: function () {
+                        i(["on", c.call(arguments)])
+                    },
+                    once: function () {
+                        i(["once", c.call(arguments)])
+                    },
+                    off: function () {
+                        i(["off", c.call(arguments)])
+                    },
+                    get: function () {
+                        if (!e._h) throw new Error("[LiveChatWidget] You can't use getters before load.");
+                        return i(["get", c.call(arguments)])
+                    },
+                    call: function () {
+                        i(["call", c.call(arguments)])
+                    },
+                    init: function () {
+                        var n = t.createElement("script");
+                        n.async = !0;
+                        n.type = "text/javascript";
+                        n.src = "https://cdn.livechatinc.com/tracking.js";
+                        t.head.appendChild(n);
+                    }
+                };
+                !n.__lc.asyncInit && e.init();
+                n.LiveChatWidget = n.LiveChatWidget || e;
+            }(window, document, [].slice))
+        }
+
+        /**
+         * In case of existing client (like profile)
+         */
+        function requestClientName() {
+            var formSelector = emailSelector.parents('form'),
+                buttonSelector = formSelector.find('button'),
+                buttonText = buttonSelector.attr('data-text');
+            buttonSelector.text(buttonText).removeAttr('disabled');
+
+            $('.j-first-name')
+                .removeClass('ignore_validation')
+                .parent()
+                .show();
+
+            $('.j-last-name')
+                .removeClass('ignore_validation')
+                .parent()
+                .show();
+
+            formSelector.removeClass('has-success');
+
+            $('.j-div-email').hide();
+            $('.j-div-language').hide();
+        }
+
+        /**
+         * @param {object} sessionData
+         * @return void
+         */
+        function saveSessionData(sessionData) {
+            $('.custom-livechat__body .j-user-id')
+                .val(initialParameters.tradingAccount)
+                .prop('readonly', true);
+
+            $('.custom-livechat__body .j-email')
+                .val(initialParameters.userDetails.userEmail)
+                .prop('readonly', true);
+
+            $('#existing-member').removeClass('active');
+            $('#visitor-user').addClass('active');
+            $('.j-hide-if-logged-in').hide();
+
+            if (!sessionData.userDetails.userFirstName || sessionData.userDetails.userFirstName === 'N/A') {
+                $('.j-show-first-name').show();
+            } else {
+                initialParameters.userDetails.userFirstName = sessionData.userDetails.userFirstName;
+                $('.custom-livechat__body .j-first-name')
+                    .val(initialParameters.userDetails.userFirstName)
+                    .prop('readonly', true);
+            }
+            if (!sessionData.userDetails.userLastName || sessionData.userDetails.userLastName === 'N/A') {
+                $('.j-show-last-name').show();
+            } else {
+                initialParameters.userDetails.userLastName = sessionData.userDetails.userLastName;
+                $('.custom-livechat__body .j-last-name')
+                    .val(initialParameters.userDetails.userLastName)
+                    .prop('readonly', true);
+            }
+        }
+
+        
+        /**
+         * Adjust live chat position based on risk warning
+         */
+        function adjustLiveChat() {
+            var $riskBlock, $riskBtn, isUK, $riskBtnHeight;
+            $riskBlock = $('#risk-block');
+            $riskBtn = $riskBlock.find('#js-riskCloseButton');
+            isUK = $riskBlock.hasClass("isUK");
+            $widgetOptions = $('#widgetOptions');
+            $riskBtnHeight = window.matchMedia("(max-width: 992px)").matches ? $riskBtn.outerHeight() : 0;
+
+            if ($riskBlock.length && $riskBtn.length) {
+                $('#new-live-chat-icon, #custom-livechat').css('bottom', $riskBlock.outerHeight() + $riskBtnHeight);
+                $widgetOptions.css('bottom', $riskBlock.outerHeight() + $riskBtnHeight);
+            }else if ($riskBlock.length && !isUK) {
+                $('#new-live-chat-icon, #custom-livechat').css('bottom', $riskBlock.outerHeight())
+                $widgetOptions.css('bottom', $riskBlock.outerHeight());
+            } else {
+                $('#new-live-chat-icon, #custom-livechat').css('bottom', 0);
+                $widgetOptions.css('bottom', 0);
+            }
+
+        }
+
+        var livechatController = new LivechatControllerClass(),
+            $document = $(document),
+            $window = $(window),
+            $newLiveChatIcon = $('#new-live-chat-icon');
+        // Initiate Event Listeners
+        $('#livechatWidget').on('click', function(e) {
+            if($('#custom-livechat').is(':visible')) {
+                livechatController.closeCustomForm();
+            }else {
+                livechatController.openChat();
+            }
+        });
+        $document.on('click', '#startLiveChat', function (e) {
+            e.preventDefault();
+            $('.j-second-step').show();
+            livechatController.openChat();
+            $.cookie("livechatDisclaimer", 1, { expires: 90, path: '/' });
+            $('.option__livechat').attr('no_disclaimer', '');
+        });
+        $document.on('click', '#start-whatsapp', function(e) {
+            $.cookie("whatsAppDisclaimer", 1, { expires: 90, path: '/' });
+            $('.option__whatsapp').attr('no_disclaimer', '');
+        });
+        $document.on('click', function(e) {
+            var $target, line_cookie, is_mobile, whatsapp_cookie, viber_cookie, telegram_cookie;
+            $target = $(e.target);
+            line_cookie = $.cookie('linechatDisclaimer');
+            whatsapp_cookie = $.cookie('whatsAppDisclaimer');
+            viber_cookie = $.cookie('viberchatDisclaimer');
+            telegram_cookie = $.cookie('telegramDisclaimer');
+            is_mobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(window.navigator.userAgent);
+
+            // Setcookie Mobile
+            if( $target.is('#start-line') && line_cookie == null && is_mobile ) {
+                $.cookie("linechatDisclaimer", 1, {expires: 90, path: '/'});
+                $('.option__linechat').attr('no_disclaimer', '');
+            }
+
+            if( $target.is('#start-whatsapp') && whatsapp_cookie == null && is_mobile ) {
+                $.cookie("whatsAppDisclaimer", 1, {expires: 90, path: '/'});
+                $('.option__whatsapp').attr('no_disclaimer', '');
+            }
+
+            if( $target.is('#start-viber') && whatsapp_cookie == null && is_mobile ) {
+                $.cookie("viberchatDisclaimer", 1, {expires: 90, path: '/'});
+                $('.option__viberchat').attr('no_disclaimer', '');
+            }
+
+            if( $target.is('#start-telegram') && whatsapp_cookie == null && is_mobile ) {
+                $.cookie("telegramDisclaimer", 1, {expires: 90, path: '/'});
+                $('.option__telegram').attr('no_disclaimer', '');
+            }
+
+            // Setcookie Desktop
+            if( $target.is('.option__linechat') && line_cookie == null && !is_mobile ) {
+                $.cookie("linechatDisclaimer", 1, {expires: 90, path: '/'});
+                $('.option__linechat').attr('no_disclaimer', '');
+            }
+
+            if( $target.is('.option__whatsapp') && whatsapp_cookie == null && !is_mobile ) {
+                $.cookie("whatsAppDisclaimer", 1, {expires: 90, path: '/'});
+                $('.option__whatsapp').attr('no_disclaimer', '');
+            }
+
+            if($target.is('.option__viberchat') && viber_cookie == null && !is_mobile) {
+                $.cookie("viberchatDisclaimer", 1, {expires: 90, path: '/'});
+                $('.option__viberchat').attr('no_disclaimer', '');
+            }
+
+            if($target.is('.option__telegram') && telegram_cookie == null && !is_mobile) {
+                $.cookie("telegramDisclaimer", 1, {expires: 90, path: '/'});
+                $('.option__telegram').attr('no_disclaimer', '');
+            }
+
+        });
+        $document.on('click', ".option__livechat[no_disclaimer]", function (e) {
+            e.preventDefault();
+            $('.j-second-step').show();
+            livechatController.openChat();
+        });
+        $document.on('click', '#close-prechat-form', function () {
+            livechatController.closeCustomForm();
+            $newLiveChatIcon.show();
+        });
+        $document.on('click', '#start-chat, #start-chat-member', function (e) {
+            e.preventDefault();
+            var formId = $(this).closest("form").attr('id'),
+                $form = $('#' + formId);
+            if ($form.valid()) {
+                var formData = {};
+                $form.serializeArray().forEach(function (item) {
+                    formData[item.name] = item.value;
+                });
+                if (formData["user_id"] === undefined && initialParameters.loggedIn) {
+                    formData["user_id"] = userIdSelector.val() ?? '0';
+                }
+                livechatController.startNewChat(formData);
+            }
+        });
+        $document.on('click', '#js-riskCloseButton', adjustLiveChat);
+        $window.on('resize', adjustLiveChat);
+        $document.on('click', '#livechatWidget', function() {
+            // Remove notification icon when user clicks on the livechat widget
+            if($(this).hasClass('notification')) {
+                $(this).removeClass('notification');
+            }
+        });
+        adjustLiveChat();
+    })(jQuery);
+</script>
+<script>
+    var pleaseWait = "Silahkan Tunggu..";
+    </script>
+<script defer="defer" src="https://cloud.xm-cdn.com/assets/js/minified/forms.js?ver=ef7bbd59ab90eb7838c8d0e2c48a8461"></script>
+<script>
+$(window).on('load', function() {
+
+//  REGISTRATION FORMS: additional scripts START
+
+    
+
+//  REGISTRATION FORMS: additional scripts END
+
+    $.validator.setDefaults({ ignore: '' });
+
+    
+    $('form#pre-chat-form,#pre-chat-form-member').each(function () {
+
+        $(this).validate({
+
+            
+            rules: {
+                "first_name": { 
+						required: true, 
+						maxlength: 70, 
+					 },
+                    "last_name": { 
+						required: true, 
+						maxlength: 90, 
+					 },
+                    "email": { 
+						required: true, 
+						validEmail: true, 
+					 },
+                    "user_id": { 
+						required: true, 
+						regex: /^[0-9]+$/, 
+					 },
+                    "user_password": { 
+						required: true, 
+						regex: /^[a-zA-Z0-9\#\[\]\(\)\@$\&\*\!\?\|\,\.\^\/\\+_-]+$/, 
+					 },
+                    "preferred_language": { 
+						required: true, 
+					 },
+                                },
+
+            messages: {
+                "first_name": { 
+						required: "Kolom <strong>Nama depan</strong> dibutuhkan", 
+						maxlength: "Kolom Nama Depan tidak boleh melebihi 70 karakter.", 
+					 },
+                    "last_name": { 
+						required: "Kolom <strong>Nama belakang</strong> dibutuhkan", 
+						maxlength: "Kolom Nama Belakang tidak boleh melebihi 90 karakter.", 
+					 },
+                    "email": { 
+						required: "Kolom <strong>E-mail</strong> dibutuhkan", 
+						validEmail: "Kolom <strong>E-mail</strong> harus berisi alamat email yang valid", 
+					 },
+                    "user_id": { 
+					 },
+                    "user_password": { 
+						required: "Kolom <strong>Kata Sandi:</strong> dibutuhkan", 
+						regex: "Kolom <strong>Kata Sandi:</strong> harus berisi alamat email yang valid", 
+					 },
+                    "preferred_language": { 
+						required: "Kolom <strong>Pilihan Bahasa</strong> dibutuhkan", 
+					 },
+                                },
+
+            ignore: '.ignore_validation',
+
+            highlight: function (element, errorClass, validClass) {
+                $(element)
+                    .addClass(errorClass)
+                    .removeClass(validClass);
+
+                if ($(element).hasClass('select2-search__field')) {
+                    return;
+                }
+                else if ($(element).attr('type') != 'checkbox' && $(element).attr('type') != 'radio') {
+                    var selectClass = ($(element).prop('type') == 'select-one') ? ' select' : '',
+                        icon = '<div class="glyphicon-wrapper"><span class="glyphicon glyphicon-remove form-control-feedback'+ selectClass +'" aria-hidden="true"></span></div>';
+                    $(element)
+                        .closest('.form-group')
+                        .removeClass('has-success')
+                        .addClass('has-error')
+                        .end()
+                        .siblings('.glyphicon-wrapper').remove()
+                        .end()
+                        .before(icon);
+                }
+
+                if ($.fn.bulletValidate) {
+                    var bulletValidator = $(element).getBulletValidation();
+                    if (bulletValidator) {
+                        bulletValidator.validation();
+                    }
+                }
+            },
+            unhighlight: function (element, errorClass, validClass) {
+                $(element)
+                    .removeClass(errorClass)
+                    .addClass(validClass);
+
+                if ($(element).hasClass('select2-search__field')) {
+                    return;
+                }
+                else if ($(element).attr('type') != 'checkbox' && $(element).attr('type') != 'radio') {
+                    var selectClass = ($(element).prop('type') == 'select-one') ? ' select' : '',
+                        icon = '<div class="glyphicon-wrapper"><span aria-hidden="true" class="glyphicon glyphicon-ok form-control-feedback'+ selectClass +'"></span></div>';
+                    $(element)
+                        .closest('.form-group')
+                        .removeClass('has-error')
+                        .addClass('has-success')
+                        .end()
+                        .siblings('.glyphicon-wrapper').remove()
+                        .end()
+                        .before(icon);
+
+                    if ($(element).parents('.remove-valid').length) {
+
+                        $(element)
+                            .removeClass('valid')
+                            .closest('.form-group')
+                            .removeClass('has-success')
+                            .end()
+                            .siblings('.glyphicon-wrapper').remove();
+                    }
+                }
+                if ($.fn.bulletValidate) {
+                    var bulletValidator = $(element).getBulletValidation();
+                    if (bulletValidator) {
+                        bulletValidator.validation();
+                    }
+                }
+            },
+
+            errorPlacement: function (error, element) {
+                
+                if (element.siblings('.input-group-addon').length > 0) {
+                    $(element)
+                        .closest('.input-group')
+                        .after(error);
+                }
+
+                else if (element.closest('.form-group').find('.search-select').length > 0) {
+                    $(element)
+                        .closest('.form-group').find('.select2-container')
+                        .after(error);
+                }
+
+                else if (element.closest('.form-group').find('.btn-group').length > 0) {
+                    $(element)
+                        .closest('.form-group').find('.btn-group')
+                        .after(error);
+                }
+
+                else if (element.attr('type') == 'file') {
+                    $(element)
+                        .closest('.input-group')
+                        .after(error);
+                }
+                else if (element.attr('type') == 'checkbox') {
+                    $(element)
+                        .closest('.form-group')
+                        .append(error);
+                }
+                else if (element.attr('type') == 'radio') {
+                    $(element)
+                        .closest('label')
+                        .siblings('span')
+                        .after(error);
+                }
+                else if (typeof element.attr('data-select2-dropdown') != 'undefined') {
+                    $(element)
+                        .closest('.form-group')
+                        .append(error);
+                }
+                else {
+                    error.insertAfter(element);
+                }
+            },
+
+            invalidHandler: function (form, validator) {
+                // Prevent scroll for livechat bubble
+                if($(form.target).is('#pre-chat-form-member,#pre-chat-form')) return;
+                scrollToObject($(validator.errorList[0].element));
+                $(form.target).removeData('submitted').find('[type="submit"]').removeProp('disabled');
+            },
+
+            submitHandler: function (form) {
+                                    if ($.fn.bulletValidate) {
+                        var submit = true;
+                        $(form).find('input').each(function () {
+                            var bulletValidator =  $(this).getBulletValidation();
+                                if (bulletValidator) {
+                                    if (bulletValidator.validation() === false) {
+                                        submit = false;
+                                        bulletValidator.invalidSubmitHandler($(this));
+                                        return false;
+                                    }
+                                }
+                        });
+                        if (submit === false) {
+                            return false;
+                        }
+                    }
+
+                    var ajaxButton = $(form).find('button[data-type="ajax"]');
+                    if (ajaxButton.length > 0) {
+                        ajaxButton.text(pleaseWait).attr('disabled', true);
+                        return false;
+                    }
+
+                    $(form).find('button').text(pleaseWait);
+                    $(form).find('button').attr('disabled', 'disabled');
+                    form.submit();
+                    return false;
+                            }
+
+        });
+
+    });
+    });
+</script>
+<link rel="stylesheet" href="https://cloud.xm-cdn.com/assets/css/minified/sources/xmapp.css?ver=eac3332f1b71fd6ace4dc1ddccb4df2d">
+<script src="https://cloud.xm-cdn.com/assets/js/minified/qr-code.js?ver=a9f138aa910facc0c600fa9c6cd765da"></script>
+<script src="https://cloud.xm-cdn.com/assets/js/minified/xmapp.js?ver=bcc73c42d005d07c50eebd00849808be"></script><script type="text/javascript">
+    var xmontv = {
+        title: 'XM hadir di TV'
+    }
+</script>
+    
+    
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.eu01.nr-data.net","licenseKey":"NRBR-1d4ceb8e146a994d175","applicationID":"99021171,99021191","transactionName":"MhBSZQoZXhFQWkZdWgtac0QLDF8PHlBWGw==","queueTime":0,"applicationTime":487,"atts":"HldRE0IDTR8=","errorBeacon":"bam.eu01.nr-data.net","agent":""}</script></body>
+</html>
